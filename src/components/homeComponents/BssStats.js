@@ -1,0 +1,36 @@
+import React from "react";
+import { FaGraduationCap, FaUserTie, FaBuilding, FaUser } from "react-icons/fa";
+import graduates from '../../../assets/icons/Graduation-Cap.png';
+import teacher from '../../../assets/icons/Certificate.png';
+import campus from '../../../assets/icons/Building.png';
+import stud from '../../../assets/icons/User.png'
+
+const BssStats = () => {
+  const stats = [
+    { iconimg: graduates, number: "97%", label: "Graduates" },
+    { iconimg: teacher, number: "30X", label: "Certified Teachers" },
+    { iconimg: campus, number: "8", label: "Student Campuses" },
+    { iconimg: stud, number: "6510", label: "Students" },
+  ];
+
+  return (
+    <section className="bss-stats-section mb-100">
+      <div className="container">
+        <div className="statsBanner">
+          {stats.map((item, index) => (
+            <div key={index} className="bss-stat-card d-flex">
+              <div className="bss-icon-box"><img src={item.iconimg} alt=""/></div>
+              <div className="ms-2">
+                <h2 className="bss-number mb-0">{item.number}</h2>
+              <p className="bss-label">{item.label}</p>
+              </div>
+              
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BssStats;

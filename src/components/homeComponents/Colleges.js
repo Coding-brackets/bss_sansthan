@@ -1,24 +1,21 @@
 import React from "react";
-import College1 from "../../../assets/college1.png";
-import College2 from "../../../assets/college2.png";
-import College3 from "../../../assets/college3.jpg";
 
 const Colleges = () => {
   const colleges = [
     {
-      img: College1,
+      img: "/assets/college1.png",
       tag: "B.A | M.A.",
       title: "Dr. Babasaheb Ambedkar Residential MR School, Bhandara",
       desc: "Manjulabai Bhondekar College was established by Late Founder of Bhondekar Sanskrutik, Krida Va Samajik Shikshan Sanstha, Bhandara.",
     },
     {
-      img: College2,
+      img: "/assets/college2.png",
       tag: "B.Sc | M.Sc | R.G.N.M | R.A.N.M.",
       title: "Late Jamunabai Bhondekar Residential MR School, Umri",
       desc: "The trust initiated nursing education with ANM (Auxiliary Nursing Midwifery) in 2009 and added GNM (General Nursing Midwifery) in 2011.",
     },
     {
-      img: College3,
+      img: "/assets/college3.jpg",
       tag: "B.A | M.A.",
       title: "Sant Gadgebaba Residential MR School, Nerla",
       desc: "Dr. Babasaheb Ambedkar Niwasi Matimand School, Bhandara was established in 2002 by Late Shri. Bhojraiji Bhondekar, Founder.",

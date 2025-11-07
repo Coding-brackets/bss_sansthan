@@ -11,6 +11,8 @@ import Success from "@/components/homeComponents/Success";
 import Testimonials from "@/components/commonComponents/Testimonials";
 import BssStats from "@/components/homeComponents/BssStats";
 import NewsAndEvents from "@/components/homeComponents/NewsAndEvents";
+import EmpoweringCon from "@/components/homeComponents/EmpoweringCon";
+import Colleges from "@/components/homeComponents/Colleges";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,6 +58,13 @@ export default function Home() {
         
         buttonText="Learn More"/>
         <NewsAndEvents/>
+        <EmpoweringCon
+        heading="Empowering Disabled Students"
+      description="Education changed my life. With this organization’s help, I could finally study without barriers.’ Education changed my life. With this organization’s help, I could finally study without barriers.’"
+      ButtonText="Learn More"
+       disabledImg="/assets/disabledimg.jpg"/>
+
+       <Colleges/>
 
       
     

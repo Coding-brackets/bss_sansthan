@@ -1,6 +1,6 @@
 
 import { FaCheck } from "react-icons/fa";
-import Button from "../uiComponent/Button";
+import CustomButtom from "../uiComponent/CustomButtom";
 // import PropTypes from "prop-types";
 
 const BssContentSec = ({image,
@@ -11,7 +11,8 @@ const BssContentSec = ({image,
   reverse = false,
 }) => {
   return (
-    <div className="container-fluid mb-100">
+    <div className="position-relative mb-100 sec_wid">
+    <div className="container-fluid ">
       <div
         className={`row legacy_content_sec align-items-center g-4 ${
           reverse ? "flex-row-reverse" : ""
@@ -43,10 +44,11 @@ const BssContentSec = ({image,
               </ul>
             )}
 
-            <Button text={buttonText} />
+            <CustomButtom text={buttonText} />
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 };

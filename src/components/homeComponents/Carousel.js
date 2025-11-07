@@ -1,14 +1,12 @@
 import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import carousel1 from "../../../assets/carousel1.png";
-import carousel2 from "../../../assets/carousel2.jpg";
-import carousel3 from "../../../assets/carousel3.jpg";
+
 
 const slides = [
   {
     id: 1,
-    image: carousel1,
+    image: "/assets/carousel1.png",
     title: "Thriving Beyond Campus",
     subtitle: "Life at BSS",
     description:
@@ -16,7 +14,7 @@ const slides = [
   },
   {
     id: 2,
-    image: carousel2,
+    image: "/assets/carousel2.jpg",
     title: "Workshops & Seminars",
     subtitle: "Learn Beyond Classroom",
     description:
@@ -24,7 +22,7 @@ const slides = [
   },
   {
     id: 3,
-    image: carousel3,
+    image: "/assets/carousel3.jpg",
     title: "Rhythm 2025",
     subtitle: "Annual Cultural Fest",
     description:
@@ -32,7 +30,7 @@ const slides = [
   },
   {
     id: 4,
-    image: carousel3,
+    image: "/assets/carousel3.jpg",
     title: "Inspiring Leaders",
     subtitle: "Growth Beyond Books",
     description:
@@ -40,7 +38,7 @@ const slides = [
   },
   {
     id: 5,
-    image: carousel2,
+    image: "/assets/carousel3.jpg",
     title: "Skill Enhancement",
     subtitle: "Workshops & Labs",
     description:
@@ -91,7 +89,7 @@ const Carousel = () => {
     <div className="carouse_banner">
       <div
         className="carousel-wrapper mb-100"
-        style={{ margin: "160px 0px 260px 0px" }}
+        style={{ margin: "40px 0px 120px 0px" }}
       >
         <div className="carousel-container">
           <Slider ref={sliderRef} {...settings}>

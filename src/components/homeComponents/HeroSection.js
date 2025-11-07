@@ -2,7 +2,6 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { motion as Motion } from "framer-motion";
  // ✅ import Framer Motion
-import heroImg from "../../../assets/heroimg.png";
 
 const HeroSection = () => {
   // Optional animation variants (for reuse)
@@ -62,7 +61,7 @@ const HeroSection = () => {
           <div className="col-md-6 border_right">
             <div   
             >
-              <img src={heroImg} alt="Hero" className="hero_image" />
+              <img src="/assets/heroimg.png" alt="Hero" className="hero_image" />
             </div>
           </div>
         </div>

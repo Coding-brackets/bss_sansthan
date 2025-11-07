@@ -1,7 +1,8 @@
 import Slider from "react-slick";
-import user from "../../assets/user.png";
+
 import { FaXTwitter } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+
 
 const Testimonials = () => {
   const testimonials = [
@@ -9,7 +10,7 @@ const Testimonials = () => {
       text: "Students describe BSS as a place where learning meets purpose. From supportive faculty to real-world hospital exposure, the institution provides the perfect environment to master medical skills, build confidence and prepare for a rewarding healthcare career.",
       name: "James Parker",
       role: "Operations Lead at TechEdge",
-      img: user,
+      img: "/assets/user.png",
       socialLink: "/",
       socialIcon: <FaXTwitter />
 
@@ -18,19 +19,19 @@ const Testimonials = () => {
       text: "BSS provides an amazing balance of academics and hands-on learning. The exposure I received during my clinical sessions gave me the confidence to step into my career with ease.",
       name: "James Parker",
       role: "Operations Lead at TechEdge",
-      img: user,
+      img: "/assets/user.png",
     },
     {
       text: "BSS provides an amazing balance of academics and hands-on learning. The exposure I received during my clinical sessions gave me the confidence to step into my career with ease.",
       name: "James Parker",
       role: "Operations Lead at TechEdge",
-      img: user,
+      img: "/assets/user.png",
     },
     {
       text: "BSS provides an amazing balance of academics and hands-on learning. The exposure I received during my clinical sessions gave me the confidence to step into my career with ease.",
       name: "James Parker",
       role: "Operations Lead at TechEdge",
-      img: user,
+      img: "/assets/user.png",
     },
   ];
 
@@ -91,7 +92,7 @@ const settings = {
                       <small className="">{item.role}</small>
                     </div>
                     </div>
-                    <Link to={item.socialLink} className="socialLink">{item.socialIcon}</Link>
+                    <a href={item.socialLink} className="socialLink">{item.socialIcon}</a>
                     
                   </div>
                 </div>

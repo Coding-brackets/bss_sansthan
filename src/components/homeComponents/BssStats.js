@@ -1,16 +1,12 @@
 import React from "react";
 import { FaGraduationCap, FaUserTie, FaBuilding, FaUser } from "react-icons/fa";
-import graduates from '../../../assets/icons/Graduation-Cap.png';
-import teacher from '../../../assets/icons/Certificate.png';
-import campus from '../../../assets/icons/Building.png';
-import stud from '../../../assets/icons/User.png'
 
 const BssStats = () => {
   const stats = [
-    { iconimg: graduates, number: "97%", label: "Graduates" },
-    { iconimg: teacher, number: "30X", label: "Certified Teachers" },
-    { iconimg: campus, number: "8", label: "Student Campuses" },
-    { iconimg: stud, number: "6510", label: "Students" },
+    { iconimg: "/assets/icons/Graduation-Cap.png", number: "97%", label: "Graduates" },
+    { iconimg: "/assets/icons/Certificate.png", number: "30X", label: "Certified Teachers" },
+    { iconimg: "/assets/icons/Building.png", number: "8", label: "Student Campuses" },
+    { iconimg: "/assets/icons/User.png", number: "6510", label: "Students" },
   ];
 
   return (

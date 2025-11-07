@@ -2,6 +2,15 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import HeroSection from "@/components/homeComponents/HeroSection";
+import BssContentSec from "@/components/commonComponents/BssContentSec";
+import AboutHighlights from "@/components/homeComponents/AboutHighlights";
+import Carousel from "@/components/homeComponents/Carousel";
+import Rankings from "@/components/homeComponents/Rankings";
+import Success from "@/components/homeComponents/Success";
+import Testimonials from "@/components/commonComponents/Testimonials";
+import BssStats from "@/components/homeComponents/BssStats";
+import NewsAndEvents from "@/components/homeComponents/NewsAndEvents";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +31,33 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <HeroSection/>
+       <BssContentSec
+        image="/assets/doctorimg.png"
+        heading="The BSS Legacy"
+        description="BSS, Bhandara is an esteemed educational organization committed to transforming society through quality education, healthcare, nursing and employment. The institution offers a wide range of medical and nursing programs that focus on academic excellence, professional ethics, and community service. With experienced faculty, advanced laboratories, and a student-centric approach, BSS is a symbol of trust and excellence in Maharashtra’s healthcare education field."
+        points={[
+          "Quality of professionalism",
+          "Best for nursing courses",
+        ]}
+        buttonText="Learn More"
+      />
+
+      <AboutHighlights/>
+      <Carousel/>
+      <Rankings/>
+      <Success/>
+      <Testimonials/>
+      <BssStats/>
+      <BssContentSec
+      image="/assets/doctor1.png"
+        heading="Vision & Mission"
+        description="BSS envisions creating compassionate healthcare professionals devoted to human welfare, striving for global excellence in medical and nursing education, research, and service while bringing positive societal change through education, healthcare, and employment opportunities for underprivileged communities."
+        
+        buttonText="Learn More"/>
+        <NewsAndEvents/>
+
+      
     
     </>
   );

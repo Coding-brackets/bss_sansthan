@@ -1,56 +1,65 @@
-
 import { FaCheck } from "react-icons/fa";
 import CustomButtom from "../uiComponent/CustomButtom";
 // import PropTypes from "prop-types";
 
-const BssContentSec = ({image,
+const BssContentSec = ({
+  image,
   heading,
   description,
   points = [],
   buttonText = "Learn More",
+  quote,
   reverse = false,
 }) => {
   return (
     <div className="position-relative mb-100 sec_wid">
-    <div className="container-fluid ">
-      <div
-        className={`row legacy_content_sec align-items-center g-4 ${
-          reverse ? "flex-row-reverse" : ""
-        }`}
-      >
-        {/* Left / Right image */}
-        <div className="col-md-6 legacy_left ps-0">
-          <img
-            src={image}
-            alt={heading}
-            className="w-100 legacy_img rounded-3"
-          />
-        </div>
+      <div className="container-fluid ">
+        <div
+          className={`row legacy_content_sec align-items-center g-4 ${
+            reverse ? "flex-row-reverse" : ""
+          }`}
+        >
+          {/* Left / Right image */}
+          <div className="col-md-6 legacy_left ps-0">
+            <img
+              src={image}
+              alt={heading}
+              className="w-100 legacy_img rounded-3"
+            />
+          </div>
 
-        {/* Content */}
-        <div className="col-md-6 legacy_right d-flex align-items-center">
-          <div>
-            <h2 className="section_heading mb-3">{heading}</h2>
-            <p className="section_para mb-4">{description}</p>
+          {/* Content */}
+          <div className="col-md-6 legacy_right d-flex align-items-center">
+            <div>
+              <h2 className="section_heading mb-3">{heading}</h2>
+              {Array.isArray(description) ? (
+                description.map((para, index) => (
+                  <p key={index} className="section_para mb-4">
+                    {para}
+                  </p>
+                ))
+              ) : (
+                <p className="section_para mb-4">{description}</p>
+              )}
 
-            {points.length > 0 && (
-              <ul className="list-unstyled mb-0">
-                {points.map((point, idx) => (
-                  <li key={idx} className="mb-2 d-flex align-items-center">
-                    <FaCheck className="me-2 check_icon" />
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            )}
+              {points.length > 0 && (
+                <ul className="list-unstyled mb-0">
+                  {points.map((point, idx) => (
+                    <li key={idx} className="mb-2 d-flex align-items-center">
+                      <FaCheck className="me-2 check_icon" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              )}
 
-            <CustomButtom text={buttonText} />
+              <CustomButtom text={buttonText} />
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-  )
+  );
 };
 
 // ✅ Prop validation (optional but clean)

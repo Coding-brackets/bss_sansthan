@@ -58,7 +58,7 @@ const Journey = () => {
      <section className="journey-section mb-100 my-40">
       <div className="container-fluid journey_banner">
       <h2 className="section_heading  journey_heading mb-0">Our Journey</h2>
-      <div className='position-relative w-100 ' style={{ padding:'0px 70px' }}>
+      <div className='position-relative w-100 jour_padd' style={{ padding:'0px 70px' }}>
       <div className="timeline-road" >
         <hr/>
             <div className='dashed-line'/>

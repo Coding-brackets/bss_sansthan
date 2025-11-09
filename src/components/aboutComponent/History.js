@@ -4,7 +4,7 @@ const History = ({image, heading, description}) => {
   return (
     <div className='mb-100'>
       <div className='container'>
-        <div className='row'>
+        <div className='row g-4'>
         <div className='col-md-6'>
             <img
             src={image}

@@ -29,6 +29,7 @@ const AboutUs = () => {
         description={[
           "To transform the Vidarbha region into a hub of knowledge and healthcare excellence. With a focus on quality education, innovation, employment and community upliftment, the vision is to establish globally respected institutions that nurture intellect, compassion, and social responsibility, shaping a self-reliant and progressive Maharashtra for generations to come.",
           "We aim to set up a world-class Medical University, to enhance youth employment opportunities, high-tech infrastructure and ensure quality education and healthcare reach every corner of society for a prosperous and self-reliant India."]}
+          reverse ="true"
       />
       <Mission
       image="/assets/mission.png"

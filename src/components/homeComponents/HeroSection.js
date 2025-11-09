@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="row heroBanner position-relative">
           {/* Left content */}
           <div className="col-md-6 p-0">
-            <div className="hero_content p-80">
+            <div className="hero_content cust_p-80">
               <Motion.h4 variants={itemVariants} initial="hidden" animate="visible">
                 Committed to Excellence in nursing courses
               </Motion.h4>

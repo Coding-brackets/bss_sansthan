@@ -100,7 +100,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-3">
-            <h4 className="text-center">Quick Links</h4>
+            <h4 className="">Quick Links</h4>
             <div className="d-flex flex-column footer_quick_links">
               <Link href="">
                 <IoIosArrowForward className="footer_icon me-2" />

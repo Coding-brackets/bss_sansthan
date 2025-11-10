@@ -5,7 +5,7 @@ import React from 'react'
 const SubPagesHero = () => {
   return (
     <div className="container-fluid mb-100 p-0">
-    <div className='my-40 hero_section p-80 heroBanner'>
+    <div className='my-40 hero_section p-80 subHeroBanner'>
    {/* <img src={college} alt='' className='w-100 position-relative' /> */}
         <div className='sub_hero_content w-75 m-auto text-center'>
          

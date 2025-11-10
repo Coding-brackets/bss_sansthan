@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const CustomButton = ({
   text = "Submit",
-  url = "/",
+  url = "",
   variant = "",
   className = "",
 }) => {

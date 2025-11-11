@@ -1,0 +1,41 @@
+[
+  {
+    "heading": "Academic Facilities",
+    "para": "Our organization takes pride in offering a modern and inclusive environment that supports academic excellence, healthcare innovation, and overall student growth. Every corner of our campus is designed to inspire learning, discovery, and well-being.",
+    "features": [
+      "Modern Classrooms",
+      "Library & Digital Resource Center",
+      "Advanced Laboratories"
+    ],
+    "image": "/assets/infrastructure/academic.png"
+  },
+  {
+    "heading": "Medical & Healthcare Facilities",
+    "para": "A fully functional, multi-specialty hospital attached to our medical college, offering real-time learning experiences for students and serving the community with quality healthcare.",
+    "features": [
+      "Teaching Hospital",
+      "Clinical Training Units",
+      "Health & Wellness Center"
+    ],
+    "image": "/assets/infrastructure/medical.jpg"
+  },
+  {
+    "heading": "Residential & Campus Life",
+    "para": "Safe, well-maintained hostels for boys and girls with modern amenities, 24-hour security, and nutritious mess facilities. Multiple hygienic cafeterias serving vegetarian and balanced meals to meet the nutritional needs of students and faculty.",
+    "features": [
+      "Hostels",
+      "Cafeteria & Dining",
+      "Staff Quarters"
+    ],
+    "image": "/assets/infrastructure/campus.jpg"
+  },
+  {
+    "heading": "Green & Sustainable Campus",
+    "para": "Solar-powered lighting, rainwater harvesting systems, and lush green landscaping reflect our commitment to sustainability. Special zones for studying medicinal plants and promoting environmental awareness.",
+    "features": [
+      "Modern Classrooms",
+      "Library & Digital Resource Center"
+    ],
+    "image": "/assets/infrastructure/green.png"
+  }
+]

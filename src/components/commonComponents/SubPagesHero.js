@@ -1,27 +1,24 @@
-import React from 'react'
-// import college from '../../assets/college.jpg'
+import React from "react";
 
-
-const SubPagesHero = () => {
+const SubPagesHero = ({ heading, description, bgImage }) => {
   return (
     <div className="container-fluid mb-100 p-0">
-    <div className='my-40 hero_section p-80 subHeroBanner'>
-   {/* <img src={college} alt='' className='w-100 position-relative' /> */}
-        <div className='sub_hero_content w-75 m-auto text-center'>
-         
-              <h1 className='mb-4 '>
-                About Us
-              </h1>
-
-              <p className=''>
-                BSS is a progressive educational and social organization working towards transforming lives through quality education, advanced healthcare, employment opportunities and community service. With a network of colleges and hospitals, it empowers students with knowledge and innovation, shaping responsible citizens for a brighter, self-reliant tomorrow.
-              </p>
+      <div
+        className="my-40 hero_section p-80 subHeroBanner d-flex align-items-center justify-content-center bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: bgImage ? `url(${bgImage})` : "none",
+          minHeight: "400px",
+        }}
+      >
+        <div className="sub_hero_content  m-auto text-center">
+          <h1 className="mb-4">{heading}</h1>
+          <p className="mb-0">{description}</p>
         </div>
+      </div>
     </div>
-      
-    </div>
-  )
-}
+  );
+};
 
-export default SubPagesHero
+export default SubPagesHero;
+
 

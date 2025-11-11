@@ -10,7 +10,11 @@ import React from 'react'
 const AboutUs = () => {
   return (
     <div>
-      <SubPagesHero/>
+      <SubPagesHero
+        heading=" About Us"
+        description="BSS is a progressive educational and social organization working towards transforming lives through quality education, advanced healthcare, employment opportunities and community service. With a network of colleges and hospitals, it empowers students with knowledge and innovation, shaping responsible citizens for a brighter, self-reliant tomorrow."
+        bgImage="/assets/aboutHeroBanner.png"
+      />
       <History
         image="/assets/bss-history-img.png"
         heading="Our History"

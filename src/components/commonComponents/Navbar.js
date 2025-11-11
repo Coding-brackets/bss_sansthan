@@ -26,12 +26,12 @@ const Navbar = () => {
           </div>
           <div className="news_scroll_sec">
             <div className="scroll-content">
-              <a href="#">
+              <Link href="#">
                 🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM
                 & ANM programs
-              </a>{" "}
-              |<a href="#">🧬 Workshop on Healthcare Innovations</a> |
-              <a href="#">🏥 Campus Placements 2025 – Register Today!</a>
+              </Link>{" "}
+              |<Link href="#">🧬 Workshop on Healthcare Innovations</Link> |
+              <Link href="#">🏥 Campus Placements 2025 – Register Today!</Link>
             </div>
           </div>
           <div
@@ -43,15 +43,15 @@ const Navbar = () => {
         </div>
         <div className="nav3 navbar_Social_links">
           <div className="">
-            <a href="">
+            <Link href="">
               <IoCallOutline className="nav-icon" />
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <CiMail className="nav-icon" />
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <IoLocationOutline className="nav-icon" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="nav4">
@@ -59,15 +59,15 @@ const Navbar = () => {
           <div className="navbar_menu_wrapper ">
 
             <div className="navbar_menu d-none d-lg-flex d-flex">
-              {/* <a href="">About</a> */}
+              {/* <Link href="">About</Link> */}
 
               <div className="dropdown d-flex align-items-center">
                 <button className="dropbtn  nav_drop_btn">
                   About <IoIosArrowDown className="ms-1" />
                 </button>
                 <div className="dropdown-content">
-                  <a href="#">About Us</a>
-                  <a href="#" className="border-bottom-0">Our Leadership</a>
+                  <Link href="/about-us" className="border-top-0 bg-transparent">About Us</Link>
+                  <Link href="/leadership" className="border-bottom-0 bg-transparent">Our Leadership</Link>
                 </div>
               </div>
 
@@ -78,37 +78,37 @@ const Navbar = () => {
                 </button>
                 <div className="dropdown-content">
                   <div className="dropdown-item ">
-                    <div className="drop_btns d-flex justify-content-between align-items-center border-top-0">
+                    <div className="drop_btns d-flex justify-content-between align-items-center border-top-0 bg-transparent">
                       <span>Colleges</span>
                       <IoIosArrowForward />
                     </div>
                     <div className="dropdown-submenu">
-                      <a href="#" className="border-top-0 bg-transparent">Pooja Nursing College</a>
-                      <a href="#">Bhagyashri Bhondekar Ayurvedic College</a>
-                      <a href="#">Bhagyashri Bhondekar Physiotherapy</a>
-                      <a href="#">Bhagyashri Bhondekar Medical College</a>
-                       <a href="#">PES Multispeciality Hospital</a>
-                      <a href="#">Manjubai BA/MA College, Bhawani</a>
-                       <a href="#">Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School</a>
-                      <a href="#">Universal BA College</a>
-                      <a href="#">Sant Gadge Baba Madhyamik Shala</a>
-                      <a href="#" >Swayamsevi Janmubai Madhyamik Shala</a>
-                      <a href="#" className="border-bottom-0 bg-transparent">Swayamsevi Janmubai Bhondekar College</a>
+                      <Link href="#" className="border-top-0 bg-transparent">Pooja Nursing College</Link>
+                      <Link href="#">Bhagyashri Bhondekar Ayurvedic College</Link>
+                      <Link href="#">Bhagyashri Bhondekar Physiotherapy</Link>
+                      <Link href="#">Bhagyashri Bhondekar Medical College</Link>
+                       <Link href="#">PES Multispeciality Hospital</Link>
+                      <Link href="#">Manjubai BA/MA College, Bhawani</Link>
+                       <Link href="#">Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School</Link>
+                      <Link href="#">Universal BA College</Link>
+                      <Link href="#">Sant Gadge Baba Madhyamik Shala</Link>
+                      <Link href="#" >Swayamsevi Janmubai Madhyamik Shala</Link>
+                      <Link href="#" className="border-bottom-0 bg-transparent">Swayamsevi Janmubai Bhondekar College</Link>
                     </div>
                   </div>
-                  <a href="#">Hospitals</a>
+                  <Link href="#">Hospitals</Link>
 
-                  <a href="#">Research & Training Center</a>
-                  <a href="#" className="border-bottom-0 bg-transparent">Specially Abled Support</a>
+                  <Link href="#">Research & Training Center</Link>
+                  <Link href="#" className="border-bottom-0 bg-transparent">Specially Abled Support</Link>
                 </div>
               </div>
 
-              <a href="">News & Events</a>
-              <a href="">Gallery</a>
-              <a href="">Admissions</a>
-              <a href="">Career</a>
-              <a href="">Infrastructure & Facilities</a>
-              <a href="">Contact Us</a>
+              <Link href="">News & Events</Link>
+              <Link href="">Gallery</Link>
+              <Link href="">Admissions</Link>
+              <Link href="">Career</Link>
+              <Link href="">Infrastructure & Facilities</Link>
+              <Link href="">Contact Us</Link>
             </div>
 
             {/* Hamburger for mobile only */}
@@ -136,11 +136,11 @@ const Navbar = () => {
         </div>
 
         <div className="sidebar_links">
-          <a href="">About</a>
-          <a href="">Infrastructure Facilities</a>
-          <a href="">News</a>
-          <a href="">Admissions</a>
-          <a href="">Under BSS Education Society</a>
+          <Link href="">About</Link>
+          <Link href="">Infrastructure Facilities</Link>
+          <Link href="">News</Link>
+          <Link href="">Admissions</Link>
+          <Link href="">Under BSS Education Society</Link>
         </div>
       </div>
 

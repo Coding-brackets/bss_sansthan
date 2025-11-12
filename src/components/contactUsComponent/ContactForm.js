@@ -9,6 +9,7 @@ import {
   Twitter,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const ContactForm = () => {
@@ -70,9 +71,9 @@ const ContactForm = () => {
       <div className="container">
         <div className="row g-4 align-items-center">
           {/* Left Info Card */}
-          <div className="col-lg-5">
-            <div className="p-4 rounded-4 text-white contact-info-card h-100">
-              <div className="mb-4">
+          <div className="col-lg-6 position-relative">
+            <div className="contact-info-card">
+              <div className="mb-5">
                 <h5 className="fw-bold">Contact Information</h5>
                 <p className="small mb-4">Say something to start a live chat!</p>
 
@@ -89,39 +90,40 @@ const ContactForm = () => {
               </div>
 
               <div className="mt-4 d-flex gap-3">
-                <Twitter size={18} />
-                <Instagram size={18} />
-                <Facebook size={18} />
-                <Linkedin size={18} />
+              <Link href="" className="contact_icon"><Twitter size={18} /></Link>
+              <Link href="" className="contact_icon"><Instagram size={18} /></Link>
+              <Link href="" className="contact_icon"><Facebook size={18} /></Link>
+              
+                
               </div>
             </div>
 
-            <div className="mt-3 rounded-4 overflow-hidden">
+            <div className="mt-3 contactUsImg ">
               <Image
-                src="/images/support-agent.jpg"
+                src="/assets/contactUs.png"
                 alt="Support Agent"
-                width={400}
-                height={300}
-                className="w-100 object-cover"
+                width={300}
+                height={390}
+                className=""
               />
             </div>
           </div>
 
           {/* Right Form */}
-          <div className="col-lg-7">
+          <div className="col-lg-6">
             <div className="p-5 rounded-4 shadow-sm bg-white form-wrapper">
-              <h4 className="fw-bold mb-1 text-dark">Have Questions?</h4>
-              <p className="text-muted small mb-4">
+              <h4 className=" mb-2 text-center">Have Questions?</h4>
+              <p className="text-muted small mb-5">
                 Fill the contact form and write us a message!
               </p>
 
               <form onSubmit={handleSubmit}>
-                <div className="row mb-3">
+                <div className="row mb-5">
                   <div className="col-md-6">
                     <label className="form-label small">First Name</label>
                     <input
                       type="text"
-                      className="form-control border-0 border-bottom"
+                      className="form-control contactForm-input"
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
@@ -132,7 +134,7 @@ const ContactForm = () => {
                     <label className="form-label small">Last Name</label>
                     <input
                       type="text"
-                      className="form-control border-0 border-bottom"
+                      className="form-control  contactForm-input"
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleChange}
@@ -141,12 +143,12 @@ const ContactForm = () => {
                   </div>
                 </div>
 
-                <div className="row mb-3">
+                <div className="row mb-5">
                   <div className="col-md-6">
                     <label className="form-label small">Email</label>
                     <input
                       type="email"
-                      className="form-control border-0 border-bottom"
+                      className="form-control contactForm-input"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
@@ -157,7 +159,7 @@ const ContactForm = () => {
                     <label className="form-label small">Phone Number</label>
                     <input
                       type="tel"
-                      className="form-control border-0 border-bottom"
+                      className="form-control contactForm-input"
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
@@ -167,7 +169,7 @@ const ContactForm = () => {
                 </div>
 
                 {/* Select Subject */}
-                <div className="mb-3">
+                <div className="mb-5">
                   <label className="form-label small">Select Subject?</label>
                   <div className="d-flex flex-wrap gap-3 mt-1">
                     {[
@@ -199,10 +201,10 @@ const ContactForm = () => {
                 </div>
 
                 {/* Message */}
-                <div className="mb-4">
+                <div className="mb-5">
                   <label className="form-label small">Message</label>
                   <textarea
-                    className="form-control border-0 border-bottom"
+                    className="form-control contactForm-input"
                     name="message"
                     rows="3"
                     placeholder="Write your message.."
@@ -211,12 +213,12 @@ const ContactForm = () => {
                   ></textarea>
                 </div>
 
-                <button
+                <a href=""
                   type="submit"
-                  className="btn btn-primary px-4 py-2 rounded-3 fw-semibold float-end"
+                  className=" contactForm_btn"
                 >
                   Send Message
-                </button>
+                </a>
               </form>
             </div>
           </div>

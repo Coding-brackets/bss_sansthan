@@ -2,7 +2,7 @@ import React from "react";
 
 const SubPagesHero = ({ heading, description, bgImage }) => {
   return (
-    <div className="container-fluid mb-100 p-0">
+    <div className="container-fluid mb-80 p-0">
       <div
         className="my-40 hero_section p-80 subHeroBanner d-flex align-items-center justify-content-center bg-cover bg-center bg-no-repeat"
         style={{

@@ -103,12 +103,12 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <Link href="">News & Events</Link>
+              <Link href="/news">News & Events</Link>
               <Link href="">Gallery</Link>
               <Link href="">Admissions</Link>
               <Link href="">Career</Link>
-              <Link href="">Infrastructure & Facilities</Link>
-              <Link href="">Contact Us</Link>
+              <Link href="/infrastructure-and-facilities">Infrastructure & Facilities</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </div>
 
             {/* Hamburger for mobile only */}

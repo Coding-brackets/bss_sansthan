@@ -14,7 +14,7 @@ const NewsGrid = ({ newsData, onSelectNews }) => {
             {newsData.map((item, index) => (
               <div className="col-md-6" key={index}>
                 <div
-                  className="card border-0 shadow-sm rounded-4 overflow-hidden h-100 news-card"
+                  className="card  overflow-hidden h-100 newsCard"
                   onClick={() => onSelectNews(item)}
                   style={{ cursor: "pointer" }}
                 >
@@ -23,9 +23,9 @@ const NewsGrid = ({ newsData, onSelectNews }) => {
                     alt={item.title}
                     width={500}
                     height={300}
-                    className="card-img-top w-100 object-cover" 
+                    className="card-img-top w-100" 
                   />
-                  <div className="card-body">
+                  <div className="card-body newsCard_conSec">
                     <p className="text-muted small mb-1">{item.date}</p>
                     <h6 className="fw-semibold">{item.title}</h6>
                   </div>
@@ -39,7 +39,7 @@ const NewsGrid = ({ newsData, onSelectNews }) => {
         <div className="col-lg-4 mt-5 mt-lg-0">
           {/* Recent News */}
           <div className="sidebar-section mb-5">
-            <h5 className="fw-bold mb-3">Recent News</h5>
+            <h5 className=" mb-3">Recent News</h5>
             {sideNews.map((item, index) => (
               <div
                 key={index}
@@ -50,18 +50,18 @@ const NewsGrid = ({ newsData, onSelectNews }) => {
                 <Image
                   src={item.image || "/assets/news/default.jpg"}
                   alt="thumb"
-                  className="me-3 rounded-3"
+                  className="me-3"
                   width={70}
                   height={70}
                 />
-                <p className="small mb-0">{item.title}</p>
+                <p className=" mb-0">{item.title}: {item.description}</p>
               </div>
             ))}
           </div>
 
           {/* Upcoming Events */}
           <div className="sidebar-section">
-            <h5 className="fw-bold mb-3">Upcoming Events</h5>
+            <h5 className=" mb-3">Upcoming Events</h5>
             {upcomingEvents.map((item, index) => (
               <div
                 key={index}
@@ -76,7 +76,7 @@ const NewsGrid = ({ newsData, onSelectNews }) => {
                   width={70}
                   height={70}
                 />
-                <p className="small mb-0">{item.title}</p>
+                <p className="small mb-0">{item.title}: {item.description}</p>
               </div>
             ))}
           </div>

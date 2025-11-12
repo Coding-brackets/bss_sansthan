@@ -199,8 +199,7 @@ const ContactForm = () => {
                     ))}
                   </div>
                 </div>
-
-                {/* Message */}
+               
                 <div className="mb-5">
                   <label className="form-label small">Message</label>
                   <textarea

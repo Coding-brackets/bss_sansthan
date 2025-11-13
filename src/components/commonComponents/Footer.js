@@ -8,6 +8,7 @@ import { IoMail } from "react-icons/io5";
 import SideLinks from './SideLinks';
 import { Instagram, InstagramIcon } from 'lucide-react';
 import Link from 'next/link';
+import SocialIcon from '../uiComponent/SocialIcon';
 
 const Footer = () => {
   return (
@@ -16,9 +17,10 @@ const Footer = () => {
       <div className="footer_top">
         <div className="container">
           <div className="footer_top_banner">
-            <div className="footer_top1 justify-content-center">
+            <div className="footer_top1">
               <div className="footer_social_links">
-                <Link href="">
+              <SocialIcon/>
+                {/* <Link href="">
                   <Instagram strokeWidth={1.75} />
                 </Link>
                 <Link href="">
@@ -29,7 +31,7 @@ const Footer = () => {
                 </Link>
                 <Link href="">
                   <FaLinkedinIn />
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="footer_top2 d-flex justify-content-center">
@@ -37,7 +39,7 @@ const Footer = () => {
                 <img src="/assets/footerlogo.png" alt="" />
               </div>
             </div>
-            <div className="footer_top3 d-flex justify-content-center align-items-center">
+            <div className="footer_top3 d-flex justify-content-end align-items-center">
               <div className="flex-column">
                 <label
                   htmlFor="newsletter"

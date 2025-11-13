@@ -9,6 +9,7 @@ const BssContentSec = ({
   points = [],
   buttonText = "Learn More",
   quote,
+  url,
   reverse = false,
 }) => {
   return (
@@ -53,7 +54,7 @@ const BssContentSec = ({
                 </ul>
               )}
 
-              <CustomButtom text={buttonText} />
+              <CustomButtom text={buttonText} url={url} />
             </div>
           </div>
         </div>

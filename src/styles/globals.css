@@ -66,18 +66,22 @@ a {
   width: 100%;
 }
 
+.p-150{
+  padding: 150px 50px;
+}
+
 .commonbtn {
   font-size: 14px;
   font-weight: 600;
   margin-top: 28px;
   border: 2px solid #0a2656;
+  background-color: #0a2656;
   font-family: "Anybody", sans-serif;
   font-weight: 600;
   font-size: 14px;
   padding: 11px 20px;
-  color: #0a2656;
+  color: #fff;
   border-radius: 8px;
-  background-color: transparent;
 }
 
 .commonbtn:hover {
@@ -363,16 +367,17 @@ a {
 }
 
 .footer_social_links a {
-  color: #ffffff80;
+  color: #fff;
   padding: 14px;
   border-radius: 12px;
-  border: 1px solid #ffffff80;
+  border: 1px solid #ffffff66;
   margin-right: 12px;
   width: 50px;
   height: 50px;
   align-items: center;
   justify-content: center;
   display: flex;
+  background: #ffffff66;
 }
 
 .footer_logo_sec {
@@ -452,8 +457,6 @@ a {
   width: 89%;
 }
 
-
-
 /* Sidebar Styles */
 .mobile_sidebar {
   position: fixed;
@@ -505,7 +508,6 @@ a {
 .menu-toggle {
   display: none;
 }
-
 
 /* testimonials */
 
@@ -1299,7 +1301,6 @@ a {
   color: #000000b2;
 }
 
-
 /* Optional hover effect */
 .highlight-card:hover {
   transform: translateY(-5px);
@@ -1789,7 +1790,6 @@ a {
   color: #fff;
 }
 
-
 .empowering_conBanner h4 {
   font-weight: 500;
   font-size: 20px;
@@ -1802,7 +1802,6 @@ a {
   line-height: 26px;
   color: #000000b2;
 }
-
 
 /* news and Events */
 .news-events {
@@ -1922,7 +1921,6 @@ a {
   width: 100%;
   margin: 0 auto;
 }
-
 
 .swiper {
   width: 100%;
@@ -2372,7 +2370,6 @@ hr {
   right: 30px;
 }
 
-
 /* leadership */
 
 .hero_content p.heroParaBold {
@@ -2708,7 +2705,6 @@ hr {
   font-weight: 700;
   font-size: 24px;
   line-height: 44px;
-
 }
 
 .form-wrapper p {
@@ -2722,7 +2718,7 @@ hr {
 .contactForm-input {
   border-radius: 0px;
   border: 0px;
-  border-bottom: 1px solid #8D8D8D;
+  border-bottom: 1px solid #8d8d8d;
 }
 
 .form-check-input:checked {
@@ -2776,10 +2772,240 @@ hr {
 }
 
 
+/* special student */
+
+.college_hero_content {
+  width: 65%;
+  z-index: 2;
+}
+.college_hero_content h1 {
+  font-family: "Anybody", sans-serif;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 54px;
+}
+.college_hero_content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+}
+.btn-hero {
+  font-family: "Anybody";
+  background-color: #ff7765;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+.btn-hero:hover {
+  background-color: #e85a38;
+}
+.blur-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(10, 38, 86, 0.8) 0%,
+    rgba(10, 38, 86, 0.8) 50%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.sau_imagSec {
+  height: 450px;
+}
+.gallery-section {
+  background-color: #ffe7c9;
+  border-radius: 60px 60px 150px 60px;
+}
+.gallery-section h2 {
+  font-size: 40px;
+  font-family: "Anybody", sans-serif;
+  font-weight: 700;
+  line-height: 50px;
+}
+.gallery-section p {
+  max-width: 624px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.gallery-container {
+  border-radius: 30px;
+  height: 370px;
+}
+
+.gallery-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.3s ease;
+  border-radius: 30px;
+}
+.gallery-section button:hover {
+  background-color: #0a2656 !important;
+  color: #fff !important;
+}
+.gallery-section img:hover {
+  transform: scale(1.03);
+}
+.inclusive-colleges {
+  background-color: #d2edff;
+  border-radius: 60px 60px 150px 60px;
+}
+.inclusive-colleges h2 {
+  font-family: "Anybody", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+}
+.inclusive-colleges p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+}
+.college-card {
+  border: 1px solid #e4e4e4;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+/* Individual card border shapes */
+.college-card.card-1 {
+  border-radius: 60px 20px 20px 20px;
+  /* height: 320px !important;
+  width: 320px; */
+  /* margin-right: -20px; */
+}
+.college-card.card-2 {
+  border-radius: 20px 60px 20px 20px;
+  /* height: 340px !important;
+  width: 320px; */
+}
+.college-card.card-3 {
+  border-radius: 20px 20px 20px 60px;
+  /* height: 283px !important;
+  width: 320px; */
+  /* margin-top: -19px; */
+}
+.college-card.card-4 {
+  border-radius: 20px 20px 60px 20px;
+  /* height: 320px !important;
+  width: 320px; */
+}
+.college-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.galleryPopup_box {
+  padding: 0px;
+}
+
+.gallery_right_btn,
+.gallery_left_btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 40px;
+}
+
+.gallery_right_btn {
+  right: 15px;
+}
+
+.empowerment-section h2 {
+  font-size: 38px;
+  font-family: "Anybody", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #000;
+}
+
+.empowerment-section p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.empowerment-image {
+  border-radius: 40px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.empowerment-caption {
+  position: absolute;
+  bottom: 16px;
+  left: 12%;
+  transform: translateX(-7%);
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 10px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+hr {
+  border-top: 1px solid #0000004d;
+  color: #0000004d;
+}
+
+
+/* socity */
+
+.socity_banner{
+  border: 1px solid #FF7765;
+  box-shadow: 0px 15px 35px 0px #FF776526;
+}
+.button_banner{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 12px;
+grid-row-gap: 12px;
+    height: 370px;
+
+}
+
+.button_banner button{
+  background: #DADFE6;
+border-radius: 30px;
+color: #000;
+font-weight: 600;
+font-size: 18px;
+line-height: 30px;
+padding: 20px;
+border: 0px;
+}
+
+.button_banner button span{
+align-items: end;
+}
+
+.button_banner button span svg{
+ background: #0A2656;
+color: #fff;
+border-radius: 12px;
+padding: 12px;
+width: 44px;
+height: 44px;
+}
+
+.image-Sec{
+  height: 500px;
+}
+
 /* ============================= */
 /* RESPONSIVE STYLING      */
 /* ============================= */
-
 
 @media screen and (min-width: 960px) {
   .swiper-container {
@@ -2793,7 +3019,6 @@ hr {
   }
 }
 
-
 @media screen and (min-width: 1440px) {
   .content {
     width: 40%;
@@ -2801,7 +3026,6 @@ hr {
     margin-bottom: 0;
   }
 }
-
 
 @media (min-width: 1600px) {
   .content {
@@ -2836,8 +3060,12 @@ hr {
   }
 }
 
-
 @media (max-width: 1400px) {
+
+  .button_banner button {
+    font-size: 16px;
+    line-height: 23px;
+}
 
   .content {
     width: 40%;
@@ -2897,7 +3125,6 @@ hr {
 }
 
 @media (max-width: 1200px) {
-
   .disable_banner {
     padding: 48px 0px 48px 43px;
   }
@@ -2943,9 +3170,7 @@ hr {
   }
 }
 
-
 @media (max-width: 1024px) {
-
   .bss-number {
     font-size: 24px;
     line-height: 28px;
@@ -2988,7 +3213,7 @@ hr {
   }
 
   .p-80 {
-    padding: 36px 0px 36px 36px;
+    padding: 36px 36px;
   }
 
   .cust_p-80 {
@@ -3002,10 +3227,9 @@ hr {
   }
 }
 
-
 /* First and last cards (desktop only) */
 @media (min-width: 991px) {
-
+  
   .card-0 {
     border-radius: 30px 0 0 30px;
   }
@@ -3017,6 +3241,9 @@ hr {
 
 @media (max-width: 991px) {
 
+  .image-Sec {
+    height: 335px;
+}
 
   .timeline-item .marker {
     left: 0;
@@ -3058,7 +3285,6 @@ hr {
     max-width: 100%;
     text-align: left;
   }
-
 
   .college_para {
     width: 100%;
@@ -3163,7 +3389,6 @@ hr {
   .submit-btn {
     width: 100%;
   }
-
 
   .slide-content {
     flex-direction: column;
@@ -3332,14 +3557,55 @@ hr {
   .footer_icon {
     display: none;
   }
+  .mainNews_body h4 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .newsCard_conSec h6 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .gallery-image {
+    height: 200px;
+  }
+
+      .button_banner button{
+        font-size: 14px;
+        line-height: 23px;
+    }
 }
 
 /* ============================= */
 /* RESPONSIVE STYLING  max-width 767px*/
 /* ============================= */
 
-
 @media (max-width: 767px) {
+
+  .button_banner{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(1, 1fr);
+    height: 100%;
+
+}
+  .mainNews_body p {
+    font-size: 16px;
+  }
+
+  .mainNews_body h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .mainNews_body {
+    padding: 18px;
+  }
+
+  .mainNews_card img {
+    height: 250px;
+  }
+
   .sub_hero_content {
     width: 95%;
   }
@@ -3580,6 +3846,9 @@ hr {
   .footer_policies a {
     font-size: 13px;
   }
+  .gallery-image {
+    height: 180px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -3590,7 +3859,6 @@ hr {
   }
 }
 
-/* special student */
 
 .college_hero_content {
   width: 65%;
@@ -3733,12 +4001,31 @@ hr {
 }
 
 @media (max-width: 768px) {
+  .empowerment-section h2 {
+    font-size: 30px;
+  }
+  .empowerment-caption {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .gallery-section h2 {
+    font-size: 32px;
+  }
+
+  .gallery-section {
+    border-radius: 40px;
+  }
   .inclusive-colleges h2 {
     font-size: 26px;
   }
 
   .college-card {
     border-radius: 20px !important;
+  }
+
+  .inclusive-colleges {
+    border-radius: 35px 35px;
   }
 }
 

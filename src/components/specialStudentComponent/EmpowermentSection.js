@@ -5,11 +5,11 @@ const EmpowermentSection = () => {
     return (
         <section className="empowerment-section mb-100">
             <div className="container">
-                <div className="row align-items-center flex-column flex-md-row">
+                <div className="row">
                     {/* Left Content */}
-                    <div className="col-md-6 mb-4 mb-md-0">
-                        <h2 className="fw-bold mb-3" style={{ fontSize: "34px" }}>
-                            Because Every Student <br /> Deserves a Chance to Shine
+                    <div className="col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center">
+                        <h2 className="section_heading  mb-3">
+                            Because Every Student  Deserves a Chance to Shine
                         </h2>
                         <p className="text-muted mb-3" style={{ fontSize: "16px", fontWeight: "400" }}>
                             We believe that a disability does not define a person’s potential —
@@ -51,56 +51,6 @@ const EmpowermentSection = () => {
                 </div>
             </div>
 
-            <style jsx>{`
-        .empowerment-section h2 {
-          font-size: 38px;
-          font-family: "Anybody", sans-serif;
-          font-weight: 700;
-          line-height: 1.3;
-          color: #000;
-        }
-
-        .empowerment-section p {
-          font-size: 16px;
-          color: #555;
-          line-height: 1.7;
-        }
-
-        .empowerment-image {
-          border-radius: 40px;
-          object-fit: cover;
-          width: 100%;
-          height: auto;
-        }
-
-        .empowerment-caption {
-          position: absolute;
-          bottom: 16px;
-          left: 12%;
-          transform: translateX(-7%);
-          background: #fff;
-          border-radius: 20px;
-          padding: 20px 10px;
-          font-weight: 500;
-          font-size: 20px;
-          color: #000;
-        }
-
-        hr {
-          border-top: 1px solid #0000004D;
-          color:#0000004D;
-        }
-
-        @media (max-width: 768px) {
-          .empowerment-section h2 {
-            font-size: 30px;
-          }
-          .empowerment-caption {
-            font-size: 13px;
-            padding: 6px 12px;
-          }
-        }
-      `}</style>
         </section>
     );
 };

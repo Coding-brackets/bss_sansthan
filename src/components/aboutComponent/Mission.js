@@ -4,8 +4,10 @@ const Mission = ({
   image,
   heading,
   description,
+  subHeadingCon,
   reverse = false,
   showQuote = false, // 👈 new prop (default = true)
+  SubHeading = false,
 }) => {
   return (
     <div className="position-relative mb-100">
@@ -17,16 +19,25 @@ const Mission = ({
         >
           {/* Left / Right image */}
           <div className="col-md-6 legacy_left ps-0">
-            <img
-              src={image}
-              alt={heading}
-              className="w-100 rounded-3"
-            />
+            <img src={image} alt={heading} className="w-100 rounded-3" />
           </div>
 
           {/* Content */}
           <div className="col-md-6 legacy_right d-flex align-items-center">
             <div>
+              {SubHeading && (
+                <p
+                  className="fw-5"
+                  style={{
+                    fontSize: "18px",
+                    fontWeight: "500",
+                    color: "#333",
+                    marginBottom: "6px",
+                  }}
+                >
+                  {subHeadingCon}
+                </p>
+              )}
               <h2 className="section_heading mb-3">{heading}</h2>
 
               {Array.isArray(description) ? (

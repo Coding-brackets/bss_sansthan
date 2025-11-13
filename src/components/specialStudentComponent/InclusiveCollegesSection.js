@@ -29,8 +29,8 @@ const InclusiveCollegesSection = () => {
             <div className="inclusive-colleges my-40 p-80 ">
                 <div className="row g-4 align-items-start flex-column flex-md-row">
                     {/* Left Content */}
-                    <div className="col-md-6 m-auto">
-                        <div className="left-box p-4 ">
+                    <div className="col-lg-6 d-flex align-items-center">
+                        <div className="left-box ">
                             <h2 className="fw-bold mb-3">
                                 Inclusive Institutes &
                                 Colleges Supporting 
@@ -52,7 +52,7 @@ const InclusiveCollegesSection = () => {
                     </div>
 
                     {/* Right Cards */}
-                    <div className="col-md-6">
+                    {/* <div className="col-md-6">
                         <div className="row g-3">
                             {colleges.map((college, index) => (
                                 <div className="col-sm-6" key={index}>
@@ -63,7 +63,36 @@ const InclusiveCollegesSection = () => {
                                 </div>
                             ))}
                         </div>
+                    </div> */}
+
+                    <div className="col-lg-6">
+                        <div className="row g-3">
+                                <div className="col-sm-6">
+                                    <div className="college-card card-1 bg-white p-4 mb-3 shadow-sm">
+                                        <h5 className="fw-bold mb-2">Sunrise Inclusive College of Education</h5>
+                                        <p className="text-muted mb-0">Together, we are building an inclusive educational ecosystem that celebrates diversity, empowers students with special needs, and helps them achieve their academic and personal goals.</p>
+                                    </div>
+                                     <div className="college-card card-3 bg-white p-4  shadow-sm">
+                                        <h5 className="fw-bold mb-2">Unity Arts & Commerce College</h5>
+                                        <p className="text-muted mb-0">A campus that champions inclusion through flexible learning programs, counseling support, and community engagement for students with special learning needs.</p>
+                                    </div>
+                                </div>
+                                <div className="col-sm-6">
+                                    <div className="college-card card-2 bg-white p-4 mb-3  shadow-sm">
+                                        <h5 className="fw-bold mb-2">Shakti Medical & Rehabilitation College</h5>
+                                        <p className="text-muted mb-0">Focused on health sciences and rehabilitation, Shakti College combines medical education with practical training for students with physical disabilities, promoting independence and professional excellence.</p>
+                                    </div>
+                                    <div className="college-card card-4 bg-white p-4  shadow-sm">
+                                        <h5 className="fw-bold mb-2">Harmony Institute of Technology & Science</h5>
+                                        <p className="text-muted mb-0">Known for its accessible campus design and inclusive teaching practices, Harmony Institute ensures that differently-abled students can pursue careers in engineering, IT, and applied sciences without barriers.</p>
+                                    </div>
+                                </div>
+                       
+                        </div>
                     </div>
+
+                    
+
                 </div>
             </div>
 

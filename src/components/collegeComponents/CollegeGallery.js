@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const CollegeGallery = ({ para}) => {
@@ -8,6 +9,16 @@ const CollegeGallery = ({ para}) => {
         <p className="section_para text-center mb-5">
          {para}
         </p>
+
+        
+<div class="parent">
+    <div class="gallerySec1"><Image src="" alt='' width={1000} height={1000}/></div>
+    <div class="gallerySec2"><Image src="" alt='' width={1000} height={1000}/></div>
+    <div class="gallerySec3"><Image src="" alt='' width={1000} height={1000}/></div>
+    <div class="gallerySec4"><Image src="" alt='' width={1000} height={1000}/></div>
+    <div class="gallerySec5"><Image src="" alt='' width={1000} height={1000}/></div>
+</div>
+    
 
       </div>
     </div>

@@ -39,8 +39,9 @@ const gallery = () => {
             />
 
             <GallerySection
-                differClass="gallery-page"
+                differClass="gallery-page my-40 container mx-auto"
                 tabsData={galleryTabs}
+                bordercolor="borderGalleryButton"
             />
         </div>
     );

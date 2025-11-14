@@ -83,10 +83,10 @@ const Navbar = () => {
                       <IoIosArrowForward />
                     </div>
                     <div className="dropdown-submenu">
-                      <Link href="#" className="border-top-0 bg-transparent">Pooja Nursing College</Link>
-                      <Link href="#">Bhagyashri Bhondekar Ayurvedic College</Link>
-                      <Link href="#">Bhagyashri Bhondekar Physiotherapy</Link>
-                      <Link href="#">Bhagyashri Bhondekar Medical College</Link>
+                      <Link href="/colleges/bb-physiotherapy-college" className="border-top-0 bg-transparent">Pooja Nursing College</Link>
+                      <Link href="/colleges/bb-ayurvedic-college">Bhagyashri Bhondekar Ayurvedic College</Link>
+                      <Link href="/colleges/bb-physiotherapy-college">Bhagyashri Bhondekar Physiotherapy</Link>
+                      <Link href="/colleges/bb-medical-college">Bhagyashri Bhondekar Medical College</Link>
                        <Link href="#">PES Multispeciality Hospital</Link>
                       <Link href="#">Manjubai BA/MA College, Bhawani</Link>
                        <Link href="#">Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School</Link>
@@ -99,15 +99,14 @@ const Navbar = () => {
                   <Link href="#">Hospitals</Link>
 
                   <Link href="#">Research & Training Center</Link>
-                  <Link href="#" className="border-bottom-0 bg-transparent">Specially Abled Support</Link>
+                  <Link href="/specialStudents" className="border-bottom-0 bg-transparent">Specially Abled Support</Link>
                 </div>
               </div>
-
-              <Link href="/news">News & Events</Link>
-              <Link href="">Gallery</Link>
               <Link href="">Admissions</Link>
-              <Link href="">Career</Link>
               <Link href="/infrastructure-and-facilities">Infrastructure & Facilities</Link>
+              <Link href="">Career</Link>
+              <Link href="/gallery">Gallery</Link>
+              <Link href="/news">News & Events</Link>
               <Link href="/contact-us">Contact Us</Link>
             </div>
 

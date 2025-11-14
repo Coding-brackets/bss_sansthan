@@ -2769,11 +2769,13 @@ hr {
   border-radius: 12px;
 }
 
-
 /* special student */
 
+.collegeContent_banner {
+  width: 60%;
+}
+
 .college_hero_content {
-  width: 65%;
   z-index: 2;
 }
 
@@ -2974,7 +2976,6 @@ hr {
   color: #0000004d;
 }
 
-
 /* socity */
 
 .socity_banner {
@@ -2989,11 +2990,10 @@ hr {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
   height: 370px;
-
 }
 
 .button_banner button {
-  background: #DADFE6;
+  background: #dadfe6;
   border-radius: 30px;
   color: #000;
   font-weight: 600;
@@ -3008,7 +3008,7 @@ hr {
 }
 
 .button_banner button span svg {
-  background: #0A2656;
+  background: #0a2656;
   color: #fff;
   border-radius: 12px;
   padding: 12px;
@@ -3024,6 +3024,149 @@ hr {
     border: 1.5px solid #0A2656 !important;
     color: #000;
   }
+/* college gallery */
+
+.galleryParent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+  height: 850px;
+}
+
+.gallerySec1 {
+  grid-row: span 2 / span 2;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.gallerySec2 {
+  grid-row: span 3 / span 3;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.gallerySec3 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.gallerySec4 {
+  grid-row: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.gallerySec5 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 2;
+  grid-row-start: 4;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.collegeQuote {
+  font-weight: 500;
+  font-style: Italic;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0a2656;
+}
+
+.ayurved_img {
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.Seprator {
+  border: 1px solid #f73a00;
+  margin-bottom: 15px;
+}
+
+.college-Gallery-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.announcement-swiper-container {
+  position: relative;
+}
+
+.announcement-card {
+  background: white;
+  border-radius: 30px;
+  padding: 30px 40px;
+  box-shadow: 0px 5px 20px 0px #0a26561a;
+  border: 1px solid #0a26564d;
+  background: #ffffff;
+}
+
+.announcement-card h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  box-shadow: 0px 8px 30px 0px #ffffff40;
+  box-shadow: 0px 4px 8px 0px #ffffff0d;
+}
+
+.announcement-card p {
+  line-height: 27px;
+  font-weight: 400;
+  margin: 0;
+  font-size: 16px;
+  color: #000000b2;
+}
+
+/* LEFT BLUR */
+.blur-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(to right, white 40%, transparent);
+  z-index: 10;
+}
+
+/* RIGHT BLUR */
+.blur-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(to left, white 40%, transparent);
+  z-index: 10;
+}
+
+/* Pagination dots */
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  border: 2px solid #00000066;
+  background-color: #fff !important;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000 !important;
+}
+
+.announcementSwiper {
+  padding: 0px 0px 45px !important;
+}
+
+.collegeHeroCon {
+}
+
 /* ============================= */
 /* RESPONSIVE STYLING      */
 /* ============================= */
@@ -3038,6 +3181,10 @@ hr {
     flex-direction: row;
     padding-inline: 0;
   }
+
+  .collegeHeroCon {
+    width: 55%;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -3049,6 +3196,10 @@ hr {
 }
 
 @media (min-width: 1600px) {
+
+  .college-con-img{
+    width: 80% !important;
+  }
   .content {
     width: 40%;
     padding-left: 14em;
@@ -3082,7 +3233,6 @@ hr {
 }
 
 @media (max-width: 1400px) {
-
   .button_banner button {
     font-size: 16px;
     line-height: 23px;
@@ -3146,6 +3296,15 @@ hr {
 }
 
 @media (max-width: 1200px) {
+
+  .ayurved_img {
+    position: relative;
+}
+
+  .collegeContent_banner {
+    width: 80%;
+  }
+
   .disable_banner {
     padding: 48px 0px 48px 43px;
   }
@@ -3250,7 +3409,6 @@ hr {
 
 /* First and last cards (desktop only) */
 @media (min-width: 991px) {
-
   .card-0 {
     border-radius: 30px 0 0 30px;
   }
@@ -3261,6 +3419,47 @@ hr {
 }
 
 @media (max-width: 991px) {
+
+  .quote-right-img{
+    display: none;
+  }
+
+  .collegeHeroCon {
+    width: 80%;
+  }
+
+  /* gallery */
+  .galleryParent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallerySec1 {
+    grid-row: span 1 / span 1;
+  }
+
+  .gallerySec2 {
+    grid-row: span 1 / span 1;
+  }
+
+  .gallerySec3 {
+    grid-row: span 1 / span 1;
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .gallerySec4 {
+    grid-row: span 1 / span 1;
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .gallerySec5 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+  }
 
   .image-Sec {
     height: 335px;
@@ -3615,6 +3814,28 @@ hr {
 
   }
 
+  .blur-right, .blur-left{
+    display: none;
+  }
+
+
+   .collegeContent_banner {
+    width: 100%;
+  }
+  .college_hero_content h1 {
+    font-size: 32px;
+    line-height: 49px;
+}
+  .collegeHeroCon {
+    width: 100%;
+  }
+
+  .button_banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 100%;
+  }
   .mainNews_body p {
     font-size: 16px;
   }
@@ -3886,7 +4107,6 @@ hr {
   }
 }
 
-
 @media (max-width: 768px) {
   .empowerment-section h2 {
     font-size: 30px;
@@ -3925,9 +4145,6 @@ hr {
 .popup-image {
   object-fit: cover;
 }
-
-
-
 
 /* footer social */
 .social-container {
@@ -3998,4 +4215,5 @@ hr {
 .indigo {
   background: linear-gradient(135deg, #4f46e5, #312e81);
   border-color: rgba(99, 102, 241, 0.5);
+}
 }

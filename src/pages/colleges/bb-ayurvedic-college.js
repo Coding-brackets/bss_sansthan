@@ -1,16 +1,19 @@
+import Announcement from '@/components/collegeComponents/announcement'
 import CollegeGallery from '@/components/collegeComponents/CollegeGallery'
 import CollegeConSec from '@/components/collegeComponents/collegesConSec'
 import HeroSection from '@/components/collegeComponents/HeroSection'
+import QuoteComponent from '@/components/collegeComponents/quoteComponent'
 import React from 'react'
 
 const BBAyurvedic = () => {
   return (
     <div>
       <HeroSection
-      subHeadingCon="Welcome to"
+      subHeadingCon="Welcome to-"
         heading="Bhojraj Bhondekar Ayurvedic College"
-        bgImage="/assets/heroImages/bb-ayurvedic-college.png"
+        bgImage="/assets/heroImages/bb-ayurvedic-college.webp"
       />
+      <Announcement/>
       <CollegeConSec
         image="/assets/CollegesImg/doctorImg.png"
         heading="Let’s Learn More About Bhojrajji Bhondekar Physiotherapy College"
@@ -23,6 +26,20 @@ const BBAyurvedic = () => {
       />
       <CollegeGallery
       para="Being a reputed Ayurveda institute, we help our students to gain maximum knowledge by combining theory with real-life scenarios."
+      images={[
+    "/assets/CollegesImg/ayurvedicGalleryImg1.png",
+    "/assets/CollegesImg/ayurvedicGalleryImg5.jpg",
+    "/assets/CollegesImg/ayurvedicGalleryImg2.png",
+    "/assets/CollegesImg/ayurvedicGalleryImg3.png",
+    "/assets/CollegesImg/ayurvedicGalleryImg4.jpg",
+    
+  ]}
+      />
+      <QuoteComponent
+        para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
+        quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
+        image1="/assets/CollegesImg/ayurved.jpg"
+        image2="/assets/CollegesImg/collegeQuote1.png"
       />
     </div>
   )

@@ -1,23 +1,32 @@
 import Image from "next/image";
 import React from "react";
 
-const QuoteComponent = ({ image, altText, para }) => {
+const QuoteComponent = ({ image1, altText, para, image2, quote }) => {
   return (
     <div className="mb-0">
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
-            <p className="section_para text-center mb-5">{para}</p>
-            <div className="Seprator"/>
-            
-          </div>
-          <div className="col-md-6">
+          <div className="col-lg-6 position-relative">
+            <p className="section_para  mb-3">{para}</p>
+            <div className="Seprator w-25"/>
+            <p className="collegeQuote">{quote}</p>
             <Image
-              src={image}
+              src={image1}
               alt={altText}
               width={1000}
               height={1000}
-              className="w-100 h-100"
+              className="w-75 h-auto ayurved_img"
+            />
+            
+          </div>
+          <div className="col-lg-6 d-flex align-items-end">
+            <Image
+              src={image2}
+              alt={altText}
+              width={1000}
+              height={1000}
+              className="w-100 h-auto quote-right-img"
+              
             />
           </div>
         </div>

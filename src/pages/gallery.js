@@ -39,8 +39,9 @@ const gallery = () => {
             />
 
             <GallerySection
-                differClass="gallery-page"
+                differClass="gallery-page container"
                 tabsData={galleryTabs}
+                
             />
         </div>
     );

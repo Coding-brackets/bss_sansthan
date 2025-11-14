@@ -3373,6 +3373,10 @@ hr {
 
 @media (max-width: 991px) {
 
+  .gallery-container {
+    height: 200px;
+}
+
   .quote-right-img{
     display: none;
   }
@@ -4069,6 +4073,7 @@ hr {
 }
 .gallery-page {
   background: #fff;
+  border-radius: 0px;
 }
 
 .popup-image {

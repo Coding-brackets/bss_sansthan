@@ -15,12 +15,12 @@ const CollegeConSec = ({
         <div
           className="row legacy_content_sec align-items-center g-4">
           {/* Left / Right image */}
-          <div className="col-md-6 legacy_left ps-0">
-            <Image src={image} alt={heading} className="w-100 h-100 rounded-3" width={1000} height={1000}/>
+          <div className="col-lg-6">
+            <Image src={image} alt={heading} className="w-100 h-100 college-con-img" width={1000} height={1000}/>
           </div>
 
           {/* Content */}
-          <div className="col-md-6 legacy_right d-flex align-items-center">
+          <div className="col-lg-6 legacy_right d-flex align-items-center">
             <div>
               <h2 className="section_heading mb-3">{heading}</h2>
 

@@ -1,5 +1,5 @@
 import Mission from "@/components/aboutComponent/Mission";
-import CollegeHeroSection from "@/components/commonComponents/CollegeHeroSection";
+import CollegeHeroSection from "@/components/specialStudentComponent/CollegeHeroSection";
 import Testimonials from "@/components/commonComponents/Testimonials";
 import EmpowermentSection from "@/components/specialStudentComponent/EmpowermentSection";
 import GallerySection from "@/components/specialStudentComponent/GallerySection";
@@ -47,7 +47,7 @@ const specialStudents = () => {
       <CollegeHeroSection
         heading="Empowering Every Ability, Enabling Every Dream"
         description="We believe that education should have no barriers. Our mission is to ensure that every student — regardless of physical or cognitive challenges — has the support, accessibility, and opportunities they deserve to learn, grow, and succeed."
-        bgImage="/assets/heroBackground.png"
+        bgImage="/assets/heroImages/special-student-bg.webp"
         buttonText="Learn How We Help"
         heroButton="true"
         desc="true"

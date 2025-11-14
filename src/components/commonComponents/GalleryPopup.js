@@ -44,7 +44,7 @@ const GalleryPopup = ({ images, selectedIndex, onClose }) => {
           <Image
             src={images[currentIndex]}
             alt={`Gallery ${currentIndex + 1}`}
-            width={425}
+            width={766}
             height={532}
             className="rounded-4 mx-auto w-100 popup-image"
           />

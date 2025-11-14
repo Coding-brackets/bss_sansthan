@@ -3172,6 +3172,12 @@ hr {
 /* ============================= */
 
 @media screen and (min-width: 960px) {
+
+  .slick-slide.slick-active.slick-center.slick-current{
+    width: 800px !important;
+    
+  }
+
   .swiper-container {
     width: 60%;
     right: -60px;
@@ -3846,6 +3852,11 @@ hr {
     font-size: 14px;
     line-height: 23px;
   }
+  .carousel-content p {
+    max-width: 100%;
+    font-size: 14px;
+}
+
 }
 
 /* ============================= */
@@ -3860,6 +3871,8 @@ hr {
 
   .hero_content{
     border-right: 1px solid var(--grey-100);
+            border-radius: 30px 30px 150px;
+
   }
 
   .button_banner {
@@ -4018,7 +4031,18 @@ hr {
   .carousel-content {
     align-items: flex-start;
     max-width: 100%;
+    padding: 18px 12px;
   }
+
+  .carousel-content p {
+    font-size: 14px;
+}
+
+.carousel-content h3 {
+    font-size: 16px;
+    white-space: nowrap;
+    line-height: 24px;
+}
 
   .about_row {
     grid-template-columns: repeat(1, 1fr);
@@ -4081,7 +4105,7 @@ hr {
   }
 
   .cust_p-80 {
-    padding: 50px 0px 50px 50px;
+    padding: 25px;
   }
 
   .mb-100 {
@@ -4152,6 +4176,18 @@ hr {
   .gallery-image {
     height: 180px;
   }
+
+  .carousel-content p {
+    max-width: 100%;
+}
+    .carousel-content {
+        flex-direction: column;
+    }
+
+    .carousel-content .carousel-content-banner{
+      display: flex;
+      justify-content: space-between;
+    }
 }
 
 @media (max-width: 425px) {

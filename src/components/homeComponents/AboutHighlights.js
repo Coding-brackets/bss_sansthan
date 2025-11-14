@@ -35,7 +35,7 @@ const AboutHighlights = () => {
                 style={{ backgroundColor: card.color }}
               >
                 <div
-                  className="icon-wrapper mx-auto mb-3"
+                  className="icon-wrapper1 mx-auto mb-3"
                   style={{ backgroundColor: card.iconBg }}
                 >
                   <BadgeCheck color="#fff"  className="badge_check"/>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import GalleryPopup from "../commonComponents/GalleryPopup";
 
-const GallerySection = ({ title, description, tabsData, differClass }) => {
+const GallerySection = ({ title, description, tabsData, differClass, bordercolor }) => {
   const tabs = Object.keys(tabsData);
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -29,12 +29,11 @@ const GallerySection = ({ title, description, tabsData, differClass }) => {
                     setActiveTab(tab);
                     setSelectedImageIndex(null);
                   }}
-                  className="btn px-4 py-2 fw-medium transition-all duration-200"
+                  className={`btn px-4 py-2 fw-medium transition-all duration-200 ${bordercolor}`}
                   style={{
                     fontFamily: "Geist",
                     fontSize: "16px",
                     fontWeight: "500",
-                    border: "none",
                     backgroundColor: activeTab === tab ? "#0A2656" : "#F5EFEC",
                     color: activeTab === tab ? "#fff" : "#333",
                     borderRadius: "10px",
@@ -71,7 +70,7 @@ const GallerySection = ({ title, description, tabsData, differClass }) => {
           </div>
         </div>
       </div>
-        {/* Popup Modal */}
+      {/* Popup Modal */}
       {selectedIndex !== null && (
         <GalleryPopup
           images={currentImages}

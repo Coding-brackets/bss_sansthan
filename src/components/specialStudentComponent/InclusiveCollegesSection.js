@@ -29,7 +29,7 @@ const InclusiveCollegesSection = () => {
             <div className="inclusive-colleges my-40 p-80 ">
                 <div className="row g-4 align-items-start flex-column flex-md-row">
                     {/* Left Content */}
-                    <div className="col-lg-6 d-flex align-items-center">
+                    <div className="col-lg-6 d-flex align-items-center m-auto">
                         <div className="left-box ">
                             <h2 className="fw-bold mb-3">
                                 Inclusive Institutes &

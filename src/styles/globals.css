@@ -114,8 +114,7 @@ a {
   width: 50%;
 }
 
-.navbar_section {
-}
+.navbar_section {}
 
 /* custom nav  css */
 
@@ -124,6 +123,7 @@ a {
   padding: 9px 20px 13px 15px;
   border-radius: 0px 0px 36px;
 }
+
 .bell_icon svg {
   font-size: 30px;
   font-weight: 800;
@@ -192,6 +192,7 @@ a {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -391,6 +392,7 @@ a {
   border: 1.5px solid #ffffff80;
   border-radius: 12px;
 }
+
 .newsletter_label {
   color: #fff;
   font-size: 16px;
@@ -510,7 +512,8 @@ a {
 /* testimonials */
 
 .testimonial_section {
-  overflow: hidden; /* prevents slick overflow horizontally */
+  overflow: hidden;
+  /* prevents slick overflow horizontally */
 }
 
 .testimonial_slider_wrapper {
@@ -690,19 +693,20 @@ a {
 .facebook:hover {
   background-color: #166fe5;
 }
+
 .twitter:hover {
   background-color: #1991da;
 }
+
 .insta:hover {
-  background: linear-gradient(
-    45deg,
-    #f09433,
-    #e6683c,
-    #dc2743,
-    #cc2366,
-    #bc1888
-  );
+  background: linear-gradient(45deg,
+      #f09433,
+      #e6683c,
+      #dc2743,
+      #cc2366,
+      #bc1888);
 }
+
 .youtube:hover {
   background-color: #e60000;
 }
@@ -712,7 +716,8 @@ a {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  background-color: #0a2656; /* dark navy like your screenshot */
+  background-color: #0a2656;
+  /* dark navy like your screenshot */
   border-radius: 15px 0 0 15px;
   z-index: 999;
   box-shadow: -5px 0px 20px 0px #0a265633;
@@ -725,7 +730,8 @@ a {
   display: block;
   color: #fff;
   text-decoration: none;
-  writing-mode: sideways-lr; /* makes text vertical */
+  writing-mode: sideways-lr;
+  /* makes text vertical */
   text-orientation: mixed;
   padding: 20px 10px;
   transition: all 0.3s ease;
@@ -1322,7 +1328,8 @@ a {
 
 /* --- Slick overrides --- */
 .slick-list {
-  overflow: visible !important; /* allow half slides */
+  overflow: visible !important;
+  /* allow half slides */
 }
 
 .slick-track {
@@ -1727,7 +1734,8 @@ a {
   height: 500px;
   border-radius: 50%;
   overflow: hidden;
-  border-left: 10px solid #f04a3e; /* red border */
+  border-left: 10px solid #f04a3e;
+  /* red border */
   background: #fff;
   right: 0px;
 }
@@ -1886,6 +1894,7 @@ a {
   background: #000;
   color: #fff;
 }
+
 .news-slider {
   overflow-x: hidden;
 }
@@ -2062,11 +2071,9 @@ hr {
 
 .dashed-line {
   width: 100%;
-  background-image: repeating-linear-gradient(
-    to right,
-    white 0 30px,
-    transparent 29px 49px
-  );
+  background-image: repeating-linear-gradient(to right,
+      white 0 30px,
+      transparent 29px 49px);
 
   top: 50%;
   left: 0;
@@ -2180,18 +2187,21 @@ hr {
 
 /* Horizontal scrollbar only */
 .journey_scroll::-webkit-scrollbar {
-  height: 8px; /* scrollbar height */
+  height: 8px;
+  /* scrollbar height */
 }
 
 /* Track (line background) */
 .journey_scroll::-webkit-scrollbar-track {
-  background: #91a9c5; /* bluish-gray line */
+  background: #91a9c5;
+  /* bluish-gray line */
   border-radius: 10px;
 }
 
 /* Thumb (scroll indicator) */
 .journey_scroll::-webkit-scrollbar-thumb {
-  background-color: #ff4500; /* orange */
+  background-color: #ff4500;
+  /* orange */
   border-radius: 10px;
 }
 
@@ -2235,6 +2245,7 @@ hr {
   margin-bottom: 0px;
   color: #000000b2;
 }
+
 .sec_right {
   margin-left: auto;
 }
@@ -2284,7 +2295,8 @@ hr {
 .mentor_banner {
   background-color: #ff7765;
   position: relative;
-  z-index: 1; /* Middle layer */
+  z-index: 1;
+  /* Middle layer */
 }
 
 .mentor_sec {
@@ -2299,7 +2311,8 @@ hr {
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 3; /* Keep it above mentor_banner */
+  z-index: 3;
+  /* Keep it above mentor_banner */
 }
 
 .founder_img_sec .img-wrapper {
@@ -2312,12 +2325,14 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2; /* Below the actual image */
+  z-index: 2;
+  /* Below the actual image */
 }
 
 .founder_img_sec .image_inner img {
   position: relative;
-  z-index: 3; /* Top layer — actual image */
+  z-index: 3;
+  /* Top layer — actual image */
 }
 
 .custom_meet_btn {
@@ -2375,7 +2390,8 @@ hr {
 
 .subHero_image {
   width: 100%;
-  height: 100%; /* or a specific height, e.g., 400px */
+  height: 100%;
+  /* or a specific height, e.g., 400px */
   object-fit: cover;
   object-position: center;
   display: block;
@@ -2762,18 +2778,21 @@ hr {
 .college_hero_content {
   z-index: 2;
 }
+
 .college_hero_content h1 {
   font-family: "Anybody", sans-serif;
   font-weight: 800;
   font-size: 44px;
   line-height: 54px;
 }
+
 .college_hero_content p {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   color: #fff;
 }
+
 .btn-hero {
   font-family: "Anybody";
   background-color: #ff7765;
@@ -2786,32 +2805,36 @@ hr {
   gap: 8px;
   margin-top: 20px;
 }
+
 .btn-hero:hover {
   background-color: #e85a38;
 }
+
 .blur-bg {
-  background: linear-gradient(
-    90deg,
-    rgba(10, 38, 86, 0.8) 0%,
-    rgba(10, 38, 86, 0.8) 50%,
-    rgba(255, 255, 255, 0.8) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(10, 38, 86, 0.8) 0%,
+      rgba(10, 38, 86, 0.8) 50%,
+      rgba(255, 255, 255, 0.8) 100%);
   backdrop-filter: blur(5px);
   z-index: 1;
 }
+
 .sau_imagSec {
   height: 450px;
 }
+
 .gallery-section {
   background-color: #ffe7c9;
   border-radius: 60px 60px 150px 60px;
 }
+
 .gallery-section h2 {
   font-size: 40px;
   font-family: "Anybody", sans-serif;
   font-weight: 700;
   line-height: 50px;
 }
+
 .gallery-section p {
   max-width: 624px;
   margin: 0 auto;
@@ -2832,17 +2855,21 @@ hr {
   transition: transform 0.3s ease;
   border-radius: 30px;
 }
+
 .gallery-section button:hover {
   background-color: #0a2656 !important;
   color: #fff !important;
 }
+
 .gallery-section img:hover {
   transform: scale(1.03);
 }
+
 .inclusive-colleges {
   background-color: #d2edff;
   border-radius: 60px 60px 150px 60px;
 }
+
 .inclusive-colleges h2 {
   font-family: "Anybody", sans-serif;
   font-size: 32px;
@@ -2850,16 +2877,19 @@ hr {
   color: #000;
   line-height: 1.3;
 }
+
 .inclusive-colleges p {
   font-size: 16px;
   color: #333;
   line-height: 1.7;
 }
+
 .college-card {
   border: 1px solid #e4e4e4;
   transition: all 0.3s ease;
   border-radius: 20px;
 }
+
 /* Individual card border shapes */
 .college-card.card-1 {
   border-radius: 60px 20px 20px 20px;
@@ -2867,22 +2897,26 @@ hr {
   width: 320px; */
   /* margin-right: -20px; */
 }
+
 .college-card.card-2 {
   border-radius: 20px 60px 20px 20px;
   /* height: 340px !important;
   width: 320px; */
 }
+
 .college-card.card-3 {
   border-radius: 20px 20px 20px 60px;
   /* height: 283px !important;
   width: 320px; */
   /* margin-top: -19px; */
 }
+
 .college-card.card-4 {
   border-radius: 20px 20px 60px 20px;
   /* height: 320px !important;
   width: 320px; */
 }
+
 .college-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
@@ -2945,9 +2979,10 @@ hr {
 /* socity */
 
 .socity_banner {
-  border: 1px solid #ff7765;
-  box-shadow: 0px 15px 35px 0px #ff776526;
+  border: 1px solid #FF7765;
+  box-shadow: 0px 15px 35px 0px #FF776526;
 }
+
 .button_banner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2985,6 +3020,10 @@ hr {
   height: 500px;
 }
 
+.borderGalleryButton {
+    border: 1.5px solid #0A2656 !important;
+    color: #000;
+  }
 /* college gallery */
 
 .galleryParent {
@@ -3137,6 +3176,7 @@ hr {
     width: 60%;
     right: -60px;
   }
+
   .book-main {
     flex-direction: row;
     padding-inline: 0;
@@ -3207,6 +3247,7 @@ hr {
   .rankings_banner {
     padding: 60px 60px;
   }
+
   .hero_content h1,
   .hero_content h1 span {
     font-size: 38px;
@@ -3222,6 +3263,7 @@ hr {
     padding: 20px 10px;
     font-size: 14px;
   }
+
   .sec_wid {
     width: 90%;
   }
@@ -3270,6 +3312,7 @@ hr {
   .bss-label {
     width: 140px;
     font-size: 16px;
+
     .bss-label {
       font-weight: 600;
       font-size: 18px;
@@ -3287,6 +3330,7 @@ hr {
   .testimonial_card p {
     line-height: 28px;
   }
+
   .testimonial_item {
     width: 72% !important;
   }
@@ -3320,6 +3364,7 @@ hr {
     width: 190px;
     font-size: 14px;
   }
+
   .hero_content h4 {
     line-height: 28px;
     margin-bottom: 12px;
@@ -3335,6 +3380,7 @@ hr {
     font-size: 16px;
     line-height: 26px;
   }
+
   .hero_btns button,
   .angle_arrow {
     font-size: 16px;
@@ -3366,6 +3412,7 @@ hr {
   .card-0 {
     border-radius: 30px 0 0 30px;
   }
+
   .card-2 {
     border-radius: 0 30px 30px 0;
   }
@@ -3520,6 +3567,7 @@ hr {
   .rankings_banner p {
     width: 100%;
   }
+
   .section_heading {
     font-size: 30px;
     line-height: 38px;
@@ -3635,6 +3683,7 @@ hr {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+
   .nav1 {
     grid-column: span 4 / span 4;
     grid-row: span 2 / span 2;
@@ -3681,6 +3730,7 @@ hr {
   .about_row {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .highlight-card {
     border-radius: 20px;
   }
@@ -3770,6 +3820,7 @@ hr {
   .footer_icon {
     display: none;
   }
+
   .mainNews_body h4 {
     font-size: 24px;
     line-height: 28px;
@@ -3779,6 +3830,9 @@ hr {
     font-size: 18px;
     line-height: 28px;
   }
+
+  
+
   .gallery-image {
     height: 200px;
   }
@@ -3794,6 +3848,14 @@ hr {
 /* ============================= */
 
 @media (max-width: 767px) {
+
+  .button_banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 100%;
+
+  }
 
   .blur-right, .blur-left{
     display: none;
@@ -3847,6 +3909,7 @@ hr {
     font-size: 16px;
     line-height: 28px;
   }
+
   .content {
     width: 100%;
     padding: 22px;
@@ -3864,6 +3927,7 @@ hr {
   .empowering_conBanner ul li {
     font-size: 14px;
   }
+
   .section_heading {
     font-size: 28px;
     line-height: 34px;
@@ -3951,10 +4015,12 @@ hr {
   .founder-text {
     text-align: center;
   }
+
   .founder-signature {
     flex-direction: column;
     align-items: center;
   }
+
   .founder-sign {
     margin-top: 10px;
   }
@@ -4070,6 +4136,7 @@ hr {
   .footer_policies a {
     font-size: 13px;
   }
+
   .gallery-image {
     height: 180px;
   }
@@ -4087,6 +4154,7 @@ hr {
   .empowerment-section h2 {
     font-size: 30px;
   }
+
   .empowerment-caption {
     font-size: 13px;
     padding: 6px 12px;
@@ -4099,9 +4167,11 @@ hr {
   .gallery-section {
     border-radius: 40px;
   }
+
   .inclusive-colleges h2 {
     font-size: 26px;
   }
+
   .college-card {
     border-radius: 20px !important;
   }
@@ -4110,6 +4180,7 @@ hr {
     border-radius: 35px 35px;
   }
 }
+
 .gallery-page {
   background: #fff;
   border-radius: 0px;
@@ -4189,3 +4260,4 @@ hr {
   background: linear-gradient(135deg, #4f46e5, #312e81);
   border-color: rgba(99, 102, 241, 0.5);
 }
+

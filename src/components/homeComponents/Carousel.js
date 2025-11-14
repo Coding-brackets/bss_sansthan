@@ -187,7 +187,7 @@ const Carousel = () => {
 
   const settings = {
     centerMode: true,
-    centerPadding: slidesToShow === 1 ? "40px" : "0px", // keep some padding on mobile
+    centerPadding: slidesToShow === 1 ? "20px" : "0px", // keep some padding on mobile
     slidesToShow,
     infinite: true,
     speed: 700,

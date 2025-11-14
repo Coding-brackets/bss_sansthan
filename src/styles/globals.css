@@ -459,8 +459,8 @@ a {
 .mobile_sidebar {
   position: fixed;
   top: 0;
-  right: -280px;
-  width: 260px;
+  right: -320px;
+  width: 320px;
   height: 100%;
   background: #fff;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
@@ -3372,6 +3372,45 @@ hr {
 }
 
 @media (max-width: 991px) {
+
+  .dropdown-submenu{
+        display: block;
+    position: relative;
+    left: 0;
+    min-width: 100%;
+    width: 100%;
+    border-radius: 0px;
+    top: 0px;
+  }
+
+  .sidebar_links a {
+    color: #000000b2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+        white-space: break-spaces;
+}
+
+  .dropdown {
+    display: block !important;
+}
+
+    .navbar_menu a, .nav_drop_btn {
+        padding: 0px;
+        font-size: 16px;
+    }
+
+    .navbar_menu a:hover, .nav_drop_btn:hover {
+    color: #f73a00;
+    border-top: 0px solid #0a2656;
+    border-bottom: 0px solid #0a2656;
+}
+
+.dropdown-content {
+    min-width: auto;
+    display: none;
+    position: relative;
+}
 
   .gallery-container {
     height: 200px;

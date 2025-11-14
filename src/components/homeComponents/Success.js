@@ -12,7 +12,7 @@ const Success = ({ heading = "Success Stories" }) => {
         <div className="success-grid">
           {/* Box 1 */}
           <div className="div1 d-flex flex-column justify-content-between">
-            <div className="icon-wrapper successIcon1">
+            <div className="icon-wrapper1 successIcon1">
                   <BadgeCheck color="#fff"  className="badge_check"/>
                 </div>
             <div className="success_con_box">
@@ -32,7 +32,7 @@ const Success = ({ heading = "Success Stories" }) => {
 
           {/* Box 3 */}
           <div className="div3  d-flex flex-column justify-content-between">
-             <div className="icon-wrapper successIcon2">
+             <div className="icon-wrapper1 successIcon2">
                   <LiaUserTieSolid color="#fff"  className="badge_check"/>
                 </div>
             <div className="success_con_box">

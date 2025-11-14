@@ -3174,6 +3174,11 @@ hr {
 .collegeHeroCon {
 }
 
+.carousel__slider .slick-slide {
+   display: flex !important;
+   align-items: center;
+}
+
 /* ============================= */
 /* RESPONSIVE STYLING      */
 /* ============================= */
@@ -3243,6 +3248,10 @@ hr {
 }
 
 @media (max-width: 1400px) {
+  .floating-card {
+    top: 89px;
+    left: -48px;
+  }
   .button_banner button {
     font-size: 16px;
     line-height: 23px;
@@ -3306,6 +3315,15 @@ hr {
 }
 
 @media (max-width: 1200px) {
+  .floating-card {
+    top: 44px;
+    left: -42px;
+  }
+
+  .disable_img_sec .img-wrapper {
+    width: 400px;
+    height: 400px;
+  }
   .ayurved_img {
     position: relative;
   }
@@ -3319,21 +3337,18 @@ hr {
   }
 
   .bss-label {
-    width: 140px;
+    width: 100px;
     font-size: 16px;
-
-    .bss-label {
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 31px;
-      color: #000000b2;
-      width: 180px;
-    }
+    line-height: 24px;
   }
 
   .floating-card {
     top: 97px;
     left: -155px;
+  }
+
+  .bss-number {
+    font-size: 28px;
   }
 
   .testimonial_card p {
@@ -3426,12 +3441,16 @@ hr {
     border-radius: 0 30px 30px 0;
   }
 
-  .slick-track{
+  .slick-track {
     height: 440px;
   }
 }
 
 @media (max-width: 991px) {
+  .empowering_conBanner {
+    text-align: left;
+  }
+
   .dropdown-submenu {
     display: block;
     position: relative;
@@ -4154,9 +4173,15 @@ hr {
   .footer_logo_sec img {
     width: 120px;
   }
+
+      .floating-card {
+        left: -70px;
+    }
 }
 
 @media (max-width: 575px) {
+
+  
   .footer_social_links a {
     width: 40px;
     height: 40px;
@@ -4193,6 +4218,7 @@ hr {
   }
 
   .carousel-content .carousel-content-banner {
+    width: inherit;
     display: flex;
     justify-content: space-between;
   }
@@ -4202,6 +4228,10 @@ hr {
 }
 
 @media (max-width: 425px) {
+  .carousel-content .carousel-content-banner {
+    display: block;
+  }
+
   .bss-label {
     width: 100px;
     font-size: 14px;

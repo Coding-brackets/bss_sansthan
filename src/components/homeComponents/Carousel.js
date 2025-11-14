@@ -187,7 +187,7 @@ const Carousel = () => {
 
   const settings = {
     centerMode: true,
-    centerPadding: slidesToShow === 1 ? "20px" : "0px", // keep some padding on mobile
+    centerPadding: slidesToShow === 1 ? "40px" : "40px", // keep some padding on mobile
     slidesToShow,
     infinite: true,
     speed: 700,
@@ -202,10 +202,9 @@ const Carousel = () => {
     <div className="carouse_banner">
       <div className="carousel-wrapper mb-100" style={{ margin: "40px 0px 120px 0px" }}>
         <div className="carousel-container" style={{ position: "relative" }}>
-          <Slider ref={sliderRef} {...settings}>
+          <Slider ref={sliderRef} {...settings} className="carousel__slider">
             {slides.map((slide, index) => {
-              // When using infinite:true, Slick duplicates slides; activeSlide corresponds to the internal index.
-              // For display purposes we compare indexes modulo slides.length
+
               const isActive = ((activeSlide % slides.length) + slides.length) % slides.length === index;
               return (
                 <div key={slide.id} className="carousel-item">

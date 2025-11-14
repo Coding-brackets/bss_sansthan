@@ -114,7 +114,8 @@ a {
   width: 50%;
 }
 
-.navbar_section {}
+.navbar_section {
+}
 
 /* custom nav  css */
 
@@ -699,12 +700,14 @@ a {
 }
 
 .insta:hover {
-  background: linear-gradient(45deg,
-      #f09433,
-      #e6683c,
-      #dc2743,
-      #cc2366,
-      #bc1888);
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
 }
 
 .youtube:hover {
@@ -1003,7 +1006,7 @@ a {
   background: rgba(255, 255, 255, 0.85);
   border-radius: 12px;
   padding: 16px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .carousel-content h3 {
@@ -1013,8 +1016,7 @@ a {
 
 .carousel-content h3 span {
   font-weight: 400;
-  color: #0A2656;
-;
+  color: #0a2656;
 }
 
 .carousel-content p {
@@ -1391,8 +1393,8 @@ a {
   background: #ff6b5c;
   color: #fff;
   width: 100%;
-  max-width: 800px;
-  border-radius: 12px;
+  /* max-width: 800px; */
+  border-radius: 0px 0px 12px 12px;
   padding: 18px 22px;
   text-align: left;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -2072,9 +2074,11 @@ hr {
 
 .dashed-line {
   width: 100%;
-  background-image: repeating-linear-gradient(to right,
-      white 0 30px,
-      transparent 29px 49px);
+  background-image: repeating-linear-gradient(
+    to right,
+    white 0 30px,
+    transparent 29px 49px
+  );
 
   top: 50%;
   left: 0;
@@ -2812,10 +2816,12 @@ hr {
 }
 
 .blur-bg {
-  background: linear-gradient(90deg,
-      rgba(10, 38, 86, 0.8) 0%,
-      rgba(10, 38, 86, 0.8) 50%,
-      rgba(255, 255, 255, 0.8) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(10, 38, 86, 0.8) 0%,
+    rgba(10, 38, 86, 0.8) 50%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
   backdrop-filter: blur(5px);
   z-index: 1;
 }
@@ -2980,8 +2986,8 @@ hr {
 /* socity */
 
 .socity_banner {
-  border: 1px solid #FF7765;
-  box-shadow: 0px 15px 35px 0px #FF776526;
+  border: 1px solid #ff7765;
+  box-shadow: 0px 15px 35px 0px #ff776526;
 }
 
 .button_banner {
@@ -3022,9 +3028,9 @@ hr {
 }
 
 .borderGalleryButton {
-    border: 1.5px solid #0A2656 !important;
-    color: #000;
-  }
+  border: 1.5px solid #0a2656 !important;
+  color: #000;
+}
 /* college gallery */
 
 .galleryParent {
@@ -3173,10 +3179,8 @@ hr {
 /* ============================= */
 
 @media screen and (min-width: 960px) {
-
-  .slick-slide.slick-active.slick-center.slick-current{
+  .slick-slide.slick-active.slick-center.slick-current {
     width: 800px !important;
-    
   }
 
   .swiper-container {
@@ -3203,8 +3207,7 @@ hr {
 }
 
 @media (min-width: 1600px) {
-
-  .college-con-img{
+  .college-con-img {
     width: 80% !important;
   }
   .content {
@@ -3303,10 +3306,9 @@ hr {
 }
 
 @media (max-width: 1200px) {
-
   .ayurved_img {
     position: relative;
-}
+  }
 
   .collegeContent_banner {
     width: 80%;
@@ -3423,12 +3425,15 @@ hr {
   .card-2 {
     border-radius: 0 30px 30px 0;
   }
+
+  .slick-track{
+    height: 440px;
+  }
 }
 
 @media (max-width: 991px) {
-
-  .dropdown-submenu{
-        display: block;
+  .dropdown-submenu {
+    display: block;
     position: relative;
     left: 0;
     min-width: 100%;
@@ -3442,35 +3447,37 @@ hr {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
-        white-space: break-spaces;
-}
+    white-space: break-spaces;
+  }
 
   .dropdown {
     display: block !important;
-}
+  }
 
-    .navbar_menu a, .nav_drop_btn {
-        padding: 0px;
-        font-size: 16px;
-    }
+  .navbar_menu a,
+  .nav_drop_btn {
+    padding: 0px;
+    font-size: 16px;
+  }
 
-    .navbar_menu a:hover, .nav_drop_btn:hover {
+  .navbar_menu a:hover,
+  .nav_drop_btn:hover {
     color: #f73a00;
     border-top: 0px solid #0a2656;
     border-bottom: 0px solid #0a2656;
-}
+  }
 
-.dropdown-content {
+  .dropdown-content {
     min-width: auto;
     display: none;
     position: relative;
-}
+  }
 
   .gallery-container {
     height: 200px;
-}
+  }
 
-  .quote-right-img{
+  .quote-right-img {
     display: none;
   }
 
@@ -3529,7 +3536,7 @@ hr {
   .swiper-slide {
     display: flex !important;
     justify-content: center !important;
-}
+  }
 
   .disable_banner {
     flex-direction: column;
@@ -3843,8 +3850,6 @@ hr {
     line-height: 28px;
   }
 
-  
-
   .gallery-image {
     height: 200px;
   }
@@ -3856,8 +3861,7 @@ hr {
   .carousel-content p {
     max-width: 100%;
     font-size: 14px;
-}
-
+  }
 }
 
 /* ============================= */
@@ -3865,25 +3869,23 @@ hr {
 /* ============================= */
 
 @media (max-width: 767px) {
-
   .carousel-image-wrapper.active {
     border-radius: 78px 30px 30px;
-}
+  }
 
-  .carousel-content h3 span{
+  .carousel-content h3 span {
     font-size: 16px;
     line-height: 18px;
-}
+  }
 
   .swiper-slide {
     display: flex !important;
     justify-content: center !important;
-}
+  }
 
-  .hero_content{
+  .hero_content {
     border-right: 1px solid var(--grey-100);
-            border-radius: 30px 30px 150px;
-
+    border-radius: 30px 30px 150px;
   }
 
   .button_banner {
@@ -3891,21 +3893,20 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     height: 100%;
-
   }
 
-  .blur-right, .blur-left{
+  .blur-right,
+  .blur-left {
     display: none;
   }
 
-
-   .collegeContent_banner {
+  .collegeContent_banner {
     width: 100%;
   }
   .college_hero_content h1 {
     font-size: 32px;
     line-height: 49px;
-}
+  }
   .collegeHeroCon {
     width: 100%;
   }
@@ -4035,7 +4036,6 @@ hr {
     border-right: 1px solid rgba(255, 255, 255, 0.6);
   }
 
- 
   .carousel-content {
     align-items: flex-start;
     max-width: 100%;
@@ -4044,13 +4044,13 @@ hr {
 
   .carousel-content p {
     font-size: 14px;
-}
+  }
 
-.carousel-content h3 {
+  .carousel-content h3 {
     font-size: 16px;
     white-space: nowrap;
     line-height: 24px;
-}
+  }
 
   .about_row {
     grid-template-columns: repeat(1, 1fr);
@@ -4187,19 +4187,18 @@ hr {
 
   .carousel-content p {
     max-width: 100%;
-}
-    .carousel-content {
-        flex-direction: column;
-    }
+  }
+  .carousel-content {
+    flex-direction: column;
+  }
 
-    .carousel-content .carousel-content-banner{
-      display: flex;
-      justify-content: space-between;
-    }
-      }
-
-   .carousel-image-wrapper img {
+  .carousel-content .carousel-content-banner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .carousel-image-wrapper img {
     height: 200px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -4207,7 +4206,6 @@ hr {
     width: 100px;
     font-size: 14px;
     line-height: 22px;
-
   }
 }
 
@@ -4321,4 +4319,3 @@ hr {
   background: linear-gradient(135deg, #4f46e5, #312e81);
   border-color: rgba(99, 102, 241, 0.5);
 }
-

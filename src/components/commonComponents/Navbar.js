@@ -93,7 +93,7 @@ const Navbar = () => {
                     </div>
                     <div className="dropdown-submenu">
                       <Link
-                        href="/colleges/bb-physiotherapy-college"
+                        href="/colleges/pooja-Nursing-college"
                         className="border-top-0 bg-transparent"
                       >
                         Pooja Nursing College
@@ -107,15 +107,15 @@ const Navbar = () => {
                       <Link href="/colleges/bb-medical-college">
                         Bhagyashri Bhondekar Medical College
                       </Link>
-                      <Link href="#">PES Multispeciality Hospital</Link>
-                      <Link href="#">Manjubai BA/MA College, Bhawani</Link>
-                      <Link href="#">
+                      <Link href="/colleges/pes-multispeciality-hospital">PES Multispeciality Hospital</Link>
+                      <Link href="/colleges/manju-bai-college">Manjubai BA/MA College, Bhawani</Link>
+                      <Link href="/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school">
                         Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School
                       </Link>
-                      <Link href="#">Universal BA College</Link>
-                      <Link href="#">Sant Gadge Baba Madhyamik Shala</Link>
-                      <Link href="#">Swayamsevi Janmubai Madhyamik Shala</Link>
-                      <Link href="#" className="border-bottom-0 bg-transparent">
+                      <Link href="/colleges/universal-ba-college">Universal BA College</Link>
+                      <Link href="/colleges/sant-gadge-baba-madhyamik-shala">Sant Gadge Baba Madhyamik Shala</Link>
+                      <Link href="/colleges/swayamsevi-janmubai-madhyamik-shala">Swayamsevi Janmubai Madhyamik Shala</Link>
+                      <Link href="/colleges/swayamsevi-janmubai-bhondekar-college" className="border-bottom-0 bg-transparent">
                         Swayamsevi Janmubai Bhondekar College
                       </Link>
                     </div>

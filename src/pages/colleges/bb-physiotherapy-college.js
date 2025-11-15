@@ -26,11 +26,11 @@ const BbPhysiotherapy = () => {
       <CollegeGallery
       para="Our institute has made learning easy by merging theory with practicals. The timely activities we provide help our students to apply their knowledge in real life."
       images={[
-    "/assets/CollegesImg/physiotherapy-Gallery1.jpg",
-    "/assets/CollegesImg/physiotherapy-Gallery2.jpg",
+    "/assets/CollegesImg/physiotherapy-Gallery1.jpg", 
     "/assets/CollegesImg/physiotherapy-Gallery3.jpg",
     "/assets/CollegesImg/physiotherapy-Gallery4.jpg",
     "/assets/CollegesImg/physiotherapy-Gallery5.jpg",
+    "/assets/CollegesImg/physiotherapy-Gallery2.jpg",
     
   ]}
       />

@@ -10,7 +10,7 @@ const BbPhysiotherapy = () => {
        <HeroSection
       subHeadingCon="Welcome to-"
         heading="Bhojrajji Bhondekar Physiotherapy College"
-        bgImage="/assets/heroImages/bb-ayurvedic-college.webp"
+        bgImage="/assets/heroImages/bb-physiotherapy-college.webp"
       />
 
       <CollegeConSec

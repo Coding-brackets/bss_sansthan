@@ -459,7 +459,7 @@ a {
 }
 
 /* Sidebar Styles */
-.mobile_sidebar {
+/* .mobile_sidebar {
   position: fixed;
   top: 0;
   right: -320px;
@@ -470,11 +470,11 @@ a {
   padding: 20px;
   transition: all 0.3s ease-in-out;
   z-index: 1050;
-}
+} */
 
-.mobile_sidebar.open {
+/* .mobile_sidebar.open {
   right: 0;
-}
+} */
 
 .sidebar_header {
   border-bottom: 1px solid var(--bordergrey-200);
@@ -482,20 +482,20 @@ a {
   margin-bottom: 15px;
 }
 
-.sidebar_links {
+/* .sidebar_links {
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
+} */
 
-.sidebar_links a {
+/* .sidebar_links a {
   color: #000000b2;
   font-size: 16px;
   text-decoration: none;
   font-weight: 500;
-}
+} */
 
-.sidebar_overlay {
+/* .sidebar_overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -503,6 +503,80 @@ a {
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   z-index: 1040;
+} */
+
+.mobile_sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100vh;
+  background: #fff;
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.mobile_sidebar.open {
+  right: 0;
+}
+
+/* Scrollable area */
+.sidebar_scroll {
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Sidebar buttons */
+.sidebar_btn,
+.sidebar_btn_sub {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 12px 0;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Dropdown container */
+.sidebar_dropdown,
+.sidebar_sub_dropdown {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Rotate arrow on open */
+.rotate-icon {
+  transform: rotate(90deg);
+  transition: 0.3s ease;
+}
+
+/* Sidebar overlay */
+.sidebar_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.sidebar_scroll a,
+.sidebar_btn,
+.sidebar_btn_sub {
+  color: #000000b2;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 /* Responsive Behavior */
@@ -2016,6 +2090,11 @@ a {
   line-height: 54px;
 }
 
+.sub_hero_content h5 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
 .sub_hero_content p {
   font-weight: 400;
   font-size: 18px;
@@ -3175,13 +3254,223 @@ hr {
 }
 
 .carousel__slider .slick-slide {
-   display: flex !important;
-   align-items: center;
+  display: flex !important;
+  align-items: center;
+}
+
+/* career & vacancy */
+
+.career-card-0 {
+  border-radius: 15px 0px 0px 15px;
+}
+
+.career-card-3 {
+  border-radius: 0px 15px 15px 0px;
+}
+
+.vacancy_card_title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.vacancy_card_para {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.job-table-container {
+  border-radius: 15px;
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 30px;
+  border: 1px solid #0a26564d;
+  box-shadow: 0px 5px 20px 0px #0a26561a;
+}
+
+.job-table thead th {
+  color: #0a2656;
+  font-size: 14px;
+  font-weight: 600;
+  background: #dadfe6;
+  padding: 22px 30px;
+}
+
+.job-table tbody tr {
+  border-bottom: 1px dashed #0a26564d;
+}
+
+.job-table td {
+  padding: 18px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000b2;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.status-open {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.status-close {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+/* Apply Now Button */
+.apply-btn {
+  font-family: Anybody, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  background: #fff;
+  color: #0a2656;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0px 5px 20px 0px #0a26561a;
+  border: 1.5px solid #0a2656;
+}
+
+.apply-btn svg {
+  color: #f73a00;
+}
+
+.apply-btn:hover {
+  background: #0a2656;
+  color: #fff;
+}
+
+.whyChoose-con-feature {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.whyChoose-1,
+.whyChoose-0 {
+  border-bottom: 1px solid #0a26564d;
+}
+
+.whyChoose-2,
+.whyChoose-0 {
+  border-right: 1px solid #0a26564d;
+}
+
+.feature-number {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ff7765;
+  margin-bottom: 14px;
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.whyChoose {
+  padding: 24px;
+}
+
+.feature-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.resume-box {
+  background: linear-gradient(110.86deg, #ff7765 22.36%, #f73a00 132.7%);
+  border-radius: 30px 130px 30px 30px;
+}
+
+.resume-input,
+.resume-file {
+  border: 1.5px solid #ffffff;
+  background: #ffffff99;
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding: 14px;
+  border-radius: 12px;
+  color: #00000080;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .feature-title {
+    font-size: 16px;
+  }
+
+  .feature-number {
+    margin-bottom: 8px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .whyChoose {
+    padding: 14px;
+  }
+
+  .mb-80 {
+    margin-bottom: 60px;
+  }
+
+  .job-table thead {
+    display: none;
+  }
+
+  .job-table-container {
+    border: 0px solid #0a26564d;
+    box-shadow: unset;
+    overflow: unset;
+  }
+
+  .job-table tbody tr {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 1px solid #0a26564d;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px #0a26561a;
+  }
+
+  .job-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .job-table td:before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #6c757d;
+  }
 }
 
 /* ============================= */
 /* RESPONSIVE STYLING      */
 /* ============================= */
+
+@media screen and (min-width: 1201px) {
+ .book-main {
+    flex-direction: row;
+    padding-inline: 0;
+  }
+}
 
 @media screen and (min-width: 960px) {
   .slick-slide.slick-active.slick-center.slick-current {
@@ -3189,17 +3478,14 @@ hr {
   }
 
   .swiper-container {
-    width: 60%;
+    width: 100%;
     right: -60px;
   }
 
-  .book-main {
-    flex-direction: row;
-    padding-inline: 0;
-  }
+ 
 
   .collegeHeroCon {
-    width: 55%;
+    width: 58%;
   }
 }
 
@@ -3315,6 +3601,19 @@ hr {
 }
 
 @media (max-width: 1200px) {
+      .content {
+        width: 80%;
+    }
+
+  .job-table td {
+    font-size: 14px;
+    padding: 14px 6px;
+  }
+
+  .apply-btn {
+    padding: 10px 12px;
+  }
+
   .floating-card {
     top: 44px;
     left: -42px;
@@ -3375,6 +3674,10 @@ hr {
 }
 
 @media (max-width: 1024px) {
+      .content {
+        padding-left: 3em;
+    }
+
   .bss-number {
     font-size: 24px;
     line-height: 28px;
@@ -3447,6 +3750,14 @@ hr {
 }
 
 @media (max-width: 991px) {
+  .p-150 {
+    padding: 80px 24px;
+  }
+
+  .commonbtn {
+    margin-top: 8px;
+  }
+
   .empowering_conBanner {
     text-align: left;
   }
@@ -3510,6 +3821,7 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+    height: 100%;
   }
 
   .gallerySec1 {
@@ -3548,7 +3860,7 @@ hr {
 
   .content {
     width: 90%;
-    padding-left: 10em;
+    padding-left: 3em;
     margin-bottom: 0;
   }
 
@@ -3888,6 +4200,10 @@ hr {
 /* ============================= */
 
 @media (max-width: 767px) {
+  .collegeQuote {
+    font-size: 16px;
+  }
+
   .carousel-image-wrapper.active {
     border-radius: 78px 30px 30px;
   }
@@ -3924,7 +4240,7 @@ hr {
   }
   .college_hero_content h1 {
     font-size: 32px;
-    line-height: 49px;
+    line-height: 42px;
   }
   .collegeHeroCon {
     width: 100%;
@@ -4174,14 +4490,16 @@ hr {
     width: 120px;
   }
 
-      .floating-card {
-        left: -70px;
-    }
+  .floating-card {
+    left: -70px;
+  }
 }
 
 @media (max-width: 575px) {
+  .mobile_sidebar {
+    width: 100%;
+  }
 
-  
   .footer_social_links a {
     width: 40px;
     height: 40px;

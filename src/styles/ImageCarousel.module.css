@@ -1,0 +1,45 @@
+.swiper {
+  padding-bottom: 50px;
+}
+
+.card {
+  width: 320px;      /* small side cards */
+  height: 420px;
+  border-radius: 22px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+/* Center slide large */
+.swiper-slide-active {
+  width: 420px !important;
+  height: 520px !important;
+  transform: scale(1.15);
+}
+
+/* Other slides */
+.swiper-slide {
+  opacity: 0.6;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #ff7e65;
+  padding: 15px 18px;
+  color: #fff;
+  width: 75%;
+  border-radius: 15px;
+}

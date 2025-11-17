@@ -9,6 +9,9 @@ import { TbBell } from "react-icons/tb";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+const [aboutOpen, setAboutOpen] = useState(false);
+const [institutionOpen, setInstitutionOpen] = useState(false);
+const [collegeOpen, setCollegeOpen] = useState(false);
 
   return (
     <div className="container-fluid p-0">
@@ -107,15 +110,28 @@ const Navbar = () => {
                       <Link href="/colleges/bb-medical-college">
                         Bhagyashri Bhondekar Medical College
                       </Link>
-                      <Link href="/colleges/pes-multispeciality-hospital">PES Multispeciality Hospital</Link>
-                      <Link href="/colleges/manju-bai-college">Manjubai BA/MA College, Bhawani</Link>
+                      <Link href="/colleges/pes-multispeciality-hospital">
+                        PES Multispeciality Hospital
+                      </Link>
+                      <Link href="/colleges/manju-bai-college">
+                        Manjubai BA/MA College, Bhawani
+                      </Link>
                       <Link href="/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school">
                         Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School
                       </Link>
-                      <Link href="/colleges/universal-ba-college">Universal BA College</Link>
-                      <Link href="/colleges/sant-gadge-baba-madhyamik-shala">Sant Gadge Baba Madhyamik Shala</Link>
-                      <Link href="/colleges/swayamsevi-janmubai-madhyamik-shala">Swayamsevi Janmubai Madhyamik Shala</Link>
-                      <Link href="/colleges/swayamsevi-janmubai-bhondekar-college" className="border-bottom-0 bg-transparent">
+                      <Link href="/colleges/universal-ba-college">
+                        Universal BA College
+                      </Link>
+                      <Link href="/colleges/sant-gadge-baba-madhyamik-shala">
+                        Sant Gadge Baba Madhyamik Shala
+                      </Link>
+                      <Link href="/colleges/swayamsevi-janmubai-madhyamik-shala">
+                        Swayamsevi Janmubai Madhyamik Shala
+                      </Link>
+                      <Link
+                        href="/colleges/swayamsevi-janmubai-bhondekar-college"
+                        className="border-bottom-0 bg-transparent"
+                      >
                         Swayamsevi Janmubai Bhondekar College
                       </Link>
                     </div>
@@ -131,11 +147,11 @@ const Navbar = () => {
                   </Link>
                 </div>
               </div>
-              <Link href="">Admissions</Link>
+              <Link href="/admission">Admissions</Link>
               <Link href="/infrastructure-and-facilities">
                 Infrastructure & Facilities
               </Link>
-              <Link href="">Career</Link>
+              <Link href="/career">Career</Link>
               <Link href="/gallery">Gallery</Link>
               <Link href="/news">News & Events</Link>
               <Link href="/contact-us">Contact Us</Link>
@@ -152,7 +168,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`mobile_sidebar ${sidebarOpen ? "open" : ""}`}>
+      {/* <div className={`mobile_sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar_header d-flex justify-content-between align-items-center">
           <Link href="/">
             <img src="/assets/logo.png" alt="" className="w-100" />
@@ -183,7 +199,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Our Institutions Dropdown */}
+          
           <div className="dropdown d-flex align-items-center">
             <button className="dropbtn nav_drop_btn">
               Our Institutions <IoIosArrowDown className="ms-1" />
@@ -239,6 +255,129 @@ const Navbar = () => {
             Infrastructure & Facilities
           </Link>
           <Link href="">Career</Link>
+          <Link href="/gallery">Gallery</Link>
+          <Link href="/news">News & Events</Link>
+          <Link href="/contact-us">Contact Us</Link>
+        </div>
+      </div> */}
+
+      {/* {sidebarOpen && (
+        <div
+          className="sidebar_overlay"
+          onClick={() => setSidebarOpen(false)}
+        ></div>
+      )} */}
+
+      {/* MOBILE SIDEBAR */}
+      <div className={`mobile_sidebar ${sidebarOpen ? "open" : ""}`}>
+        <div className="sidebar_header d-flex justify-content-between align-items-center">
+          <Link href="/">
+            <img src="/assets/logo.png" alt="" className="w-100" />
+          </Link>
+          <button
+            className="border-0 bg-transparent"
+            onClick={() => setSidebarOpen(false)}
+          >
+            <X size={26} />
+          </button>
+        </div>
+
+        {/* SIDEBAR SCROLLABLE AREA */}
+        <div className="sidebar_scroll">
+          {/* ABOUT DROPDOWN */}
+          <div className="sidebar_item">
+            <button 
+              className="sidebar_btn p-0"
+              onClick={() => setAboutOpen(!aboutOpen)}
+            >
+              About{" "}
+              <IoIosArrowDown className={aboutOpen ? "rotate-icon" : ""} />
+            </button>
+
+            {aboutOpen && (
+              <div className="sidebar_dropdown">
+                <Link href="/about-us"  onClick={() => setSidebarOpen(false)}>About Us</Link>
+                <Link href="/leadership"  onClick={() => setSidebarOpen(false)}>Our Leadership</Link>
+              </div>
+            )}
+          </div>
+
+          {/* OUR INSTITUTIONS DROPDOWN */}
+          <div className="sidebar_item">
+            <button
+              className="sidebar_btn p-0"
+              onClick={() => setInstitutionOpen(!institutionOpen)}
+            >
+              Our Institutions{" "}
+              <IoIosArrowDown
+                className={institutionOpen ? "rotate-icon" : ""}
+              />
+            </button>
+
+            {institutionOpen && (
+              <div className="sidebar_dropdown">
+                {/* Colleges Submenu */}
+                <button
+                  className="sidebar_btn_sub pt-3 pb-0"
+                  onClick={() => setCollegeOpen(!collegeOpen)}
+                >
+                  Colleges{" "}
+                  <IoIosArrowForward
+                    className={collegeOpen ? "rotate-icon" : ""}
+                  />
+                </button>
+
+                {collegeOpen && (
+                  <div className="sidebar_sub_dropdown">
+                    <Link href="/colleges/pooja-Nursing-college"  onClick={() => setSidebarOpen(false)}>
+                      Pooja Nursing College
+                    </Link>
+                    <Link href="/colleges/bb-ayurvedic-college">
+                      Bhagyashri Bhondekar Ayurvedic College
+                    </Link>
+                    <Link href="/colleges/bb-physiotherapy-college">
+                      Bhagyashri Bhondekar Physiotherapy
+                    </Link>
+                    <Link href="/colleges/bb-medical-college">
+                      Bhagyashri Bhondekar Medical College
+                    </Link>
+                    <Link href="/colleges/pes-multispeciality-hospital">
+                     PES Multispeciality Hospital
+                    </Link>
+                    <Link href="/colleges/manju-bai-college">
+                     Manjubai BA/MA College, Bhawani
+                    </Link>
+                    <Link href="/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school">
+                      Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School
+                    </Link>
+                    <Link href="/colleges/universal-ba-college">
+                     Universal BA College
+                    </Link>
+                    <Link href="/colleges/sant-gadge-baba-madhyamik-shala">
+                     Sant Gadge Baba Madhyamik Shala
+                    </Link>
+                    <Link href="/colleges/swayamsevi-janmubai-madhyamik-shala">
+                    Swayamsevi Janmubai Madhyamik Shala
+                    </Link>
+                    <Link href="/colleges/swayamsevi-janmubai-bhondekar-college">
+                     Swayamsevi Janmubai Bhondekar College
+                    </Link>
+                  </div>
+                )}
+
+                <Link href="#">Hospitals</Link>
+                <Link href="#">Research & Training Center</Link>
+                <Link href="/specialStudents">Specially Abled Support</Link>
+              </div>
+            )}
+          </div>
+
+          {/* REST OF LINKS */}
+          <Link href="/admission">Admissions</Link>
+          <Link href="/infrastructure-and-facilities">
+            Infrastructure & Facilities
+          </Link>
+          <Link href="/career">Career</Link>
           <Link href="/gallery">Gallery</Link>
           <Link href="/news">News & Events</Link>
           <Link href="/contact-us">Contact Us</Link>

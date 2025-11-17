@@ -14,7 +14,7 @@ const SwayamseviJanmubaiMadhyamik = () => {
       />
 
       <CollegeConSec
-        image="/public/assets/CollegesImg/swayamsevi-janmubai"
+        image="/assets/CollegesImg/swayamsevi-janmubai/school.png"
         heading="Let’s Explore Swayamsevi Janmubai Madhyamik Shala, Umri, Navegaon Bandh"
         description={[
             "Late Shri Bhojrajji Bhondekar, the brainchild of Bhojrajji Bhondekar Physiotherapy College, founded this institution to bring change in society through education and community service. It is a government-recognized institute currently managed by Bhodenkar Shikshan Sanstha ",
@@ -26,11 +26,11 @@ const SwayamseviJanmubaiMadhyamik = () => {
       <CollegeGallery
       para="Our institute has made learning easy by merging theory with practicals. The timely activities we provide help our students to apply their knowledge in real life."
       images={[
-    "/public/assets/CollegesImg/swayamsevi-janmubai",
-    "/public/assets/CollegesImg/swayamsevi-janmubai",
-    "/public/assets/CollegesImg/swayamsevi-janmubai",
-    "/public/assets/CollegesImg/swayamsevi-janmubai",
-    "/public/assets/CollegesImg/swayamsevi-janmubai",
+    "/assets/CollegesImg/swayamsevi-janmubai/student1.jpg",
+    "/assets/CollegesImg/swayamsevi-janmubai/student2.jpg",
+    "/assets/CollegesImg/swayamsevi-janmubai/playground2.png",
+    "/assets/CollegesImg/swayamsevi-janmubai/playground3.png",
+    "/assets/CollegesImg/swayamsevi-janmubai/playground1.jpg",
     
   ]}
       />
@@ -38,7 +38,7 @@ const SwayamseviJanmubaiMadhyamik = () => {
         para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
         quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
         image1="/assets/CollegesImg/ayurved.jpg"
-        image2="/public/assets/CollegesImg/swayamsevi-janmubai"
+        image2="/assets/CollegesImg/swayamsevi-janmubai/Rectangle 21206.png"
       />
     </div>
   )

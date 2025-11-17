@@ -1,6 +1,6 @@
 import React from "react";
 
-const SubPagesHero = ({ heading, description, bgImage }) => {
+const SubPagesHero = ({ heading, description, bgImage, subHeadingCon, SubHeading= false }) => {
   return (
     <div className="container-fluid mb-80 p-0">
       <div
@@ -12,6 +12,9 @@ const SubPagesHero = ({ heading, description, bgImage }) => {
       >
         <div className="sub_hero_content  m-auto text-center">
           <h1 className="mb-4">{heading}</h1>
+           {SubHeading && (
+          <h5 className="mb-4">{subHeadingCon}</h5>
+           )}
           <p className="mb-0">{description}</p>
         </div>
       </div>

@@ -10,11 +10,11 @@ const SantGadgeBabamadhyamik = () => {
        <HeroSection
       subHeadingCon="Welcome to-"
         heading="Sant Gadge Baba Madhyamik Shala"
-        bgImage="/public/assets/heroImages/sant-gadge-baba-madhyamik-shala.webp"
+        bgImage="/assets/heroImages/sant-gadge-baba-madhyamik-shala.webp"
       />
 
       <CollegeConSec
-        image="/public/assets/CollegesImg/sant-Gadge-baba-madhyamik/"
+        image="/assets/CollegesImg/sant-Gadge-baba-madhyamik/school.png"
         heading="Let’s Explore Sant Gadge Baba Madhyamik Shala, Nerla"
         description={[
             "Bhojraj Bhondekar Ayurvedic College was founded by Shri Bhojrajji in 2002, Bhandara, Maharashtra. This institute is renowned for its education in the field of Ayurveda and health services that help unprivileged groups to rise above poverty. The goal behind its establishment was to improve society by offering education to poor students with the help of MLA Narendra Bhodenkar. Today, we are operating 14 colleges across Maharashtra that offer nursing courses.",
@@ -26,11 +26,11 @@ const SantGadgeBabamadhyamik = () => {
       <CollegeGallery
       para="Being a reputed Ayurveda institute, we help our students to gain maximum knowledge by combining theory with real-life scenarios."
       images={[
-    "/public/assets/CollegesImg/sant-Gadge-baba-madhyamik/",
-    "/public/assets/CollegesImg/sant-Gadge-baba-madhyamik/",
-    "/public/assets/CollegesImg/sant-Gadge-baba-madhyamik/",
-    "/public/assets/CollegesImg/sant-Gadge-baba-madhyamik/",
-    "/public/assets/CollegesImg/sant-Gadge-baba-madhyamik/",
+    "/assets/CollegesImg/sant-Gadge-baba-madhyamik/school-image1.jpg",
+    "/assets/CollegesImg/sant-Gadge-baba-madhyamik/school-image2.jpg",
+    "/assets/CollegesImg/sant-Gadge-baba-madhyamik/school-image3image2.jpg",
+    "/assets/CollegesImg/sant-Gadge-baba-madhyamik/school-image4.jpg",
+    "/assets/CollegesImg/sant-Gadge-baba-madhyamik/school-image5.jpg",
     
   ]}
       />
@@ -38,7 +38,7 @@ const SantGadgeBabamadhyamik = () => {
         para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
         quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
         image1="/assets/CollegesImg/ayurved.jpg"
-        image2="/public/assets/CollegesImg/sant-Gadge-baba-madhyamik/"
+        image2="/public/assets/CollegesImg/sant-Gadge-baba-madhyamik/Rectangle 21206.png"
       />
     </div>
   )

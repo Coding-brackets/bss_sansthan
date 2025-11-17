@@ -69,7 +69,7 @@ const NewsAndEvents = () => {
           breakpoints={{
             460: { slidesPerView: 1 },
             768: { slidesPerView: 1.5 },
-            1024: { slidesPerView: 2 },
+            1024: { slidesPerView: 2.5 },
             1600: { slidesPerView: 2.5 },
           }}
           coverflowEffect={{

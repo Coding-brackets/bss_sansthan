@@ -14,7 +14,7 @@ const SwayamseviJanmubaiBhondekar = () => {
       />
 
       <CollegeConSec
-        image="/assets/CollegesImg/swayamsevi-bhondekar-college"
+        image="/assets/CollegesImg/swayamsevi-bhondekar-college/classroomFrame.png"
         heading="Let’s Explore Swayamsevi Janmubai Bhondekar College, Umri, Navegaon Bandh"
         description={[
             "Late Shri Bhojrajji Bhondekar, the brainchild of Bhojrajji Bhondekar Physiotherapy College, founded this institution to bring change in society through education and community service. It is a government-recognized institute currently managed by Bhodenkar Shikshan Sanstha ",
@@ -26,11 +26,11 @@ const SwayamseviJanmubaiBhondekar = () => {
       <CollegeGallery
       para="Our institute has made learning easy by merging theory with practicals. The timely activities we provide help our students to apply their knowledge in real life."
       images={[
-    "/assets/CollegesImg/swayamsevi-bhondekar-college",
-    "/assets/CollegesImg/swayamsevi-bhondekar-college",
-    "/assets/CollegesImg/swayamsevi-bhondekar-college",
-    "/assets/CollegesImg/swayamsevi-bhondekar-college",
-    "/assets/CollegesImg/swayamsevi-bhondekar-college",
+    "/assets/CollegesImg/swayamsevi-bhondekar-college/classroom.jpg",
+    "/assets/CollegesImg/swayamsevi-bhondekar-college/classroom1.jpg",
+    "/assets/CollegesImg/swayamsevi-bhondekar-college/doctor.jpg",
+    "/assets/CollegesImg/swayamsevi-bhondekar-college/event.jpg",
+    "/assets/CollegesImg/swayamsevi-bhondekar-college/college.jpg",
     
   ]}
       />
@@ -38,7 +38,7 @@ const SwayamseviJanmubaiBhondekar = () => {
         para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
         quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
         image1="/assets/CollegesImg/ayurved.jpg"
-        image2="/assets/CollegesImg/swayamsevi-bhondekar-college"
+        image2="/assets/CollegesImg/swayamsevi-bhondekar-college/Rectangle 21206@2x.png"
       />
     </div>
   )

@@ -10,7 +10,7 @@ const news = () => {
     <SubPagesHero
         heading="News"
         description="The latest industry news, interviews, technologies, and resources."
-        bgImage="/assets/heroBackground.png"
+        bgImage="/assets/heroImages/hero-background.webp"
     />
     <NewsSec/>
       

@@ -78,7 +78,7 @@ const LeaderShip = () => {
 
         <div className="row g-4 justify-content-center">
           {displayedLeaders.map((leader, index) => (
-            <div className="col-md-6 col-xxl-6 col-sm-6" key={index}>
+            <div className="col-lg-6 col-xxl-6" key={index}>
               <div className="leader-card  d-flex gap-4">
                 <div className="leader-img ">
                   <img

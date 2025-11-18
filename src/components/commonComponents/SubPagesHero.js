@@ -3,8 +3,9 @@ import React from "react";
 const SubPagesHero = ({ heading, description, bgImage, subHeadingCon, SubHeading= false }) => {
   return (
     <div className="container-fluid mb-80 p-0">
+    <div className="border_right my-40">
       <div
-        className="my-40 hero_section p-80 subHeroBanner d-flex align-items-center justify-content-center bg-cover bg-center bg-no-repeat"
+        className=" hero_section p-80 subHeroBanner d-flex align-items-center justify-content-center bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: bgImage ? `url(${bgImage})` : "none",
           minHeight: "400px",
@@ -18,6 +19,7 @@ const SubPagesHero = ({ heading, description, bgImage, subHeadingCon, SubHeading
           <p className="mb-0">{description}</p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

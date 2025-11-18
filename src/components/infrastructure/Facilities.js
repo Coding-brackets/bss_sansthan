@@ -19,12 +19,12 @@ const Facilities = () => {
           return (
             <div
               key={index}
-              className={`row position-relative mb-4 align-items-center flex-column flex-md-row ${
+              className={`row mt-4 position-relative mb-4 align-items-center flex-column flex-md-row mx-1 ${
                 isImageLeft ? "left-layout" : "right-layout flex-md-row-reverse"
               }`}
             >
               {/* Image Section */}
-              <div className="col-md-6 d-flex align-items-stretch p-0 facilities_imagSec">
+              <div className="col-lg-6 d-flex align-items-stretch  facilities_imagSec">
                 <Image
                   src={item.image}
                   alt={item.heading}
@@ -41,7 +41,7 @@ const Facilities = () => {
               </div>
 
               {/* Content Section */}
-              <div className="col-md-6 d-flex align-items-center" >
+              <div className="col-lg-6 d-flex align-items-center" >
                 <div className={`facilities_conSec ${
                     isImageLeft ? "ms-5" : "me-5"
                   } rounded-4`}>

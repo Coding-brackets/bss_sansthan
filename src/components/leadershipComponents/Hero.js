@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="hero_section my-40">
         <div className="row heroBanner position-relative">
           {/* Left content */}
-          <div className="col-md-6 p-0 d-flex align-items-center">
+          <div className="col-md-6 p-0 d-flex align-items-center border-right-mobile">
             <div className="hero_content cust_p-80">
 
               <h1>

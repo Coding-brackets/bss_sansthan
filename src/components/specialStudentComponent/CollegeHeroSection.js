@@ -13,9 +13,10 @@ const CollegeHeroSection = ({
   desc = false,
 }) => {
   return (
-    <div className="container-fluid mb-100 p-0">
+    <div className="container-fluid mb-100 p-0 ">
+    <div className="my-40 border_right">
       <div
-        className="my-40 hero_section p-80 subHeroBanner d-flex bg-cover bg-center bg-no-repeat position-relative overflow-hidden"
+        className=" hero_section p-80 subHeroBanner d-flex bg-cover bg-center bg-no-repeat position-relative overflow-hidden"
         style={{
           backgroundImage: bgImage ? `url(${bgImage})` : "none",
         }}
@@ -39,6 +40,7 @@ const CollegeHeroSection = ({
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };

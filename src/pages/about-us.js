@@ -2,8 +2,6 @@ import History from '@/components/aboutComponent/History'
 import Journey from '@/components/aboutComponent/Journey'
 import Mentors from '@/components/aboutComponent/Mentors'
 import Mission from '@/components/aboutComponent/Mission'
-import Vision from '@/components/aboutComponent/Vision'
-
 import SubPagesHero from '@/components/commonComponents/SubPagesHero'
 import React from 'react'
 

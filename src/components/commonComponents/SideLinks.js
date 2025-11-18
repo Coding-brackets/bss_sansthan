@@ -1,14 +1,17 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 import { PiYoutubeLogo } from "react-icons/pi";
 import Popup from "./Popup";
 import QuickRegistrationForm from "./QuickRegistrationForm";
+import { IoMdClose, IoMdShareAlt } from "react-icons/io";
 
 const SideLinks = () => {
   const [showCollegeModal, setShowCollegeModal] = useState(false);
   const [showFormModal, setShowFormModal] = useState(false);
   const [selectedCollege, setSelectedCollege] = useState("");
+  const [open, setOpen] = useState(false);
 
   const handleCollegeClose = () => setShowCollegeModal(false);
 
@@ -31,21 +34,56 @@ const SideLinks = () => {
     <>
       <div className="side_links">
         <Link href="/" className="side_social_link facebook">
-          <FaFacebookF />
           <span>Facebook</span>
+          <FaFacebookF className="ms-3"/>
         </Link>
         <Link href="/" className="side_social_link twitter">
-          <FaTwitter />
           <span>Twitter</span>
+          <BsTwitterX className="ms-3"/>
         </Link>
         <Link href="/" className="side_social_link insta">
-          <FaInstagram />
           <span>Instagram</span>
+          <FaInstagram className="ms-3"/>
         </Link>
         <Link href="/" className="side_social_link youtube">
-          <PiYoutubeLogo />
           <span>Youtube</span>
+          <PiYoutubeLogo  className="ms-3"/>
         </Link>
+      </div>
+
+      {/* mobile view */}
+
+      {/* Floating Social Button */}
+      <div className="mobile-floating-container d-md-none">
+
+        {/* Toggle Button */}
+        <button
+          className="floating-btn"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <IoMdClose size={28} /> : <IoMdShareAlt size={28} />}
+        </button>
+
+        {/* Expanded Icons */}
+        {open && (
+          <div className="floating-icons">
+            <Link href="/" className="mobileicon-box facebook_icon-box">
+              <FaFacebookF />
+            </Link>
+
+            <Link href="/" className="mobileicon-box icon-box_insta">
+              <FaInstagram />
+            </Link>
+
+            <Link href="/" className="mobileicon-box icon-box_x">
+              <BsTwitterX />
+            </Link>
+
+            <Link href="/" className="mobileicon-box icon-box_youtube">
+              <PiYoutubeLogo />
+            </Link>
+          </div>
+        )}
       </div>
 
       <div className="register_btn">

@@ -19,7 +19,10 @@ const [collegeOpen, setCollegeOpen] = useState(false);
         <div className="nav1 d-flex align-items-center">
           <div className="navbar_logo">
             <Link href="/">
-              <img src="/assets/logo.png" alt="" className="w-100" />
+              <img src="/assets/logo.png" alt="" className="w-100 mainLogo" />
+            </Link>
+            <Link href="/">
+              <img src="/assets/mobile-view-logo.png" alt="" className=" d-none mobile-logo"/>
             </Link>
           </div>
         </div>

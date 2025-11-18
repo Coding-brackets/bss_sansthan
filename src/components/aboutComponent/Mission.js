@@ -18,7 +18,7 @@ const Mission = ({
           }`}
         >
           {/* Left / Right image */}
-          <div className="col-md-6 legacy_left ps-0">
+          <div className="col-md-6">
             <img src={image} alt={heading} className="w-100 rounded-3" />
           </div>
 

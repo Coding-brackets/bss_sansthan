@@ -35,7 +35,7 @@ const gallery = () => {
             <SubPagesHero
                 heading="Campus Life & Moments That Inspire"
                 description="Explore the vibrant atmosphere of our institutions through glimpses of everyday learning, achievements, and celebrations."
-                bgImage="/assets/aboutHeroBanner.png"
+                bgImage="/assets/heroImages/hero-background.webp"
             />
 
             <GallerySection

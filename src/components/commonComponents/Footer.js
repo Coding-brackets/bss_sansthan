@@ -8,6 +8,8 @@ import { IoMail } from "react-icons/io5";
 import SideLinks from './SideLinks';
 import { Instagram, InstagramIcon } from 'lucide-react';
 import Link from 'next/link';
+import { BsTwitterX } from 'react-icons/bs';
+import { PiYoutubeLogo } from 'react-icons/pi';
 
 
 const Footer = () => {
@@ -20,17 +22,17 @@ const Footer = () => {
             <div className="footer_top1">
               <div className="footer_social_links">
               {/* <SocialIcon/> */}
-                <Link href="">
+                <Link href="" className='insta border-0'>
                   <Instagram strokeWidth={1.75} />
                 </Link>
-                <Link href="">
+                <Link href="" className="facebook border-0">
                   <FaFacebookF />
                 </Link>
-                <Link href="">
-                  <FaTwitter />
+                <Link href="" className="twitter border-0">
+                  <BsTwitterX />
                 </Link>
-                <Link href="">
-                  <FaLinkedinIn />
+                <Link href="" className="youtube border-0">
+                  <PiYoutubeLogo  />
                 </Link>
               </div>
             </div>
@@ -40,7 +42,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer_top3 d-flex justify-content-end align-items-center">
-              <div className="flex-column">
+              <div className="footer-subscribe-form">
                 <label
                   htmlFor="newsletter"
                   className="newsletter_label mb-2 fw-semibold"
@@ -102,31 +104,39 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-3">
-            <h4 className="">Quick Links</h4>
+            <h4 className="footer-quick-links">Quick Links</h4>
             <div className="d-flex flex-column footer_quick_links">
-              <Link href="">
-                <IoIosArrowForward className="footer_icon me-2" />
-                Home
-              </Link>
               <Link href="/about-us">
                 <IoIosArrowForward className="footer_icon me-2" />
-                About Us
+                About
               </Link>
-              <Link href="">
+              <Link href="/socity">
                 <IoIosArrowForward className="footer_icon me-2" />
-                Infastructure Facilities
+                Our Institutions
               </Link>
-              <Link href="">
+              <Link href="/news">
                 <IoIosArrowForward className="footer_icon me-2" />
-                Academics
+                News & Events
               </Link>
-              <Link href="">
+              <Link href="/gallery">
                 <IoIosArrowForward className="footer_icon me-2" />
-                Admissions
+                Gallery
               </Link>
-              <Link href="">
+              <Link href="/career">
                 <IoIosArrowForward className="footer_icon me-2" />
-                Under Bhondekar Education Society
+                Career
+              </Link>
+              <Link href="/socity">
+                <IoIosArrowForward className="footer_icon me-2" />
+                Infrastructure & Facilities
+              </Link>
+              <Link href="/contact-us">
+                <IoIosArrowForward className="footer_icon me-2" />
+                Contact Us
+              </Link>
+              <Link href="/sitemap">
+                <IoIosArrowForward className="footer_icon me-2" />
+                Sitemap
               </Link>
               
             </div>
@@ -141,7 +151,7 @@ const Footer = () => {
             © Bhondekar Education Society 2025 All Rights Reserved
           </p>
           <div className="footer_policies footer_quick_links">
-          <Link href="#" className="me-3">
+          <Link href="/sitemap" className="me-3">
               Sitemap
             </Link>
             <Link href="#" className="me-3">

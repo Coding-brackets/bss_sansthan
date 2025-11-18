@@ -51,20 +51,6 @@ const InclusiveCollegesSection = () => {
                         </div>
                     </div>
 
-                    {/* Right Cards */}
-                    {/* <div className="col-md-6">
-                        <div className="row g-3">
-                            {colleges.map((college, index) => (
-                                <div className="col-sm-6" key={index}>
-                                    <div className={`college-card card-${index + 1} bg-white p-4 h-100 shadow-sm`}>
-                                        <h5 className="fw-bold mb-2">{college.title}</h5>
-                                        <p className="text-muted mb-0">{college.description}</p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div> */}
-
                     <div className="col-lg-6">
                         <div className="row g-3">
                                 <div className="col-sm-6">
@@ -90,9 +76,6 @@ const InclusiveCollegesSection = () => {
                        
                         </div>
                     </div>
-
-                    
-
                 </div>
             </div>
 

@@ -16,7 +16,7 @@ const Mentors = ({heading, img}) => {
         <div className="founder_img_sec">
           <div className="img-wrapper">
           <div className='image_inner'>
-            <img src={img} alt="Founder" />
+            <img src={img} alt="Founder" className='w-100'/>
             <img src="/assets/flower1.png" alt="Founder" className='flower1 position-absolute'/>
             <img src="/assets/flower2.png" alt="Founder" className='flower2 position-absolute'/>
             </div>

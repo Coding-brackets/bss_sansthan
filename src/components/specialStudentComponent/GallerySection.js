@@ -29,14 +29,12 @@ const GallerySection = ({ title, description, tabsData, differClass, bordercolor
                     setActiveTab(tab);
                     setSelectedImageIndex(null);
                   }}
-                  className={`btn px-4 py-2 fw-medium transition-all duration-200 ${bordercolor}`}
+                  className={`btn transition-all duration-200 ${bordercolor} gallery_btn`}
                   style={{
                     fontFamily: "Geist",
-                    fontSize: "16px",
-                    fontWeight: "500",
                     backgroundColor: activeTab === tab ? "#0A2656" : "#F5EFEC",
                     color: activeTab === tab ? "#fff" : "#333",
-                    borderRadius: "10px",
+                    
                     boxShadow:
                       activeTab === tab
                         ? "0 2px 8px rgba(0,0,0,0.2)"

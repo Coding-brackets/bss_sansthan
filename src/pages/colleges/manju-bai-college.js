@@ -30,27 +30,27 @@ const ManjuBaiCollege = () => {
 
         items={[
           {
-            img: "/public/assets/CollegesImg/manjubai-college/biometric-attendence.jpg",
+            img: "/assets/CollegesImg/manjubai-college/biometric-attendence.jpg",
             title: "Campus",
             desc: "BCSS emerged out in Bhandara under the eminent leadership...",
           },
           {
-            img: "/public/assets/CollegesImg/manjubai-college/classroom.jpg",
+            img: "/assets/CollegesImg/manjubai-college/classroom.jpg",
             title: "Campus",
             desc: "BCSS emerged out in Bhandara under the eminent leadership...",
           },
           {
-            img: "/public/assets/CollegesImg/manjubai-college/teacher-teaching-stu.jpg",
+            img: "/assets/CollegesImg/manjubai-college/teacher-teaching-stu.jpg",
             title: "Campus",
             desc: "BCSS emerged out in Bhandara under the eminent leadership...",
           },
           {
-            img: "/public/assets/CollegesImg/manjubai-college/dr-examining-student.jpg",
+            img: "/assets/CollegesImg/manjubai-college/dr-examining-student.jpg",
             title: "Campus",
             desc: "BCSS emerged out in Bhandara under the eminent leadership...",
           },
           {
-            img: "/public/assets/CollegesImg/manjubai-college/teacher.jpg",
+            img: "/assets/CollegesImg/manjubai-college/teacher.jpg",
             title: "Campus",
             desc: "BCSS emerged out in Bhandara under the eminent leadership...",
           },

@@ -5,7 +5,7 @@ const LinkTree = () => {
   return (
     <div className="container">
 
-    <div className="sitemap-container">
+    <div className="sitemap-container ">
   <ul className="tree d-flex">
     <li>
       <div className="node main">Home</div>

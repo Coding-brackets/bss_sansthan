@@ -1,31 +1,9 @@
 import CarouselGallery from "@/components/collegeComponents/CarouselGallery";
-import CollegeGallery from "@/components/collegeComponents/CollegeGallery";
 import CollegeConSec from "@/components/collegeComponents/collegesConSec";
 import HeroSection from "@/components/collegeComponents/HeroSection";
 import QuoteComponent from "@/components/collegeComponents/quoteComponent";
 import React from "react";
 
-const data = [
-  {
-    bg: "https://cdn-front.freepik.com/home/anon-rvmp/professionals/designers.webp",
-    thumb: "https://cdn-front.freepik.com/home/anon-rvmp/professionals/img-designer.webp?w=480",
-    title: "Designers",
-    desc: "Tools that work like you do.",
-  },
-  {
-    bg: "https://cdn-front.freepik.com/home/anon-rvmp/professionals/marketers.webp",
-    thumb: "https://cdn-front.freepik.com/home/anon-rvmp/professionals/img-marketer.webp?w=480",
-    title: "Marketers",
-    desc: "Create faster, explore new possibilities.",
-  },
-  {
-    bg: "https://cdn-front.freepik.com/home/anon-rvmp/professionals/filmmakers.webp",
-    thumb: "https://cdn-front.freepik.com/home/anon-rvmp/professionals/img-film.webp?w=480",
-    title: "VFX filmmakers",
-    desc: "From concept to cut, faster.",
-  },
-  // add more slides...
-];
 
 const PoojaNursing = () => {
   return (
@@ -47,8 +25,10 @@ const PoojaNursing = () => {
         url="/"
       />
 
-      {/* <CarouselGallery 
-        images={[
+      <CarouselGallery 
+      para="This college has been established to provide platform for the candidates interested in nursing as a career."
+
+        items={[
           {
             img: "/assets/CollegesImg/pooja-nursing-college/college-fest-image1.jpg",
             title: "Campus",
@@ -70,12 +50,12 @@ const PoojaNursing = () => {
             desc: "BCSS emerged out in Bhandara under the eminent leadership...",
           },
           {
-            img: "/assets/CollegesImg/pooja-nursing-college/college-activity-image.png",
+            img: "/assets/CollegesImg/pooja-nursing-college/nursing-students.jpg",
             title: "Campus",
             desc: "BCSS emerged out in Bhandara under the eminent leadership...",
           },
         ]}
-      /> */}
+      />
 
       <QuoteComponent
         para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."

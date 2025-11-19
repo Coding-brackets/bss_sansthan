@@ -1,4 +1,5 @@
 
+import CarouselGallery from "@/components/collegeComponents/CarouselGallery";
 import CollegeConSec from "@/components/collegeComponents/collegesConSec";
 import HeroSection from "@/components/collegeComponents/HeroSection";
 import QuoteComponent from "@/components/collegeComponents/quoteComponent";
@@ -23,6 +24,39 @@ const ManjuBaiCollege = () => {
         buttonText="Visit Now"
         url="/"
       />
+
+        <CarouselGallery
+      para="This college has been established to provide platform for the candidates interested in nursing as a career."
+
+        items={[
+          {
+            img: "/public/assets/CollegesImg/manjubai-college/biometric-attendence.jpg",
+            title: "Campus",
+            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+          },
+          {
+            img: "/public/assets/CollegesImg/manjubai-college/classroom.jpg",
+            title: "Campus",
+            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+          },
+          {
+            img: "/public/assets/CollegesImg/manjubai-college/teacher-teaching-stu.jpg",
+            title: "Campus",
+            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+          },
+          {
+            img: "/public/assets/CollegesImg/manjubai-college/dr-examining-student.jpg",
+            title: "Campus",
+            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+          },
+          {
+            img: "/public/assets/CollegesImg/manjubai-college/teacher.jpg",
+            title: "Campus",
+            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+          },
+        ]}
+      />
+
       
 
       <QuoteComponent

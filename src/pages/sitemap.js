@@ -1,5 +1,6 @@
 import SubPagesHero from '@/components/commonComponents/SubPagesHero'
 import LinkTree from '@/components/sitemapComponent/LinkTree'
+import SitemapSvg from '@/components/svg/sitemap'
 import React from 'react'
 
 const Sitemap = () => {
@@ -10,8 +11,8 @@ const Sitemap = () => {
         description="An overview of our institution and its branches dedicated to education, healthcare, and service"
         bgImage="/assets/heroImages/hero-background.webp"
     />
-
-    <LinkTree/>
+<SitemapSvg/>
+    {/* <LinkTree/> */}
       
     </div>
   )

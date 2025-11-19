@@ -6,15 +6,20 @@ import { CiMail } from "react-icons/ci";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { TbBell } from "react-icons/tb";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 const [aboutOpen, setAboutOpen] = useState(false);
 const [institutionOpen, setInstitutionOpen] = useState(false);
 const [collegeOpen, setCollegeOpen] = useState(false);
+ const pathname = usePathname();
+  const isHome = pathname === "/";
 
   return (
-    <div className="container-fluid p-0">
+    <div  className={`container-fluid p-0 ${
+        !isHome ? " nav_container" : ""
+      }`}>
       <div className="navbar_section my-40">
         <div className="nav1 d-flex align-items-center">
           <div className="navbar_logo">
@@ -170,106 +175,6 @@ const [collegeOpen, setCollegeOpen] = useState(false);
           </div>
         </div>
       </div>
-
-      {/* <div className={`mobile_sidebar ${sidebarOpen ? "open" : ""}`}>
-        <div className="sidebar_header d-flex justify-content-between align-items-center">
-          <Link href="/">
-            <img src="/assets/logo.png" alt="" className="w-100" />
-          </Link>
-          <button
-            className="border-0 bg-transparent"
-            onClick={() => setSidebarOpen(false)}
-          >
-            <X size={26} />
-          </button>
-        </div>
-
-        <div className="sidebar_links">
-          <div className="dropdown d-flex align-items-center">
-            <button className="dropbtn  nav_drop_btn">
-              About <IoIosArrowDown className="ms-1" />
-            </button>
-            <div className="dropdown-content">
-              <Link href="/about-us" className="border-top-0 bg-transparent">
-                About Us
-              </Link>
-              <Link
-                href="/leadership"
-                className="border-bottom-0 bg-transparent"
-              >
-                Our Leadership
-              </Link>
-            </div>
-          </div>
-
-          
-          <div className="dropdown d-flex align-items-center">
-            <button className="dropbtn nav_drop_btn">
-              Our Institutions <IoIosArrowDown className="ms-1" />
-            </button>
-            <div className="dropdown-content">
-              <div className="dropdown-item ">
-                <div className="drop_btns d-flex justify-content-between align-items-center border-top-0 bg-transparent">
-                  <span>Colleges</span>
-                  <IoIosArrowForward />
-                </div>
-                <div className="dropdown-submenu">
-                  <Link
-                    href="/colleges/bb-physiotherapy-college"
-                    className="border-top-0 bg-transparent"
-                  >
-                    Pooja Nursing College
-                  </Link>
-                  <Link href="/colleges/bb-ayurvedic-college">
-                    Bhagyashri Bhondekar Ayurvedic College
-                  </Link>
-                  <Link href="/colleges/bb-physiotherapy-college">
-                    Bhagyashri Bhondekar Physiotherapy
-                  </Link>
-                  <Link href="/colleges/bb-medical-college">
-                    Bhagyashri Bhondekar Medical College
-                  </Link>
-                  <Link href="#">PES Multispeciality Hospital</Link>
-                  <Link href="#">Manjubai BA/MA College, Bhawani</Link>
-                  <Link href="#">
-                    Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School
-                  </Link>
-                  <Link href="#">Universal BA College</Link>
-                  <Link href="#">Sant Gadge Baba Madhyamik Shala</Link>
-                  <Link href="#">Swayamsevi Janmubai Madhyamik Shala</Link>
-                  <Link href="#" className="border-bottom-0 bg-transparent">
-                    Swayamsevi Janmubai Bhondekar College
-                  </Link>
-                </div>
-              </div>
-              <Link href="#">Hospitals</Link>
-
-              <Link href="#">Research & Training Center</Link>
-              <Link
-                href="/specialStudents"
-                className="border-bottom-0 bg-transparent"
-              >
-                Specially Abled Support
-              </Link>
-            </div>
-          </div>
-          <Link href="">Admissions</Link>
-          <Link href="/infrastructure-and-facilities">
-            Infrastructure & Facilities
-          </Link>
-          <Link href="">Career</Link>
-          <Link href="/gallery">Gallery</Link>
-          <Link href="/news">News & Events</Link>
-          <Link href="/contact-us">Contact Us</Link>
-        </div>
-      </div> */}
-
-      {/* {sidebarOpen && (
-        <div
-          className="sidebar_overlay"
-          onClick={() => setSidebarOpen(false)}
-        ></div>
-      )} */}
 
       {/* MOBILE SIDEBAR */}
       <div className={`mobile_sidebar ${sidebarOpen ? "open" : ""}`}>

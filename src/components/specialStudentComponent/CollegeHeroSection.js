@@ -14,7 +14,7 @@ const CollegeHeroSection = ({
 }) => {
   return (
     <div className="container-fluid mb-100 p-0 ">
-    <div className="my-40 border_right">
+    <div className="my-40 ">
       <div
         className=" hero_section p-80 subHeroBanner d-flex bg-cover bg-center bg-no-repeat position-relative overflow-hidden"
         style={{

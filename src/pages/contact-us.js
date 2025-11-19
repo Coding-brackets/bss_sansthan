@@ -15,7 +15,7 @@ const ContactUs = () => {
       <SubPagesHero
         heading="Contact Us"
         description="An overview of our institution and its branches dedicated to education, healthcare, and service"
-        bgImage="/assets/heroBackground.png"
+        bgImage="/assets/heroImages/hero-background.webp"
       />
       <ContactForm />
       <ContactMap />

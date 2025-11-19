@@ -1,15 +1,6 @@
 "use client";
-import {
-  Facebook,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  PhoneCall,
-  Twitter,
-} from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+
+import { ArrowUpRight } from "lucide-react";
 import React, { useState } from "react";
 
 const ContactForm = () => {
@@ -67,59 +58,21 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-section mb-5">
+    <div className="contact-section mb-80">
       <div className="container">
-        <div className="row g-4 align-items-center">
-          {/* Left Info Card */}
-          <div className="col-lg-6 position-relative">
-            <div className="contact-info-card">
-              <div className="mb-5">
-                <h5 className="fw-bold">Contact Information</h5>
-                <p className="small mb-4">Say something to start a live chat!</p>
-
-                <p className="mb-3 d-flex align-items-center">
-                  <PhoneCall className="me-3" /> +91 97668 08377
-                </p>
-                <p className="mb-3 d-flex align-items-center">
-                  <Mail className="me-3" /> demo@gmail.com
-                </p>
-                <p className="mb-0 d-flex align-items-start">
-                  <MapPin className="me-3 mt-1" />
-                  Sahkar Nagar, Bank Colony, Kisan Chowk, Bhandara, Maharashtra 441904
-                </p>
-              </div>
-
-              <div className="mt-4 d-flex gap-3">
-              <Link href="" className="contact_icon"><Twitter size={18} /></Link>
-              <Link href="" className="contact_icon"><Instagram size={18} /></Link>
-              <Link href="" className="contact_icon"><Facebook size={18} /></Link>
-              
-                
-              </div>
-            </div>
-
-            <div className="mt-3 contactUsImg ">
-              <Image
-                src="/assets/contactUs.png"
-                alt="Support Agent"
-                width={300}
-                height={390}
-                className=""
-              />
-            </div>
-          </div>
+        <div className="row g-4 align-items-center justify-content-center">
 
           {/* Right Form */}
-          <div className="col-lg-6">
-            <div className="p-5 rounded-4 shadow-sm bg-white form-wrapper">
-              <h4 className=" mb-2 text-center">Have Questions?</h4>
+          <div className="col-lg-8">
+            <div className=" bg-white form-wrapper text-center">
+              {/* <h4 className=" mb-2 text-center">Have Questions?</h4>
               <p className="text-muted small mb-5">
                 Fill the contact form and write us a message!
-              </p>
+              </p> */}
 
               <form onSubmit={handleSubmit}>
-                <div className="row mb-5">
-                  <div className="col-md-6">
+                <div className="row mb-3">
+                  <div className="col-md-6 contact-input-sec">
                     <label className="form-label small">First Name</label>
                     <input
                       type="text"
@@ -127,10 +80,10 @@ const ContactForm = () => {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
-                      placeholder="John"
+                     
                     />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 contact-input-sec">
                     <label className="form-label small">Last Name</label>
                     <input
                       type="text"
@@ -138,13 +91,12 @@ const ContactForm = () => {
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleChange}
-                      placeholder="Doe"
                     />
                   </div>
                 </div>
 
-                <div className="row mb-5">
-                  <div className="col-md-6">
+                <div className="row mb-3">
+                  <div className="col-md-6 contact-input-sec">
                     <label className="form-label small">Email</label>
                     <input
                       type="email"
@@ -152,10 +104,9 @@ const ContactForm = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="you@example.com"
                     />
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-6 contact-input-sec">
                     <label className="form-label small">Phone Number</label>
                     <input
                       type="tel"
@@ -163,13 +114,12 @@ const ContactForm = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+1 012 3456 789"
                     />
                   </div>
                 </div>
 
                 {/* Select Subject */}
-                <div className="mb-5">
+                {/* <div className="mb-5">
                   <label className="form-label small">Select Subject?</label>
                   <div className="d-flex flex-wrap gap-3 mt-1">
                     {[
@@ -198,15 +148,14 @@ const ContactForm = () => {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
                
-                <div className="mb-5">
+                <div className="col-12 contact-input-sec mb-4">
                   <label className="form-label small">Message</label>
                   <textarea
                     className="form-control contactForm-input"
                     name="message"
                     rows="3"
-                    placeholder="Write your message.."
                     value={formData.message}
                     onChange={handleChange}
                   ></textarea>
@@ -216,7 +165,7 @@ const ContactForm = () => {
                   type="submit"
                   className=" contactForm_btn"
                 >
-                  Send Message
+                  Send Message <ArrowUpRight className="ms-2" />
                 </a>
               </form>
             </div>

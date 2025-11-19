@@ -47,7 +47,7 @@ const PoojaNursing = () => {
         url="/"
       />
 
-      <CarouselGallery 
+      {/* <CarouselGallery 
         images={[
           {
             img: "/assets/CollegesImg/pooja-nursing-college/college-fest-image1.jpg",
@@ -75,7 +75,7 @@ const PoojaNursing = () => {
             desc: "BCSS emerged out in Bhandara under the eminent leadership...",
           },
         ]}
-      />
+      /> */}
 
       <QuoteComponent
         para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."

@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="hero_section my-40">
         <div className="row heroBanner position-relative">
           {/* Left content */}
-          <div className="col-md-6 p-0 d-flex align-items-center border-right-mobile">
+          <div className="col-md-6 p-0 d-flex align-items-center">
             <div className="hero_content cust_p-80">
 
               <h1>
@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
 
           {/* Right image */}
-          <div className="col-md-6 border_right heroImgSec d-flex align-items-stretch">
+          <div className="col-md-6  heroImgSec d-flex align-items-stretch">
               <img src="/assets/ourLeaders.jpg" alt="Hero" className="subHero_image w-100" />
           </div>
         </div>

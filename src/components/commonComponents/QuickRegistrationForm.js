@@ -14,13 +14,42 @@ const QuickRegistrationForm = ({ collegeName, onClose }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+
+    // console.log("Form submitted:", formData);
+    try {
+      const res = await fetch("", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        alert("Form Submitted Successfully!");
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          college: collegeName || "",
+          course: "",
+        });
+      } else {
+        alert("Something went wrong: " + data.message);
+      }
+    } catch (error) {
+      console.error("Error Submitting form:", error);
+    }
     alert(`Registered successfully for ${formData.college}`);
+
     onClose();
   };
-
+b  
   return (
     <div
       className="modal fade show d-block"
@@ -34,7 +63,9 @@ const QuickRegistrationForm = ({ collegeName, onClose }) => {
             <IoMdClose size={22} />
           </button>
 
-          <h5 className="popup-heading  mb-4 text-center">Quick Registration</h5>
+          <h5 className="popup-heading  mb-4 text-center">
+            Quick Registration
+          </h5>
 
           <form onSubmit={handleSubmit}>
             <div className="mb-3 text-start">

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
@@ -29,7 +30,7 @@ const SocityInsideComponent = ({image, heading, para, institute}) => {
               <p className="mb-4">{para}</p>
               <div className=" button_banner">
               {institute.buttonItem.map((buttonItem, index) => (
-                <button key={index} className="d-flex text-start justify-content-between">{buttonItem} <span className="d-flex "><MdArrowOutward /></span></button>
+                <a href={buttonItem.url} key={index} className="d-flex text-start justify-content-between">{buttonItem.label}<span className="d-flex "><MdArrowOutward /></span></a>
               ))}
 
               </div>

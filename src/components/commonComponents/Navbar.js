@@ -10,16 +10,14 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-const [aboutOpen, setAboutOpen] = useState(false);
-const [institutionOpen, setInstitutionOpen] = useState(false);
-const [collegeOpen, setCollegeOpen] = useState(false);
- const pathname = usePathname();
+  const [aboutOpen, setAboutOpen] = useState(false);
+  const [institutionOpen, setInstitutionOpen] = useState(false);
+  const [collegeOpen, setCollegeOpen] = useState(false);
+  const pathname = usePathname();
   const isHome = pathname === "/";
 
   return (
-    <div  className={`container-fluid p-0 ${
-        !isHome ? " nav_container" : ""
-      }`}>
+    <div className={`container-fluid p-0 ${!isHome ? " nav_container" : ""}`}>
       <div className="navbar_section my-40">
         <div className="nav1 d-flex align-items-center">
           <div className="navbar_logo">
@@ -27,7 +25,11 @@ const [collegeOpen, setCollegeOpen] = useState(false);
               <img src="/assets/logo.png" alt="" className="w-100 mainLogo" />
             </Link>
             <Link href="/">
-              <img src="/assets/mobile-view-logo.png" alt="" className=" d-none mobile-logo"/>
+              <img
+                src="/assets/mobile-view-logo.png"
+                alt=""
+                className=" d-none mobile-logo"
+              />
             </Link>
           </div>
         </div>
@@ -37,12 +39,12 @@ const [collegeOpen, setCollegeOpen] = useState(false);
           </div>
           <div className="news_scroll_sec">
             <div className="scroll-content">
-              <Link href="#">
-                🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM
-                & ANM programs
-              </Link>{" "}
-              |<Link href="#">🧬 Workshop on Healthcare Innovations</Link> |
-              <Link href="#">🏥 Campus Placements 2025 – Register Today!</Link>
+              <Link href="#" className="tag">🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs</Link>
+              | <Link href="#" className="tag">🧬 Workshop on Healthcare Innovations</Link> |
+              <Link href="#" className="tag">🏥 Campus Placements 2025 – Register Today!</Link>
+               <Link href="#" className="tag">🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs</Link>
+              | <Link href="#" className="tag">🧬 Workshop on Healthcare Innovations</Link> |
+              <Link href="#" className="tag">🏥 Campus Placements 2025 – Register Today!</Link>
             </div>
           </div>
           <div
@@ -194,7 +196,7 @@ const [collegeOpen, setCollegeOpen] = useState(false);
         <div className="sidebar_scroll">
           {/* ABOUT DROPDOWN */}
           <div className="sidebar_item">
-            <button 
+            <button
               className="sidebar_btn p-0"
               onClick={() => setAboutOpen(!aboutOpen)}
             >
@@ -204,8 +206,12 @@ const [collegeOpen, setCollegeOpen] = useState(false);
 
             {aboutOpen && (
               <div className="sidebar_dropdown">
-                <Link href="/about-us"  onClick={() => setSidebarOpen(false)}>About Us</Link>
-                <Link href="/leadership"  onClick={() => setSidebarOpen(false)}>Our Leadership</Link>
+                <Link href="/about-us" onClick={() => setSidebarOpen(false)}>
+                  About Us
+                </Link>
+                <Link href="/leadership" onClick={() => setSidebarOpen(false)}>
+                  Our Leadership
+                </Link>
               </div>
             )}
           </div>
@@ -237,7 +243,10 @@ const [collegeOpen, setCollegeOpen] = useState(false);
 
                 {collegeOpen && (
                   <div className="sidebar_sub_dropdown">
-                    <Link href="/colleges/pooja-Nursing-college"  onClick={() => setSidebarOpen(false)}>
+                    <Link
+                      href="/colleges/pooja-Nursing-college"
+                      onClick={() => setSidebarOpen(false)}
+                    >
                       Pooja Nursing College
                     </Link>
                     <Link href="/colleges/bb-ayurvedic-college">
@@ -250,25 +259,25 @@ const [collegeOpen, setCollegeOpen] = useState(false);
                       Bhagyashri Bhondekar Medical College
                     </Link>
                     <Link href="/colleges/pes-multispeciality-hospital">
-                     PES Multispeciality Hospital
+                      PES Multispeciality Hospital
                     </Link>
                     <Link href="/colleges/manju-bai-college">
-                     Manjubai BA/MA College, Bhawani
+                      Manjubai BA/MA College, Bhawani
                     </Link>
                     <Link href="/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school">
                       Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School
                     </Link>
                     <Link href="/colleges/universal-ba-college">
-                     Universal BA College
+                      Universal BA College
                     </Link>
                     <Link href="/colleges/sant-gadge-baba-madhyamik-shala">
-                     Sant Gadge Baba Madhyamik Shala
+                      Sant Gadge Baba Madhyamik Shala
                     </Link>
                     <Link href="/colleges/swayamsevi-janmubai-madhyamik-shala">
-                    Swayamsevi Janmubai Madhyamik Shala
+                      Swayamsevi Janmubai Madhyamik Shala
                     </Link>
                     <Link href="/colleges/swayamsevi-janmubai-bhondekar-college">
-                     Swayamsevi Janmubai Bhondekar College
+                      Swayamsevi Janmubai Bhondekar College
                     </Link>
                   </div>
                 )}

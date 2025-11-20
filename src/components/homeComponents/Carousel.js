@@ -13,7 +13,7 @@ const slides = [
     title: "Thriving Beyond Campus",
     subtitle: "Life at BSS",
     description:
-      "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities.",
+      "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const slides = [
     title: "Workshops & Seminars",
     subtitle: "Learn Beyond Classroom",
     description:
-      "Regular workshops and seminars prepare students with real-world insights, teamwork, and professional exposure.",
+      "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const slides = [
     title: "Rhythm 2025",
     subtitle: "Annual Cultural Fest",
     description:
-      "Our annual event 'Rhythm' celebrates creativity, unity and leadership through art, dance, and music.",
+      "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const slides = [
     title: "Inspiring Leaders",
     subtitle: "Growth Beyond Books",
     description:
-      "BSS students develop leadership skills through active participation in cultural and academic committees.",
+      "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const slides = [
     title: "Skill Enhancement",
     subtitle: "Workshops & Labs",
     description:
-      "Hands-on workshops and advanced laboratories equip our students with real-world technical expertise.",
+      "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
   },
 ];
 
@@ -93,7 +93,7 @@ const Carousel = () => {
     <div className="carouse_banner">
       <div
         className="carousel-wrapper mb-100"
-        style={{ margin: "40px 0px 120px 0px" }}
+        style={{ margin: "80px 0px 120px 0px" }}
       >
         <div className="carousel-container" style={{ position: "relative" }}>
           <Slider ref={sliderRef} {...settings} className="carousel__slider">

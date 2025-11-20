@@ -18,10 +18,10 @@ const socity = () => {
         para="BSS, Bhandara, since 2002, is a trusted name in medical and nursing education."
        institute={{
     buttonItem: [
-      "Pooja Nursing College",
-      "Bhagyashri Bhondekar Ayurvedic College",
-      "Bhagyashri Bhondekar Physiotherapy",
-      "Bhagyashri Bhondekar Medical College"
+       { label: "Pooja Nursing College", url: "/colleges/pooja-Nursing-college" },
+       { label: "Bhagyashri Bhondekar Ayurvedic College", url: "/colleges/bb-ayurvedic-college" },
+       { label: "Bhagyashri Bhondekar Physiotherapy", url: "/colleges/bb-physiotherapy-college" },
+       { label: "Bhagyashri Bhondekar Medical College", url: "/colleges/bb-medical-college" }
     ]
   }}
     />
@@ -32,7 +32,8 @@ const socity = () => {
         para="BSS, Bhandara, since 2002, is a trusted name in medical and nursing education."
        institute={{
     buttonItem: [
-      "PES Multispeciality Hospital, Sirsi"
+      { label: "PES Multispeciality Hospital, Sirsi", url: "/colleges/pes-multispeciality-hospital" }
+      
     ]
   }}
     />
@@ -43,12 +44,12 @@ const socity = () => {
         para="BSS, Bhandara, since 2002, is a trusted name in medical and nursing education."
        institute={{
     buttonItem: [
-      "Manjubai BA/MA College, Bhawani",
-      "Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School, Kegawade",
-      "Universal BA College, Nerla",
-      "Sant Gadge Baba Madhyamik Shala, Nerla",
-      "Swayamsevi Janmubai Madhyamik Shala, Umri, Navegaon Bandh",
-      "Swayamsevi Janmubai Bhondekar College, Umri, Navegaon Bandh"
+      { label: "Manjubai BA/MA College, Bhawani", url: "/colleges/manju-bai-college" },
+      { label: "Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School, Kegawade", url: "/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school" },
+      { label: "Universal BA College, Nerla", url: "/colleges/universal-ba-college" },
+      { label: "Sant Gadge Baba Madhyamik Shala, Nerla", url: "/colleges/sant-gadge-baba-madhyamik-shala" },
+      { label: "Swayamsevi Janmubai Madhyamik Shala, Umri, Navegaon Bandh", url: "/colleges/swayamsevi-janmubai-madhyamik-shala" },
+      { label: "Swayamsevi Janmubai Bhondekar College, Umri, Navegaon Bandh", url: "/colleges/swayamsevi-janmubai-bhondekar-college" },
     ]
   }}
     />

@@ -3,7 +3,8 @@ import React from "react";
 
 const QuoteComponent = ({ image1, altText, para, image2, quote }) => {
   return (
-    <div className="mb-0">
+    <div className="mb-0 position-relative">
+    <div className="section-background"></div>
       <div className="container">
         <div className="row">
           <div className="col-lg-6 position-relative">
@@ -15,7 +16,7 @@ const QuoteComponent = ({ image1, altText, para, image2, quote }) => {
               alt={altText}
               width={1000}
               height={1000}
-              className="w-75 h-auto ayurved_img"
+              className="w-75 h-auto ayurved_img d-flex m-auto"
             />
             
           </div>

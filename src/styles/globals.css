@@ -130,6 +130,15 @@ a {
   transform: rotate(45deg);
 }
 
+.section-background{
+      position: absolute;
+    width: 100%;
+    height: 156%;
+    background: linear-gradient(182.73deg, rgba(218, 223, 230, 0) 4.31%, #DADFE6 51.71%);
+    z-index: -1;
+    top: 0px;
+}
+
 .navbar_section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -3050,11 +3059,11 @@ hr {
   color: #0a2656;
 }
 
-.ayurved_img {
+/* .ayurved_img {
   position: absolute;
   bottom: 0px;
   z-index: -1;
-}
+} */
 
 .Seprator {
   border: 1px solid #f73a00;
@@ -3716,9 +3725,9 @@ vertical-align: middle;
     width: 400px;
     height: 400px;
   }
-  .ayurved_img {
+  /* .ayurved_img {
     position: relative;
-  }
+  } */
 
   .collegeContent_banner {
     width: 80%;

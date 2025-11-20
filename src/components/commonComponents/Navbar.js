@@ -249,55 +249,55 @@ const Navbar = () => {
                     >
                       Pooja Nursing College
                     </Link>
-                    <Link href="/colleges/bb-ayurvedic-college">
+                    <Link href="/colleges/bb-ayurvedic-college" onClick={() => setSidebarOpen(false)}>
                       Bhagyashri Bhondekar Ayurvedic College
                     </Link>
-                    <Link href="/colleges/bb-physiotherapy-college">
+                    <Link href="/colleges/bb-physiotherapy-college" onClick={() => setSidebarOpen(false)}>
                       Bhagyashri Bhondekar Physiotherapy
                     </Link>
-                    <Link href="/colleges/bb-medical-college">
+                    <Link href="/colleges/bb-medical-college" onClick={() => setSidebarOpen(false)}>
                       Bhagyashri Bhondekar Medical College
                     </Link>
-                    <Link href="/colleges/pes-multispeciality-hospital">
+                    <Link href="/colleges/pes-multispeciality-hospital" onClick={() => setSidebarOpen(false)}>
                       PES Multispeciality Hospital
                     </Link>
                     <Link href="/colleges/manju-bai-college">
                       Manjubai BA/MA College, Bhawani
                     </Link>
-                    <Link href="/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school">
+                    <Link href="/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school" onClick={() => setSidebarOpen(false)}>
                       Dr. Babasaheb Ambedkar Mosa Mahavidyalaya School
                     </Link>
-                    <Link href="/colleges/universal-ba-college">
+                    <Link href="/colleges/universal-ba-college" onClick={() => setSidebarOpen(false)}>
                       Universal BA College
                     </Link>
-                    <Link href="/colleges/sant-gadge-baba-madhyamik-shala">
+                    <Link href="/colleges/sant-gadge-baba-madhyamik-shala" onClick={() => setSidebarOpen(false)}>
                       Sant Gadge Baba Madhyamik Shala
                     </Link>
-                    <Link href="/colleges/swayamsevi-janmubai-madhyamik-shala">
+                    <Link href="/colleges/swayamsevi-janmubai-madhyamik-shala" onClick={() => setSidebarOpen(false)}>
                       Swayamsevi Janmubai Madhyamik Shala
                     </Link>
-                    <Link href="/colleges/swayamsevi-janmubai-bhondekar-college">
+                    <Link href="/colleges/swayamsevi-janmubai-bhondekar-college" onClick={() => setSidebarOpen(false)}>
                       Swayamsevi Janmubai Bhondekar College
                     </Link>
                   </div>
                 )}
 
-                <Link href="#">Hospitals</Link>
-                <Link href="#">Research & Training Center</Link>
-                <Link href="/specialStudents">Specially Abled Support</Link>
+                <Link href="#" onClick={() => setSidebarOpen(false)}>Hospitals</Link>
+                <Link href="#" onClick={() => setSidebarOpen(false)}>Research & Training Center</Link>
+                <Link href="/specialStudents" onClick={() => setSidebarOpen(false)}>Specially Abled Support</Link>
               </div>
             )}
           </div>
 
           {/* REST OF LINKS */}
-          <Link href="/admission">Admissions</Link>
-          <Link href="/infrastructure-and-facilities">
+          <Link href="/admission" onClick={() => setSidebarOpen(false)}>Admissions</Link>
+          <Link href="/infrastructure-and-facilities" onClick={() => setSidebarOpen(false)}>
             Infrastructure & Facilities
           </Link>
-          <Link href="/career">Career</Link>
-          <Link href="/gallery">Gallery</Link>
-          <Link href="/news">News & Events</Link>
-          <Link href="/contact-us">Contact Us</Link>
+          <Link href="/career" onClick={() => setSidebarOpen(false)}>Career</Link>
+          <Link href="/gallery" onClick={() => setSidebarOpen(false)}>Gallery</Link>
+          <Link href="/news" onClick={() => setSidebarOpen(false)}>News & Events</Link>
+          <Link href="/contact-us" onClick={() => setSidebarOpen(false)}>Contact Us</Link>
         </div>
       </div>
 

@@ -60,7 +60,7 @@ const PoojaNursing = () => {
       <QuoteComponent
         para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
         quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
-        image1="/assets/CollegesImg/ayurved.jpg"
+        image1="/assets/CollegesImg/ayurved.png"
         image2="/assets/CollegesImg/pooja-nursing-college/female-doctor-with-stethoscope-her-neck 1.png"
       />
     </div>

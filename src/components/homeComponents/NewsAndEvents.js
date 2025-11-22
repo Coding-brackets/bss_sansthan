@@ -65,11 +65,13 @@ const NewsAndEvents = () => {
           loop={true}
           pagination={{ clickable: true }}
           keyboard={{ enabled: true }}
-          mousewheel={{ thresholdDelta: 70 }}
+          // mousewheel={{ thresholdDelta: 70 }}
           breakpoints={{
             460: { slidesPerView: 1 },
-            768: { slidesPerView: 1.5 },
+            768: { slidesPerView: 2 },
             1024: { slidesPerView: 2.5 },
+            1201: { slidesPerView: 2 },
+            1401: { slidesPerView: 2.5 },
             1600: { slidesPerView: 2.5 },
           }}
           coverflowEffect={{

@@ -39,12 +39,12 @@ const Navbar = () => {
           </div>
           <div className="news_scroll_sec">
             <div className="scroll-content">
-              <Link href="#" className="tag">🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs</Link>
+              <Link href="#" className="tag">🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs</Link> 
               | <Link href="#" className="tag">🧬 Workshop on Healthcare Innovations</Link> |
-              <Link href="#" className="tag">🏥 Campus Placements 2025 – Register Today!</Link>
-               <Link href="#" className="tag">🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs</Link>
+              <Link href="#" className="tag">🏥 Campus Placements 2025 – Register Today!</Link> |
+               <Link href="#" className="tag">🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs</Link> 
               | <Link href="#" className="tag">🧬 Workshop on Healthcare Innovations</Link> |
-              <Link href="#" className="tag">🏥 Campus Placements 2025 – Register Today!</Link>
+              <Link href="#" className="tag">🏥 Campus Placements 2025 – Register Today!</Link> |
             </div>
           </div>
           <div

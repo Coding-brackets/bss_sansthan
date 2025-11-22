@@ -20,18 +20,24 @@ const Testimonials = () => {
       name: "James Parker",
       role: "Operations Lead at TechEdge",
       img: "/assets/user.png",
+      socialLink: "/",
+      socialIcon: <FaXTwitter />
     },
     {
       text: "BSS provides an amazing balance of academics and hands-on learning. The exposure I received during my clinical sessions gave me the confidence to step into my career with ease.",
       name: "James Parker",
       role: "Operations Lead at TechEdge",
       img: "/assets/user.png",
+      socialLink: "/",
+      socialIcon: <FaXTwitter />
     },
     {
       text: "BSS provides an amazing balance of academics and hands-on learning. The exposure I received during my clinical sessions gave me the confidence to step into my career with ease.",
       name: "James Parker",
       role: "Operations Lead at TechEdge",
       img: "/assets/user.png",
+      socialLink: "/",
+      socialIcon: <FaXTwitter />
     },
   ];
 
@@ -70,7 +76,7 @@ const settings = {
   return (
     <section className="testimonial_section pb-100">
       <div className="container text-center">
-        <h2 className="section_heading mb-5">What do our students say?</h2>
+        <h2 className="section_heading ">What do our students say?</h2>
         <div className="testimonial_slider_wrapper">
           <Slider {...settings} className="single-item">
             {testimonials.map((item, i) => (

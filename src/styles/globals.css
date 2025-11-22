@@ -117,6 +117,10 @@ a {
   margin-bottom: 40px;
 }
 
+/* .slick-list{
+  padding: 0px 22px !important;
+} */
+
 .bell_icon {
   background: #ff7765;
   padding: 9px 20px 13px 15px;
@@ -185,7 +189,7 @@ a {
 .nav2 a {
   color: #000;
   text-decoration: none;
-  margin-right: 60px;
+  margin-right: 0px;
 }
 
 .nav2 .scroll-content {
@@ -206,6 +210,9 @@ a {
   100% {
     transform: translateX(-50%);
   }
+}
+.nav2 .scroll-content:hover {
+  animation-play-state: paused;
 }
 
 .navbar_Social_links {
@@ -1279,9 +1286,16 @@ a {
 /* --- Slick overrides --- */
 .slick-list {
   overflow: visible !important;
-  /* allow half slides */
 }
 
+.testimonial_slider_wrapper .slick-list{
+  overflow: hidden !important;
+}
+
+.slick-slide {
+    height: auto;
+    margin: 40px 0px;
+}
 .slick-track {
   display: flex;
   align-items: center;

@@ -49,7 +49,7 @@ const QuickRegistrationForm = ({ collegeName, onClose }) => {
 
     onClose();
   };
-b  
+
   return (
     <div
       className="modal fade show d-block"

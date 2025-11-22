@@ -82,6 +82,7 @@ const NewsAndEvents = () => {
           // mousewheel={{ thresholdDelta: 70 }}
           breakpoints={{
             460: { slidesPerView: 1 },
+            500: { slidesPerView: 1.5 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 2.5 },
             1201: { slidesPerView: 2 },
@@ -111,7 +112,10 @@ const NewsAndEvents = () => {
                 index === 0 ? "first-slide" : "normal-slide"
               }`}
             >
+            <div className="news-slide-image-wrapper">
               <img src={slide.img} alt={slide.title} className="slide-news-img"/>
+              <div className="slide-gradient"></div>
+              </div>
 
               <div className="slide-content">
               <h5>NEWS - {slide.date}</h5>

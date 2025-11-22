@@ -22,7 +22,7 @@ const NewsAndEvents = () => {
       date: "JAN 30, 2023",
       title: "Cultural Performances",
       desc: "(27–29 January 2025)",
-      img: "/assets/news1.png",
+      img: "/assets/news1.jpg",
       type: "NEWS",
     },
     {
@@ -31,7 +31,7 @@ const NewsAndEvents = () => {
       date: "JAN 21, 2023",
       title: "Prize Distribution & Closing Ceremony",
       desc: "(27–29 January 2025)",
-      img: "/assets/news1.png",
+      img: "/assets/news2.jpg",
       type: "NEWS",
     },
     {
@@ -40,7 +40,7 @@ const NewsAndEvents = () => {
       date: "JAN 15, 2023",
       title: "Rhythm Annual Gathering & Magazine Launch",
       desc: "(27–29 January 2025)",
-      img: "/assets/news1.png",
+      img: "/assets/news3.jpg",
       type: "EVENTS",
     },
   ];
@@ -59,19 +59,19 @@ const NewsAndEvents = () => {
 
         <CustomButton text="View All" />
         <button className="news_prev">
-            <LeftArrow />
-          </button>
-          <button className="news_next">
-            <RightArrow />
-          </button>
+          <LeftArrow />
+        </button>
+        <button className="news_next">
+          <RightArrow />
+        </button>
       </div>
 
       <div className="swiper-container">
         <Swiper
-            navigation={{
-              nextEl: ".news_next",
-              prevEl: ".news_prev",
-            }}
+          navigation={{
+            nextEl: ".news_next",
+            prevEl: ".news_prev",
+          }}
           effect="coverflow"
           grabCursor={true}
           spaceBetween={0}
@@ -95,8 +95,14 @@ const NewsAndEvents = () => {
             modifier: 1,
             slideShadows: false,
           }}
-          modules={[Pagination, EffectCoverflow, Keyboard, Mousewheel, Navigation]}
-          className="swiper"
+          modules={[
+            Pagination,
+            EffectCoverflow,
+            Keyboard,
+            Mousewheel,
+            Navigation,
+          ]}
+          className="swiper news-slide"
         >
           {slides.map((slide, index) => (
             <SwiperSlide
@@ -105,13 +111,13 @@ const NewsAndEvents = () => {
                 index === 0 ? "first-slide" : "normal-slide"
               }`}
             >
-              <img src={slide.img} alt={slide.title} />
+              <img src={slide.img} alt={slide.title} className="slide-news-img"/>
 
-              {/* <p>{slide.date}</p>
               <div className="slide-content">
+              <h5>NEWS - {slide.date}</h5>
                 {slide.title && <h3>{slide.title}</h3>}
                 {slide.desc && <p>{slide.desc}</p>}
-              </div> */}
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

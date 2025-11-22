@@ -625,18 +625,18 @@ a {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   font-size: 18px;
   cursor: pointer;
   transition: all 0.3s ease;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
-  border: 1px solid #0a26564d;
-  color: #000;
+    z-index: 99;
+    border: 1px solid #0a26564d;
+    padding: 14px;
+    display: flex;
 }
 
 .slick-prev:before,
@@ -644,10 +644,10 @@ a {
   display: none;
 }
 
-.custom-arrow:hover {
+/* .custom-arrow:hover {
   background: #000;
   color: var(--white);
-}
+} */
 
 .slick-prev {
   left: 0px;
@@ -1867,7 +1867,7 @@ a {
   color: var(--white);
 }
 
-.custom-arrow {
+/* .custom-arrow {
   background: var(--white);
   border-radius: 50%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -1883,7 +1883,7 @@ a {
 .custom-arrow:hover {
   background: #000;
   color: var(--white);
-}
+} */
 
 .news-slider {
   overflow-x: hidden;
@@ -1917,6 +1917,24 @@ a {
   z-index: 2;
 }
 
+.news-slide .swiper-wrapper{
+      gap: 23px;
+    height: 500px;
+}
+
+.normal-slide, .first-slide{
+      height: 100%;
+    gap: 21px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.slide-news-img{
+      height: 100%;
+    width: fit-content;
+    object-fit: contain;
+}
+
 .swiper-slide {
   width: 9rem;
   height: 24rem;
@@ -1930,12 +1948,34 @@ a {
 }
 
 .slide-content {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -10px);
-  width: 90%;
-  color: var(--white);
+    width: 65%;
+    color: var(--white);
+    position: absolute;
+    bottom: 0;
+    left: 38%;
+    transform: translate(-50%, 0px);
+}
+
+.slide-content h5{
+font-weight: 500;
+font-size: 14px;
+text-transform: uppercase;
+color: #FFFFFFB2;
+}
+
+.slide-content h3{
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: #fff;
+}
+
+.slide-content p{
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+color: #FF7765;
+
 }
 
 .swiper-slide-active {
@@ -4167,8 +4207,8 @@ hr {
 
   .slide-content {
     flex-direction: column;
-    bottom: -50px;
-    width: 90%;
+    bottom: 8px;
+    width: 75%;
   }
 
   .slide-content p {
@@ -4647,6 +4687,7 @@ hr {
 
   .statsBanner {
     border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
   }
 
   .empowering_conBanner ul li {
@@ -4985,8 +5026,11 @@ hr {
 @media (max-width: 425px) {
   .news_prev,
   .news_next {
-    bottom: 240px;
+    bottom: 280px;
   }
+      .news_prev {
+        left: 68%;
+    }
   .mobile-logo {
     display: block !important;
     width: 65%;

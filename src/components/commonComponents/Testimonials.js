@@ -2,6 +2,8 @@ import Slider from "react-slick";
 
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
+import LeftArrow from "../svg/leftArrow";
+import RightArrow from "../svg/rightArrow";
 
 
 const Testimonials = () => {
@@ -114,9 +116,10 @@ const settings = {
 const SampleNextArrow = (props) => {
   const { onClick } = props;
   return (
-    <div className="slick-arrow slick-next custom-arrow" onClick={onClick}>
-      ❯
-    </div>
+    <button className="slick-arrow slick-next custom-arrow" onClick={onClick}>
+            <RightArrow />
+
+    </button>
   );
 };
 
@@ -124,7 +127,8 @@ const SamplePrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div className="slick-arrow slick-prev custom-arrow" onClick={onClick}>
-      ❮
+            <LeftArrow />
+
     </div>
   );
 };

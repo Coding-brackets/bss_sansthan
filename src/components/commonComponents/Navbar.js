@@ -39,12 +39,12 @@ const Navbar = () => {
           </div>
           <div className="news_scroll_sec">
             <div className="scroll-content">
-              <Link href="#" className="tag">🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs</Link> 
-              | <Link href="#" className="tag">🧬 Workshop on Healthcare Innovations</Link> |
-              <Link href="#" className="tag">🏥 Campus Placements 2025 – Register Today!</Link> |
-               <Link href="#" className="tag">🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs</Link> 
-              | <Link href="#" className="tag">🧬 Workshop on Healthcare Innovations</Link> |
-              <Link href="#" className="tag">🏥 Campus Placements 2025 – Register Today!</Link> |
+              <Link href="/news" className="tag">🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs</Link> 
+              | <Link href="/news" className="tag">🧬 Workshop on Healthcare Innovations</Link> |
+              <Link href="/news" className="tag">🏥 Campus Placements 2025 – Register Today!</Link> |
+               <Link href="/news" className="tag">🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs</Link> 
+              | <Link href="/news" className="tag">🧬 Workshop on Healthcare Innovations</Link> |
+              <Link href="/news" className="tag">🏥 Campus Placements 2025 – Register Today!</Link> |
             </div>
           </div>
           <div
@@ -56,13 +56,13 @@ const Navbar = () => {
         </div>
         <div className="nav3 navbar_Social_links">
           <div className="">
-            <Link href="">
+            <Link href="tel:+917823006818">
               <IoCallOutline className="nav-icon" />
             </Link>
-            <Link href="">
+            <Link href="mailto:info@bhondekarss.com">
               <CiMail className="nav-icon" />
             </Link>
-            <Link href="">
+            <Link href="https://www.google.com/maps/place/Sahakar+Nagar,+Bhandara,+Maharashtra+441904/@21.1785209,79.6458981,17z/data=!3m1!4b1!4m10!1m2!2m1!1sSahakar+Nagar+Bank+Colony+Krishna+Chowk+Bhandara+Maharashtra+441904!3m6!1s0x3a2b3f4b4767432f:0xeaa0649fc3d8c1c1!8m2!3d21.1783908!4d79.6509123!15sCkNTYWhha2FyIE5hZ2FyIEJhbmsgQ29sb255IEtyaXNobmEgQ2hvd2sgQmhhbmRhcmEgTWFoYXJhc2h0cmEgNDQxOTA0kgEMc3VibG9jYWxpdHkxqgGnARABKjkiNWJhbmsgY29sb255IGtyaXNobmEgY2hvd2sgYmhhbmRhcmEgbWFoYXJhc2h0cmEgNDQxOTA0KAAyHxABIhu8oET4J_1OR4-2RIFCFnYWP909dTym97eW4-syRxACIkNzYWhha2FyIG5hZ2FyIGJhbmsgY29sb255IGtyaXNobmEgY2hvd2sgYmhhbmRhcmEgbWFoYXJhc2h0cmEgNDQxOTA04AEA!16s%2Fg%2F11h1qxnz9?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
               <IoLocationOutline className="nav-icon" />
             </Link>
           </div>
@@ -114,15 +114,15 @@ const Navbar = () => {
                       <Link href="/colleges/bb-ayurvedic-college">
                         Bhagyashri Bhondekar Ayurvedic College
                       </Link>
-                      <Link href="/colleges/bb-physiotherapy-college">
+                      {/* <Link href="/colleges/bb-physiotherapy-college">
                         Bhagyashri Bhondekar Physiotherapy
-                      </Link>
+                      </Link> */}
                       <Link href="/colleges/bb-medical-college">
                         Bhagyashri Bhondekar Medical College
                       </Link>
-                      <Link href="/colleges/pes-multispeciality-hospital">
+                      {/* <Link href="/colleges/pes-multispeciality-hospital">
                         PES Multispeciality Hospital
-                      </Link>
+                      </Link> */}
                       <Link href="/colleges/manju-bai-college">
                         Manjubai BA/MA College, Bhawani
                       </Link>
@@ -146,9 +146,24 @@ const Navbar = () => {
                       </Link>
                     </div>
                   </div>
-                  <Link href="#">Hospitals</Link>
+                  <div className="dropdown-item ">
+                    <div className="drop_btns d-flex justify-content-between align-items-center border-top-0 bg-transparent">
+                      <span>Hospitals</span>
+                      <IoIosArrowForward />
+                    </div>
+                    <div className="dropdown-submenu">
+                      <Link href="/colleges/bb-physiotherapy-college">
+                        Bhagyashri Bhondekar Physiotherapy
+                      </Link>
+                      <Link href="/colleges/pes-multispeciality-hospital">
+                        PES Multispeciality Hospital
+                      </Link>
+                      
+                    </div>
+                  </div>
+                  {/* <Link href="#">Hospitals</Link> */}
 
-                  <Link href="#">Research & Training Center</Link>
+                  {/* <Link href="#">Research & Training Center</Link> */}
                   <Link
                     href="/specialStudents"
                     className="border-bottom-0 bg-transparent"

@@ -2,6 +2,7 @@ import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const EmpoweringCon = ({ heading, description, disabledImg }) => {
@@ -12,12 +13,12 @@ const EmpoweringCon = ({ heading, description, disabledImg }) => {
         <div className="empowering_conBanner">
           <h2 className="section_heading mb-3">{heading}</h2>
           <p className="section_para mb-4">{description}</p>
-          <Link href="" className="custom_btn">Learn More <ArrowUpRight  className="ms-2"/></Link>
+          <Link href="/specialStudents" className="custom_btn">Learn More <ArrowUpRight  className="ms-2"/></Link>
         </div>
 
         <div className="disable_img_sec">
           <div className="img-wrapper">
-            <img src={disabledImg} alt="Disabled Students" />
+            <Image src={disabledImg} alt="Disabled Students" width={1000} height={1000}/>
           </div>
 
           <div className="floating-card">

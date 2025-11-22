@@ -35,24 +35,26 @@ const HeroSection = () => {
               </Motion.p>
 
               <div className="hero_btns">
-                {/* ✅ Animated Button */}
-                <Motion.button
+                {/* ✅ Animated a */}
+                <Motion.a
+                href="/about-us"
                   className="hero_btn"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   About Us <MdArrowOutward className="ms-2 angle_arrow" />
-                </Motion.button>
+                </Motion.a>
 
-                <Motion.button
+                <Motion.a
+                href="/leadership"
                   className="hero_btn_outline"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   Get Connected
-                </Motion.button>
+                </Motion.a>
               </div>
             </div>
           </div>

@@ -1,24 +1,33 @@
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 const Colleges = () => {
+
+
   const colleges = [
     {
-      img: "/assets/college1.png",
+      img: "/assets/college3.jpg",
       tag: "B.A | M.A.",
       title: "Dr. Babasaheb Ambedkar Residential MR School, Bhandara",
       desc: "Manjulabai Bhondekar College was established by Late Founder of Bhondekar Sanskrutik, Krida Va Samajik Shikshan Sanstha, Bhandara.",
+      url: "/colleges/manju-bai-college"
     },
     {
       img: "/assets/college2.png",
       tag: "B.Sc | M.Sc | R.G.N.M | R.A.N.M.",
       title: "Late Jamunabai Bhondekar Residential MR School, Umri",
       desc: "The trust initiated nursing education with ANM (Auxiliary Nursing Midwifery) in 2009 and added GNM (General Nursing Midwifery) in 2011.",
+      url: "/colleges/swayamsevi-janmubai-madhyamik-shala"
+
     },
     {
-      img: "/assets/college3.jpg",
+      img: "/assets/college1.png",
       tag: "B.A | M.A.",
       title: "Sant Gadgebaba Residential MR School, Nerla",
       desc: "Dr. Babasaheb Ambedkar Niwasi Matimand School, Bhandara was established in 2002 by Late Shri. Bhojraiji Bhondekar, Founder.",
+      url: "/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school"
     },
   ];
 
@@ -34,10 +43,11 @@ const Colleges = () => {
 
         <div className="college_grid">
           {colleges.map((college, index) => (
-            <div className="college_card" key={index}>
+            <div className="college_card" key={index} >
+            <Link href={college.url}>
             <div className="p-3">
               <div className="college_img_wrapper">
-                <img src={college.img} alt={college.title} />
+                <Image src={college.img} alt={college.title} width={1000} height={1000}/>
                 <span className="college_tag">{college.tag}</span>
               </div>
               </div>
@@ -45,6 +55,7 @@ const Colleges = () => {
                 <h4>{college.title}</h4>
                 <p className="mb-0">{college.desc}</p>
               </div>
+              </Link>
             </div>
           ))}
         </div>

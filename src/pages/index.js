@@ -28,6 +28,7 @@ export default function Home() {
           "Best for nursing courses",
         ]}
         buttonText="Learn More"
+        url="/about-us"
       />
 
       <AboutHighlights/>
@@ -43,7 +44,9 @@ export default function Home() {
           "BSS envisions creating compassionate healthcare professionals devoted to human welfare, striving for global excellence in medical and nursing education, research, and service while bringing positive societal change through education, healthcare, and employment opportunities for underprivileged communities."
         ]}
         
-        buttonText="Learn More"/>
+        buttonText="Learn More"
+          url="/about-us"
+        />
         <NewsAndEvents/>
         <EmpoweringCon
         heading="Empowering Disabled Students"

@@ -13,6 +13,7 @@ import "swiper/css/effect-coverflow";
 import CustomButton from "../uiComponent/CustomButtom";
 import LeftArrow from "../svg/leftArrow";
 import RightArrow from "../svg/rightArrow";
+import Image from "next/image";
 
 const NewsAndEvents = () => {
   const slides = [
@@ -57,7 +58,7 @@ const NewsAndEvents = () => {
           guests.
         </p>
 
-        <CustomButton text="View All" />
+        <CustomButton text="View All" url="/news"/>
         <button className="news_prev">
           <LeftArrow />
         </button>
@@ -113,7 +114,7 @@ const NewsAndEvents = () => {
               }`}
             >
             <div className="news-slide-image-wrapper">
-              <img src={slide.img} alt={slide.title} className="slide-news-img"/>
+              <Image src={slide.img} alt={slide.title} className="slide-news-img" width={1000} height={1000}/>
               <div className="slide-gradient"></div>
               </div>
 

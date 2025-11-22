@@ -3,6 +3,8 @@ import React from "react";
 import { ArrowUpRight, BadgeCheck } from "lucide-react";
 import { LiaUserTieSolid } from "react-icons/lia";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { useRouter } from "next/navigation"; 
 
 const Success = ({ heading = "Success Stories" }) => {
   // Reusable animation variants
@@ -15,6 +17,16 @@ const Success = ({ heading = "Success Stories" }) => {
     hidden: { opacity: 0, scale: 0.9 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
   };
+
+    const router = useRouter();
+  
+    const handleClick = () => {
+      if (url.startsWith("http")) {
+        window.open("/infrastructure-and-facilities", "_blank");
+      } else {
+        router.push("/infrastructure-and-facilities"); // ✅ Next.js navigation
+      }
+    };
 
   return (
     <motion.div
@@ -51,10 +63,12 @@ const Success = ({ heading = "Success Stories" }) => {
             className="div2 overflow-hidden"
             variants={fadeScale}
           >
-            <img
+            <Image
               src="/assets/doctor2.png"
-              alt="Success"
+              alt="dr. examining patient"
               className="img-fluid w-100 h-100 object-fit-cover"
+              width={1000}
+              height={1000}
             />
           </motion.div>
 
@@ -76,6 +90,8 @@ const Success = ({ heading = "Success Stories" }) => {
           <motion.div
             className="div4 d-flex flex-column justify-content-end position-relative"
             variants={fadeUp}
+            onClick={handleClick}
+            style={{ cursor: "pointer" }}
           >
             <ArrowUpRight
               size={24}

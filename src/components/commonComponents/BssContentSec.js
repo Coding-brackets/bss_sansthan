@@ -1,6 +1,7 @@
 import { FaCheck } from "react-icons/fa";
 import { motion } from "framer-motion";
 import CustomButtom from "../uiComponent/CustomButtom";
+import Image from "next/image";
 
 const BssContentSec = ({
   image,
@@ -48,10 +49,12 @@ const BssContentSec = ({
             viewport={{ once: true }}
             variants={imageReveal}
           >
-            <img
+            <Image
               src={image}
               alt={heading}
-              className="w-100 legacy_img rounded-3"
+              className="w-100 legacy_img rounded-3 h-100"
+              width={1000}
+              height={1000}
             />
           </motion.div>
 

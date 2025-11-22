@@ -63,7 +63,7 @@ const Carousel = () => {
         setSlidesToShow(
           1
         ); // tablets / small screens (you can set 2 if desired)
-      else if (w < 959) setSlidesToShow(1);
+      else if (w < 991) setSlidesToShow(1);
       else if (w < 1024) setSlidesToShow(3); // small desktops / large tablets
       else setSlidesToShow(3); // desktop
     };

@@ -5,11 +5,14 @@ import {
   EffectCoverflow,
   Keyboard,
   Mousewheel,
+  Navigation,
 } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import CustomButton from "../uiComponent/CustomButtom";
+import LeftArrow from "../svg/leftArrow";
+import RightArrow from "../svg/rightArrow";
 
 const NewsAndEvents = () => {
   const slides = [
@@ -53,11 +56,22 @@ const NewsAndEvents = () => {
           sports, cultural programs and inspirational sessions by eminent
           guests.
         </p>
+
         <CustomButton text="View All" />
+        <button className="news_prev">
+            <LeftArrow />
+          </button>
+          <button className="news_next">
+            <RightArrow />
+          </button>
       </div>
 
       <div className="swiper-container">
         <Swiper
+            navigation={{
+              nextEl: ".news_next",
+              prevEl: ".news_prev",
+            }}
           effect="coverflow"
           grabCursor={true}
           spaceBetween={0}
@@ -81,7 +95,7 @@ const NewsAndEvents = () => {
             modifier: 1,
             slideShadows: false,
           }}
-          modules={[Pagination, EffectCoverflow, Keyboard, Mousewheel]}
+          modules={[Pagination, EffectCoverflow, Keyboard, Mousewheel, Navigation]}
           className="swiper"
         >
           {slides.map((slide, index) => (

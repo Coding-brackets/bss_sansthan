@@ -10,6 +10,7 @@ import { Instagram, InstagramIcon } from 'lucide-react';
 import Link from 'next/link';
 import { BsTwitterX } from 'react-icons/bs';
 import { PiYoutubeLogo } from 'react-icons/pi';
+import Image from 'next/image';
 
 
 const Footer = () => {
@@ -38,7 +39,7 @@ const Footer = () => {
             </div>
             <div className="footer_top2 d-flex justify-content-center">
               <div className="footer_logo_sec">
-                <img src="/assets/footerlogo.png" alt="" />
+                <Image src="/assets/footerlogo.png" alt="" className='w-100 h-100' width={1000} height={1000} />
               </div>
             </div>
             <div className="footer_top3 d-flex justify-content-end align-items-center">
@@ -134,10 +135,10 @@ const Footer = () => {
                 <IoIosArrowForward className="footer_icon me-2" />
                 Contact Us
               </Link>
-              <Link href="/sitemap">
+              {/* <Link href="/sitemap">
                 <IoIosArrowForward className="footer_icon me-2" />
                 Sitemap
-              </Link>
+              </Link> */}
               
             </div>
           </div>

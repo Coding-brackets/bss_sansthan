@@ -22,13 +22,15 @@ const Navbar = () => {
         <div className="nav1 d-flex align-items-center">
           <div className="navbar_logo">
             <Link href="/">
-              <img src="/assets/logo.png" alt="" className="w-100 mainLogo" />
+              <Image src="/assets/logo.png" alt="" className="w-100 mainLogo h-100" width={1000} height={1000}/>
             </Link>
             <Link href="/">
-              <img
+              <Image
                 src="/assets/mobile-view-logo.png"
                 alt=""
-                className=" d-none mobile-logo"
+                className=" d-none mobile-logo h-100"
+                width={1000}
+                height={1000}
               />
             </Link>
           </div>
@@ -197,7 +199,7 @@ const Navbar = () => {
       <div className={`mobile_sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar_header d-flex justify-content-between align-items-center">
           <Link href="/">
-            <img src="/assets/logo.png" alt="" className="w-100" />
+            <Image src="/assets/logo.png" alt="" className="w-100" width={1000} height={1000}/>
           </Link>
           <button
             className="border-0 bg-transparent"

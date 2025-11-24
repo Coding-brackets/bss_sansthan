@@ -76,7 +76,7 @@ const HeroSection = () => {
           </div>
 
           {/* RIGHT SIDE IMAGE */}
-          <div className="col-lg-6 border_right position-relative pe-0 hero-img-wrapper pt-5">
+          <div className="col-lg-6 border_right position-relative pe-0 hero-img-wrapper mt-5">
             <Image
               src="/assets/heroimg.png"
               alt="Hero"

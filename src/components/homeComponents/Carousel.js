@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import LeftArrow from "../svg/leftArrow";
 import RightArrow from "../svg/rightArrow";
+import Image from "next/image";
 
 const slides = [
   {
@@ -114,10 +115,13 @@ const Carousel = () => {
                       style={{ display: "grid", gap: "14px" }}
                     >
                       <div className="carousel_image_sec">
-                        <img
+                        <Image
                           src={slide.image}
                           alt={slide.title}
                           style={{ width: "100%", borderRadius: 8 }}
+                          width={1000}
+                          height={1000}
+                          className=""
                         />
                       </div>
 

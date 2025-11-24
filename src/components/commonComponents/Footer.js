@@ -1,17 +1,15 @@
-
-import React from 'react'
+import React from "react";
 import { FaFacebookF, FaPhoneAlt, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
-import SideLinks from './SideLinks';
-import { Instagram, InstagramIcon } from 'lucide-react';
-import Link from 'next/link';
-import { BsTwitterX } from 'react-icons/bs';
-import { PiYoutubeLogo } from 'react-icons/pi';
-import Image from 'next/image';
-
+import SideLinks from "./SideLinks";
+import { Instagram, InstagramIcon } from "lucide-react";
+import Link from "next/link";
+import { BsTwitterX } from "react-icons/bs";
+import { PiYoutubeLogo } from "react-icons/pi";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -22,8 +20,8 @@ const Footer = () => {
           <div className="footer_top_banner">
             <div className="footer_top1">
               <div className="footer_social_links">
-              {/* <SocialIcon/> */}
-                <Link href="" className='insta border-0'>
+                {/* <SocialIcon/> */}
+                <Link href="" className="insta border-0">
                   <Instagram strokeWidth={1.75} />
                 </Link>
                 <Link href="" className="facebook border-0">
@@ -33,13 +31,29 @@ const Footer = () => {
                   <BsTwitterX />
                 </Link>
                 <Link href="" className="youtube border-0">
-                  <PiYoutubeLogo  />
+                  <PiYoutubeLogo />
                 </Link>
               </div>
             </div>
             <div className="footer_top2 d-flex justify-content-center">
               <div className="footer_logo_sec">
-                <Image src="/assets/footerlogo.png" alt="" className='w-100 h-100' width={1000} height={1000} />
+                <Link href="/">
+                  <Image
+                    src="/assets/footer-mainlogo.png"
+                    alt="logo"
+                    width={1000}
+                    height={1000}
+                    className="footer-mainLogo w-100 h-100"
+                  />
+                </Link>
+
+                <Image
+                  src="/assets/footerlogo.png"
+                  alt=""
+                  className="w-100 h-100 footer-logo"
+                  width={1000}
+                  height={1000}
+                />
               </div>
             </div>
             <div className="footer_top3 d-flex justify-content-end align-items-center">
@@ -139,7 +153,6 @@ const Footer = () => {
                 <IoIosArrowForward className="footer_icon me-2" />
                 Sitemap
               </Link> */}
-              
             </div>
           </div>
         </div>
@@ -152,7 +165,7 @@ const Footer = () => {
             © Bhondekar Education Society 2025 All Rights Reserved
           </p>
           <div className="footer_policies footer_quick_links">
-          <Link href="/sitemap" className="me-3">
+            <Link href="/sitemap" className="me-3">
               Sitemap
             </Link>
             <Link href="#" className="me-3">
@@ -169,7 +182,7 @@ const Footer = () => {
         <FaWhatsapp />
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

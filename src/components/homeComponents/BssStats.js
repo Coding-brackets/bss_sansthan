@@ -15,7 +15,9 @@ const BssStats = () => {
         <div className="statsBanner">
           {stats.map((item, index) => (
             <div key={index} className="bss-stat-card d-flex">
-              <div className="bss-icon-box"><img src={item.iconimg} alt=""/></div>
+              <div className="bss-icon-box">
+              <img src={item.iconimg} alt={item.label}/>
+              </div>
               <div className="ms-2">
                 <h2 className="bss-number mb-0">{item.number}</h2>
               <p className="bss-label">{item.label}</p>

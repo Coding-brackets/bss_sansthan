@@ -44,6 +44,33 @@ const NewsAndEvents = () => {
       img: "/assets/news3.jpg",
       type: "EVENTS",
     },
+    {
+      id: 4,
+      className: "swiper-slide",
+      date: "JAN 30, 2023",
+      title: "Cultural Performances",
+      desc: "(27–29 January 2025)",
+      img: "/assets/news1.jpg",
+      type: "NEWS",
+    },
+    {
+      id: 5,
+      className: "swiper-slide",
+      date: "JAN 21, 2023",
+      title: "Prize Distribution & Closing Ceremony",
+      desc: "(27–29 January 2025)",
+      img: "/assets/news2.jpg",
+      type: "NEWS",
+    },
+    {
+      id: 6,
+      className: "swiper-slide",
+      date: "JAN 15, 2023",
+      title: "Rhythm Annual Gathering & Magazine Launch",
+      desc: "(27–29 January 2025)",
+      img: "/assets/news3.jpg",
+      type: "EVENTS",
+    },
   ];
 
   return (

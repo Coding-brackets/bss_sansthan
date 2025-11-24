@@ -1,31 +1,49 @@
+"use client";
 import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { motion as Motion } from "framer-motion";
- // ✅ import Framer Motion
+import Image from "next/image";
 
 const HeroSection = () => {
-  // Optional animation variants (for reuse)
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  // Stagger container for left content
+  const container = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  // Animation for child elements
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   return (
     <div className="container-fluid mb-100">
       <div className="hero_section my-40">
         <div className="row heroBanner position-relative">
-          {/* Left content */}
-          <div className="col-md-6 p-0 border-right-mobile">
-            <div className="hero_content cust_p-80">
-              <Motion.h4 variants={itemVariants} initial="hidden" animate="visible">
+
+          {/* LEFT SIDE CONTENT */}
+          <div className="col-lg-6 p-0 border-right-mobile">
+            <Motion.div
+              className="hero_content cust_p-80"
+              variants={container}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <Motion.h4 variants={fadeUp}>
                 Committed to Excellence in nursing courses
               </Motion.h4>
 
-              <Motion.h1 variants={itemVariants} initial="hidden" animate="visible">
+              <Motion.h1 variants={fadeUp}>
                 Welcome to Bhondekar Shikshan Sanstha! <span>(BSS)</span>
               </Motion.h1>
 
-              <Motion.p variants={itemVariants} initial="hidden" animate="visible">
+              <Motion.p variants={fadeUp}>
                 Bhondekar Shiksha Sansthan, Bhandara, since 2002, is a trusted name in
                 medical and nursing education. The institution is dedicated to nurturing
                 skilled healthcare professionals through world-class teaching, modern
@@ -34,38 +52,41 @@ const HeroSection = () => {
                 through knowledge and innovation.
               </Motion.p>
 
-              <div className="hero_btns">
-                {/* ✅ Animated a */}
+              {/* BUTTONS */}
+              <Motion.div variants={fadeUp} className="hero_btns d-flex gap-3">
                 <Motion.a
-                href="/about-us"
+                  href="/about-us"
                   className="hero_btn"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 300 }}
                 >
                   About Us <MdArrowOutward className="ms-2 angle_arrow" />
                 </Motion.a>
 
                 <Motion.a
-                href="/leadership"
+                  href="/leadership"
                   className="hero_btn_outline"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 300 }}
                 >
                   Get Connected
                 </Motion.a>
-              </div>
-            </div>
+              </Motion.div>
+            </Motion.div>
           </div>
 
-          {/* Right image */}
-          <div className="col-md-6 border_right">
-            <div   
+          {/* RIGHT SIDE IMAGE */}
+          <div className="col-lg-6 border_right position-relative">
+            <Motion.div
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
             >
-              <img src="/assets/heroimg.png" alt="Hero" className="hero_image" />
-            </div>
+              <Image src="/assets/heroimg.png" alt="Hero" className="hero_image h-auto w-auto" width={1000} height={1000}/>
+            </Motion.div>
           </div>
+
         </div>
       </div>
     </div>

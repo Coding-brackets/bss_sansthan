@@ -6,6 +6,7 @@ import { PiYoutubeLogo } from "react-icons/pi";
 import Popup from "./Popup";
 import QuickRegistrationForm from "./QuickRegistrationForm";
 import { IoMdClose, IoMdShareAlt } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const SideLinks = () => {
   const [showCollegeModal, setShowCollegeModal] = useState(false);
@@ -35,19 +36,19 @@ const SideLinks = () => {
       <div className="side_links">
         <Link href="/" className="side_social_link facebook">
           <span>Facebook</span>
-          <FaFacebookF className="ms-3"/>
+          <FaFacebookF className="ms-3" />
         </Link>
         <Link href="/" className="side_social_link twitter">
           <span>Twitter</span>
-          <BsTwitterX className="ms-3"/>
+          <BsTwitterX className="ms-3" />
         </Link>
         <Link href="/" className="side_social_link insta">
           <span>Instagram</span>
-          <FaInstagram className="ms-3"/>
+          <FaInstagram className="ms-3" />
         </Link>
         <Link href="/" className="side_social_link youtube">
           <span>Youtube</span>
-          <PiYoutubeLogo  className="ms-3"/>
+          <PiYoutubeLogo className="ms-3" />
         </Link>
       </div>
 
@@ -55,12 +56,8 @@ const SideLinks = () => {
 
       {/* Floating Social Button */}
       <div className="mobile-floating-container d-md-none">
-
         {/* Toggle Button */}
-        <button
-          className="floating-btn"
-          onClick={() => setOpen(!open)}
-        >
+        <button className="floating-btn" onClick={() => setOpen(!open)}>
           {open ? <IoMdClose size={28} /> : <IoMdShareAlt size={28} />}
         </button>
 
@@ -87,14 +84,27 @@ const SideLinks = () => {
       </div>
 
       <div className="register_btn">
-        <button onClick={handleShowCollegeModal} className="register_btn">
+        <motion.button
+          onClick={handleShowCollegeModal}
+          className="register_btn"
+          whileHover={{
+            scale: 1.08,
+            rotate: 2,
+            boxShadow: "0px 8px 20px rgba(0,0,0,0.25)",
+          }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 260, damping: 20 }}
+        >
           Register Now
-        </button>
+        </motion.button>
       </div>
 
       {/* College selection popup */}
       {showCollegeModal && (
-        <Popup onClose={handleCollegeClose} onQuickRegister={handleQuickRegister} />
+        <Popup
+          onClose={handleCollegeClose}
+          onQuickRegister={handleQuickRegister}
+        />
       )}
 
       {/* Registration form popup */}

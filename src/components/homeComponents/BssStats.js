@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import { FaGraduationCap, FaUserTie, FaBuilding, FaUser } from "react-icons/fa";
+import { motion as Motion } from "framer-motion";
 
 const BssStats = () => {
   const stats = [
@@ -9,23 +10,44 @@ const BssStats = () => {
     { iconimg: "/assets/icons/User.png", number: "6510", label: "Students" },
   ];
 
+  // Wrapper animation (stagger children)
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  // Each item fade-up animation
+  const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
   return (
     <section className="bss-stats-section mb-100">
       <div className="container">
-        <div className="statsBanner">
+        <Motion.div
+          className="statsBanner"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {stats.map((item, index) => (
-            <div key={index} className="bss-stat-card d-flex">
+            <Motion.div key={index} className="bss-stat-card d-flex" variants={fadeUp}>
               <div className="bss-icon-box">
-              <img src={item.iconimg} alt={item.label}/>
+                <img src={item.iconimg} alt={item.label} />
               </div>
               <div className="ms-2">
                 <h2 className="bss-number mb-0">{item.number}</h2>
-              <p className="bss-label">{item.label}</p>
+                <p className="bss-label">{item.label}</p>
               </div>
-              
-            </div>
+            </Motion.div>
           ))}
-        </div>
+        </Motion.div>
       </div>
     </section>
   );

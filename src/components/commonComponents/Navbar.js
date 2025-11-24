@@ -197,7 +197,7 @@ useEffect(() => {
           <Link href="mailto:info@bhondekarss.com">
             <CiMail className="nav-icon" />
           </Link>
-          <Link href="#" target="_blank">
+          <Link href="https://www.google.com/maps/place/Pes+Hospital+And+Research+Centre/@21.179175,79.651557,18z/data=!4m6!3m5!1s0x3a2b3fb962971951:0xa648f8fc0e407ba6!8m2!3d21.179711!4d79.6516375!16s%2Fg%2F11j1k0gzpr?hl=en&entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
             <IoLocationOutline className="nav-icon" />
           </Link>
         </div>

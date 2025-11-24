@@ -25,7 +25,6 @@ const HeroSection = () => {
     <div className="container-fluid mb-100">
       <div className="hero_section my-40">
         <div className="row heroBanner position-relative">
-
           {/* LEFT SIDE CONTENT */}
           <div className="col-lg-6 p-0 border-right-mobile">
             <Motion.div
@@ -44,12 +43,13 @@ const HeroSection = () => {
               </Motion.h1>
 
               <Motion.p variants={fadeUp}>
-                Bhondekar Shiksha Sansthan, Bhandara, since 2002, is a trusted name in
-                medical and nursing education. The institution is dedicated to nurturing
-                skilled healthcare professionals through world-class teaching, modern
-                facilities, advancement of medical research and learning. With a strong
-                foundation of ethics and excellence, we inspire students to serve humanity
-                through knowledge and innovation.
+                Bhondekar Shiksha Sansthan, Bhandara, since 2002, is a trusted
+                name in medical and nursing education. The institution is
+                dedicated to nurturing skilled healthcare professionals through
+                world-class teaching, modern facilities, advancement of medical
+                research and learning. With a strong foundation of ethics and
+                excellence, we inspire students to serve humanity through
+                knowledge and innovation.
               </Motion.p>
 
               {/* BUTTONS */}
@@ -76,17 +76,16 @@ const HeroSection = () => {
           </div>
 
           {/* RIGHT SIDE IMAGE */}
-          <div className="col-lg-6 border_right position-relative">
-            <Motion.div
-              initial={{ opacity: 0, x: 80 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <Image src="/assets/heroimg.png" alt="Hero" className="hero_image h-auto w-auto" width={1000} height={1000}/>
-            </Motion.div>
+          <div className="col-lg-6 border_right position-relative pe-0 hero-img-wrapper pt-5">
+            <Image
+              src="/assets/heroimg.png"
+              alt="Hero"
+              className="hero_image"
+              fill
+              priority
+              style={{ objectFit: "contain", objectPosition: "right bottom" }}
+            />
           </div>
-
         </div>
       </div>
     </div>

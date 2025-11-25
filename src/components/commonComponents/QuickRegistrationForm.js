@@ -75,7 +75,7 @@ const QuickRegistrationForm = ({ collegeName, onClose }) => {
                 name="fullname"
                 className="form-control border-0 border-bottom rounded-0 form_input"
                 placeholder="John Doe"
-                value={formData.name}
+                value={formData.fullname}
                 onChange={handleChange}
                 required
               />

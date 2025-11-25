@@ -1,7 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import Slider from "react-slick";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Colleges = () => {
   const colleges = [
@@ -49,43 +56,34 @@ const Colleges = () => {
     },
   ];
 
-  /** Slick Carousel Settings */
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 600,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    responsive: [
-      {
-        breakpoint: 992, // tablets
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 767, // mobile
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
 
   return (
     <section className="mb-100">
       <div className="container">
-        <h2 className="section_heading text-center mb-3">Colleges Under Society</h2>
+        <h2 className="section_heading text-center mb-3">
+          Colleges Under Society
+        </h2>
 
         <p className="section_para text-center mb-5 m-auto college_para">
-          We operate a network of institutions offering comprehensive programs in medical, nursing, and allied health sciences. Each college upholds the values of integrity, excellence, and social commitment, preparing students for success in the healthcare sector.
+          We operate a network of institutions offering comprehensive programs...
         </p>
 
-        <Slider {...settings} className="college-slider">
+        <Swiper
+          modules={[ Pagination]}
+          spaceBetween={24}
+          slidesPerView={3}
+          // navigation
+          pagination={{ clickable: true }}
+          // autoplay={{ delay: 5000 }}
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 },
+          }}
+          className="college-slider py-5"
+        >
           {colleges.map((college, index) => (
-            <div key={index}>
+            <SwiperSlide key={index}>
               <div className="college_card">
                 <Link href={college.url}>
                   <div className="p-3">
@@ -95,6 +93,7 @@ const Colleges = () => {
                         alt={college.title}
                         width={1000}
                         height={1000}
+                        
                       />
                       <span className="college_tag">{college.tag}</span>
                     </div>
@@ -105,9 +104,9 @@ const Colleges = () => {
                   </div>
                 </Link>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </Slider>
+        </Swiper>
       </div>
     </section>
   );

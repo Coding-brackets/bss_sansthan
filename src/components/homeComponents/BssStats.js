@@ -1,13 +1,17 @@
 "use client";
 import React from "react";
 import { motion as Motion } from "framer-motion";
+import Building from "../svg/Building";
+import Graduation from "../svg/graduationCap";
+import Certificate from "../svg/Certificate";
+import User from "../svg/User";
 
 const BssStats = () => {
   const stats = [
-    { iconimg: "/assets/icons/Graduation-Cap.png", number: "97%", label: "Graduates" },
-    { iconimg: "/assets/icons/Certificate.png", number: "30X", label: "Certified Teachers" },
-    { iconimg: "/assets/icons/Building.png", number: "8", label: "Student Campuses" },
-    { iconimg: "/assets/icons/User.png", number: "6510", label: "Students" },
+    { iconimg: <Graduation/>, number: "97%", label: "Graduates"  },
+    { iconimg: <Certificate/>, number: "30X", label: "Certified Teachers" },
+    { iconimg: <Building/>, number: "8", label: "Student Campuses" },
+    { iconimg: <User/>, number: "6510", label: "Students" },
   ];
 
   // Wrapper animation (stagger children)
@@ -39,7 +43,8 @@ const BssStats = () => {
           {stats.map((item, index) => (
             <Motion.div key={index} className="bss-stat-card d-flex" variants={fadeUp}>
               <div className="bss-icon-box">
-                <img src={item.iconimg} alt={item.label} />
+                {/* <img src={item.iconimg} alt={item.label} /> */}
+                <span>{item.iconimg}</span>
               </div>
               <div className="ms-2">
                 <h2 className="bss-number mb-0">{item.number}</h2>

@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
@@ -6,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import LeftArrow from "../svg/leftArrow";
 import RightArrow from "../svg/rightArrow";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const slides = [
   {
@@ -60,10 +60,8 @@ const Carousel = () => {
     const compute = () => {
       const w = window.innerWidth;
       if (w < 480) setSlidesToShow(1); // small phones
-      else if (w < 768)
-        setSlidesToShow(
-          1
-        ); // tablets / small screens (you can set 2 if desired)
+      else if (w < 768) setSlidesToShow(1);
+      // tablets / small screens (you can set 2 if desired)
       else if (w < 991) setSlidesToShow(1);
       else if (w < 1024) setSlidesToShow(3); // small desktops / large tablets
       else setSlidesToShow(3); // desktop
@@ -115,19 +113,33 @@ const Carousel = () => {
                       style={{ display: "grid", gap: "14px" }}
                     >
                       <div className="carousel_image_sec">
-                        <Image
-                          src={slide.image}
-                          alt={slide.title}
-                          style={{ width: "100%", borderRadius: 8 }}
-                          width={1000}
-                          height={1000}
-                          className=""
-                        />
+                        <motion.div
+                          initial={{ scale: 0.9, opacity: 0.6 }}
+                          animate={
+                            isActive
+                              ? { scale: 1, opacity: 1 }
+                              : { scale: 0.9, opacity: 0.6 }
+                          }
+                          transition={{ duration: 0.5 }}
+                        >
+                          <Image
+                            src={slide.image}
+                            alt={slide.title}
+                            style={{ width: "100%", borderRadius: 8 }}
+                            width={1000}
+                            height={1000}
+                            className=""
+                          />
+                        </motion.div>
                       </div>
 
-                      {/* Show content only on active (center) slide */}
                       {isActive && (
-                        <div className="carousel-content d-flex">
+                        <motion.div
+                          className="carousel-content d-flex"
+                          initial={{ opacity: 0, y: 30 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.6 }}
+                        >
                           <div className="carousel-content-banner">
                             <h3>
                               {slide.title} <br />
@@ -145,7 +157,6 @@ const Carousel = () => {
                                 <button
                                   onClick={prevSlide}
                                   className="control-btn"
-                                  aria-label="Previous"
                                 >
                                   <LeftArrow size={20} />
                                 </button>
@@ -153,7 +164,6 @@ const Carousel = () => {
                                 <button
                                   onClick={nextSlide}
                                   className="control-btn"
-                                  aria-label="Next"
                                 >
                                   <RightArrow size={20} />
                                 </button>
@@ -164,8 +174,11 @@ const Carousel = () => {
                               </div>
                             </div>
                           </div>
-                          <p style={{ marginTop: 8 }} className="text-white">{slide.description}</p>
-                        </div>
+
+                          <p style={{ marginTop: 8 }} className="text-white">
+                            {slide.description}
+                          </p>
+                        </motion.div>
                       )}
                     </div>
                   </div>

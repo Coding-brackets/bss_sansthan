@@ -76,7 +76,13 @@ const HeroSection = () => {
           </div>
 
           {/* RIGHT SIDE IMAGE */}
-          <div className="col-lg-6 border_right position-relative pe-0 hero-img-wrapper mt-5">
+          <Motion.div
+            initial={{ opacity: 0, x: 80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="col-lg-6 border_right position-relative pe-0 hero-img-wrapper mt-5"
+          >
             <Image
               src="/assets/heroimg.png"
               alt="Hero"
@@ -85,7 +91,7 @@ const HeroSection = () => {
               priority
               style={{ objectFit: "contain", objectPosition: "right bottom" }}
             />
-          </div>
+          </Motion.div>
         </div>
       </div>
     </div>

@@ -3,11 +3,11 @@ import { ArrowUpRight } from "lucide-react";
 
 function AdmissionForm() {
   const [formData, setFormData] = useState({
-    fullName: "",
+    fullname: "",
     email: "",
-    contactNumber: "",
+    phone: "",
     course: "",
-    institute: "",
+    college: "",
     documents: null,
     message: "",
   });
@@ -45,11 +45,11 @@ function AdmissionForm() {
       if (res.ok) {
         // ✅ reset same way
         setFormData({
-          fullName: "",
+          fullname: "",
           email: "",
-          contactNumber: "",
+          phone: "",
           course: "",
-          institute: "",
+          college: "",
           documents: null,
           message: "",
         });
@@ -85,10 +85,10 @@ function AdmissionForm() {
                   <div className="col-sm-6">
                     <input
                       type="text"
-                      name="fullName"
+                      name="fullname"
                       className="form-control resume-input"
                       placeholder="Full Name"
-                      value={formData.fullName}
+                      value={formData.fullname}
                       onChange={handleChange}
                       required
                     />
@@ -109,10 +109,10 @@ function AdmissionForm() {
                   <div className="col-sm-6">
                     <input
                       type="text"
-                      name="contactNumber"
+                      name="phone"
                       className="form-control resume-input"
                       placeholder="Contact Number"
-                      value={formData.contactNumber}
+                      value={formData.phone}
                       onChange={handleChange}
                       required
                     />
@@ -134,9 +134,9 @@ function AdmissionForm() {
 
                   <div className="col-sm-6">
                     <select
-                      name="institute"
+                      name="college"
                       className="form-select resume-input"
-                      value={formData.institute}
+                      value={formData.college}
                       onChange={handleChange}
                     >
                       <option value="">Preferred Institute</option>

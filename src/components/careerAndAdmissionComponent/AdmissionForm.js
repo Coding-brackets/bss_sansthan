@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 
-function AdmissionForm() {
+function JobApplicationForm() {
+  const [preview, setPreview] = useState(null);
+
   const [formData, setFormData] = useState({
     fullname: "",
     email: "",
@@ -16,58 +18,61 @@ function AdmissionForm() {
     const { name, value, type } = e.target;
 
     if (type === "file") {
-      // not sending file since API expects JSON
-      setFormData((prev) => ({ ...prev, [name]: e.target.files[0] }));
+      const file = e.target.files[0];
+      setFormData((prev) => ({ ...prev, [name]: file }));
+
+      if (file) {
+        setPreview(URL.createObjectURL(file)); // ✅ preview
+      }
     } else {
       setFormData((prev) => ({ ...prev, [name]: value }));
     }
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    // ✅ API expects JSON (same as QuickRegistrationForm)
-    const payload = { ...formData };
-    delete payload.documents; // prevents error
+  const formDataToSend = new FormData();
 
-    try {
-      const res = await fetch("https://bss.alekh.online/api/post-admission", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
-
-      const data = await res.json();
-
-      if (res.ok) {
-        // ✅ reset same way
-        setFormData({
-          fullname: "",
-          email: "",
-          phone: "",
-          course: "",
-          college: "",
-          documents: null,
-          message: "",
-        });
-
-        alert("Form Submitted Successfully!");
-      } else {
-        alert("Something went wrong: " + data.message);
-      }
-    } catch (error) {
-      console.error("Error Submitting form:", error);
+  Object.entries(formData).forEach(([key, value]) => {
+    if (value) {
+      formDataToSend.append(key, value);
     }
-  };
+  });
+
+  try {
+    const res = await fetch("https://bss.alekh.online/api/post-admission", {
+      method: "POST",
+      body: formDataToSend,
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      alert("Form Submitted Successfully!");
+
+      setFormData({
+        fullname: "",
+        email: "",
+        phone: "",
+        course: "",
+        college: "",
+        documents: null,
+        message: "",
+      });
+    } else {
+      alert("Error: " + data.message);
+    }
+  } catch (error) {
+    console.error("Upload failed:", error);
+  }
+};
+
 
   return (
     <div className="resume-wrapper mb-100">
       <div className="container resume-box p-4 p-md-0">
         <div className="row g-4 position-relative">
-
           <div className="col-lg-8 z-1 d-flex flex-column justify-content-center">
             <div className="p-4 p-md-5">
               <h1 className="section_heading mb-2 text-white">
@@ -81,7 +86,6 @@ function AdmissionForm() {
 
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">
-
                   <div className="col-sm-6">
                     <input
                       type="text"
@@ -148,7 +152,9 @@ function AdmissionForm() {
 
                   <div className="col-sm-6">
                     <label className="resume-file w-100">
-                      Upload Documents (optional)
+                      {formData.documents
+                        ? formData.documents.name
+                        : "Upload Documents (optional)"}
                       <input
                         type="file"
                         name="documents"
@@ -157,6 +163,15 @@ function AdmissionForm() {
                         onChange={handleChange}
                       />
                     </label>
+
+                    {/* {preview && (
+  <img
+    src={preview}
+    alt="preview"
+    className="img-fluid mt-2"
+    style={{ maxHeight: "120px", borderRadius: "8px" }}
+  />
+)} */}
                   </div>
 
                   <div className="col-12">
@@ -191,4 +206,4 @@ function AdmissionForm() {
   );
 }
 
-export default AdmissionForm;
+export default JobApplicationForm;

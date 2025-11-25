@@ -1,15 +1,15 @@
-import React from 'react'
-import { useState } from "react";
+import React, { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 
-const JobApplicationForm = () => {
+function JobApplicationForm() {
+  const [preview, setPreview] = useState(null);
 
   const [formData, setFormData] = useState({
-    fullName: "",
+    fullname: "",
     email: "",
-    contactNumber: "",
+    phone: "",
     course: "",
-    institute: "",
+    college: "",
     documents: null,
     message: "",
   });
@@ -18,127 +18,181 @@ const JobApplicationForm = () => {
     const { name, value, type } = e.target;
 
     if (type === "file") {
-      setFormData((prev) => ({ ...prev, [name]: e.target.files[0] }));
+      const file = e.target.files[0];
+      setFormData((prev) => ({ ...prev, [name]: file }));
+
+      if (file) {
+        setPreview(URL.createObjectURL(file)); // ✅ preview
+      }
     } else {
       setFormData((prev) => ({ ...prev, [name]: value }));
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Submitted:", formData);
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const formDataToSend = new FormData();
+
+  Object.entries(formData).forEach(([key, value]) => {
+    if (value) {
+      formDataToSend.append(key, value);
+    }
+  });
+
+  try {
+    const res = await fetch("https://bss.alekh.online/api/post-admission", {
+      method: "POST",
+      body: formDataToSend,
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      alert("Form Submitted Successfully!");
+
+      setFormData({
+        fullname: "",
+        email: "",
+        phone: "",
+        course: "",
+        college: "",
+        documents: null,
+        message: "",
+      });
+    } else {
+      alert("Error: " + data.message);
+    }
+  } catch (error) {
+    console.error("Upload failed:", error);
+  }
+};
+
 
   return (
     <div className="resume-wrapper mb-100">
-      <div className="container resume-box p-4 p-md-5">
+      <div className="container resume-box p-4 p-md-0">
         <div className="row g-4 position-relative">
-
-          {/* LEFT COLUMN */}
           <div className="col-lg-8 z-1 d-flex flex-column justify-content-center">
-            <h1 className="section_heading mb-2 text-white">
-              Resume Submission Form
-            </h1>
+            <div className="p-4 p-md-5">
+              <h1 className="section_heading mb-2 text-white">
+                Resume Submission Form
+              </h1>
 
-            <p className="text-white mb-4">
-              Didn’t find a suitable opening? Drop your details below, and our HR team will reach out when a matching role is available.
-            </p>
+              <p className="text-white mb-4">
+                Didn’t find a suitable opening? Drop your details below, and our
+                HR team will reach out when a matching role is available.
+              </p>
 
-            <form onSubmit={handleSubmit}>
-              <div className="row g-3">
-
-                {/* Full Name + Email */}
-                <div className="col-sm-6">
-                  <input
-                    type="text"
-                    name="fullName"
-                    className="form-control resume-input"
-                    placeholder="Full Name"
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="col-sm-6">
-                  <input
-                    type="email"
-                    name="email"
-                    className="form-control resume-input"
-                    placeholder="Email Address"
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-
-                {/* Phone + Course */}
-                <div className="col-sm-6">
-                  <input
-                    type="text"
-                    name="contactNumber"
-                    className="form-control resume-input"
-                    placeholder="Contact Number"
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-
-                <div className="col-sm-6">
-                  <select
-                    name="course"
-                    className="form-select resume-input"
-                    onChange={handleChange}
-                  >
-                    <option value="">Select Course</option>
-                    <option value="mca">MCA</option>
-                    <option value="btech">B.Tech</option>
-                    <option value="mtech">M.Tech</option>
-                  </select>
-                </div>
-
-                {/* Institute + File Upload */}
-                <div className="col-sm-6">
-                  <select
-                    name="institute"
-                    className="form-select resume-input"
-                    onChange={handleChange}
-                  >
-                    <option value="">Preferred Institute</option>
-                    <option value="iit">IIT</option>
-                    <option value="nit">NIT</option>
-                    <option value="bits">BITS</option>
-                  </select>
-                </div>
-
-                <div className="col-sm-6">
-                  <label className="resume-file w-100">
-                    Upload Documents (optional)
+              <form onSubmit={handleSubmit}>
+                <div className="row g-3">
+                  <div className="col-sm-6">
                     <input
-                      type="file"
-                      name="documents"
-                      className="d-none"
+                      type="text"
+                      name="fullname"
+                      className="form-control resume-input"
+                      placeholder="Full Name"
+                      value={formData.fullname}
                       onChange={handleChange}
+                      required
                     />
-                  </label>
+                  </div>
+
+                  <div className="col-sm-6">
+                    <input
+                      type="email"
+                      name="email"
+                      className="form-control resume-input"
+                      placeholder="Email Address"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="col-sm-6">
+                    <input
+                      type="text"
+                      name="phone"
+                      className="form-control resume-input"
+                      placeholder="Contact Number"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="col-sm-6">
+                    <select
+                      name="course"
+                      className="form-select resume-input"
+                      value={formData.course}
+                      onChange={handleChange}
+                    >
+                      <option value="">Select Course</option>
+                      <option value="mca">MCA</option>
+                      <option value="btech">B.Tech</option>
+                      <option value="mtech">M.Tech</option>
+                    </select>
+                  </div>
+
+                  <div className="col-sm-6">
+                    <select
+                      name="college"
+                      className="form-select resume-input"
+                      value={formData.college}
+                      onChange={handleChange}
+                    >
+                      <option value="">Preferred Institute</option>
+                      <option value="iit">IIT</option>
+                      <option value="nit">NIT</option>
+                      <option value="bits">BITS</option>
+                    </select>
+                  </div>
+
+                  <div className="col-sm-6">
+                    <label className="resume-file w-100">
+                      {formData.documents
+                        ? formData.documents.name
+                        : "Upload Documents (optional)"}
+                      <input
+                        type="file"
+                        name="documents"
+                        accept=".pdf, .doc, .docx, .jpg, .jpeg, .png"
+                        className="d-none"
+                        onChange={handleChange}
+                      />
+                    </label>
+
+                    {/* {preview && (
+  <img
+    src={preview}
+    alt="preview"
+    className="img-fluid mt-2"
+    style={{ maxHeight: "120px", borderRadius: "8px" }}
+  />
+)} */}
+                  </div>
+
+                  <div className="col-12">
+                    <textarea
+                      name="message"
+                      rows={5}
+                      className="form-control resume-input"
+                      placeholder="Message"
+                      value={formData.message}
+                      onChange={handleChange}
+                    ></textarea>
+                  </div>
                 </div>
 
-                {/* Message */}
-                <div className="col-12">
-                  <textarea
-                    name="message"
-                    rows={5}
-                    className="form-control resume-input"
-                    placeholder="Message"
-                    onChange={handleChange}
-                  ></textarea>
-                </div>
-              </div>
-
-              <button className="submit-btn mt-4 d-inline-flex align-items-center gap-2">
-                Submit Now <ArrowUpRight size={18} />
-              </button>
-            </form>
+                <button className="text-center submit-btn mt-4 gap-2">
+                  Submit Now <ArrowUpRight size={18} />
+                </button>
+              </form>
+            </div>
           </div>
 
-          {/* RIGHT IMAGE */}
           <div className="col-lg-4 d-none d-lg-flex align-items-end justify-content-end">
             <img
               src="/assets/young-woman-with-laptop-showing.png"
@@ -146,11 +200,10 @@ const JobApplicationForm = () => {
               alt="Student"
             />
           </div>
-
         </div>
       </div>
     </div>
   );
 }
 
-export default JobApplicationForm
+export default JobApplicationForm;

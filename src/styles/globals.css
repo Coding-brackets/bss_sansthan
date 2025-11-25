@@ -5370,7 +5370,7 @@ hr {
 
 
 /* Show overlay only on mobile landscape */
-@media screen and (orientation: landscape) and (max-width: 900px) {
+/* @media screen and (orientation: landscape) and (max-width: 900px) {
   body {
     overflow: hidden;
   }
@@ -5380,7 +5380,7 @@ hr {
   }
 }
 
-/* Hidden by default */
+
 #rotate-message {
   position: fixed;
   top: 0;
@@ -5396,5 +5396,5 @@ hr {
   justify-content: center;
   text-align: center;
   padding: 20px;
-}
+} */
 

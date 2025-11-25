@@ -3,7 +3,7 @@ import { IoMdClose } from "react-icons/io";
 
 const QuickRegistrationForm = ({ collegeName, onClose }) => {
   const [formData, setFormData] = useState({
-    name: "",
+    fullname: "",
     phone: "",
     email: "",
     college: collegeName || "",
@@ -19,7 +19,7 @@ const QuickRegistrationForm = ({ collegeName, onClose }) => {
 
     // console.log("Form submitted:", formData);
     try {
-      const res = await fetch("", {
+      const res = await fetch("https://bss.alekh.online/api/post-admission", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,7 +33,7 @@ const QuickRegistrationForm = ({ collegeName, onClose }) => {
       if (res.ok) {
         alert("Form Submitted Successfully!");
         setFormData({
-          name: "",
+          fullname: "",
           phone: "",
           email: "",
           college: collegeName || "",
@@ -72,7 +72,7 @@ const QuickRegistrationForm = ({ collegeName, onClose }) => {
               <label className="form-label">Full Name</label>
               <input
                 type="text"
-                name="name"
+                name="fullname"
                 className="form-control border-0 border-bottom rounded-0 form_input"
                 placeholder="John Doe"
                 value={formData.name}

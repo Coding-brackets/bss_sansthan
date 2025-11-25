@@ -77,7 +77,7 @@ const navItems = [
           },
         ],
       },
-      { label: "Specially Abled Support", href: "/specialStudents" },
+      { label: "Specially Abled Support", href: "/special-students" },
     ],
   },
   { title: "Admissions", href: "/admission" },

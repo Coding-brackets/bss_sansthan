@@ -41,7 +41,7 @@ function JobApplicationForm() {
   });
 
   try {
-    const res = await fetch("https://bss.alekh.online/api/post-admission", {
+    const res = await fetch("", {
       method: "POST",
       body: formDataToSend,
     });

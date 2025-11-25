@@ -76,12 +76,11 @@ function JobApplicationForm() {
           <div className="col-lg-8 z-1 d-flex flex-column justify-content-center">
             <div className="p-4 p-md-5">
               <h1 className="section_heading mb-2 text-white">
-                Resume Submission Form
+               Submit Admission Inquiry
               </h1>
 
               <p className="text-white mb-4">
-                Didn’t find a suitable opening? Drop your details below, and our
-                HR team will reach out when a matching role is available.
+               Have questions or want to apply directly? Fill out the form below — our admissions team will contact you soon.
               </p>
 
               <form onSubmit={handleSubmit}>

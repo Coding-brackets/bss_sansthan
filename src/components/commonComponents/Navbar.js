@@ -286,7 +286,7 @@ useEffect(() => {
             item.submenu ? (
               <div key={index} className="sidebar_item">
                 <button
-                  className="sidebar_btn"
+                  className="sidebar_btn p-0"
                   onClick={() => toggleDropdown(item.title)}
                 >
                   {item.title}
@@ -301,7 +301,7 @@ useEffect(() => {
                       sub.children ? (
                         <div key={i}>
                           <button
-                            className="sidebar_btn_sub"
+                            className="sidebar_btn_sub p-0"
                             onClick={() => toggleDropdown(sub.label)}
                           >
                             {sub.label}

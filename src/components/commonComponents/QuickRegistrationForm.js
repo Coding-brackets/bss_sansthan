@@ -31,7 +31,7 @@ const QuickRegistrationForm = ({ collegeName, onClose }) => {
       const data = await res.json();
 
       if (res.ok) {
-        alert("Form Submitted Successfully!");
+        // alert("Form Submitted Successfully!");
         setFormData({
           fullname: "",
           phone: "",

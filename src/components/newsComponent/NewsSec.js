@@ -25,7 +25,7 @@ const NewsSec = () => {
         description: item.description || "",  // backend has no description → fallback
         date: item.event_date,
         editor: "Edited by Puniti Pandey", // backend doesn't have editor → static / optional
-        image: "https://bss.alekh.online/public/" + item.attachment, // FIX IMAGE PATH
+        image: "https://bss.alekh.online/public/storage/" + item.attachment, // FIX IMAGE PATH
         category: item.type,
         slug: item.slug,
       }));

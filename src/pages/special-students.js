@@ -7,40 +7,44 @@ import InclusiveCollegesSection from "@/components/specialStudentComponent/Inclu
 import React from "react";
 
 const specialStudents = () => {
-  const specialGalleryTabs = {
-    "Moments of Inclusion": [
-      "/assets/gallery/gallery1.jpg",
-      "/assets/gallery/gallery2.jpg",
-      "/assets/gallery/gallery3.jpg",
-      "/assets/gallery/gallery4.jpg",
-      "/assets/gallery/gallery5.jpg",
-      "/assets/gallery/gallery6.jpg",
-    ],
-    "Smiles & Success": [
-      "/assets/gallery/gallery6.jpg",
-      "/assets/gallery/gallery5.jpg",
-      "/assets/gallery/gallery4.jpg",
-      "/assets/gallery/gallery3.jpg",
-      "/assets/gallery/gallery2.jpg",
-      "/assets/gallery/gallery1.jpg",
-    ],
-    "Inspiring Journeys": [
-      "/assets/gallery/gallery1.jpg",
-      "/assets/gallery/gallery2.jpg",
-      "/assets/gallery/gallery3.jpg",
-      "/assets/gallery/gallery4.jpg",
-      "/assets/gallery/gallery5.jpg",
-      "/assets/gallery/gallery6.jpg",
-    ],
-    "Life at Our Campus": [
-      "/assets/gallery/gallery6.jpg",
-      "/assets/gallery/gallery5.jpg",
-      "/assets/gallery/gallery4.jpg",
-      "/assets/gallery/gallery3.jpg",
-      "/assets/gallery/gallery2.jpg",
-      "/assets/gallery/gallery1.jpg",
-    ],
-  };
+ const specialGalleryTabs = {
+  "Moments of Inclusion": [
+    { image: "/assets/gallery/gallery1.jpg", alt: "Moments of Inclusion 1" },
+    { image: "/assets/gallery/gallery2.jpg", alt: "Moments of Inclusion 2" },
+    { image: "/assets/gallery/gallery3.jpg", alt: "Moments of Inclusion 3" },
+    { image: "/assets/gallery/gallery4.jpg", alt: "Moments of Inclusion 4" },
+    { image: "/assets/gallery/gallery5.jpg", alt: "Moments of Inclusion 5" },
+    { image: "/assets/gallery/gallery6.jpg", alt: "Moments of Inclusion 6" },
+  ],
+
+  "Smiles & Success": [
+    { image: "/assets/gallery/gallery6.jpg", alt: "Smiles & Success 1" },
+    { image: "/assets/gallery/gallery5.jpg", alt: "Smiles & Success 2" },
+    { image: "/assets/gallery/gallery4.jpg", alt: "Smiles & Success 3" },
+    { image: "/assets/gallery/gallery3.jpg", alt: "Smiles & Success 4" },
+    { image: "/assets/gallery/gallery2.jpg", alt: "Smiles & Success 5" },
+    { image: "/assets/gallery/gallery1.jpg", alt: "Smiles & Success 6" },
+  ],
+
+  "Inspiring Journeys": [
+    { image: "/assets/gallery/gallery1.jpg", alt: "Inspiring Journeys 1" },
+    { image: "/assets/gallery/gallery2.jpg", alt: "Inspiring Journeys 2" },
+    { image: "/assets/gallery/gallery3.jpg", alt: "Inspiring Journeys 3" },
+    { image: "/assets/gallery/gallery4.jpg", alt: "Inspiring Journeys 4" },
+    { image: "/assets/gallery/gallery5.jpg", alt: "Inspiring Journeys 5" },
+    { image: "/assets/gallery/gallery6.jpg", alt: "Inspiring Journeys 6" },
+  ],
+
+  "Life at Our Campus": [
+    { image: "/assets/gallery/gallery6.jpg", alt: "Life at Our Campus 1" },
+    { image: "/assets/gallery/gallery5.jpg", alt: "Life at Our Campus 2" },
+    { image: "/assets/gallery/gallery4.jpg", alt: "Life at Our Campus 3" },
+    { image: "/assets/gallery/gallery3.jpg", alt: "Life at Our Campus 4" },
+    { image: "/assets/gallery/gallery2.jpg", alt: "Life at Our Campus 5" },
+    { image: "/assets/gallery/gallery1.jpg", alt: "Life at Our Campus 6" },
+  ],
+};
+
 
   return (
     <div>

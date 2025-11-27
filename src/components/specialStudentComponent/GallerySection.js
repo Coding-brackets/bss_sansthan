@@ -47,7 +47,7 @@ const GallerySection = ({ title, description, tabsData, differClass, bordercolor
             </div>
 
             {/* Gallery Grid */}
-            <div className="row g-4">
+            {/* <div className="row g-4">
               {currentImages.map((src, index) => (
                 <div className="col-6 col-md-4" key={index}>
                   <div
@@ -64,7 +64,26 @@ const GallerySection = ({ title, description, tabsData, differClass, bordercolor
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
+            <div className="row g-4">
+  {currentImages?.map((item, index) => (
+    <div className="col-6 col-md-4" key={index}>
+      <div
+        className="overflow-hidden relative gallery-container"
+        onClick={() => setSelectedIndex(index)}
+      >
+        <Image
+          src={item.image}     // 🔥 use backend image URL
+          alt={item.alt}       // 🔥 use backend alt text
+          width={1000}
+          height={100}
+          className="gallery-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+      </div>
+    </div>
+  ))}
+</div>
+
           </div>
         </div>
       </div>

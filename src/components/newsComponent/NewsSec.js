@@ -8,31 +8,31 @@ const NewsSec = () => {
 
   useEffect(() => {
     // 🔁 Later, replace this with your real backend endpoint
-    // fetch("/data/news.json")
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     setNewsData(data);
-    //     setMainNews(data[0]); // first one as default
-    //   })
+    fetch("/data/news.json")
+      .then(res => res.json())
+      .then(data => {
+        setNewsData(data);
+        setMainNews(data[0]); // first one as default
+      })
 
       // backend logic
-        fetch("https://bss.alekh.online/api/fetch-news-events-data")
-    .then(res => res.json())
-    .then(response => {
-      const mapped = response.data.map(item => ({
-        id: item.id,
-        title: item.title,
-        description: item.description || "",  // backend has no description → fallback
-        date: item.event_date,
-        editor: "Edited by Puniti Pandey", // backend doesn't have editor → static / optional
-        image: "https://bss.alekh.online/public/storage/" + item.attachment, // FIX IMAGE PATH
-        category: item.type,
-        slug: item.slug,
-      }));
+    //     fetch("https://bss.alekh.online/api/fetch-news-events-data")
+    // .then(res => res.json())
+    // .then(response => {
+    //   const mapped = response.data.map(item => ({
+    //     id: item.id,
+    //     title: item.title,
+    //     description: item.description || "",  // backend has no description → fallback
+    //     date: item.event_date,
+    //     editor: "Edited by Puniti Pandey", // backend doesn't have editor → static / optional
+    //     image: "https://bss.alekh.online/public/storage/" + item.attachment, // FIX IMAGE PATH
+    //     category: item.type,
+    //     slug: item.slug,
+    //   }));
 
-      setNewsData(mapped);
-      setMainNews(mapped[0]);
-    })
+    //   setNewsData(mapped);
+    //   setMainNews(mapped[0]);
+    // })
 
       .catch(err => console.error("Error loading news:", err));
   }, []);

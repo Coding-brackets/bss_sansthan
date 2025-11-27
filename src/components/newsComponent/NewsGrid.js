@@ -18,11 +18,11 @@ const NewsGrid = ({ newsData, onSelectNews }) => {
                   onClick={() => onSelectNews(item)}
                   style={{ cursor: "pointer" }}
                 >
-                  <Image
+                  <img
                     src={item.image || "/assets/news/default.jpg"}
                     alt={item.title}
-                    width={500}
-                    height={300}
+                    // width={500}
+                    // height={300}
                     className="card-img-top w-100" 
                   />
                   <div className="card-body newsCard_conSec">

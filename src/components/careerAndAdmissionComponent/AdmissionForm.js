@@ -31,9 +31,8 @@ function JobApplicationForm() {
 
   const handleSubmit = async (e) => {
   e.preventDefault();
-
+  
   const formDataToSend = new FormData();
-
   Object.entries(formData).forEach(([key, value]) => {
     if (value) {
       formDataToSend.append(key, value);
@@ -43,32 +42,41 @@ function JobApplicationForm() {
   try {
     const res = await fetch("https://bss.alekh.online/api/post-admission", {
       method: "POST",
+      headers: {
+        "Accept": "application/json", // ✅ Tell Laravel you expect JSON
+      },
       body: formDataToSend,
     });
-     const text = await res.text();
-  console.log("RAW RESPONSE:", text);
 
-  return;
+    // Check if response is JSON
+    const contentType = res.headers.get("content-type");
+    if (!contentType || !contentType.includes("application/json")) {
+      const text = await res.text();
+      console.error("Non-JSON response:", text);
+      alert("Server error. Please check console.");
+      return;
+    }
 
-    // const data = await res.json();
+    const data = await res.json();
 
-    // if (res.ok) {
-    //   alert("Form Submitted Successfully!");
-
-    //   setFormData({
-    //     fullname: "",
-    //     email: "",
-    //     phone: "",
-    //     course: "",
-    //     college: "",
-    //     document: null,
-    //     message: "",
-    //   });
-    // } else {
-    //   alert("Error: " + data.message);
-    // }
+    if (res.ok && data.success) {
+      alert("Form Submitted Successfully!");
+      setFormData({
+        fullname: "",
+        email: "",
+        phone: "",
+        course: "",
+        college: "",
+        document: null,
+        message: "",
+      });
+      setPreview(null);
+    } else {
+      alert("Error: " + (data.message || "Submission failed"));
+    }
   } catch (error) {
     console.error("Upload failed:", error);
+    alert("Network error. Please try again.");
   }
 };
 
@@ -87,7 +95,7 @@ function JobApplicationForm() {
                Have questions or want to apply directly? Fill out the form below — our admissions team will contact you soon.
               </p>
 
-              <form onSubmit={handleSubmit} encType="multipart/form-data">
+              <form onSubmit={handleSubmit} >
                 <div className="row g-3">
                   <div className="col-sm-6">
                     <input

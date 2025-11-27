@@ -10,7 +10,7 @@ function JobApplicationForm() {
     phone: "",
     course: "",
     college: "",
-    documents: null,
+    document: null,
     message: "",
   });
 
@@ -61,7 +61,7 @@ function JobApplicationForm() {
     //     phone: "",
     //     course: "",
     //     college: "",
-    //     documents: null,
+    //     document: null,
     //     message: "",
     //   });
     // } else {
@@ -155,12 +155,12 @@ function JobApplicationForm() {
 
                   <div className="col-sm-6">
                     <label className="resume-file w-100">
-                      {formData.documents
-                        ? formData.documents.name
+                      {formData.document
+                        ? formData.document.name
                         : "Upload Documents (optional)"}
                       <input
                         type="file"
-                        name="documents"
+                        name="document"
                         accept=".pdf, .doc, .docx, .jpg, .jpeg, .png"
                         className="d-none"
                         onChange={handleChange}

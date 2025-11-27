@@ -87,7 +87,7 @@ function JobApplicationForm() {
                Have questions or want to apply directly? Fill out the form below — our admissions team will contact you soon.
               </p>
 
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} encType="multipart/form-data">
                 <div className="row g-3">
                   <div className="col-sm-6">
                     <input

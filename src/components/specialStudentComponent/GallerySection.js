@@ -3,7 +3,13 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import GalleryPopup from "../commonComponents/GalleryPopup";
 
-const GallerySection = ({ title, description, tabsData, differClass, bordercolor }) => {
+const GallerySection = ({
+  title,
+  description,
+  tabsData,
+  differClass,
+  bordercolor,
+}) => {
   const tabs = Object.keys(tabsData);
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -34,7 +40,7 @@ const GallerySection = ({ title, description, tabsData, differClass, bordercolor
                     fontFamily: "Geist",
                     backgroundColor: activeTab === tab ? "#0A2656" : "#F5EFEC",
                     color: activeTab === tab ? "#fff" : "#333",
-                    
+
                     boxShadow:
                       activeTab === tab
                         ? "0 2px 8px rgba(0,0,0,0.2)"
@@ -66,24 +72,23 @@ const GallerySection = ({ title, description, tabsData, differClass, bordercolor
               ))}
             </div> */}
             <div className="row g-4">
-  {currentImages?.map((item, index) => (
-    <div className="col-6 col-md-4" key={index}>
-      <div
-        className="overflow-hidden relative gallery-container"
-        onClick={() => setSelectedIndex(index)}
-      >
-        <img
-          src={item.image}     // 🔥 use backend image URL
-          alt={item.alt}       // 🔥 use backend alt text
-          width={1000}
-          height={100}
-          className="gallery-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-      </div>
-    </div>
-  ))}
-</div>
-
+              {currentImages?.map((item, index) => (
+                <div className="col-6 col-md-4" key={index}>
+                  <div
+                    className="overflow-hidden relative gallery-container"
+                    onClick={() => setSelectedIndex(index)}
+                  >
+                    <img
+                      src={item.image} // 🔥 use backend image URL
+                      alt={item.alt} // 🔥 use backend alt text
+                      width={1000}
+                      height={100}
+                      className="gallery-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -100,6 +105,3 @@ const GallerySection = ({ title, description, tabsData, differClass, bordercolor
 };
 
 export default GallerySection;
-
-
-

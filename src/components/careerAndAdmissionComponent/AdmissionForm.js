@@ -45,6 +45,8 @@ function JobApplicationForm() {
       method: "POST",
       body: formDataToSend,
     });
+     const text = await res.text();
+  console.log("RAW RESPONSE:", text);
 
     const data = await res.json();
 

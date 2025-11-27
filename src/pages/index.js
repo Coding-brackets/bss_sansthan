@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 import HeroSection from "@/components/homeComponents/HeroSection";
 import BssContentSec from "@/components/commonComponents/BssContentSec";
 import AboutHighlights from "@/components/homeComponents/AboutHighlights";
-import Carousel from "@/components/homeComponents/Carousel";
+// import Carousel from "@/components/homeComponents/Carousel";
 import Rankings from "@/components/homeComponents/Rankings";
 import Success from "@/components/homeComponents/Success";
 import Testimonials from "@/components/commonComponents/Testimonials";
@@ -12,6 +12,7 @@ import BssStats from "@/components/homeComponents/BssStats";
 import NewsAndEvents from "@/components/homeComponents/NewsAndEvents";
 import EmpoweringCon from "@/components/homeComponents/EmpoweringCon";
 import Colleges from "@/components/homeComponents/Colleges";
+import { CustomCarousel } from "@/components/uiComponent/Carousel";
 
 
 
@@ -32,7 +33,9 @@ export default function Home() {
       />
 
       <AboutHighlights/>
-      <Carousel/>
+      {/* <Carousel/> */}
+
+      <CustomCarousel/>
       <Rankings/>
       <Success/>
       <Testimonials/>

@@ -8,7 +8,7 @@ const NewsSec = () => {
 
   useEffect(() => {
     // 🔁 Later, replace this with your real backend endpoint
-    fetch("/data/news.json")
+    fetch("https://bss.alekh.online/api/fetch-news-events-data")
       .then(res => res.json())
       .then(data => {
         setNewsData(data);

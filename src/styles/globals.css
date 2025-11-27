@@ -5398,3 +5398,210 @@ hr {
   padding: 20px;
 } */
 
+
+/* Custom Carousel */
+
+
+/* Wrapper */
+.custom_carousel-wrapper {
+  background: transparent;
+}
+
+/* Background blue strip */
+.carousel-bg-strip {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  transform: translateY(-50%);
+  background-color: #0a2656;
+  z-index: -1;
+}
+
+
+/* Track area (matches h-[600px] md:h-[700px] max-w-[1800px]) */
+.carousel-track {
+  width: 100%;
+  max-width: 1800px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+
+/* Active card */
+.custom-carousel-card {
+  background: transparent;
+  border-radius: 150px 30px 30px;
+}
+
+/* Widths like w-[320px] sm:w-[480px] md:w-[640px] */
+.active-card {
+  width: 320px;
+  gap: 12px;
+}
+
+/* Image section heights: h-[240px] sm:h-[320px] md:h-[380px] */
+.carousel-card-image {
+  width: 100%;
+  height: 240px;
+}
+
+
+/* Image hover scale */
+.carousel-card-image img {
+  transition: transform 1s ease;
+  object-fit: cover;
+}
+
+.custom-carousel-card:hover .carousel-card-image img {
+  transform: scale(1.05);
+}
+
+/* Pink info card */
+.carousel-card-info {
+  background-color: #ff6b5c;
+  padding: 24px;
+}
+
+.counter-current {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* Side item (non-active) cards */
+.carousel-side-card {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+}
+
+.carousel-side-card img {
+  object-fit: cover;
+}
+
+/* Dark overlay on side images */
+.carousel-image-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(11, 28, 62, 0.3);
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-side-card:hover .carousel-image-overlay {
+  background-color: transparent;
+}
+
+/* Side image contrast effect */
+.side-image {
+  filter: contrast(0.75);
+  transition: all 0.5s ease;
+}
+
+.carousel-side-card:hover .side-image {
+  filter: contrast(1);
+}
+
+/* Mobile dots */
+.carousel-dot {
+  height: 6px;
+  width: 8px;
+  border-radius: 999px;
+  border: none;
+  background-color: #e0e0e0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.carousel-dot--active {
+  width: 24px;
+  background-color: #ff7f6d;
+}
+
+@media (max-width: 1440px) {
+    .carousel-side-card {
+        width: 420px;
+        height: 450px;
+    }
+}
+
+@media (min-width: 375px) {
+  .active-card {
+    width: 370px;
+  }
+}
+
+@media (min-width: 425px) {
+  .active-card {
+    width: 420px;
+  }
+}
+
+
+@media (min-width: 1441px) {
+      .carousel-side-card {
+    width: 700px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1200px) {
+    .carousel-side-card {
+        width: 280px;
+        height: 450px;
+    }
+}
+
+@media (min-width: 576px) {
+  .active-card {
+    width: 570px;
+  }
+   .carousel-card-image {
+    height: 320px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .active-card {
+    width: 675px;
+  }
+}
+
+@media (min-width: 991px) {
+  .active-card {
+    width: 775px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-track {
+    height: 700px;
+  }
+    .carousel-bg-strip {
+    height: 445px;
+  }
+    .carousel-card-image {
+    height: 380px;
+  }
+
+  .carousel-card-info {
+    background-color: #ff6b5c;
+    padding: 18px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .carousel-card-info {
+    background-color: #ff6b5c;
+    padding: 18px;
+}
+
+}
+
+
+
+
+

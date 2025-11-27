@@ -48,23 +48,25 @@ function JobApplicationForm() {
      const text = await res.text();
   console.log("RAW RESPONSE:", text);
 
-    const data = await res.json();
+  return;
 
-    if (res.ok) {
-      alert("Form Submitted Successfully!");
+    // const data = await res.json();
 
-      setFormData({
-        fullname: "",
-        email: "",
-        phone: "",
-        course: "",
-        college: "",
-        documents: null,
-        message: "",
-      });
-    } else {
-      alert("Error: " + data.message);
-    }
+    // if (res.ok) {
+    //   alert("Form Submitted Successfully!");
+
+    //   setFormData({
+    //     fullname: "",
+    //     email: "",
+    //     phone: "",
+    //     course: "",
+    //     college: "",
+    //     documents: null,
+    //     message: "",
+    //   });
+    // } else {
+    //   alert("Error: " + data.message);
+    // }
   } catch (error) {
     console.error("Upload failed:", error);
   }

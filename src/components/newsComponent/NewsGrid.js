@@ -51,8 +51,8 @@ const NewsGrid = ({ newsData, onSelectNews }) => {
                   src={item.image || "/assets/news/default.jpg"}
                   alt="thumb"
                   className="me-3"
-                  // width={70}
-                  // height={70}
+                  width={70}
+                  height={70}
                 />
                 <p className=" mb-0">{item.title}: {item.description}</p>
               </div>

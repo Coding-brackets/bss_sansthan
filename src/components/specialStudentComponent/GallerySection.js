@@ -72,7 +72,7 @@ const GallerySection = ({ title, description, tabsData, differClass, bordercolor
         className="overflow-hidden relative gallery-container"
         onClick={() => setSelectedIndex(index)}
       >
-        <Image
+        <img
           src={item.image}     // 🔥 use backend image URL
           alt={item.alt}       // 🔥 use backend alt text
           width={1000}

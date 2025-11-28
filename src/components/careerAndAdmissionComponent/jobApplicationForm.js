@@ -43,13 +43,25 @@ function JobApplicationForm() {
   try {
     const res = await fetch("", {
       method: "POST",
+      headers: {
+        "Accept": "application/json", // ✅ Tell Laravel you expect JSON
+      },
       body: formDataToSend,
     });
 
+     // Check if response is JSON
+    const contentType = res.headers.get("content-type");
+    if (!contentType || !contentType.includes("application/json")) {
+      const text = await res.text();
+      console.error("Non-JSON response:", text);
+      console.log("Server error. Please check console.");
+      return;
+    }
+
     const data = await res.json();
 
-    if (res.ok) {
-      alert("Form Submitted Successfully!");
+    if (res.ok && data.success) {
+      console.log("Form Submitted Successfully!");
 
       setFormData({
         fullname: "",
@@ -60,8 +72,9 @@ function JobApplicationForm() {
         documents: null,
         message: "",
       });
+      setPreview(null);
     } else {
-      alert("Error: " + data.message);
+      console.log("Error: " + data.message);
     }
   } catch (error) {
     console.error("Upload failed:", error);

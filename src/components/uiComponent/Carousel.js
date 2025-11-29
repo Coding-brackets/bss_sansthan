@@ -195,7 +195,7 @@ export const CustomCarousel = () => {
                     </div>
 
                     {/* Text Info */}
-                      <p className="text-white">
+                      <p className="text-white m-0">
                         {item.description}
                       </p>
                   </div>

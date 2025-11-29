@@ -5,6 +5,7 @@ import { LiaUserTieSolid } from "react-icons/lia";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation"; 
+import CircleCheck from "../svg/CircleCheck";
 
 const Success = ({ heading = "Success Stories" }) => {
   // Reusable animation variants
@@ -50,7 +51,7 @@ const Success = ({ heading = "Success Stories" }) => {
             variants={fadeUp}
           >
             <div className="icon-wrapper1 successIcon1">
-              <BadgeCheck color="#fff" className="badge_check" />
+              <CircleCheck className="badge_check" />
             </div>
             <div className="success_con_box">
               <h3 className="">10,000+</h3>

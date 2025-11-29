@@ -1,6 +1,7 @@
 import React from "react";
 import { BadgeCheck } from "lucide-react";
 import { motion } from "framer-motion";
+import CircleCheck from "../svg/CircleCheck";
 
 const AboutHighlights = () => {
   const cards = [
@@ -56,7 +57,8 @@ const AboutHighlights = () => {
                   className="icon-wrapper1 mx-auto mb-3"
                   style={{ backgroundColor: card.iconBg }}
                 >
-                  <BadgeCheck color="#fff" className="badge_check" />
+                <CircleCheck className="badge_check" />
+              
                 </div>
                 <h4 className="fw-bold mb-3 about_card_title">{card.title}</h4>
                 <p className="mb-0 about_card_para">{card.text}</p>

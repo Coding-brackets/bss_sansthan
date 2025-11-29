@@ -65,7 +65,7 @@ const Colleges = () => {
         </h2>
 
         <p className="section_para text-center mb-5 m-auto college_para">
-          We operate a network of institutions offering comprehensive programs...
+          We operate a network of institutions offering comprehensive programs in medical, nursing, and allied health sciences. Each college upholds the values of integrity, excellence, and social commitment, preparing students for success in the healthcare sector.
         </p>
 
         <Swiper

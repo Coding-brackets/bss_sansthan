@@ -5,7 +5,7 @@ export const  CAROUSEL_ITEMS = [
     image: "/assets/carousel1.png",
     category: "Thriving Beyond Campus",
     title: "Life at BSS",
-    description: "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
+    description: "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers, shaping confident and skilled healthcare professionals for the future.",
     totalItems: 6,
   },
   {
@@ -13,7 +13,7 @@ export const  CAROUSEL_ITEMS = [
     image: "/assets/carousel2.jpg",
     category: "Clinical Excellence",
     title: "Hands-on Training",
-    description: "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
+    description: "Here, we make sure that Clinical excellence is at the heart of every learning experience. Students are trained through real-world practice and expert-guided clinical exposure in top healthcare facilities. The atmosphere here encourages precision, a key quality of successful medical professionals. Regular case discussions and skill demonstrations ensure students refine their techniques and build solid clinical judgment.",
     totalItems: 6,
   },
   {
@@ -21,7 +21,7 @@ export const  CAROUSEL_ITEMS = [
     image: "/assets/carousel3.jpg",
     category: "Community & Growth",
     title: "Student Leadership",
-    description: "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
+    description: "Student leadership at BSS is built through action and collaboration. Learners take part in councils and activities that help them grow in confidence and decision-making. Through teamwork and meaningful participation, students learn to guide and support one another. These experiences help them shape strong values and a sense of purpose that stays with them long after they complete their medical studies.",
     totalItems: 6,
   },
   {
@@ -29,7 +29,7 @@ export const  CAROUSEL_ITEMS = [
     image: "/assets/carousel1.png",
     category: "Global Perspectives",
     title: "Seminars & Events",
-    description: "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
+    description: "Across the year, BSS hosts seminars and global learning events like Rhythm 2025 that connect students with new ideas and global healthcare developments. Expert speakers, international collaborations, and academic forums help students stay informed and future-ready. These interactions broaden their understanding of the medical and nursing fields on a global scale, strengthening professional preparation.",
     totalItems: 6,
   },
   {
@@ -37,7 +37,7 @@ export const  CAROUSEL_ITEMS = [
     image: "/assets/carousel2.jpg",
     category: "Campus Culture",
     title: "Arts & Recreation",
-    description: "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
+    description: "Beyond academics, students here enjoy vibrant cultural experiences and recreational opportunities that make campus life truly memorable. Music, dance, sports and other creative events encourage expression and self-confidence. Annual celebrations, talent showcases, and student-led programs bring joy and unity. This balance of learning and recreation creates a lively and meaningful student journey.",
     totalItems: 6,
   },
   {
@@ -45,7 +45,7 @@ export const  CAROUSEL_ITEMS = [
     image: "/assets/carousel3.jpg",
     category: "Alumni Network",
     title: "Building Future",
-    description: "Life at BSS is dynamic, inspiring and purpose-driven. Students experience an enriching campus life filled with academics, clinical practice, sports and cultural activities. Regular seminars, workshops, and events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful medical and nursing careers.",
+    description: "Graduates of BSS form a strong and supportive alumni community connected through shared achievements and professional growth. Many of our Alumni have established successful careers in hospitals and healthcare organizations across the globe. They regularly return to guide our students through mentorship. This ongoing bond strengthens the BSS legacy and builds brighter futures for every learner who joins the journey.",
     totalItems: 6,
   },
 ];

@@ -41,8 +41,8 @@ const Rankings = () => {
             src="/assets/ranking_img.png"
             alt=""
             className="w-100 h-100"
-            width={1000}
-            height={1000}
+            width={2000}
+            height={1500}
           />
         </motion.div>
       </div>

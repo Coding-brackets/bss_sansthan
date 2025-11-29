@@ -142,7 +142,7 @@ function JobApplicationForm() {
                       value={formData.course}
                       onChange={handleChange}
                     >
-                      <option value="">Select Course</option>
+                      <option value="">Select Post</option>
                       <option value="mca">MCA</option>
                       <option value="btech">B.Tech</option>
                       <option value="mtech">M.Tech</option>
@@ -167,7 +167,7 @@ function JobApplicationForm() {
                     <label className="resume-file w-100">
                       {formData.documents
                         ? formData.documents.name
-                        : "Upload Documents (optional)"}
+                        : "Upload Resume (optional)"}
                       <input
                         type="file"
                         name="documents"

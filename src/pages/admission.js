@@ -8,20 +8,20 @@ import AdmissionForm from '@/components/careerAndAdmissionComponent/AdmissionFor
 
 const features = [
   {
-    title: "Expert Faculty",
-    description: "Learn from experienced educators who bring real-world insights into the classroom."
+    title: "Learn From the Best",
+    description: "Benefit from mentors who teach with passion, experience, and a student-first approach, making learning clear, engaging, and meaningful for every learner."
   },
   {
-    title: "Modern Infrastructure",
-    description: "State-of-the-art labs, digital libraries, and advanced learning spaces."
+    title: "Future-Ready Learning Spaces",
+    description: "Study in an environment designed for today’s generation, featuring smart classrooms, hands-on labs, and digital tools that enhance every learning experience."
   },
   {
-    title: "Career-Oriented Programs",
-    description: "Programs designed to prepare students for real-world opportunities."
+    title: "Pathways to Real Careers",
+    description: "Choose programs crafted to match industry needs and future career trends, ensuring that what you learn prepares you for the world beyond campus."
   },
   {
-    title: "Supportive Environment",
-    description: "A campus culture that supports personal and academic growth."
+    title: "A Place Where You Belong",
+    description: "Become part of a positive, inclusive campus community where students feel encouraged, supported, and valued throughout their academic journey."
   },
 ];
 
@@ -71,7 +71,9 @@ const Admission = () => {
     />
     <VacancyTable  tableData={jobs}/>
 
-     <WhyJoinUs features={features} image = "/assets/campusImg.png" />
+     <WhyJoinUs features={features} image = "/assets/campusImg.png" 
+      subHeading="At BSS, education is more than classrooms and textbooks! It’s about discovering your potential and how you prepare for your future full of opportunities. Here, every student is encouraged to think differently and grow through meaningful learning experiences."
+     />
      <AdmissionForm/>
     </div>
   )

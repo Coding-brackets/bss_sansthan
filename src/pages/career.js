@@ -9,20 +9,20 @@ import JobApplicationForm from '@/components/careerAndAdmissionComponent/jobAppl
 
 const features = [
   {
-    title: "Expert Faculty",
-    description: "Learn from experienced educators who bring real-world insights into the classroom."
+    title: "Expert Faculty Team",
+    description: "Join a network of experienced educators who collaborate and share real-world knowledge to create impactful learning experiences for every learner."
   },
   {
-    title: "Modern Infrastructure",
-    description: "State-of-the-art labs, digital libraries, and advanced learning spaces."
+    title: "Modern Learning Facilities",
+    description: "Work in an environment equipped with digital classrooms and cutting-edge technology designed to support excellence and innovation in every step."
   },
   {
-    title: "Career-Oriented Programs",
-    description: "Programs designed to prepare students for real-world opportunities."
+    title: "Professional Growth Opportunities",
+    description: "Access continuous training, certifications, workshops, and development pathways that enhance teaching skills and build long-term academic and leadership careers."
   },
   {
-    title: "Supportive Environment",
-    description: "A campus culture that supports personal and academic growth."
+    title: "Supportive and Inclusive Culture",
+    description: "Be part of a nurturing workplace that values respect, teamwork, work–life balance, and the well-being of every faculty member across all levels."
   },
 ];
 
@@ -72,7 +72,7 @@ const Career = () => {
     />
     <VacancyTable  tableData={jobs}/>
 
-     <WhyJoinUs features={features} image = "/assets/campusImg.png" />
+     <WhyJoinUs features={features} image = "/assets/campusImg.png" subHeading="Becoming a part of BSS means contributing to meaningful education while growing professionally. Here, educators transform lives, expand their expertise and thrive in a nurturing academic environment."/>
 
      <JobApplicationForm/>
     </div>

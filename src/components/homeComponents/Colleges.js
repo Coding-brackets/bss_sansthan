@@ -22,7 +22,7 @@ const Colleges = () => {
     {
       img: "/assets/college2.png",
       tag: "B.Sc | M.Sc | R.G.N.M | R.A.N.M.",
-      title: "Sant Gadgebaba Residential MR School, Nerla",
+      title: "Late Jamunabai Bhondekar Residential MR School, Umri",
       desc: "A safe and nurturing home for differently-abled learners. The school focuses on education and emotional support, ensuring each child receives equal opportunities and respect while learning and living in a positive environment.",
       url: "/colleges/swayamsevi-janmubai-madhyamik-shala",
     },
@@ -108,7 +108,7 @@ const Colleges = () => {
 
 
   return (
-    <section className="mb-100">
+    <section className="mb-80">
       <div className="container">
         <h2 className="section_heading text-center mb-3">
           Colleges Under Society
@@ -130,7 +130,7 @@ const Colleges = () => {
             768: { slidesPerView: 2 },
             1200: { slidesPerView: 3 },
           }}
-          className="college-slider py-5"
+          className="college-slider pb-5"
         >
           {colleges.map((college, index) => (
             <SwiperSlide key={index}>

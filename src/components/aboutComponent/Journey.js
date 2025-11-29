@@ -31,25 +31,25 @@ const timelineData = [
       "Setup district's first B.Sc. Nursing college as a part of BSS project.",
   },
   {
-    year: "2018",
+    year: "2021",
     title: "BSS Expands Education Initiatives",
     subtitle: "Regional Development",
     description:
-      "Opened new educational branches focusing on technology and innovation.",
+      "Started Maharashtra’s first M.Sc. Nursing program offering all five specializations.",
   },
   {
-    year: "2022",
-    title: "Digital Transformation Launch",
-    subtitle: "Smart Campus Initiative",
+    year: "2024",
+    title: "Established Two New Educational Institution",
+    subtitle: "New Campuses",
     description:
-      "Introduced AI-based education and digital classrooms across BSS institutions.",
+      "Founded Bhojraj Bhendekar Ayurvedic College & Bhojrajji Bhendekar Physiotherapy College",
   },
   {
-    year: "2025",
-    title: "Future Vision 2030",
-    subtitle: "Global Collaboration",
+    year: "",
+    title: "Way Ahead",
+    subtitle: "",
     description:
-      "Plans to collaborate with international universities for research and student exchange programs.",
+      "Looking forward to establish an MBBS medical college and a world-class medical university on a 50-acre campus.",
   },
 ];
 

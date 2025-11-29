@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const WhyJoinUs = ({image, features}) => {
+const WhyJoinUs = ({image, features, subHeading}) => {
   return (
     <div className='container mb-80'>
     <div className='row'>
@@ -9,7 +9,7 @@ const WhyJoinUs = ({image, features}) => {
         <div>
             <h2 className="section_heading mb-2">Why Join us</h2>
         <p className="section_para mb-4">
-          At our institution, we don’t just focus on education — we focus on transformation
+          {subHeading}
         </p>
         <div className='whyChoose-con-feature mb-3'>
          {features.map((item, index) => (

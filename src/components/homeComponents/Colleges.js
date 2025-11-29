@@ -15,13 +15,15 @@ const Colleges = () => {
     {
       img: "/assets/college3.jpg",
       tag: "B.A | M.A.",
-      title: "This school provides a supportive residential learning atmosphere for students with special needs. With dedicated teachers and a caring campus, children grow with confidence and essential life skills for a better future.",
+      title: "Dr. Babasaheb Ambedkar Residential MR School, Bhandara",
+      desc: "This school provides a supportive residential learning atmosphere for students with special needs. With dedicated teachers and a caring campus, children grow with confidence and essential life skills for a better future.",
       url: "/colleges/manju-bai-college",
     },
     {
       img: "/assets/college2.png",
       tag: "B.Sc | M.Sc | R.G.N.M | R.A.N.M.",
-      title: "A safe and nurturing home for differently-abled learners. The school focuses on education and emotional support, ensuring each child receives equal opportunities and respect while learning and living in a positive environment.",
+      title: "Sant Gadgebaba Residential MR School, Nerla",
+      desc: "A safe and nurturing home for differently-abled learners. The school focuses on education and emotional support, ensuring each child receives equal opportunities and respect while learning and living in a positive environment.",
       url: "/colleges/swayamsevi-janmubai-madhyamik-shala",
     },
     {

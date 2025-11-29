@@ -18,6 +18,11 @@ body {
   font-family: var(--font-poppins), sans-serif;
 }
 
+body {
+
+  overflow-x: hidden ;
+}
+
 a {
   text-decoration: none !important;
 }

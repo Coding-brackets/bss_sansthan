@@ -27,11 +27,11 @@ const BBAyurvedic = () => {
       <CollegeGallery
       para="Being a reputed Ayurveda institute, we help our students to gain maximum knowledge by combining theory with real-life scenarios."
       images={[
-    "/assets/CollegesImg/ayurvedicGalleryImg1.png",
-    "/assets/CollegesImg/ayurvedicGalleryImg5.jpg",
-    "/assets/CollegesImg/ayurvedicGalleryImg2.png",
-    "/assets/CollegesImg/ayurvedicGalleryImg3.png",
-    "/assets/CollegesImg/ayurvedicGalleryImg4.jpg",
+    "/assets/CollegesImg/ayurvedic-clg4.webp",
+    "/assets/CollegesImg/ayurvedic-clg2.webp",
+    "/assets/CollegesImg/ayurvedic-clg3.webp",
+    "/assets/CollegesImg/ayurvedic-clg5.webp",
+    "/assets/CollegesImg/ayurvedic-clg1.webp",
     
   ]}
       />

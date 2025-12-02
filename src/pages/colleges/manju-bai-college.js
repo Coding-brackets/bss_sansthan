@@ -9,7 +9,7 @@ const ManjuBaiCollege = () => {
   return (
     <div>
       <HeroSection
-        subHeadingCon="Welcome to-"
+        subHeadingCon="Welcome to"
         heading="Manju bai BA/MA College, Bhawani"
         bgImage="/assets/heroImages/manju-baicollege.webp"
       />

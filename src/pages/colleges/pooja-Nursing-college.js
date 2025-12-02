@@ -9,7 +9,7 @@ const PoojaNursing = () => {
   return (
     <div>
       <HeroSection
-        subHeadingCon="Welcome to-"
+        subHeadingCon="Welcome to"
         heading="Pooja Nursing College & PES Hospital & Research Center, Bhandara"
         bgImage="/assets/heroImages/pooja-nursing-college-hero.webp"
       />

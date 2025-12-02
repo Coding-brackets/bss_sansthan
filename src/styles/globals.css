@@ -2904,6 +2904,13 @@ hr {
   z-index: 2;
 }
 
+.welcome-line{
+  width: 50px;
+  height: 2px;
+  background: #ffffffcc;
+  display: inline-block;
+}
+
 .college_hero_content h1 {
   font-family: var(--font-anybody), sans-serif;
   font-weight: 800;

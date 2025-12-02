@@ -8,7 +8,7 @@ const PesMultispecialityHospital = () => {
   return (
     <div>
        <HeroSection
-      subHeadingCon="Welcome to-"
+      subHeadingCon="Welcome to"
         heading="PES Multispeciality Hospital, Sirsi"
         bgImage="/assets/heroImages/pes-multispeciality-hospital.webp"
       />

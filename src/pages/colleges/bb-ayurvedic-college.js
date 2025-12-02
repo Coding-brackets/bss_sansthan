@@ -9,7 +9,7 @@ const BBAyurvedic = () => {
   return (
     <div>
       <HeroSection
-      subHeadingCon="Welcome to-"
+      subHeadingCon="Welcome to"
         heading="Bhojraj Bhondekar Ayurvedic College"
         bgImage="/assets/heroImages/bb-ayurvedic-college.webp"
       />

@@ -8,7 +8,7 @@ const UniversalBA = () => {
   return (
     <div>
        <HeroSection
-      subHeadingCon="Welcome to-"
+      subHeadingCon="Welcome to"
         heading="Universal BA College, Nerla"
         bgImage="/assets/heroImages/universal-ba-college-hero.webp"
       />

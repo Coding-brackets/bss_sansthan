@@ -8,7 +8,7 @@ const SwayamseviJanmubaiBhondekar = () => {
   return (
    <div>
        <HeroSection
-      subHeadingCon="Welcome to-"
+      subHeadingCon="Welcome to"
         heading="Swayamsevi Janmubai Bhondekar College"
         bgImage="/assets/heroImages/swayamsevi-janmubai-college.webp"
       />

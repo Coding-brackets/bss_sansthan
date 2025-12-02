@@ -8,7 +8,7 @@ const BbPhysiotherapy = () => {
   return (
     <div>
        <HeroSection
-      subHeadingCon="Welcome to-"
+      subHeadingCon="Welcome to"
         heading="Bhojrajji Bhondekar Physiotherapy College"
         bgImage="/assets/heroImages/bb-physiotherapy-college.webp"
       />

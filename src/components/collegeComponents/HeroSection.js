@@ -18,7 +18,7 @@ const HeroSection = ({
 
         {/* === Content Section === */}
         <div className="college_hero_content position-relative text-white">
-          <p className="hero_subHeading">{subHeadingCon}<span className="welcome-line"></span></p>
+          <p className="hero_subHeading d-flex align-items-center ">{subHeadingCon}<span className="ms-3 welcome-line"></span></p>
           <h1 className="mb-4 collegeHeroCon">{heading}</h1>
         </div>
       </div>

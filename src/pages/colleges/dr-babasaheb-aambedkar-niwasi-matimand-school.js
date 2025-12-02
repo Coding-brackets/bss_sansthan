@@ -8,7 +8,7 @@ const DrBabasahebAambedkar = () => {
   return (
     <div>
        <HeroSection
-      subHeadingCon="Welcome to-"
+      subHeadingCon="Welcome to"
         heading="Dr. Babasaheb aambedkar niwasi matimand school, bhandara"
         bgImage="/assets/heroImages/dr-babasaheb-aambedkar-school-hero.webp"
       />

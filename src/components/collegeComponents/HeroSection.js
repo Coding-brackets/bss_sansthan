@@ -18,7 +18,7 @@ const HeroSection = ({
 
         {/* === Content Section === */}
         <div className="college_hero_content position-relative text-white">
-          <p className="hero_subHeading">{subHeadingCon}</p>
+          <p className="hero_subHeading">{subHeadingCon}<span className="welcome-line"></span></p>
           <h1 className="mb-4 collegeHeroCon">{heading}</h1>
         </div>
       </div>

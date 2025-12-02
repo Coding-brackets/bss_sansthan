@@ -72,7 +72,7 @@ const Career = () => {
     />
     <VacancyTable  tableData={jobs}/>
 
-     <WhyJoinUs features={features} image = "/assets/campusImg.png" subHeading="Becoming a part of BSS means contributing to meaningful education while growing professionally. Here, educators transform lives, expand their expertise and thrive in a nurturing academic environment."/>
+     <WhyJoinUs features={features} image = "/assets/campusImg1.webp" subHeading="Becoming a part of BSS means contributing to meaningful education while growing professionally. Here, educators transform lives, expand their expertise and thrive in a nurturing academic environment."/>
 
      <JobApplicationForm/>
     </div>

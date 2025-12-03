@@ -86,7 +86,7 @@ const Footer = () => {
           <div className="col-md-5">
             <div className="footer_content_sec">
               <h4>
-                About,
+                About
                 <br /> Bhondekar Shikshan Sanstha
                 <br /> Maharashtra
               </h4>

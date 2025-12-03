@@ -28,8 +28,8 @@ const WhyJoinUs = ({image, features, subHeading}) => {
         </div>
         </div>
         </div>
-        <div className='col-md-6'>
-            <Image src={image} className='w-100 h-100' alt='' width={1000} height={1000}/>
+        <div className='col-md-6 d-flex'>
+            <Image src={image} className='w-100 h-auto' alt='' width={1000} height={1000}/>
         </div>
     </div>
       

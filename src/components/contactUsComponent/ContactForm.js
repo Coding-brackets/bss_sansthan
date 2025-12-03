@@ -22,37 +22,47 @@ const ContactForm = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    try {
-      const res = await fetch("https://bss.alekh.online/api/post-contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await res.json();
-      if (res.ok) {
-        alert("Message sent successfully!");
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          subject: "General Inquiry",
-          message: "",
-        });
-      } else {
-        alert("Something went wrong: " + data.message);
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("Server error, please try again later.");
-    }
+  const payload = {
+    name: formData.firstName + " " + formData.lastName,
+    email: formData.email,
+    phone: formData.phone,
+    subject: formData.subject,
+    message: formData.message,
   };
+
+  try {
+    const res = await fetch("https://bss.alekh.online/api/post-contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      alert("Message sent successfully!");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        subject: "General Inquiry",
+        message: "",
+      });
+    } else {
+      alert("Something went wrong: " + data.message);
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    alert("Server error, please try again later.");
+  }
+};
+
 
   return (
     <div className="contact-section mb-80">

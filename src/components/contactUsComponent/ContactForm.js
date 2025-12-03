@@ -25,17 +25,14 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(
-        "",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const res = await fetch("https://bss.alekh.online/api/post-contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       const data = await res.json();
       if (res.ok) {
@@ -61,7 +58,6 @@ const ContactForm = () => {
     <div className="contact-section mb-80">
       <div className="container">
         <div className="row g-4 align-items-center justify-content-center">
-
           {/* Right Form */}
           <div className="col-lg-8">
             <div className=" bg-white form-wrapper text-center">
@@ -80,7 +76,6 @@ const ContactForm = () => {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
-                     
                     />
                   </div>
                   <div className="col-md-6 contact-input-sec">
@@ -149,7 +144,7 @@ const ContactForm = () => {
                     ))}
                   </div>
                 </div> */}
-               
+
                 <div className="col-12 contact-input-sec mb-4">
                   <label className="form-label small">Message</label>
                   <textarea
@@ -161,12 +156,9 @@ const ContactForm = () => {
                   ></textarea>
                 </div>
 
-                <a href=""
-                  type="submit"
-                  className=" contactForm_btn"
-                >
+                <button type="submit" className="contactForm_btn">
                   Send Message <ArrowUpRight className="ms-2" />
-                </a>
+                </button>
               </form>
             </div>
           </div>

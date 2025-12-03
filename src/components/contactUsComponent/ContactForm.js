@@ -25,9 +25,10 @@ const ContactForm = () => {
   e.preventDefault();
 
   const payload = {
-    name: formData.firstName + " " + formData.lastName,
+    first_name: formData.firstName,
+    last_name: formData.lastName,
     email: formData.email,
-    phone: formData.phone,
+    phone_number: formData.phone,
     subject: formData.subject,
     message: formData.message,
   };
@@ -55,7 +56,7 @@ const ContactForm = () => {
         message: "",
       });
     } else {
-      alert("Something went wrong: " + data.message);
+      alert("Something went wrong: " + JSON.stringify(data.errors));
     }
   } catch (error) {
     console.error("Error submitting form:", error);
@@ -77,99 +78,88 @@ const ContactForm = () => {
               </p> */}
 
               <form onSubmit={handleSubmit}>
-                <div className="row mb-3">
-                  <div className="col-md-6 contact-input-sec">
-                    <label className="form-label small">First Name</label>
-                    <input
-                      type="text"
-                      className="form-control contactForm-input"
-                      name="firstName"
-                      value={formData.firstName}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className="col-md-6 contact-input-sec">
-                    <label className="form-label small">Last Name</label>
-                    <input
-                      type="text"
-                      className="form-control  contactForm-input"
-                      name="lastName"
-                      value={formData.lastName}
-                      onChange={handleChange}
-                    />
-                  </div>
-                </div>
 
-                <div className="row mb-3">
-                  <div className="col-md-6 contact-input-sec">
-                    <label className="form-label small">Email</label>
-                    <input
-                      type="email"
-                      className="form-control contactForm-input"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                    />
-                  </div>
-                  <div className="col-md-6 contact-input-sec">
-                    <label className="form-label small">Phone Number</label>
-                    <input
-                      type="tel"
-                      className="form-control contactForm-input"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
-                    />
-                  </div>
-                </div>
+  <div className="row mb-3">
+    <div className="col-md-6 contact-input-sec">
+      <label className="form-label small">First Name</label>
+      <input
+        type="text"
+        className="form-control contactForm-input"
+        name="firstName"
+        value={formData.firstName}
+        onChange={handleChange}
+      />
+    </div>
 
-                {/* Select Subject */}
-                {/* <div className="mb-5">
-                  <label className="form-label small">Select Subject?</label>
-                  <div className="d-flex flex-wrap gap-3 mt-1">
-                    {[
-                      "General Inquiry",
-                      "Support",
-                      "Partnership",
-                      "Feedback",
-                      "Other",
-                    ].map((option) => (
-                      <div key={option} className="form-check form-check-inline">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name="subject"
-                          id={option}
-                          value={option}
-                          checked={formData.subject === option}
-                          onChange={handleChange}
-                        />
-                        <label
-                          className="form-check-label small"
-                          htmlFor={option}
-                        >
-                          {option}
-                        </label>
-                      </div>
-                    ))}
-                  </div>
-                </div> */}
+    <div className="col-md-6 contact-input-sec">
+      <label className="form-label small">Last Name</label>
+      <input
+        type="text"
+        className="form-control contactForm-input"
+        name="lastName"
+        value={formData.lastName}
+        onChange={handleChange}
+      />
+    </div>
+  </div>
 
-                <div className="col-12 contact-input-sec mb-4">
-                  <label className="form-label small">Message</label>
-                  <textarea
-                    className="form-control contactForm-input"
-                    name="message"
-                    rows="3"
-                    value={formData.message}
-                    onChange={handleChange}
-                  ></textarea>
-                </div>
+  <div className="row mb-3">
+    <div className="col-md-6 contact-input-sec">
+      <label className="form-label small">Email</label>
+      <input
+        type="email"
+        className="form-control contactForm-input"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+      />
+    </div>
 
-                <button type="submit" className="contactForm_btn">
-                  Send Message <ArrowUpRight className="ms-2" />
-                </button>
-              </form>
+    <div className="col-md-6 contact-input-sec">
+      <label className="form-label small">Phone Number</label>
+      <input
+        type="tel"
+        className="form-control contactForm-input"
+        name="phone"
+        value={formData.phone}
+        onChange={handleChange}
+      />
+    </div>
+  </div>
+
+  {/* SUBJECT FIELD */}
+  <div className="mb-4">
+    <label className="form-label small">Select Subject</label>
+    <select
+      className="form-select contactForm-input"
+      name="subject"
+      value={formData.subject}
+      onChange={handleChange}
+    >
+      <option value="General Inquiry">General Inquiry</option>
+      <option value="Support">Support</option>
+      <option value="Partnership">Partnership</option>
+      <option value="Feedback">Feedback</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div className="col-12 contact-input-sec mb-4">
+    <label className="form-label small">Message</label>
+    <textarea
+      className="form-control contactForm-input"
+      name="message"
+      rows="3"
+      value={formData.message}
+      onChange={handleChange}
+    ></textarea>
+  </div>
+
+  <button type="submit" className="contactForm_btn">
+    Send Message <ArrowUpRight className="ms-2" />
+  </button>
+</form>
+
             </div>
           </div>
         </div>

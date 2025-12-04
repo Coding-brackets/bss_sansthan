@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TopNewsSec from "./TopNewsSec";
 import NewsGrid from "./NewsGrid";
+import NewsSkeleton from "../uiComponent/NewsSkeleton";
 
 const NewsSec = () => {
   const [newsData, setNewsData] = useState([]);
@@ -37,7 +38,7 @@ const NewsSec = () => {
       .catch(err => console.error("Error loading news:", err));
   }, []);
 
-  if (!mainNews) return <p className="text-center my-5">Loading news...</p>;
+  if (!mainNews) return <NewsSkeleton/>;
 
   return (
     <div className="mb-100">

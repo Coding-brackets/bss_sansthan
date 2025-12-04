@@ -7,6 +7,16 @@ const NewsSec = () => {
   const [newsData, setNewsData] = useState([]);
   const [mainNews, setMainNews] = useState(null);
 
+  const formatDate = (dateString) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};
+
+
   useEffect(() => {
     // 🔁 Later, replace this with your real backend endpoint
     // fetch("/data/news.json")
@@ -24,7 +34,7 @@ const NewsSec = () => {
         id: item.id,
         title: item.title,
         description: item.description || "",  // backend has no description → fallback
-        date: item.event_date,
+        date: formatDate(item.event_date),
         editor: "Edited by Puniti Pandey", // backend doesn't have editor → static / optional
         image: "https://bss.alekh.online/public/storage/" + item.attachment, // FIX IMAGE PATH
         category: item.type,

@@ -2,6 +2,7 @@
 
 import { ArrowUpRight } from "lucide-react";
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -46,7 +47,8 @@ const ContactForm = () => {
       const data = await res.json();
 
       if (res.ok) {
-        alert("Message sent successfully!");
+        toast.success("Message sent successfully!");
+        // alert("Message sent successfully!");
         setFormData({
           firstName: "",
           lastName: "",
@@ -56,11 +58,13 @@ const ContactForm = () => {
           message: "",
         });
       } else {
-        alert("Something went wrong: " + JSON.stringify(data.errors));
+         toast.error("Something went wrong: " + JSON.stringify(data.errors));
+        // alert("Something went wrong: " + JSON.stringify(data.errors));
       }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("Server error, please try again later.");
+      // alert("Server error, please try again later.");
+      toast.error("Server error, please try again later.");
     }
   };
 

@@ -54,7 +54,7 @@ const ContactForm = () => {
           lastName: "",
           email: "",
           phone: "",
-          subject: "General Inquiry",
+          subject: "",
           message: "",
         });
       } else {

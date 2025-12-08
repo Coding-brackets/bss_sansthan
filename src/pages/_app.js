@@ -5,12 +5,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import "react-toastify/dist/ReactToastify.css";
 
 import { Poppins, Anybody } from "next/font/google";
 import Footer from "@/components/commonComponents/Footer";
 import Navbar from "@/components/commonComponents/Navbar";
 import "@/styles/globals.css";
 import MetaTags from "@/data/meta";
+import { ToastContainer } from "react-toastify";
 // import OrientationBlock from "@/components/uiComponent/OrientationBlock";
 
 const poppins = Poppins({
@@ -35,6 +37,7 @@ export default function App({ Component, pageProps }) {
       {/* <OrientationBlock/> */}
       <main>
         <Component {...pageProps} />
+        <ToastContainer position="top-right" autoClose={3000} />
       </main>
       <Footer />
     </div>

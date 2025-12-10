@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaFacebookF, FaPhoneAlt, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
@@ -12,6 +12,27 @@ import { PiYoutubeLogo } from "react-icons/pi";
 import Image from "next/image";
 
 const Footer = () => {
+   useEffect(() => {
+    // GTranslate settings
+    window.gtranslateSettings = {
+      default_language: "en",
+      native_language_names: true,
+      detect_browser_language: true,
+      languages: ["en", "mr"],
+      wrapper_selector: ".gtranslate_wrapper",
+    };
+
+    // Load dropdown.js script
+    const script = document.createElement("script");
+    script.src = "https://cdn.gtranslate.net/widgets/latest/dropdown.js";
+    script.defer = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="footer_section">
       {/* top bar */}
@@ -84,6 +105,7 @@ const Footer = () => {
       <div className="container py-5">
         <div className="row">
           <div className="col-md-5">
+            <div className="gtranslate_wrapper"></div>
             <div className="footer_content_sec">
               <h4>
                 About

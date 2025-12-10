@@ -45,7 +45,7 @@ const timelineData = [
       "Founded Bhojraj Bhendekar Ayurvedic College & Bhojrajji Bhendekar Physiotherapy College",
   },
   {
-    year: "",
+    year: "NEXT",
     title: "Way Ahead",
     subtitle: "",
     description:

@@ -6,12 +6,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const EmpoweringCon = ({ heading, description, disabledImg }) => {
+const EmpoweringCon = ({
+  heading,
+  description,
+  disabledImg,
+  listItems = [],
+  ButtonText,
+  ButtonUrl,
+}) => {
   return (
     <div className="cust_pad">
       <div className="container position-relative">
         <div className="disable_banner">
-
           {/* TEXT SECTION */}
           <motion.div
             className="empowering_conBanner"
@@ -24,8 +30,9 @@ const EmpoweringCon = ({ heading, description, disabledImg }) => {
             <p className="section_para mb-4">{description}</p>
 
             <motion.div whileHover={{ scale: 1.05 }}>
-              <Link href="/specialStudents" className="custom_btn">
-                Learn More <ArrowUpRight className="ms-2" />
+              <Link href={ButtonUrl} className="custom_btn">
+                {ButtonText}
+                <ArrowUpRight className="ms-2" />
               </Link>
             </motion.div>
           </motion.div>
@@ -56,10 +63,11 @@ const EmpoweringCon = ({ heading, description, disabledImg }) => {
               viewport={{ once: true }}
             >
               <ul>
-                <li><FaCheck /> Inclusive classrooms</li>
-                <li><FaCheck /> Special learning materials</li>
-                <li><FaCheck /> Accessible infrastructure</li>
-                <li><FaCheck /> Dedicated mentors</li>
+                {listItems.map((item, index) => (
+                  <li key={index}>
+                    <FaCheck /> {item}
+                  </li>
+                ))}
               </ul>
             </motion.div>
           </motion.div>

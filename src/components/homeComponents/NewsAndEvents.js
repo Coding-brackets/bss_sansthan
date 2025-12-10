@@ -15,7 +15,7 @@ import LeftArrow from "../svg/leftArrow";
 import RightArrow from "../svg/rightArrow";
 import Image from "next/image";
 
-const NewsAndEvents = () => {
+const NewsAndEvents = ({heading, subHeading}) => {
   const slides = [
     {
       id: 1,
@@ -76,13 +76,9 @@ const NewsAndEvents = () => {
   return (
     <main className="book-main mb-100">
       <div className="content">
-        <h2 className="section_heading mb-3">News & Events</h2>
+        <h2 className="section_heading mb-3">{heading}</h2>
         <p className="section_para mb-4">
-          To inspire and empower our students, we regularly organize academic,
-          cultural and healthcare-driven events annually. The upcoming Joint
-          Annual Gathering, Rhythm 2025 celebrates the spirit of service through
-          sports, cultural programs and inspirational sessions by eminent
-          guests.
+          {subHeading}
         </p>
 
         <CustomButton text="View All" url="/news"/>

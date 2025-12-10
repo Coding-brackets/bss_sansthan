@@ -3,27 +3,8 @@ import { BadgeCheck } from "lucide-react";
 import { motion } from "framer-motion";
 import CircleCheck from "../svg/CircleCheck";
 
-const AboutHighlights = () => {
-  const cards = [
-    {
-      title: "History",
-      text: "Founded in 2002, BSS began its journey with a vision to provide inclusive and advanced medical education in Bhandara. Over two decades, the institution has established nursing, physiotherapy and Ayurvedic colleges that now serve as pillars of healthcare learning in the Vidarbha region.",
-      color: "#FF77654D",
-      iconBg: "#FF7765",
-    },
-    {
-      title: "Aim",
-      text: "Aims to produce competent, compassionate, and ethical healthcare professionals. The institution focuses on blending scientific knowledge with human values, ensuring that every graduate contributes meaningfully to society’s well-being. We inspire lifelong learning and dedication in every aspiring healthcare professional.",
-      color: "#D2EDFF",
-      iconBg: "#289EEE",
-    },
-    {
-      title: "Objectives",
-      text: "We are committed to transforming Bhandara district into a center of excellence for advanced education and modern healthcare. By expanding educational and employment opportunities for the youth of Vidarbha, Bhondekar Shiksha Sansthan strives to empower communities through knowledge and service.",
-      color: "#E6F8AF",
-      iconBg: "#9CC71A",
-    },
-  ];
+const AboutHighlights = ({ cards = [] }) => {
+  
 
   // Animation Variants
   const fadeUp = {

@@ -6,13 +6,8 @@ import Graduation from "../svg/graduationCap";
 import Certificate from "../svg/Certificate";
 import User from "../svg/User";
 
-const BssStats = () => {
-  const stats = [
-    { iconimg: <Graduation/>, number: "97%", label: "Graduates"  },
-    { iconimg: <Certificate/>, number: "30X", label: "Certified Teachers" },
-    { iconimg: <Building/>, number: "8", label: "Student Campuses" },
-    { iconimg: <User/>, number: "6510", label: "Students" },
-  ];
+const BssStats = ({ stats = [] }) => {
+
 
   // Wrapper animation (stagger children)
   const container = {
@@ -34,7 +29,7 @@ const BssStats = () => {
     <section className="bss-stats-section mb-100">
       <div className="container">
         <Motion.div
-          className="statsBanner"
+          className="statsBanner overflow-hidden"
           variants={container}
           initial="hidden"
           whileInView="show"
@@ -43,7 +38,6 @@ const BssStats = () => {
           {stats.map((item, index) => (
             <Motion.div key={index} className="bss-stat-card d-flex" variants={fadeUp}>
               <div className="bss-icon-box">
-                {/* <img src={item.iconimg} alt={item.label} /> */}
                 <span>{item.iconimg}</span>
               </div>
               <div className="ms-2">

@@ -4,7 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { motion as Motion } from "framer-motion";
 import Image from "next/image";
 
-const HeroSection = () => {
+const HeroSection = ({subHeading, mainHeading, content, urltext1, urltext2, urlLink1, urlLink2, imgUrl}) => {
   // Stagger container for left content
   const container = {
     hidden: {},
@@ -35,41 +35,35 @@ const HeroSection = () => {
               viewport={{ once: true }}
             >
               <Motion.h4 variants={fadeUp}>
-                Committed to Excellence in nursing courses
+                {subHeading}
               </Motion.h4>
 
               <Motion.h1 variants={fadeUp}>
-                Welcome to Bhondekar Shikshan Sanstha! <span>(BSS)</span>
+                {mainHeading} <span>(BSS)</span>
               </Motion.h1>
 
               <Motion.p variants={fadeUp}>
-                Bhondekar Shiksha Sansthan, Bhandara, since 2002, is a trusted
-                name in medical and nursing education. The institution is
-                dedicated to nurturing skilled healthcare professionals through
-                world-class teaching, modern facilities, advancement of medical
-                research and learning. With a strong foundation of ethics and
-                excellence, we inspire students to serve humanity through
-                knowledge and innovation.
+                {content}
               </Motion.p>
 
               {/* BUTTONS */}
               <Motion.div variants={fadeUp} className="hero_btns d-flex gap-3">
                 <Motion.a
-                  href="/about-us"
+                  href={urlLink1}
                   className="hero_btn"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  About Us <MdArrowOutward className="ms-2 angle_arrow" />
+                  {urltext1} <MdArrowOutward className="ms-2 angle_arrow" />
                 </Motion.a>
 
                 <Motion.a
-                  href="/leadership"
+                  href={urlLink2}
                   className="hero_btn_outline"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Get Connected
+                  {urltext2}
                 </Motion.a>
               </Motion.div>
             </Motion.div>
@@ -84,8 +78,8 @@ const HeroSection = () => {
             className="col-lg-6 border_right position-relative pe-0 hero-img-wrapper mt-5"
           >
             <Image
-              src="/assets/heroimg.png"
-              alt="Hero"
+              src={imgUrl}
+              alt={mainHeading}
               className="hero_image"
               fill
               priority

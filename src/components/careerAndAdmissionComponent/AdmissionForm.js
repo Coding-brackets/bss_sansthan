@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
+import { toast } from "react-toastify";
 
 function JobApplicationForm() {
   const [preview, setPreview] = useState(null);
@@ -53,14 +54,14 @@ function JobApplicationForm() {
     if (!contentType || !contentType.includes("application/json")) {
       const text = await res.text();
       console.error("Non-JSON response:", text);
-      alert("Server error. Please check console.");
+      toast.error("Server error! Please try again later.");
       return;
     }
 
     const data = await res.json();
 
     if (res.ok && data.success) {
-      alert("Form Submitted Successfully!");
+      toast.success("Form Submitted Successfully!");
       setFormData({
         fullname: "",
         email: "",
@@ -76,7 +77,7 @@ function JobApplicationForm() {
     }
   } catch (error) {
     console.error("Upload failed:", error);
-    alert("Network error. Please try again.");
+    toast.error("Network error. Please try again.");
   }
 };
 

@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation"; 
 import CircleCheck from "../svg/CircleCheck";
 
-const Success = ({ heading = "Success Stories" }) => {
+const Success = ({ heading, exploreUrl, image, stats, exploreText }) => {
   // Reusable animation variants
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -23,9 +23,9 @@ const Success = ({ heading = "Success Stories" }) => {
   
     const handleClick = () => {
       if (url.startsWith("http")) {
-        window.open("/infrastructure-and-facilities", "_blank");
+        window.open(exploreUrl, "_blank");
       } else {
-        router.push("/infrastructure-and-facilities"); // ✅ Next.js navigation
+        router.push(exploreUrl); // ✅ Next.js navigation
       }
     };
 
@@ -54,8 +54,8 @@ const Success = ({ heading = "Success Stories" }) => {
               <CircleCheck className="badge_check" />
             </div>
             <div className="success_con_box">
-              <h3 className="">10,000+</h3>
-              <p className="m-0">Students Regularly Enrolled</p>
+              <h3 className="">{stats[0].value}</h3>
+              <p className="m-0">{stats[0].label}</p>
             </div>
           </motion.div>
 
@@ -65,7 +65,7 @@ const Success = ({ heading = "Success Stories" }) => {
             variants={fadeScale}
           >
             <Image
-              src="/assets/doctor2.png"
+              src={image}
               alt="dr. examining patient"
               className="img-fluid w-100 h-100 object-fit-cover"
               width={1000}
@@ -82,8 +82,8 @@ const Success = ({ heading = "Success Stories" }) => {
               <LiaUserTieSolid color="#fff" className="badge_check" />
             </div>
             <div className="success_con_box">
-              <h3 className="">7,000+</h3>
-              <p className="m-0">Graduated Successfully</p>
+              <h3 className="">{stats[1].value}</h3>
+              <p className="m-0">{stats[1].label}</p>
             </div>
           </motion.div>
 
@@ -98,7 +98,7 @@ const Success = ({ heading = "Success Stories" }) => {
               size={24}
               className="position-absolute top-0 end-0 m-3 text-white"
             />
-            <h4 className="text-white mb-0">Explore BSS</h4>
+            <h4 className="text-white mb-0">{exploreText}</h4>
           </motion.div>
         </div>
       </div>

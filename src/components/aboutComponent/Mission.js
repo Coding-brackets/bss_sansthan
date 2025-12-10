@@ -42,7 +42,7 @@ const Mission = ({
 
               {Array.isArray(description) ? (
                 description.map((para, index) => (
-                  <p key={index} className="section_para ">
+                  <p key={index} className="section_para" style={{ fontWeight: 500 }}>
                     {para}
                   </p>
                 ))

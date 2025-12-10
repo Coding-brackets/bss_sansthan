@@ -25,6 +25,12 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+     // ✅ Custom validation
+    if (!formData.firstName || !formData.email || !formData.subject || !formData.message) {
+      toast.error("Please fill all required fields: Name, Email, Subject, and Message.");
+      return;
+    }
+
     const payload = {
       first_name: formData.firstName,
       last_name: formData.lastName,
@@ -54,11 +60,11 @@ const ContactForm = () => {
           lastName: "",
           email: "",
           phone: "",
-          subject: "",
+          subject: "General Inquiry",
           message: "",
         });
       } else {
-         toast.error("Something went wrong: " + JSON.stringify(data.errors));
+         console.error("Something went wrong: " + JSON.stringify(data.errors));
         // alert("Something went wrong: " + JSON.stringify(data.errors));
       }
     } catch (error) {
@@ -83,37 +89,40 @@ const ContactForm = () => {
               <form onSubmit={handleSubmit}>
                 <div className="row mb-3">
                   <div className="col-md-6 contact-input-sec">
-                    <label className="form-label small">First Name</label>
+                    <label className="form-label small">First Name<span style={{ color: "red" }}>*</span></label>
                     <input
                       type="text"
                       className="form-control contactForm-input"
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
+                      required
                     />
                   </div>
 
                   <div className="col-md-6 contact-input-sec">
-                    <label className="form-label small">Last Name</label>
+                    <label className="form-label small">Last Name<span style={{ color: "red" }}>*</span></label>
                     <input
                       type="text"
                       className="form-control contactForm-input"
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleChange}
+                      required
                     />
                   </div>
                 </div>
 
                 <div className="row mb-3">
                   <div className="col-md-6 contact-input-sec">
-                    <label className="form-label small">Email</label>
+                    <label className="form-label small">Email<span style={{ color: "red" }}>*</span></label>
                     <input
                       type="email"
                       className="form-control contactForm-input"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
+                      required
                     />
                   </div>
 
@@ -131,13 +140,14 @@ const ContactForm = () => {
 
                 {/* SUBJECT FIELD */}
                 <div className="col-md-12 contact-input-sec">
-                  <label className="form-label small">Subject</label>
+                  <label className="form-label small">Subject<span style={{ color: "red" }}>*</span></label>
                   <input
                       type="subject"
                       className="form-control contactForm-input"
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
+                      required
                     />
                   </div>
                   {/* <select
@@ -155,13 +165,14 @@ const ContactForm = () => {
                 {/* </div> */}
 
                 <div className="col-12 contact-input-sec mb-4">
-                  <label className="form-label small">Message</label>
+                  <label className="form-label small">Message<span style={{ color: "red" }}>*</span></label>
                   <textarea
                     className="form-control contactForm-input"
                     name="message"
                     rows="3"
                     value={formData.message}
                     onChange={handleChange}
+                    required
                   ></textarea>
                 </div>
 

@@ -15,16 +15,15 @@ const SantGadgeBabamadhyamik = () => {
 
       <CollegeConSec
         image="/assets/CollegesImg/sant-Gadge-baba-madhyamik/school.png"
-        heading="Let’s Explore Sant Gadge Baba Madhyamik Shala, Nerla"
+        heading="Come and Discover Sant Gadge Baba School"
         description={[
-            "Bhojraj Bhondekar Ayurvedic College was founded by Shri Bhojrajji in 2002, Bhandara, Maharashtra. This institute is renowned for its education in the field of Ayurveda and health services that help unprivileged groups to rise above poverty. The goal behind its establishment was to improve society by offering education to poor students with the help of MLA Narendra Bhodenkar. Today, we are operating 14 colleges across Maharashtra that offer nursing courses.",
-            "By combining education with moral values and modern-day technology, this institute has helped various students to get a better education and life. The addition of e-libraries, gyms and healthcare camps in our learning system has encouraged more students to access our services."
+            "Sant Gadge Baba School offers simple and practical learning that helps students understand daily life and important values in a fun and meaningful way. Here, we promote clean habits and respect, inspired by the teachings of Sant Gadge Baba. Students learn through stories, hands-on activities, extra-curricular programs, and lively lessons that make every day exciting. Our teachers support each child with patience and care, helping them grow in skills, confidence, and creativity. With a warm and motivating environment, the school shapes responsible and active learners who love coming to school. Contact Us to know how students discover new talents and shine brighter every single day."
         ]}
         buttonText="Visit Now"
         url="/"
       />
       <CollegeGallery
-      para="Being a reputed Ayurveda institute, we help our students to gain maximum knowledge by combining theory with real-life scenarios."
+      para="Check out the gallery to experience the learning moments and celebrations of our students."
       images={[
     "/assets/CollegesImg/sant-Gadge-baba-madhyamik/school-image1.jpg",
     "/assets/CollegesImg/sant-Gadge-baba-madhyamik/school-image2.jpg",
@@ -35,8 +34,8 @@ const SantGadgeBabamadhyamik = () => {
   ]}
       />
       <QuoteComponent
-        para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
-        quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
+        para="Our institution strives to provide quality learning and a caring space where students can grow well. We believe in strong values, clear teaching, and gradual skill development. Parents and students are welcome to reach out whenever they need assistance."
+        quote="Together, we aim to shape a bright and confident future for every learner."
         image1="/assets/CollegesImg/ayurved.png"
         image2="/public/assets/CollegesImg/sant-Gadge-baba-madhyamik/Rectangle 21206.png"
       />

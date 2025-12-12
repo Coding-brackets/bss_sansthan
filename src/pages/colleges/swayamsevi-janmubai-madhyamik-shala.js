@@ -15,16 +15,15 @@ const SwayamseviJanmubaiMadhyamik = () => {
 
       <CollegeConSec
         image="/assets/CollegesImg/swayamsevi-janmubai/school.png"
-        heading="Let’s Explore Swayamsevi Janmubai Madhyamik Shala, Umri, Navegaon Bandh"
+        heading="Begin your journey into Janmubai Madhyamik Shala"
         description={[
-            "Late Shri Bhojrajji Bhondekar, the brainchild of Bhojrajji Bhondekar Physiotherapy College, founded this institution to bring change in society through education and community service. It is a government-recognized institute currently managed by Bhodenkar Shikshan Sanstha ",
-            "This Physiotherapy College has 6 departments with advanced facilities and modern equipment. Students can choose their desired fields and can access the digital library, which offers online articles and video lectures by professionals."
+            "Janmubai Madhyamik Shala delivers a strong and focused education for students from upper primary to high school, providing students with the proper guidance and structure they need to progress confidently. The school follows clear teaching methods and well-planned lessons that help students understand subjects with ease and stay prepared for academic success. Along with classroom learning, students participate in sports, cultural programs, competitions, and skill-based activities that help them discover their abilities and develop a balanced personality. With a safe environment and 100% opportunities to learn beyond textbooks, the school prepares every learner for future studies with a strong foundation. Click to explore how students advance academically toward a successful future at Janmubai Madhyamik Shala."
         ]}
         buttonText="Visit Now"
         url="/"
       />
       <CollegeGallery
-      para="Our institute has made learning easy by merging theory with practicals. The timely activities we provide help our students to apply their knowledge in real life."
+      para="Enjoy a collection of images that show how our students participate and achieve."
       images={[
     "/assets/CollegesImg/swayamsevi-janmubai/student1.jpg",
     "/assets/CollegesImg/swayamsevi-janmubai/student2.jpg",
@@ -35,7 +34,7 @@ const SwayamseviJanmubaiMadhyamik = () => {
   ]}
       />
       <QuoteComponent
-        para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
+        para="We are committed to giving students good learning and a safe, supportive space to move forward. Strong values, simple teaching methods, and steady skill improvement guide our work. Parents and students can contact us anytime for help or information. With this support, we look forward to building a confident future for every child."
         quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
         image1="/assets/CollegesImg/ayurved.png"
         image2="/assets/CollegesImg/swayamsevi-janmubai/Rectangle 21206.png"

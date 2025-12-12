@@ -15,16 +15,15 @@ const DrBabasahebAambedkar = () => {
 
       <CollegeConSec
         image="/assets/CollegesImg/babasaheb-ambedkar-school/award-ceremony.png"
-        heading="Let’s Explore Dr. Babasaheb aambedkar niwasi matimand school, bhandara"
+        heading="Let’s take a tour of Ambedkar Niwasi School"
         description={[
-            "Bhojraj Bhondekar Ayurvedic College was founded by Shri Bhojrajji in 2002, Bhandara, Maharashtra. This institute is renowned for its education in the field of Ayurveda and health services that help unprivileged groups to rise above poverty. The goal behind its establishment was to improve society by offering education to poor students with the help of MLA Narendra Bhodenkar. Today, we are operating 14 colleges across Maharashtra that offer nursing courses.",
-            "By combining education with moral values and modern-day technology, this institute has helped various students to get a better education and life. The addition of e-libraries, gyms and healthcare camps in our learning system has encouraged more students to access our services."
+            "A safe and home-like space where students feel protected and ready to learn with confidence. The school builds strong reading and writing habits, boosts self-belief and helps every child grow through meaningful daily activities. Caring teachers guide each student step by step so they feel encouraged and excited to improve. Students learn at their own pace and develop skills that truly matter. With a friendly environment, inspiring programs and chances to explore new abilities, the school aims to help every child build a bright future they can be proud of. Click to discover how students grow more every day."
         ]}
         buttonText="Visit Now"
         url="/"
       />
       <CollegeGallery
-      para="Being a reputed Ayurveda institute, we help our students to gain maximum knowledge by combining theory with real-life scenarios."
+      para="Visit our gallery to see snapshots of school life and happy achievements."
       images={[
     "/assets/CollegesImg/babasaheb-ambedkar-school/award-distribution1.jpg",
     "/assets/CollegesImg/babasaheb-ambedkar-school/award-distribution2.jpg",
@@ -35,8 +34,8 @@ const DrBabasahebAambedkar = () => {
   ]}
       />
       <QuoteComponent
-        para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
-        quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
+        para="We aim to offer every student good learning and a caring place to develop. With strong values, simple teaching and steady skill-building, we help students progress every day. Parents and students can always contact us for guidance or support. "
+        quote="Our goal is to shape a confident and promising future for each child."
         image1="/assets/CollegesImg/ayurved.png"
         image2="/assets/CollegesImg/pes-multispeciality-hospital/Rectangle 21206.png"
       />

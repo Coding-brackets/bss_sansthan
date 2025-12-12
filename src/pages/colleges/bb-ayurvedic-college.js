@@ -16,10 +16,10 @@ const BBAyurvedic = () => {
       <Announcement/>
       <CollegeConSec
         image="/assets/CollegesImg/doctorImg.png"
-        heading="Let’s Learn More About Bhojrajji Bhondekar Physiotherapy College"
+        heading="Let’s Explore Bhojraj Bhondekar Ayurvedic College"
         description={[
-            "Late Shri Bhojrajji Bhondekar, the brainchild of Bhojrajji Bhondekar Physiotherapy College, founded this institution to bring change in society through education and community service. It is a government-recognized institute currently managed by Bhodenkar Shikshan Sanstha with the goal of providing education easily to underprivileged students. The idea of this institute is to help students access job opportunities in the field of Physiotherapy within their budget.",
-            "This Physiotherapy College has 6 departments with advanced facilities and modern equipment. Students can choose their desired fields and can access the digital library, which offers online articles and video lectures by professionals."
+            "Bhojraj Bhondekar Ayurvedic College was founded by Shri Bhojrajji in 2002, Bhandara, Maharashtra. This institute is renowned for its education in the field of Ayurveda and health services that help unprivileged groups to rise above poverty. The goal behind its establishment was to improve society by offering education to poor students with the help of MLA Narendra Bhodenkar. Today, we are operating 14 colleges across Maharashtra that offer nursing courses.",
+            "By combining education with moral values and modern-day technology, this institute has helped various students to get a better education and life. The addition of e-libraries, gyms and healthcare camps in our learning system has encouraged more students to access our services. "
         ]}
         buttonText="Visit Now"
         url="/"
@@ -36,8 +36,8 @@ const BBAyurvedic = () => {
   ]}
       />
       <QuoteComponent
-        para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
-        quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
+        para="At BB Ayurvedic College, we nurture a learning ecosystem where curiosity and knowledge grows together. Through student-focused initiatives, we continue shaping the next generation of healthcare professionals. Our vision extends beyond academic success according to which we cultivate individuals who lead with compassion and purpose."
+        quote="Every achievement stands as a testament to our unwavering mission of quality education and positive community impact."
         image1="/assets/CollegesImg/ayurved.png"
         image2="/assets/CollegesImg/collegeQuote1.png"
       />

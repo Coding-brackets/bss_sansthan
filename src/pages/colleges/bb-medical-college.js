@@ -15,16 +15,16 @@ const BbMedicalCollege = () => {
 
       <CollegeConSec
         image="/assets/CollegesImg/medicalCollege/medical-college-doctor-Image.png"
-        heading="Let’s Explore Bhagyashri Bhondekar Medical College"
+        heading="A Legacy of Excellence: BB Medical College"
         description={[
-            "Bhojraj Bhondekar Ayurvedic College was founded by Shri Bhojrajji in 2002, Bhandara, Maharashtra. This institute is renowned for its education in the field of Ayurveda and health services that help unprivileged groups to rise above poverty. The goal behind its establishment was to improve society by offering education to poor students with the help of MLA Narendra Bhodenkar. Today, we are operating 14 colleges across Maharashtra that offer nursing courses.",
-            "By combining education with moral values and modern-day technology, this institute has helped various students to get a better education and life. The addition of e-libraries, gyms and healthcare camps in our learning system has encouraged more students to access our services."
+            "BB Medical College, located in Maharashtra, provides an expert learning environment to students who want to pursue medical sciences. The use of a structured curriculum along with advanced technology and medical equipment has helped the students to grasp knowledge more easily. Since the establishment of this College, we have encountered a huge growth in patient care along with education.",
+            "Currently, the BB Medical College is run by various professionals who are experts in their respective fields. Students can use our online portal to access details related to admission and fees."
         ]}
         buttonText="Visit Now"
         url="/"
       />
       <CollegeGallery
-      para="Being a reputed Ayurveda institute, we help our students to gain maximum knowledge by combining theory with real-life scenarios."
+      para="A glimpse into our campus life and learning journey. Discover the essence of BB Medical College through our gallery."
       images={[
     "/assets/CollegesImg/medicalCollege/doctor-performing-surgery.png",
     "/assets/CollegesImg/medicalCollege/doctor-vacinating-patient.png",
@@ -35,8 +35,8 @@ const BbMedicalCollege = () => {
   ]}
       />
       <QuoteComponent
-        para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
-        quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
+        para="BB Medical College continues to lead with a commitment to evidence-based education, modern healthcare practices, and meaningful community service. BB Medical College continues to lead with a commitment to evidence-based education, modern healthcare practices, and meaningful community service."
+        quote="Every advancement we make strengthens our promise, to shape skilled medical professionals with a healing mindset."
         image1="/assets/CollegesImg/ayurved.png"
         image2="/assets/CollegesImg/medicalCollege/young-doctor.png"
       />

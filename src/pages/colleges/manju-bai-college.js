@@ -16,43 +16,43 @@ const ManjuBaiCollege = () => {
 
       <CollegeConSec
         image="/assets/CollegesImg/manjubai-college/college-staffs.png"
-        heading="Let’s Learn More About Manjubai BA/MA College, Bhawani"
+        heading="Find out more about Manjubai BA/MA College, Bhawani"
         description={[
-          "Late Shri Bhojrajji Bhondekar, the brainchild of Bhojrajji Bhondekar Physiotherapy College, founded this institution to bring change in society through education and community service. It is a government-recognized institute currently managed by Bhodenkar Shikshan Sanstha with the goal of providing education easily to underprivileged students. The idea of this institute is to help students access job opportunities in the field of Physiotherapy within their budget.",
-          "This Physiotherapy College has 6 departments with advanced facilities and modern equipment. Students can choose their desired fields and can access the digital library, which offers online articles and video lectures by professionals.",
+          "Manjubai BA/MA College, Bhawani was established by the late Shri Bhojrajji Bhodenkar to provide graduate and postgraduate degrees in the fields of art. The foundation of this college was initiated with an idea to help students coming from marginalized communities to get a valuable education on a limited budget. Students are free to choose preferred subjects like Economics, Philosophy, Psychology, History or literature.",
+          "With expert guidance from qualified teachers and a digital library, our Manjubai BA/MA College is helping students to attain success in their respective fields. We welcome every student who wants to grasp knowledge easily.",
         ]}
         buttonText="Visit Now"
         url="/"
       />
 
         <CarouselGallery
-      para="This college has been established to provide platform for the candidates interested in nursing as a career."
+      para="We at Manjubai BA/MA College believe that education should be fun hence, we encourage our students to participate in various activities"
 
         items={[
           {
             img: "/assets/CollegesImg/manjubai-college/biometric-attendence.jpg",
             title: "Campus",
-            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+            desc: "Take a moment to explore Our School.",
           },
           {
             img: "/assets/CollegesImg/manjubai-college/classroom.jpg",
             title: "Campus",
-            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+            desc: "Take a moment to explore Our School.",
           },
           {
             img: "/assets/CollegesImg/manjubai-college/teacher-teaching-stu.jpg",
             title: "Campus",
-            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+            desc: "Take a moment to explore Our School.",
           },
           {
             img: "/assets/CollegesImg/manjubai-college/dr-examining-student.jpg",
             title: "Campus",
-            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+            desc: "Take a moment to explore Our School.",
           },
           {
             img: "/assets/CollegesImg/manjubai-college/teacher.jpg",
             title: "Campus",
-            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+            desc: "Take a moment to explore Our School.",
           },
         ]}
       />
@@ -60,8 +60,8 @@ const ManjuBaiCollege = () => {
       
 
       <QuoteComponent
-        para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
-        quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
+        para="Our institution, Manjubai College, is committed to shaping informed and socially responsible graduates through quality education and inclusive learning. We advance education by blending academic excellence with values and student empowerment."
+        quote="Every effort we make represents our mission, to nurture scholars and changemakers for a better future."
         image1="/assets/CollegesImg/ayurved.png"
         image2="/assets/CollegesImg/manjubai-college/Rectangle 21206.png"
       />

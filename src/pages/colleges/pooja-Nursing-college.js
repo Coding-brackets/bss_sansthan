@@ -26,40 +26,40 @@ const PoojaNursing = () => {
       />
 
       <CarouselGallery 
-      para="This college has been established to provide platform for the candidates interested in nursing as a career."
+      para="Here is a small piece of collections that were captured during college events and social programs conducted by our faculty."
 
         items={[
           {
             img: "/assets/CollegesImg/pooja-nursing-college/college-fest-image1.jpg",
             title: "Campus",
-            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+            desc: "Take a moment to explore Our School.",
           },
           {
             img: "/assets/CollegesImg/pooja-nursing-college/college-fest-image2.jpg",
             title: "Campus",
-            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+            desc: "Take a moment to explore Our School.",
           },
           {
             img: "/assets/CollegesImg/pooja-nursing-college/college-fest-image3.jpg",
             title: "Campus",
-            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+            desc: "Take a moment to explore Our School.",
           },
           {
             img: "/assets/CollegesImg/pooja-nursing-college/college-fest-image4.jpg",
             title: "Campus",
-            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+            desc: "Take a moment to explore Our School.",
           },
           {
             img: "/assets/CollegesImg/pooja-nursing-college/nursing-students.jpg",
             title: "Campus",
-            desc: "BCSS emerged out in Bhandara under the eminent leadership...",
+            desc: "Take a moment to explore Our School.",
           },
         ]}
       />
 
       <QuoteComponent
-        para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
-        quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
+        para="We strive to create an environment where learning thrives. With the help of advanced facilities and student-centered initiatives, we continue to inspire future healthcare leaders. Our commitment goes beyond academics! We aim to shape professionals who serve humanity with integrity."
+        quote="Every milestone we achieve reflects our dedication to excellence and meaningful societal impact."
         image1="/assets/CollegesImg/ayurved.png"
         image2="/assets/CollegesImg/pooja-nursing-college/female-doctor-with-stethoscope-her-neck 1.png"
       />

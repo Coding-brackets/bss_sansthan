@@ -17,14 +17,15 @@ const SwayamseviJanmubaiBhondekar = () => {
         image="/assets/CollegesImg/swayamsevi-bhondekar-college/classroomFrame.png"
         heading="Let’s Explore Swayamsevi Janmubai Bhondekar College, Umri, Navegaon Bandh"
         description={[
-            "Late Shri Bhojrajji Bhondekar, the brainchild of Bhojrajji Bhondekar Physiotherapy College, founded this institution to bring change in society through education and community service. It is a government-recognized institute currently managed by Bhodenkar Shikshan Sanstha ",
-            "This Physiotherapy College has 6 departments with advanced facilities and modern equipment. Students can choose their desired fields and can access the digital library, which offers online articles and video lectures by professionals."
+            "Janmubai Bhondekar College provides a strong platform for higher education, guiding students as they work toward meaningful careers and personal growth. The college blends clear instruction and regular mentorship so students can understand their subjects with full confidence and apply their own knowledge in real situations. ",
+            "Students receive support for competitive exams and overall personality shaping, helping them stand out in today’s world. We motivate students to explore new fields and connect with opportunities that match their goals. With steady guidance and a focus on real-world readiness, the college prepares young adults to move forward with clarity and purpose. ",
+            "Discover how students here build strong abilities and move closer to the careers they dream of."
         ]}
         buttonText="Visit Now"
         url="/"
       />
       <CollegeGallery
-      para="Our institute has made learning easy by merging theory with practicals. The timely activities we provide help our students to apply their knowledge in real life."
+      para="Discover how our students learn and grow by browsing the pictures in our gallery.."
       images={[
     "/assets/CollegesImg/swayamsevi-bhondekar-college/classroom.jpg",
     "/assets/CollegesImg/swayamsevi-bhondekar-college/classroom1.jpg",
@@ -35,8 +36,8 @@ const SwayamseviJanmubaiBhondekar = () => {
   ]}
       />
       <QuoteComponent
-        para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
-        quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
+        para="Our institution works to give every student quality learning and a supportive space to grow. We focus on strong values, clear teaching, and building skills step by step. Parents and students can reach out anytime for help or information. "
+        quote="Together, we work towards creating a bright and confident future for every learner."
         image1="/assets/CollegesImg/ayurved.png"
         image2="/assets/CollegesImg/swayamsevi-bhondekar-college/Rectangle 21206@2x.png"
       />

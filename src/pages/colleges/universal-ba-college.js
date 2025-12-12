@@ -15,16 +15,16 @@ const UniversalBA = () => {
 
       <CollegeConSec
         image="/assets/CollegesImg/universal-ba-college/student-collage-img.png"
-        heading="Let’s Explore Universal BA College, Nerla"
+        heading="Let us learn about Universal BA College, Nerla"
         description={[
-            "Bhojraj Bhondekar Ayurvedic College was founded by Shri Bhojrajji in 2002, Bhandara, Maharashtra. This institute is renowned for its education in the field of Ayurveda and health services that help unprivileged groups to rise above poverty. The goal behind its establishment was to improve society by offering education to poor students with the help of MLA Narendra Bhodenkar. Today, we are operating 14 colleges across Maharashtra that offer nursing courses.",
-            "By combining education with moral values and modern-day technology, this institute has helped various students to get a better education and life. The addition of e-libraries, gyms and healthcare camps in our learning system has encouraged more students to access our services."
+            "The Universal BA College in Nerla, Maharashtra was founded by the late Shri Bhojrajji Bhodenkar in 2002. The aim behind the construction of this college in the remote village of Nerla was to deliver expert learning facilities for the students. The continuous praise that we receive from students, their parents and the community has encouraged us to provide exceptional educational facilities in the fields of Arts.",
+            "Our Universal BA College allows the students of Nerla to complete their graduation and post-graduation programs without any inconvenience. We have helped various students of this village to get quality education."
         ]}
         buttonText="Visit Now"
         url="/"
       />
       <CollegeGallery
-      para="Being a reputed Ayurveda institute, we help our students to gain maximum knowledge by combining theory with real-life scenarios."
+      para="Browse through our pictures to see the energy of our students."
       images={[
     "/assets/CollegesImg/universal-ba-college/stu-writing-notepad.jpg",
     "/assets/CollegesImg/universal-ba-college/happy-student-with-notebook.jpg",
@@ -35,8 +35,8 @@ const UniversalBA = () => {
   ]}
       />
       <QuoteComponent
-        para="Our organization stands as a model of modern education blended with compassionate service and sustainability. Our organization stands as a model of modern education blended with compassionate service and sustainability."
-        quote="Every facility we build reflects our mission — to nurture excellence, innovation, and holistic growth."
+        para="We are strongly committed to giving students good learning and a safe space to move ahead. We work with 100% disciplined values and use steady skill as well. Parents and students can contact us anytime for help or information. With this support, we look forward to building a confident future for every child."
+        quote="Our teaching methods and academic activities reflect our strong commitment to student development. We guide learners toward high standards of excellence, ensuring they progress confidently in life."
         image1="/assets/CollegesImg/ayurved.png"
         image2="/assets/CollegesImg/universal-ba-college/Rectangle 21206.png"
       />

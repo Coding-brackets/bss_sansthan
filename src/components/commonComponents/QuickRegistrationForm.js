@@ -19,7 +19,7 @@ const QuickRegistrationForm = ({ collegeName, onClose }) => {
 
     // console.log("Form submitted:", formData);
     try {
-      const res = await fetch("https://bss.alekh.online/api/post-admission", {
+      const res = await fetch("https://bss.youstable.cfd/api/post-admission", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

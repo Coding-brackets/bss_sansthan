@@ -10,7 +10,7 @@ const ManjuBaiCollege = () => {
     <div>
       <HeroSection
         subHeadingCon="Welcome to"
-        heading="Manju bai BA/MA College, Bhawani"
+        heading="Manjulabai BA/MA College, Bhawani"
         bgImage="/assets/heroImages/manju-baicollege.webp"
       />
 
@@ -18,7 +18,7 @@ const ManjuBaiCollege = () => {
         image="/assets/CollegesImg/manjubai-college/college-staffs.png"
         heading="Find out more about Manjubai BA/MA College, Bhawani"
         description={[
-          "Manjubai BA/MA College, Bhawani was established by the late Shri Bhojrajji Bhodenkar to provide graduate and postgraduate degrees in the fields of art. The foundation of this college was initiated with an idea to help students coming from marginalized communities to get a valuable education on a limited budget. Students are free to choose preferred subjects like Economics, Philosophy, Psychology, History or literature.",
+          "Manjulabai BA/MA College, Bhawani was established by the late Shri Bhojrajji Bhodenkar to provide graduate and postgraduate degrees in the fields of art. The foundation of this college was initiated with an idea to help students coming from marginalized communities to get a valuable education on a limited budget. Students are free to choose preferred subjects like Economics, Philosophy, Psychology, History or literature.",
           "With expert guidance from qualified teachers and a digital library, our Manjubai BA/MA College is helping students to attain success in their respective fields. We welcome every student who wants to grasp knowledge easily.",
         ]}
         buttonText="Visit Now"
@@ -26,7 +26,7 @@ const ManjuBaiCollege = () => {
       />
 
         <CarouselGallery
-      para="We at Manjubai BA/MA College believe that education should be fun hence, we encourage our students to participate in various activities"
+      para="We at Manjlaubai BA/MA College believe that education should be fun hence, we encourage our students to participate in various activities"
 
         items={[
           {

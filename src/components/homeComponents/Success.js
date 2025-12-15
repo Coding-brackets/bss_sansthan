@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
-import { ArrowUpRight, BadgeCheck } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { LiaUserTieSolid } from "react-icons/lia";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation"; 
 import CircleCheck from "../svg/CircleCheck";
 
-const Success = ({ heading, exploreUrl, image, stats, exploreText }) => {
-  // Reusable animation variants
+const Success = ({ heading, image, stats, exploreText }) => {
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.9 } },
@@ -19,15 +18,11 @@ const Success = ({ heading, exploreUrl, image, stats, exploreText }) => {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
   };
 
-    const router = useRouter();
-  
-    const handleClick = () => {
-      if (url.startsWith("http")) {
-        window.open(exploreUrl, "_blank");
-      } else {
-        router.push(exploreUrl); // ✅ Next.js navigation
-      }
-    };
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/infrastructure-and-facilities");
+  };
 
   return (
     <motion.div
@@ -37,33 +32,26 @@ const Success = ({ heading, exploreUrl, image, stats, exploreText }) => {
       viewport={{ once: true, amount: 0.2 }}
     >
       <div className="container">
-        <motion.h2
-          className="section_heading text-center mb-5"
-          variants={fadeUp}
-        >
+        
+        <motion.h2 className="section_heading text-center mb-5" variants={fadeUp}>
           {heading}
         </motion.h2>
 
         <div className="success-grid">
+
           {/* Box 1 */}
-          <motion.div
-            className="div1 d-flex flex-column justify-content-between"
-            variants={fadeUp}
-          >
+          <motion.div className="div1 d-flex flex-column justify-content-between" variants={fadeUp}>
             <div className="icon-wrapper1 successIcon1">
               <CircleCheck className="badge_check" />
             </div>
             <div className="success_con_box">
-              <h3 className="">{stats[0].value}</h3>
+              <h3>{stats[0].value}</h3>
               <p className="m-0">{stats[0].label}</p>
             </div>
           </motion.div>
 
           {/* Box 2 (Image) */}
-          <motion.div
-            className="div2 overflow-hidden"
-            variants={fadeScale}
-          >
+          <motion.div className="div2 overflow-hidden" variants={fadeScale}>
             <Image
               src={image}
               alt="dr. examining patient"
@@ -74,15 +62,12 @@ const Success = ({ heading, exploreUrl, image, stats, exploreText }) => {
           </motion.div>
 
           {/* Box 3 */}
-          <motion.div
-            className="div3 d-flex flex-column justify-content-between"
-            variants={fadeUp}
-          >
+          <motion.div className="div3 d-flex flex-column justify-content-between" variants={fadeUp}>
             <div className="icon-wrapper1 successIcon2">
               <LiaUserTieSolid color="#fff" className="badge_check" />
             </div>
             <div className="success_con_box">
-              <h3 className="">{stats[1].value}</h3>
+              <h3>{stats[1].value}</h3>
               <p className="m-0">{stats[1].label}</p>
             </div>
           </motion.div>
@@ -94,10 +79,7 @@ const Success = ({ heading, exploreUrl, image, stats, exploreText }) => {
             onClick={handleClick}
             style={{ cursor: "pointer" }}
           >
-            <ArrowUpRight
-              size={24}
-              className="position-absolute top-0 end-0 m-3 text-white"
-            />
+            <ArrowUpRight size={24} className="position-absolute top-0 end-0 m-3 text-white" />
             <h4 className="text-white mb-0">{exploreText}</h4>
           </motion.div>
         </div>

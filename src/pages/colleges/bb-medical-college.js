@@ -37,7 +37,7 @@ const BbMedicalCollege = () => {
       <QuoteComponent
         para="BB Medical College continues to lead with a commitment to evidence-based education, modern healthcare practices, and meaningful community service. BB Medical College continues to lead with a commitment to evidence-based education, modern healthcare practices, and meaningful community service."
         quote="Every advancement we make strengthens our promise, to shape skilled medical professionals with a healing mindset."
-        image1="/assets/CollegesImg/ayurved.png"
+        // image1="/assets/CollegesImg/ayurved.png"
         image2="/assets/CollegesImg/medicalCollege/young-doctor.png"
       />
     </div>

@@ -21,7 +21,7 @@ const UniversalBA = () => {
             "Our Universal BA College allows the students of Nerla to complete their graduation and post-graduation programs without any inconvenience. We have helped various students of this village to get quality education."
         ]}
         buttonText="Visit Now"
-        url="/"
+        url="https://poojanursing.com/"
       />
       <CollegeGallery
       para="Browse through our pictures to see the energy of our students."

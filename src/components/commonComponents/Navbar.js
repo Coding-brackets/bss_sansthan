@@ -34,16 +34,16 @@ const navItems = [
             href: "/colleges/pooja-Nursing-college",
           },
           {
-            label: "BB Ayurvedic College",
+            label: "Bhojraj Bhondekar Ayurvedic College",
             href: "/colleges/bb-ayurvedic-college",
           },
-          { label: "BB Medical College", href: "/colleges/bb-medical-college" },
+          { label: "Bhojrajji Bhondekar Medical College", href: "/colleges/bb-medical-college" },
           {
-            label: "Manjubai BA/MA College",
-            href: "/colleges/manju-bai-college",
+            label: "Manjulabai Bhondekar College",
+            href: "/colleges/manjulabai-boondekar-college",
           },
           {
-            label: "Ambedkar Niwasi School",
+            label: "Dr. Babasaheb Ambedkar Residential MR School",
             href: "/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school",
           },
           {
@@ -51,16 +51,16 @@ const navItems = [
             href: "/colleges/universal-ba-college",
           },
           {
-            label: "Sant Gadge Baba School",
+            label: "Sant Gadgebaba Residential MR School",
             href: "/colleges/sant-gadge-baba-madhyamik-shala",
           },
           {
-            label: "Janmubai Madhyamik Shala",
-            href: "/colleges/swayamsevi-janmubai-madhyamik-shala",
+            label: "Late Jamunabai Bhondekar Residential MR School",
+            href: "/colleges/swayamsevi-Jamunabai-madhyamik-shala",
           },
           {
-            label: "Janmubai Bhondekar College",
-            href: "/colleges/swayamsevi-janmubai-bhondekar-college",
+            label: "Late Jamnabai Bhondekar College",
+            href: "/colleges/swayamsevi-Jamunabai-bhondekar-college",
           },
         ],
       },
@@ -68,11 +68,11 @@ const navItems = [
         label: "Hospitals",
         children: [
           {
-            label: "BB Physiotherapy",
+            label: "Bhojrajji Bhondekar Physiotherapy College",
             href: "/colleges/bb-physiotherapy-college",
           },
           {
-            label: "PES Multispeciality Hospital",
+            label: "PES Hospital and Research Centre",
             href: "/colleges/pes-multispeciality-hospital",
           },
         ],

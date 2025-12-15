@@ -7,7 +7,7 @@ const Gallery = () => {
     //  const [galleryTabs, setGalleryTabs] = useState({});
 
     // useEffect(() => {
-    //     fetch("https://bss.alekh.online/api/fetch-gallery-data")
+    //     fetch("https://bss.youstable.cfd/api/fetch-gallery-data")
     //         .then(res => res.json())
     //         .then(response => {
     //             const data = response.data;
@@ -20,7 +20,7 @@ const Gallery = () => {
     //                 if (!groupedData[category]) groupedData[category] = [];
 
     //                 groupedData[category].push({
-    //                     image: "https://bss.alekh.online/public/storage/" + item.image,
+    //                     image: "https://bss.youstable.cfd/public/storage/" + item.image,
     //                     alt: item.alt_text || item.title || "Gallery Image"
     //                 });
     //             });

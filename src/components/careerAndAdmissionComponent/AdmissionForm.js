@@ -41,7 +41,7 @@ function JobApplicationForm() {
   });
 
   try {
-    const res = await fetch("https://bss.alekh.online/api/post-admission", {
+    const res = await fetch("https://bss.youstable.cfd/api/post-admission", {
       method: "POST",
       headers: {
         "Accept": "application/json", // ✅ Tell Laravel you expect JSON

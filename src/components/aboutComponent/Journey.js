@@ -19,8 +19,8 @@ const timelineData = [
   },
   {
     year: "2014",
-    title: "Hon. Shri. Narendraji B. BSS",
-    subtitle: "MLA, Bhandara",
+    title: "Dr Ashwani Narendra Bhondekar",
+    subtitle: "Secretary, BSS",
     description: "Established PES Hospital and Research Centre.",
   },
   {

@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { LiaUserTieSolid } from "react-icons/lia";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 import CircleCheck from "../svg/CircleCheck";
 
 const Success = ({ heading, image, stats, exploreText }) => {
@@ -32,15 +32,32 @@ const Success = ({ heading, image, stats, exploreText }) => {
       viewport={{ once: true, amount: 0.2 }}
     >
       <div className="container">
-        
-        <motion.h2 className="section_heading text-center mb-5" variants={fadeUp}>
+        <motion.h2
+          className="section_heading text-center mb-3"
+          variants={fadeUp}
+        >
           {heading}
         </motion.h2>
+        <motion.p
+          className="text-center w-75 mx-auto mb-5"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          We have transformed thousands of aspiring students into skilled
+          professionals. Graduates are now serving in top organizations and are
+          posted at higher hierarchical levels. The institution’s commitment to
+          academic excellence and holistic growth ensures every student achieves
+          career success with dignity.
+        </motion.p>
 
         <div className="success-grid">
-
           {/* Box 1 */}
-          <motion.div className="div1 d-flex flex-column justify-content-between" variants={fadeUp}>
+          <motion.div
+            className="div1 d-flex flex-column justify-content-between"
+            variants={fadeUp}
+          >
             <div className="icon-wrapper1 successIcon1">
               <CircleCheck className="badge_check" />
             </div>
@@ -62,7 +79,10 @@ const Success = ({ heading, image, stats, exploreText }) => {
           </motion.div>
 
           {/* Box 3 */}
-          <motion.div className="div3 d-flex flex-column justify-content-between" variants={fadeUp}>
+          <motion.div
+            className="div3 d-flex flex-column justify-content-between"
+            variants={fadeUp}
+          >
             <div className="icon-wrapper1 successIcon2">
               <LiaUserTieSolid color="#fff" className="badge_check" />
             </div>
@@ -79,7 +99,10 @@ const Success = ({ heading, image, stats, exploreText }) => {
             onClick={handleClick}
             style={{ cursor: "pointer" }}
           >
-            <ArrowUpRight size={24} className="position-absolute top-0 end-0 m-3 text-white" />
+            <ArrowUpRight
+              size={24}
+              className="position-absolute top-0 end-0 m-3 text-white"
+            />
             <h4 className="text-white mb-0">{exploreText}</h4>
           </motion.div>
         </div>

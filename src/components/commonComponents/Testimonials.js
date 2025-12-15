@@ -12,38 +12,43 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      text: "Students describe BSS as a place where learning meets purpose. From supportive faculty to real-world hospital exposure, the institution provides the perfect environment to master medical skills, build confidence and prepare for a rewarding healthcare career.",
-      name: "James Parker",
-      role: "Operations Lead at TechEdge",
-      img: "/assets/user.png",
+      text: "BSS has given me much more than academic knowledge. The supportive faculty, hands-on hospital training, and real-world exposure have helped me grow both professionally and personally. I feel confident and well-prepared to begin my healthcare career.",
+      name: "Rahul Sharma",
+      role: "Nursing Student, BSS Institute",
+      img: "/assets/testimonial.png",
       socialLink: "/",
       socialIcon: <FaXTwitter />,
     },
     {
-      text: "BSS provides an amazing balance of academics and hands-on learning. The exposure I received during my clinical sessions gave me the confidence to step into my career with ease.",
-      name: "James Parker",
-      role: "Operations Lead at TechEdge",
-      img: "/assets/user.png",
+      text: "BSS has given me much more than academic knowledge. The supportive faculty, hands-on hospital training, and real-world exposure have helped me grow both professionally and personally. I feel confident and well-prepared to begin my healthcare career.",
+      name: "Rahul Sharma",
+      role: "Nursing Student, BSS Institute",
+      img: "/assets/testimonial.png",
       socialLink: "/",
       socialIcon: <FaXTwitter />,
     },
     {
-      text: "BSS provides an amazing balance of academics and hands-on learning. The exposure I received during my clinical sessions gave me the confidence to step into my career with ease.",
-      name: "James Parker",
-      role: "Operations Lead at TechEdge",
-      img: "/assets/user.png",
+      text: "BSS has given me much more than academic knowledge. The supportive faculty, hands-on hospital training, and real-world exposure have helped me grow both professionally and personally. I feel confident and well-prepared to begin my healthcare career.",
+      name: "Rahul Sharma",
+      role: "Nursing Student, BSS Institute",
+      img: "/assets/testimonial.png",
       socialLink: "/",
       socialIcon: <FaXTwitter />,
     },
     {
-      text: "BSS provides an amazing balance of academics and hands-on learning. The exposure I received during my clinical sessions gave me the confidence to step into my career with ease.",
-      name: "James Parker",
-      role: "Operations Lead at TechEdge",
-      img: "/assets/user.png",
+      text: "BSS has given me much more than academic knowledge. The supportive faculty, hands-on hospital training, and real-world exposure have helped me grow both professionally and personally. I feel confident and well-prepared to begin my healthcare career.",
+      name: "Rahul Sharma",
+      role: "Nursing Student, BSS Institute",
+      img: "/assets/testimonial.png",
       socialLink: "/",
       socialIcon: <FaXTwitter />,
     },
   ];
+
+   const fadeUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.9 } },
+  };
 
   const settings = {
     dots: false,
@@ -61,7 +66,24 @@ const Testimonials = () => {
   return (
     <section className="testimonial_section mb-80">
       <div className="container text-center">
-        <h2 className="section_heading">What do our students say?</h2>
+        <motion.h2
+          className="section_heading text-center mb-3"
+          variants={fadeUp}
+        >
+          What Do Our Students Say About Us?
+        </motion.h2>
+        <motion.p
+          className="text-center w-75 mx-auto mb-3"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          Students describe BSS as a place where one gets a supportive faculty,
+          real-world exposure and more-importantly a friendly environment. They
+          get the perfect atmosphere to master skills and prepare for a
+          rewarding career.
+        </motion.p>
 
         <div className="testimonial_slider_wrapper">
           <Slider {...settings}>
@@ -76,7 +98,8 @@ const Testimonials = () => {
                     opacity: 1,
                     y: 0,
                     scale: activeSlide === i ? 1.2 : 1,
-                    transition: { duration: 0.5 }, ease: "easeOut"
+                    transition: { duration: 0.5 },
+                    ease: "easeOut",
                   }}
                 >
                   <motion.p

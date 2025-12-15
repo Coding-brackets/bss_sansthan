@@ -11,14 +11,16 @@
   },
   "bssContent": {
     "heading": "The BSS Legacy",
-    "description": "BSS, Bhandara is an esteemed educational organization committed to transforming society through quality education, healthcare, nursing and employment. The institution offers a wide range of medical and nursing programs that focus on academic excellence, professional ethics, and community service. With experienced faculty, advanced laboratories, and a student-centric approach, BSS is a symbol of trust and excellence in Maharashtra’s healthcare education field.",
+    "description": "Bhondekar Shiksha Sansthan, Bhandara is an esteemed educational organization committed to transforming society through quality education in the fields of law, administration and medical science and employment generation. The institution offers a wide range of educational programs that focus on academic excellence and community service. With experienced faculty, advanced laboratories and a student-centric approach, BSS is a symbol of trust and excellence in Maharashtra’s education field.",
     "points": [
-      "Quality of professionalism",
-      "Best for nursing courses"
+      "Learning from school to undergraduate programs",
+      "Modern infrastructure and quality facilities",
+      "Focus on practical and skill-based learning",
+      "Experienced and dedicated faculty"
     ],
     "buttonText": "Learn More",
     "url": "/about-us",
-    "image": "/assets/doctorimg.png"
+    "image": "/assets/our-leaders.webp"
   },
   "aboutCards": [
     {
@@ -88,7 +90,7 @@
     }
   ],
   "visionMission": {
-    "image": "/assets/doctor1.png",
+    "image": "/assets/leaders.png",
     "heading": "Vision & Mission",
     "description": [
       "BSS envisions creating compassionate healthcare professionals devoted to human welfare, striving for global excellence in medical and nursing education, research, and service while bringing positive societal change through education, healthcare, and employment opportunities for underprivileged communities."
@@ -101,9 +103,9 @@
     "subHeading": "To inspire and empower our students, we regularly organize academic, cultural and healthcare-driven events annually. The upcoming Joint Annual Gathering, Rhythm 2025 celebrates the spirit of service through sports, cultural programs and inspirational sessions by eminent guests."
   },
   "empoweringCon": {
-    "heading": "Empowering Disabled Students",
+    "heading": "Education For Every Ability / For Differently-Abled Students",
     "description": [
-      "Education changed my life. With this organization’s help, I could finally study without barriers.’ Education changed my life. With this organization’s help, I could finally study without barriers."
+      "Every child deserves the right to learn and achieve their fullest potential. Bhondekar Shiksha Sansthan is deeply dedicated to creating an atmosphere that supports students with disabilities."
     ],
     "ButtonText": "Learn More",
     "ButtonUrl": "/special-students",

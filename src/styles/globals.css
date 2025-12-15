@@ -1982,8 +1982,8 @@ a {
 
 .slide-news-img {
   height: 100%;
-  width: fit-content;
-  object-fit: contain;
+  width: 100%;
+  object-fit: cover;
 }
 
 .swiper-slide {

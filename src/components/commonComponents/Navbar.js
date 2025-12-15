@@ -34,8 +34,8 @@ const navItems = [
             href: "/colleges/pooja-Nursing-college",
           },
           {
-            label: "Bhojraj Bhondekar Ayurvedic College",
-            href: "/colleges/bb-ayurvedic-college",
+            label: "Bhojrajji Bhondekar Physiotherapy College",
+            href: "/colleges/bb-physiotherapy-college",
           },
           { label: "Bhojrajji Bhondekar Medical College", href: "/colleges/bb-medical-college" },
           {
@@ -68,11 +68,11 @@ const navItems = [
         label: "Hospitals",
         children: [
           {
-            label: "Bhojrajji Bhondekar Physiotherapy College",
-            href: "/colleges/bb-physiotherapy-college",
+            label: "Bhojraj Bhondekar Ayurvedic College",
+            href: "/colleges/bb-ayurvedic-college",
           },
           {
-            label: "PES Hospital and Research Centre",
+            label: "PES Multi speciality Hospital and Research Centre",
             href: "/colleges/pes-multispeciality-hospital",
           },
         ],

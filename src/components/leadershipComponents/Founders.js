@@ -11,7 +11,7 @@ const Founders = () => {
   const founders = [
     {
       id: 1,
-      image: "/assets/leader&founders/founder1.png",
+      image: "/assets/leader&founders/manjulatai.png",
       founderSign: "/assets/leader&founders/sign.png",
       name: "Mrs. Manjulatai Bhojraj Bhondekar",
       title: "President, Bhondekar Shikshan Sanstha",

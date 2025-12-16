@@ -41,6 +41,10 @@ const navItems = [
             label: "Bhojrajji Bhondekar Medical College(Proposed)",
             href: "/colleges/bb-medical-college",
           },
+           {
+            label: "Bhojrajji Bhondekar Ayurvedic Mahavidyalaya",
+            href: "/colleges/bhojrajji-bhondekar-ayurvedic-mahavidyalaya",
+          },
           {
             label: "Manjulabai Bhondekar College B.A. Bhandara",
             href: "/colleges/manjulabai-bhondekar-college-ba-administrative-services-bhandara",
@@ -72,7 +76,7 @@ const navItems = [
         children: [
           {
             label: "PES Ayurvedic Rugnalay",
-            href: "/colleges/bb-ayurvedic-college",
+            href: "/colleges/pes-ayurvedic-rugnalay",
           },
           {
             label: "PES Multi speciality Hospital and Research Centre",

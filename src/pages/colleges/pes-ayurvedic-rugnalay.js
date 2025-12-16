@@ -5,20 +5,20 @@ import HeroSection from '@/components/collegeComponents/HeroSection'
 import QuoteComponent from '@/components/collegeComponents/quoteComponent'
 import React from 'react'
 
-const BBAyurvedic = () => {
+const PESAyurvedicRugnalay = () => {
   return (
     <div>
       <HeroSection
       subHeadingCon="Welcome to"
-        heading="Bhojraj Bhondekar Ayurvedic College"
+        heading="PES Ayurvedic Rugnalay"
         bgImage="/assets/heroImages/bb-ayurvedic-college.webp"
       />
       <Announcement/>
       <CollegeConSec
         image="/assets/CollegesImg/doctorImg.png"
-        heading="Let’s Explore Bhojraj Bhondekar Ayurvedic College"
+        heading="Let’s Explore PES Ayurvedic Rugnalay"
         description={[
-            "Bhojraj Bhondekar Ayurvedic College was founded by Shri Bhojrajji in 2002, Bhandara, Maharashtra. This institute is renowned for its education in the field of Ayurveda and health services that help unprivileged groups to rise above poverty. The goal behind its establishment was to improve society by offering education to poor students with the help of MLA Narendra Bhodenkar. Today, we are operating 14 colleges across Maharashtra that offer nursing courses.",
+            "PES Ayurvedic Rugnalay was founded by Shri Bhojrajji in 2002, Bhandara, Maharashtra. This institute is renowned for its education in the field of Ayurveda and health services that help unprivileged groups to rise above poverty. The goal behind its establishment was to improve society by offering education to poor students with the help of MLA Narendra Bhodenkar. Today, we are operating 14 colleges across Maharashtra that offer nursing courses.",
             "By combining education with moral values and modern-day technology, this institute has helped various students to get a better education and life. The addition of e-libraries, gyms and healthcare camps in our learning system has encouraged more students to access our services. "
         ]}
         buttonText="Visit Now"
@@ -45,4 +45,4 @@ const BBAyurvedic = () => {
   )
 }
 
-export default BBAyurvedic
+export default PESAyurvedicRugnalay

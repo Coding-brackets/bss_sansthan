@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Hero = () => {
@@ -12,17 +13,17 @@ const Hero = () => {
               <h1>
                 Meet the Visionaries Behind BSS
               </h1>
-              <p className='heroParaBold'>A team of educators, clinicians, professionals and innovators, who drive the growth of BSS, since 2002.</p>
+              <p className='heroParaBold'>A team of educators and professionals, who drive the growth of BSS, since 2002. </p>
 
               <p>
-                Each faculty member has academic excellence, clinical expertise and research-driven leadership quality. Through advanced pedagogy and technological integration, the team cultivates future-ready healthcare professionals. With unwavering dedication to ethics, precision, and innovation, the leadership ecosystem empowers students to redefine standards in nursing & medicine, building a transformative foundation for holistic healthcare education and community advancement.
+               Each faculty member has academic excellence and research-driven leadership quality. Through advanced technological integration, the team cultivates future-ready work professionals. With unwavering dedication to core ethics, the leadership ecosystem empowers students to redefine standards in the fields of Administration, Law & Medical Science, building a transformative foundation for holistic education and community advancement.
               </p>
             </div>
           </div>
 
           {/* Right image */}
           <div className="col-md-6  heroImgSec d-flex align-items-stretch">
-              <img src="/assets/ourLeaders.jpg" alt="Hero" className="subHero_image w-100" />
+              <Image src="/assets/ourLeaders.jpg" alt="Hero" className="subHero_image w-100 h-auto" width={1000} height={1000} />
           </div>
         </div>
       </div>

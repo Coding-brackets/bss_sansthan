@@ -71,7 +71,7 @@ const navItems = [
         label: "Hospitals",
         children: [
           {
-            label: "Bhojraj Bhondekar Ayurvedic College",
+            label: "PES Ayurvedic rugnalay",
             href: "/colleges/bb-ayurvedic-college",
           },
           {

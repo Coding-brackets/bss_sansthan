@@ -3792,6 +3792,17 @@ hr {
 }
 
 @media (max-width: 1400px) {
+  .flower1 {
+    bottom: 35px;
+    right: 35px;
+    width: 35%;
+}
+
+.flower2 {
+    width: 35%;
+    bottom: 40px;
+    left: 33px;
+}
   .news_prev,
   .news_next {
     bottom: 38px;

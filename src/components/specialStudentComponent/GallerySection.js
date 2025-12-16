@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import GalleryPopup from "../commonComponents/GalleryPopup";
+import GallerySkelton from "../uiComponent/GallerySkelton";
 
 const GallerySection = ({
   title,
@@ -24,7 +25,7 @@ const tabs = Object.keys(tabsData);
   const currentImages = activeTab ? tabsData[activeTab] : [];
 
   if (!activeTab) {
-    return <div className="text-center py-5">Loading gallery…</div>;
+    return <div className="text-center py-5"><GallerySkelton/></div>;
   }
 
 
@@ -94,7 +95,7 @@ const tabs = Object.keys(tabsData);
                       alt={item.alt} // 🔥 use backend alt text
                       width={1000}
                       height={100}
-                      className="gallery-image w-100 h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="gallery-image w-100 h-100 object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                 </div>

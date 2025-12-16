@@ -90,7 +90,7 @@
     }
   ],
   "visionMission": {
-    "image": "/assets/leaders.png",
+    "image": "/assets/leaders.webp",
     "heading": "Vision & Mission",
     "description": [
       "BSS envisions creating compassionate healthcare professionals devoted to human welfare, striving for global excellence in medical and nursing education, research, and service while bringing positive societal change through education, healthcare, and employment opportunities for underprivileged communities."
@@ -155,7 +155,7 @@
       "url": "/colleges/pes-multispeciality-hospital"
     },
     {
-      "img": "/assets/manjulabai-college.jpg",
+      "img": "/assets/manjulabai-bhondekar.jpeg",
       "tag": "B.A | M.A.",
       "title": "Manjulabai Bhondekar College B.A. (Administrative Services), Bhandara",
       "desc": "This college prepares students for administrative and government-sector careers. With experienced faculty and competitive exam guidance, learners build confidence for future roles in public service and administration.",

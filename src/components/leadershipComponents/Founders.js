@@ -22,18 +22,18 @@ const Founders = () => {
       id: 2,
       image: "/assets/leader&founders/founderImage1.webp",
       founderSign: "/assets/leader&founders/sign.png",
-      name: "Mrs. Manjulatai Bhojraj Bhondekar",
-      title: "President, Bhondekar Shikshan Sanstha",
+    
+      title: "Society Member, Bhondekar Shikshan Sanstha",
       quote:
-        "I formally welcome you to BSS. I encourage you to pursue education with discipline and integrity. Within this institution, knowledge refines character and values cultivate leadership. Dedicate yourselves to learning and excellence for the progress of society and the nation.",
+        "I formally welcome you to BSS. I encourage you to pursue education with discipline and integrity. Dedicate yourselves to learning and excellence for the progress of the nation.",
     },
 
     {
       id: 2,
       image: "/assets/leader&founders/founderImage2.webp",
       founderSign: "/assets/leader&founders/sign.png",
-      name: "Mrs. Manjulatai Bhojraj Bhondekar",
-      title: "President, Bhondekar Shikshan Sanstha",
+     
+      title: "Secretary, Bhondekar Shikshan Sanstha",
       quote:
         "I formally welcome you to BSS. I encourage you to pursue education with discipline and integrity. Within this institution, knowledge refines character and values cultivate leadership. Dedicate yourselves to learning and excellence for the progress of society and the nation.",
     },

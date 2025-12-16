@@ -35,7 +35,7 @@ const AboutUs = () => {
         ]}
         reverse="true"/>
          <Vision
-      image="/assets/leaders.png"
+      image="/assets/leaders.webp"
       heading="Our Vision"
         
         description={[

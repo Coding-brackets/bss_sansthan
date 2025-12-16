@@ -3617,6 +3617,19 @@ hr {
   border-radius: 10px;
 }
 
+/* Desktop dropdown main container */
+.dropdown-submenu{
+  height: calc(100vh - 320px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Optional scrollbar styling */
+.dropdown-submenu.long-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .feature-title {
@@ -3748,6 +3761,9 @@ hr {
 }
 
 @media screen and (min-width: 1400px) {
+
+  
+
   .content {
     width: 40%;
     padding-left: 8em;
@@ -5704,3 +5720,25 @@ hr {
   margin-bottom: 20px;
 }
 
+
+@media(max-width:1440px) and (min-width:991px){
+  .dropdown-submenu.long-dropdown{
+  height: calc(100vh - 160px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.dropdown-submenu.long-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-submenu.long-dropdown::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.dropdown-submenu.long-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+}

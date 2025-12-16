@@ -28,6 +28,7 @@ const navItems = [
     submenu: [
       {
         label: "Colleges",
+        className: "long-dropdown",
         children: [
           {
             label: "Pooja Nursing College",
@@ -229,7 +230,7 @@ const Navbar = () => {
                               <span>{sub.label}</span>
                               <IoIosArrowForward />
                             </div>
-                            <div className="dropdown-submenu">
+                            <div className={`dropdown-submenu ${sub.className || ""}`}>
                               {sub.children.map((child, j) => (
                                 <Link key={j} href={child.href}>
                                   {child.label}

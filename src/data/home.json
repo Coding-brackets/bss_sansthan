@@ -110,7 +110,7 @@
     ],
     "ButtonText": "Learn More",
     "ButtonUrl": "/special-students",
-    "disabledImg": "/assets/disabledimg.jpg",
+    "disabledImg": "/assets/special-students.JPG",
     "listItems": [
       "Inclusive classrooms",
       "Special learning materials",
@@ -162,7 +162,7 @@
       "url": "/colleges/manju-bai-college"
     },
     {
-      "img": "/assets/CollegesImg/swayamsevi-bhondekar-college/classroom.jpg",
+      "img": "/assets/CollegesImg/mr-school.JPG",
       "tag": "B.A | M.A.",
       "title": "Dr. Babasaheb Ambedkar Residential MR School, Bhandara",
       "desc": "This school provides a supportive residential learning atmosphere for students with special needs. With dedicated teachers and a caring campus, children grow with confidence and essential life skills for a better future.",

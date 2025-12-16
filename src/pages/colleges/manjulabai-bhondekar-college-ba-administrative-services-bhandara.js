@@ -28,7 +28,7 @@ const ManjuBaiCollege = () => {
         para="We at Manjlaubai BA/MA College believe that education should be fun hence, we encourage our students to participate in various activities"
         items={[
           {
-            img: "/assets/CollegesImg/manjubai-college/biometric-attendence.jpg",
+            img: "/assets/CollegesImg/manjubai-college/manjulabai_gallery1.jpg",
             title: "Campus",
             desc: "Take a moment to explore Our School.",
           },
@@ -43,7 +43,7 @@ const ManjuBaiCollege = () => {
             desc: "Take a moment to explore Our School.",
           },
           {
-            img: "/assets/CollegesImg/manjubai-college/dr-examining-student.jpg",
+            img: "/assets/CollegesImg/manjubai-college/manjulabai_gallery2.jpg",
             title: "Campus",
             desc: "Take a moment to explore Our School.",
           },

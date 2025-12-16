@@ -47,7 +47,7 @@ const navItems = [
             href: "/colleges/bhojrajji-bhondekar-ayurvedic-mahavidyalaya",
           },
           {
-            label: "Manjulabai Bhondekar College B.A. Bhandara",
+            label: "Manjulabai Bhondekar Mahavidyalaya B.A. Bhandara",
             href: "/colleges/manjulabai-bhondekar-college-ba-administrative-services-bhandara",
           },
           {

@@ -10,11 +10,23 @@ const GallerySection = ({
   differClass,
   bordercolor,
 }) => {
-  const tabs = Object.keys(tabsData);
-  const [activeTab, setActiveTab] = useState(tabs[0]);
+const tabs = Object.keys(tabsData);
+
+  const [activeTab, setActiveTab] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(null);
 
-  const currentImages = tabsData[activeTab];
+  useEffect(() => {
+    if (tabs.length > 0) {
+      setActiveTab((prev) => prev ?? tabs[0]);
+    }
+  }, [tabs]);
+
+  const currentImages = activeTab ? tabsData[activeTab] : [];
+
+  if (!activeTab) {
+    return <div className="text-center py-5">Loading gallery…</div>;
+  }
+
 
   return (
     <>
@@ -33,11 +45,10 @@ const GallerySection = ({
                   key={tab}
                   onClick={() => {
                     setActiveTab(tab);
-                    setSelectedImageIndex(null);
+                    setSelectedIndex(null);
                   }}
                   className={`btn transition-all duration-200 ${bordercolor} gallery_btn`}
                   style={{
-                    fontFamily: "Geist",
                     backgroundColor: activeTab === tab ? "#0A2656" : "#F5EFEC",
                     color: activeTab === tab ? "#fff" : "#333",
 
@@ -78,12 +89,12 @@ const GallerySection = ({
                     className="overflow-hidden relative gallery-container"
                     onClick={() => setSelectedIndex(index)}
                   >
-                    <img
+                    <Image
                       src={item.image} // 🔥 use backend image URL
                       alt={item.alt} // 🔥 use backend alt text
                       width={1000}
                       height={100}
-                      className="gallery-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="gallery-image w-100 h-auto object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                 </div>

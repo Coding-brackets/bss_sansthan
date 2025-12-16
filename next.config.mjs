@@ -6,7 +6,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "bss.alekh.online",
+        hostname: "bss.youstable.cfd",
         port: "",
         pathname: "/public/storage/**",   // adjust path if needed
       },

@@ -21,7 +21,7 @@ const ManjuBaiCollege = () => {
           "With expert guidance from qualified teachers and a digital library, our Manjubai BA/MA College is helping students to attain success in their respective fields. We welcome every student who wants to grasp knowledge easily.",
         ]}
         buttonText="Visit Now"
-        url="/"
+        url="https://www.mbmbhandara.com/"
       />
 
       <CarouselGallery

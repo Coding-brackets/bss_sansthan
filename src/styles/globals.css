@@ -3618,11 +3618,11 @@ hr {
 }
 
 /* Desktop dropdown main container */
-.dropdown-submenu{
+/* .dropdown-submenu{
   height: calc(100vh - 320px);
   overflow-y: auto;
   overflow-x: hidden;
-}
+} */
 
 /* Optional scrollbar styling */
 .dropdown-submenu.long-dropdown::-webkit-scrollbar {

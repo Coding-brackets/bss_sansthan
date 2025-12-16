@@ -4,62 +4,62 @@ import React, { useEffect, useState } from 'react'
 
 const Gallery = () => {
 
-    //  const [galleryTabs, setGalleryTabs] = useState({});
+     const [galleryTabs, setGalleryTabs] = useState({});
 
-    // useEffect(() => {
-    //     fetch("https://bss.youstable.cfd/api/fetch-gallery-data")
-    //         .then(res => res.json())
-    //         .then(response => {
-    //             const data = response.data;
+    useEffect(() => {
+        fetch("https://bss.youstable.cfd/api/fetch-gallery-data")
+            .then(res => res.json())
+            .then(response => {
+                const data = response.data;
 
-    //             const groupedData = {};
+                const groupedData = {};
 
-    //             data.forEach(item => {
-    //                 const category = item.category || "Other";
+                data.forEach(item => {
+                    const category = item.category || "Other";
 
-    //                 if (!groupedData[category]) groupedData[category] = [];
+                    if (!groupedData[category]) groupedData[category] = [];
 
-    //                 groupedData[category].push({
-    //                     image: "https://bss.youstable.cfd/public/storage/" + item.image,
-    //                     alt: item.alt_text || item.title || "Gallery Image"
-    //                 });
-    //             });
+                    groupedData[category].push({
+                        image: "https://bss.youstable.cfd/public/storage/" + item.image,
+                        alt: item.alt_text || item.title || "Gallery Image"
+                    });
+                });
 
-    //             setGalleryTabs(groupedData);
-    //         })
-    //         .catch(err => console.error("Gallery load error:", err));
-    // }, []);
+                setGalleryTabs(groupedData);
+            })
+            .catch(err => console.error("Gallery load error:", err));
+    }, []);
 
 
-    const galleryTabs = {
-        "Academics": [
-           { image: "/assets/gallery/wds.png", alt: "Moments of Inclusion 1" },
-           { image: "/assets/gallery/vfs.png", alt: "Moments of Inclusion 1" },
-           { image: "/assets/gallery/doctors.jpg", alt: "Moments of Inclusion 1" },
-           { image: "/assets/gallery/tereating-mental.jpg", alt: "Moments of Inclusion 1" },
-           { image: "/assets/gallery/emergency_room.jpg", alt: "Moments of Inclusion 1" },
-           { image: "/assets/gallery/jharkhan_classroom.png", alt: "Moments of Inclusion 1" },
-           { image: "/assets/gallery/psychiatric-emergency.jpg", alt: "Moments of Inclusion 1" },
-           { image: "/assets/gallery/mbbs-seats.jpg", alt: "Moments of Inclusion 1" },
-           { image: "/assets/gallery/overview.png", alt: "Moments of Inclusion 1" },
-        ],
-        "Medical & Hospital": [
-           { image: "/assets/gallery/jharkhan_classroom.png", alt: "Smiles & Success 1" },
-           { image: "/assets/gallery/psychiatric-emergency.jpg", alt: "Smiles & Success 1" },
-           { image: "/assets/gallery/mbbs-seats.jpg", alt: "Smiles & Success 1" },
-           { image: "/assets/gallery/overview.png", alt: "Smiles & Success 1" },
-        ],
-        "College Life": [
-           { image: "/assets/gallery/wds.png", alt: "Smiles & Success 1" },
-           { image: "/assets/gallery/vfs.png", alt: "Smiles & Success 1" },
-           { image: "/assets/gallery/doctors.jpg",alt: "Smiles & Success 1" }, ],
+    // const galleryTabs = {
+    //     "Academics": [
+    //        { image: "/assets/gallery/wds.png", alt: "Moments of Inclusion 1" },
+    //        { image: "/assets/gallery/vfs.png", alt: "Moments of Inclusion 1" },
+    //        { image: "/assets/gallery/doctors.jpg", alt: "Moments of Inclusion 1" },
+    //        { image: "/assets/gallery/tereating-mental.jpg", alt: "Moments of Inclusion 1" },
+    //        { image: "/assets/gallery/emergency_room.jpg", alt: "Moments of Inclusion 1" },
+    //        { image: "/assets/gallery/jharkhan_classroom.png", alt: "Moments of Inclusion 1" },
+    //        { image: "/assets/gallery/psychiatric-emergency.jpg", alt: "Moments of Inclusion 1" },
+    //        { image: "/assets/gallery/mbbs-seats.jpg", alt: "Moments of Inclusion 1" },
+    //        { image: "/assets/gallery/overview.png", alt: "Moments of Inclusion 1" },
+    //     ],
+    //     "Medical & Hospital": [
+    //        { image: "/assets/gallery/jharkhan_classroom.png", alt: "Smiles & Success 1" },
+    //        { image: "/assets/gallery/psychiatric-emergency.jpg", alt: "Smiles & Success 1" },
+    //        { image: "/assets/gallery/mbbs-seats.jpg", alt: "Smiles & Success 1" },
+    //        { image: "/assets/gallery/overview.png", alt: "Smiles & Success 1" },
+    //     ],
+    //     "College Life": [
+    //        { image: "/assets/gallery/wds.png", alt: "Smiles & Success 1" },
+    //        { image: "/assets/gallery/vfs.png", alt: "Smiles & Success 1" },
+    //        { image: "/assets/gallery/doctors.jpg",alt: "Smiles & Success 1" }, ],
 
-            "Campus Environment": [
-            { image:    "/assets/gallery/tereating-mental.jpg", alt: "Smiles & Success 1" },
-           { image: "/assets/gallery/emergency_room.jpg", alt: "Smiles & Success 1" },
-           { image: "/assets/gallery/jharkhan_classroom.png", alt: "Smiles & Success 1" },
-           { image:"/assets/gallery/psychiatric-emergency.jpg", alt: "Smiles & Success 1" },]
-     };
+    //         "Campus Environment": [
+    //         { image:    "/assets/gallery/tereating-mental.jpg", alt: "Smiles & Success 1" },
+    //        { image: "/assets/gallery/emergency_room.jpg", alt: "Smiles & Success 1" },
+    //        { image: "/assets/gallery/jharkhan_classroom.png", alt: "Smiles & Success 1" },
+    //        { image:"/assets/gallery/psychiatric-emergency.jpg", alt: "Smiles & Success 1" },]
+    //  };
 
     return (
         <div>

@@ -4,10 +4,11 @@ const Vision = ({
      image,
   heading,
   description,
-  reverse = true,
+  reverse = false,
+  showQuote = false,
 }) => {
   return (
-    <div className="position-relative mb-100 sec_wid sec_right">
+    <div className="position-relative mb-80 sec_wid sec_right">
       <div className="container-fluid ">
         <div
           className={`row legacy_content_sec align-items-center g-4 ${
@@ -15,7 +16,7 @@ const Vision = ({
           }`}
         >
           {/* Left / Right image */}
-          <div className="col-md-6 legacy_left pe-0 text-end">
+          <div className="col-md-6 legacy_left pe-0 ">
             <img
               src={image}
               alt={heading}
@@ -35,6 +36,19 @@ const Vision = ({
                 ))
               ) : (
                 <p className="section_para mb-4">{description}</p>
+              )}
+
+               {/* 👇 Conditionally show quote */}
+              {showQuote && (
+                <div className="quote">
+                  <p>
+                    <span>“</span>Dream big, but keep your feet on the ground.
+                    Whatever goal you take in hand must be achieved, no matter
+                    how hard the path may be!<span>”</span>
+                  </p>
+                  <h5>Late Shri Bhojrajji Bhondekar</h5>
+                  <p className="designation">Our Revered Founder</p>
+                </div>
               )}
 
             </div>

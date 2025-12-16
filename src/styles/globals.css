@@ -2140,11 +2140,24 @@ a {
 
 .timeline {
   margin-top: 60px;
+  animation: journeyloop 20s linear infinite;
 }
 
 .journey_scroll {
-  overflow-y: hidden;
+  overflow: hidden;
   height: 500px;
+}
+
+
+
+@keyframes journeyloop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-70%);
+  }
 }
 
 .timeline-road {
@@ -2347,8 +2360,17 @@ hr {
   color: #000000b2;
 }
 
-.sec_right {
+/* .sec_right {
   margin-left: auto;
+} */
+
+.sec_right:has(.legacy_content_sec.flex-row-reverse),
+.sec_right:has(.legacy_content_sec.flex-lg-row-reverse) {
+  margin-left: auto;
+}
+
+.flex-row-reverse .legacy_left{
+  text-align: end;
 }
 
 .right_sec .legacy_content_sec .legacy_left img {

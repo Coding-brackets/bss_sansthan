@@ -37,22 +37,25 @@ const navItems = [
             label: "Bhojraj Bhondekar Ayurvedic College",
             href: "/colleges/bb-ayurvedic-college",
           },
-          { label: "Bhojrajji Bhondekar Medical College", href: "/colleges/bb-medical-college" },
           {
-            label: "Manjulabai Bhondekar College",
-            href: "/colleges/manjulabai-boondekar-college",
+            label: "Bhojrajji Bhondekar Medical College",
+            href: "/colleges/bb-medical-college",
+          },
+          {
+            label: "Manjulabai Bhondekar College B.A. Bhandara",
+            href: "/colleges/manjulabai-bhondekar-college-ba-administrative-services-bhandara",
           },
           {
             label: "Dr. Babasaheb Ambedkar Residential MR School",
-            href: "/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school",
+            href: "/colleges/dr-babasaheb-ambedkar-residential-mr-school-bhandara",
           },
           {
             label: "Universal BA College",
             href: "/colleges/universal-ba-college",
           },
           {
-            label: "Sant Gadgebaba Residential MR School",
-            href: "/colleges/sant-gadge-baba-madhyamik-shala",
+            label: "Sant Gadgebaba Residential MR School, Nerla",
+            href: "/colleges/sant-gadgebaba-residential-mr-school-nerla",
           },
           {
             label: "Late Jamunabai Bhondekar Residential MR School",
@@ -103,18 +106,18 @@ const Navbar = () => {
   const [openDropdowns, setOpenDropdowns] = useState({});
   const [isScrolled, setIsScrolled] = useState(false);
 
-useEffect(() => {
-  const handleScroll = () => {
-    if (window.scrollY > 10) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const pathname = usePathname();
   const isHome = pathname === "/";
@@ -124,9 +127,11 @@ useEffect(() => {
   };
 
   return (
-    <div className={`nav-banner ${isScrolled ? "nav-shadow" : ""} container-fluid p-0 ${
-    !isHome ? " nav_container" : ""
-  }`}>
+    <div
+      className={`nav-banner ${
+        isScrolled ? "nav-shadow" : ""
+      } container-fluid p-0 ${!isHome ? " nav_container" : ""}`}
+    >
       <div className="navbar_section my-40">
         {/* Logo Section */}
         <div className="nav1 d-flex align-items-center">
@@ -197,7 +202,10 @@ useEffect(() => {
           <Link href="mailto:info@bhondekarss.com">
             <CiMail className="nav-icon" />
           </Link>
-          <Link href="https://www.google.com/maps/place/Pes+Hospital+And+Research+Centre/@21.179175,79.651557,18z/data=!4m6!3m5!1s0x3a2b3fb962971951:0xa648f8fc0e407ba6!8m2!3d21.179711!4d79.6516375!16s%2Fg%2F11j1k0gzpr?hl=en&entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          <Link
+            href="https://www.google.com/maps/place/Pes+Hospital+And+Research+Centre/@21.179175,79.651557,18z/data=!4m6!3m5!1s0x3a2b3fb962971951:0xa648f8fc0e407ba6!8m2!3d21.179711!4d79.6516375!16s%2Fg%2F11j1k0gzpr?hl=en&entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+          >
             <IoLocationOutline className="nav-icon" />
           </Link>
         </div>
@@ -253,7 +261,6 @@ useEffect(() => {
               className="menu-toggle d-lg-none border-0 bg-transparent p-2"
               onClick={() => setSidebarOpen(true)}
             >
-              
               <Menu size={28} />
             </button>
           </div>
@@ -276,7 +283,6 @@ useEffect(() => {
             className="border-0 bg-transparent"
             onClick={() => setSidebarOpen(false)}
           >
-            
             <X size={26} />
           </button>
         </div>

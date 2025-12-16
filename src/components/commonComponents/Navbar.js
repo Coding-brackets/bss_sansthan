@@ -38,7 +38,7 @@ const navItems = [
             href: "/colleges/bb-physiotherapy-college",
           },
           {
-            label: "Bhojrajji Bhondekar Medical College",
+            label: "Bhojrajji Bhondekar Medical College(Proposed)",
             href: "/colleges/bb-medical-college",
           },
           {
@@ -71,7 +71,7 @@ const navItems = [
         label: "Hospitals",
         children: [
           {
-            label: "PES Ayurvedic rugnalay",
+            label: "PES Ayurvedic Rugnalay",
             href: "/colleges/bb-ayurvedic-college",
           },
           {

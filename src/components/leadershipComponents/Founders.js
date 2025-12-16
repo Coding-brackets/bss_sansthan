@@ -20,12 +20,22 @@ const Founders = () => {
     },
     {
       id: 2,
-      image: "/assets/leader&founders/founder1.png",
+      image: "/assets/leader&founders/founderImage1.webp",
       founderSign: "/assets/leader&founders/sign.png",
       name: "Mrs. Manjulatai Bhojraj Bhondekar",
       title: "President, Bhondekar Shikshan Sanstha",
       quote:
-        "Our Institution upholds the motto “Education is Life,” providing quality learning. We empower students to dream big and achieve excellence in every field.",
+        "I formally welcome you to BSS. I encourage you to pursue education with discipline and integrity. Within this institution, knowledge refines character and values cultivate leadership. Dedicate yourselves to learning and excellence for the progress of society and the nation.",
+    },
+
+    {
+      id: 2,
+      image: "/assets/leader&founders/founderImage2.webp",
+      founderSign: "/assets/leader&founders/sign.png",
+      name: "Mrs. Manjulatai Bhojraj Bhondekar",
+      title: "President, Bhondekar Shikshan Sanstha",
+      quote:
+        "I formally welcome you to BSS. I encourage you to pursue education with discipline and integrity. Within this institution, knowledge refines character and values cultivate leadership. Dedicate yourselves to learning and excellence for the progress of society and the nation.",
     },
   ];
 

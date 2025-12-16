@@ -19,7 +19,7 @@ const timelineData = [
   },
   {
     year: "2014",
-    title: "Dr Ashwani Narendra Bhondekar",
+    title: "Dr Ashvini Narendra Bhondekar",
     subtitle: "Secretary, BSS",
     description: "Established PES Hospital and Research Centre.",
   },

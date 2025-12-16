@@ -22,7 +22,7 @@ const BBAyurvedic = () => {
             "By combining education with moral values and modern-day technology, this institute has helped various students to get a better education and life. The addition of e-libraries, gyms and healthcare camps in our learning system has encouraged more students to access our services. "
         ]}
         buttonText="Visit Now"
-        url="/"
+        url=""
       />
       <CollegeGallery
       para="Being a reputed Ayurveda institute, we help our students to gain maximum knowledge by combining theory with real-life scenarios."

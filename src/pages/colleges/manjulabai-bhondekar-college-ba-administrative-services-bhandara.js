@@ -1,4 +1,3 @@
-
 import CarouselGallery from "@/components/collegeComponents/CarouselGallery";
 import CollegeConSec from "@/components/collegeComponents/collegesConSec";
 import HeroSection from "@/components/collegeComponents/HeroSection";
@@ -10,7 +9,7 @@ const ManjuBaiCollege = () => {
     <div>
       <HeroSection
         subHeadingCon="Welcome to"
-        heading="Manjulabai BA/MA College, Bhawani"
+        heading="Manjulabai Bhondekar College B.A. (Administrative Services), Bhandara"
         bgImage="/assets/heroImages/manju-baicollege.webp"
       />
 
@@ -22,12 +21,11 @@ const ManjuBaiCollege = () => {
           "With expert guidance from qualified teachers and a digital library, our Manjubai BA/MA College is helping students to attain success in their respective fields. We welcome every student who wants to grasp knowledge easily.",
         ]}
         buttonText="Visit Now"
-        url="/"
+        url="https://www.mbmbhandara.com/"
       />
 
-        <CarouselGallery
-      para="We at Manjlaubai BA/MA College believe that education should be fun hence, we encourage our students to participate in various activities"
-
+      <CarouselGallery
+        para="We at Manjlaubai BA/MA College believe that education should be fun hence, we encourage our students to participate in various activities"
         items={[
           {
             img: "/assets/CollegesImg/manjubai-college/biometric-attendence.jpg",
@@ -56,8 +54,6 @@ const ManjuBaiCollege = () => {
           },
         ]}
       />
-
-      
 
       <QuoteComponent
         para="Our institution, Manjubai College, is committed to shaping informed and socially responsible graduates through quality education and inclusive learning. We advance education by blending academic excellence with values and student empowerment."

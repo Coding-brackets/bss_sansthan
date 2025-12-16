@@ -1982,8 +1982,8 @@ a {
 
 .slide-news-img {
   height: 100%;
-  width: fit-content;
-  object-fit: contain;
+  width: 100%;
+  object-fit: cover;
 }
 
 .swiper-slide {
@@ -2140,11 +2140,24 @@ a {
 
 .timeline {
   margin-top: 60px;
+  animation: journeyloop 20s linear infinite;
 }
 
 .journey_scroll {
-  overflow-y: hidden;
+  overflow: hidden;
   height: 500px;
+}
+
+
+
+@keyframes journeyloop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-70%);
+  }
 }
 
 .timeline-road {
@@ -2200,7 +2213,7 @@ hr {
   width: 32px;
   height: 40px;
   display: flex;
-  transform: translate(-50%, -70%);
+  transform: translate(-42%, -70%);
 }
 
 .marker-inner {
@@ -2222,7 +2235,7 @@ hr {
   position: absolute;
   top: -8%;
   left: 16%;
-  transform: translate(-50%, -50%);
+  transform: translate(-42%, -50%);
   z-index: 100;
 }
 
@@ -2347,8 +2360,17 @@ hr {
   color: #000000b2;
 }
 
-.sec_right {
+/* .sec_right {
   margin-left: auto;
+} */
+
+.sec_right:has(.legacy_content_sec.flex-row-reverse),
+.sec_right:has(.legacy_content_sec.flex-lg-row-reverse) {
+  margin-left: auto;
+}
+
+.flex-row-reverse .legacy_left{
+  text-align: end;
 }
 
 .right_sec .legacy_content_sec .legacy_left img {
@@ -3770,6 +3792,17 @@ hr {
 }
 
 @media (max-width: 1400px) {
+  .flower1 {
+    bottom: 35px;
+    right: 35px;
+    width: 35%;
+}
+
+.flower2 {
+    width: 35%;
+    bottom: 40px;
+    left: 33px;
+}
   .news_prev,
   .news_next {
     bottom: 38px;

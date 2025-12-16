@@ -1,4 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 const Mentors = ({heading, img}) => {
@@ -10,7 +11,7 @@ const Mentors = ({heading, img}) => {
         <div className="mentor_conBanner">
           <h2 className="section_heading mb-3">{heading}</h2>
           
-          <a href="" className="custom_meet_btn">Meet Now! <ArrowUpRight  className="ms-2"/></a>
+          <Link href="/leadership" className="custom_meet_btn">Meet Now! <ArrowUpRight  className="ms-2"/></Link>
         </div>
 
         <div className="founder_img_sec">

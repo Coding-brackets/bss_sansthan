@@ -19,7 +19,7 @@ const timelineData = [
   },
   {
     year: "2014",
-    title: "Dr Ashwani Narendra Bhondekar",
+    title: "Dr Ashvini Narendra Bhondekar",
     subtitle: "Secretary, BSS",
     description: "Established PES Hospital and Research Centre.",
   },
@@ -50,6 +50,13 @@ const timelineData = [
     subtitle: "",
     description:
       "Looking forward to establish an MBBS medical college and a world-class medical university on a 50-acre campus.",
+  },
+  {
+    year: "2002",
+    title: "Hon. Late Shri. Bhojrajji L. Bhondekar",
+    subtitle: "Founder of BSS, Bhandara",
+    description:
+      "Established 3 residential schools for differently-abled (mentally challenged) children.",
   },
 ];
 

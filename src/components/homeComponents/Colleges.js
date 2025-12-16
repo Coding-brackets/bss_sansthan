@@ -51,7 +51,7 @@ const Colleges = ({ colleges }) => {
                         height={1000}
                         
                       />
-                      <span className="college_tag">{college.tag}</span>
+                      {/* <span className="college_tag">{college.tag}</span> */}
                     </div>
                   </div>
                   <div className="college_content">

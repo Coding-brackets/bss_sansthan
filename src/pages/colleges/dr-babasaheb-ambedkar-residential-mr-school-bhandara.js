@@ -9,7 +9,7 @@ const DrBabasahebAambedkar = () => {
     <div>
        <HeroSection
       subHeadingCon="Welcome to"
-        heading="Dr. Babasaheb aambedkar niwasi matimand school, bhandara"
+        heading="Dr. Babasaheb Ambedkar Residential MR School, Bhandara"
         bgImage="/assets/heroImages/dr-babasaheb-aambedkar-school-hero.webp"
       />
 
@@ -17,8 +17,9 @@ const DrBabasahebAambedkar = () => {
         image="/assets/CollegesImg/babasaheb-ambedkar-school/award-ceremony.png"
         heading="Let’s take a tour of Ambedkar Niwasi School"
         description={[
-            "A safe and home-like space where students feel protected and ready to learn with confidence. The school builds strong reading and writing habits, boosts self-belief and helps every child grow through meaningful daily activities. Caring teachers guide each student step by step so they feel encouraged and excited to improve. Students learn at their own pace and develop skills that truly matter. With a friendly environment, inspiring programs and chances to explore new abilities, the school aims to help every child build a bright future they can be proud of. Click to discover how students grow more every day."
-        ]}
+  "A safe and home-like space where students feel protected and ready to learn with confidence. The school builds strong reading and writing habits, boosts self-belief and helps every child grow through meaningful daily activities. Caring teachers guide each student step by step so they feel encouraged and excited to improve.",
+  "Students learn at their own pace and develop skills that truly matter. With a friendly environment, inspiring programs and chances to explore new abilities, the school aims to help every child build a bright future they can be proud of. Click to discover how students grow more every day."
+]}
         buttonText="Visit Now"
         url="/"
       />

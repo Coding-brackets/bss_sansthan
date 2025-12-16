@@ -22,7 +22,7 @@ const PoojaNursing = () => {
           "With over 25+ years of combined academic and healthcare experience, our faculty work together to create a warm and innovative learning atmosphere. We blend modern teaching methods with strong practical training, ensuring our students are career-ready. Our community is inspired by a single vision, to nurture the next generation of nurses who will bring both knowledge and kindness into the world of healthcare.",
         ]}
         buttonText="Visit Now"
-        url="/"
+        url="https://www.poojanursing.com/"
       />
 
       <CarouselGallery 

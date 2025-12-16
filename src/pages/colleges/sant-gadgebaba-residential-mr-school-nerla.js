@@ -9,7 +9,7 @@ const SantGadgeBabamadhyamik = () => {
     <div>
        <HeroSection
       subHeadingCon="Welcome to"
-        heading="Sant Gadge Baba Madhyamik Shala"
+        heading="Sant Gadgebaba Residential MR School, Nerla"
         bgImage="/assets/heroImages/sant-gadge-baba-madhyamik-shala.webp"
       />
 

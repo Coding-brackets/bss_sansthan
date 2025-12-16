@@ -23,7 +23,7 @@ const NewsAndEvents = ({heading, subHeading}) => {
       date: "JAN 30, 2023",
       title: "Cultural Performances",
       desc: "(27–29 January 2025)",
-      img: "/assets/news1.jpg",
+      img: "/assets/news/cultural performance.jpeg",
       type: "NEWS",
     },
     {
@@ -32,7 +32,7 @@ const NewsAndEvents = ({heading, subHeading}) => {
       date: "JAN 21, 2023",
       title: "Prize Distribution & Closing Ceremony",
       desc: "(27–29 January 2025)",
-      img: "/assets/news2.jpg",
+      img: "/assets/news/prize-distribution.jpeg",
       type: "NEWS",
     },
     {
@@ -41,16 +41,16 @@ const NewsAndEvents = ({heading, subHeading}) => {
       date: "JAN 15, 2023",
       title: "Rhythm Annual Gathering & Magazine Launch",
       desc: "(27–29 January 2025)",
-      img: "/assets/news3.jpg",
+      img: "/assets/news/gathering.jpeg",
       type: "EVENTS",
     },
-    {
+   {
       id: 4,
       className: "swiper-slide",
       date: "JAN 30, 2023",
       title: "Cultural Performances",
       desc: "(27–29 January 2025)",
-      img: "/assets/news1.jpg",
+      img: "/assets/news/cultural performance.jpeg",
       type: "NEWS",
     },
     {
@@ -59,7 +59,7 @@ const NewsAndEvents = ({heading, subHeading}) => {
       date: "JAN 21, 2023",
       title: "Prize Distribution & Closing Ceremony",
       desc: "(27–29 January 2025)",
-      img: "/assets/news2.jpg",
+      img: "/assets/news/prize-distribution.jpeg",
       type: "NEWS",
     },
     {
@@ -68,7 +68,7 @@ const NewsAndEvents = ({heading, subHeading}) => {
       date: "JAN 15, 2023",
       title: "Rhythm Annual Gathering & Magazine Launch",
       desc: "(27–29 January 2025)",
-      img: "/assets/news3.jpg",
+      img: "/assets/news/gathering.jpeg",
       type: "EVENTS",
     },
   ];

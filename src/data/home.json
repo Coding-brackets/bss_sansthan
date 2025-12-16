@@ -2,7 +2,7 @@
   "hero": {
     "subHeading": "Committed to Excellence all Academic Courses",
     "mainHeading": "Welcome to Bhondekar Shikshan Sanstha!",
-    "content": "Established in 2002, Bhondekar Shiksha Sansthan, Bhandara delivers comprehensive education spanning primary, secondary high school, senior secondary school and bachelor’s programs in administration, law, healthcare and diverse fields, driven by modern teaching facilities, robust infrastructure, dedicated faculty with academic excellence, core values, innovation and student success.",
+    "content": "Established in 2002, Bhondekar Shiksha Sansthan, Bhandara stands as a dynamic educational group delivering quality learning across nursing and allied healthcare fields, along with colleges dedicated to administration and other professional & academic disciplines. With advanced teaching facilities and an experienced faculty, BSS creates an atmosphere where knowledge meets values and real-world readiness. Shape a future filled with opportunity and take the first step toward professional success today.",
     "urltext1": "About Us",
     "urltext2": "Get Connected",
     "urlLink1": "/about-us",
@@ -102,6 +102,7 @@
     "heading": "News & Events",
     "subHeading": "To inspire and empower our students, we regularly organize academic, cultural and healthcare-driven events annually. The upcoming Joint Annual Gathering, Rhythm 2025 celebrates the spirit of service through sports, cultural programs and inspirational sessions by eminent guests."
   },
+
   "empoweringCon": {
     "heading": "Education For Every Ability / For Differently-Abled Students",
     "description": [
@@ -119,7 +120,7 @@
   },
   "collegesData": [
     {
-      "img": "/assets/CollegesImg/pooja-nursing-college/college-fest-image4.jpg",
+      "img": "/assets/CollegesImg/pooja-nursing-college/poojs-girls-college.jpg",
       "tag": "B.A | M.A.",
       "title": "Puja Nursing College, Bhandara",
       "desc": "Offers advanced nursing education with modern labs, clinical training and an experienced faculty team. Students develop strong medical skills and professionalism, preparing them for rewarding careers in the healthcare sector.",
@@ -154,7 +155,7 @@
       "url": "/colleges/pes-multispeciality-hospital"
     },
     {
-      "img": "/assets/college3.jpg",
+      "img": "/assets/manjulabai-college.jpg",
       "tag": "B.A | M.A.",
       "title": "Manjulabai Bhondekar College B.A. (Administrative Services), Bhandara",
       "desc": "This college prepares students for administrative and government-sector careers. With experienced faculty and competitive exam guidance, learners build confidence for future roles in public service and administration.",
@@ -168,7 +169,7 @@
       "url": "/colleges/dr-babasaheb-aambedkar-niwasi-matimand-school"
     },
      {
-      "img": "/assets/CollegesImg/universal-ba-college/happy-student-with-notebook.jpg",
+      "img": "/assets/CollegesImg/universal-ba-college/ba college.jpeg",
       "tag": "B.A | M.A.",
       "title": "Universal B.A. College (Administrative Services), Nerla",
       "desc": "It’s a college dedicated to creating future leaders in public administration. Students gain practical knowledge and strong understanding of governance. The campus encourages learning through discussions and academic help.",
@@ -182,7 +183,7 @@
       "url": "/colleges/sant-gadge-baba-madhyamik-shala"
     },
     {
-      "img": "/assets/CollegesImg/ayurvedic-clg4.webp",
+      "img": "/assets/CollegesImg/mr_school.jpeg",
       "tag": "B.Sc | M.Sc | R.G.N.M | R.A.N.M.",
       "title": "Late Jamunabai Bhondekar Residential MR School, Umri",
       "desc": "A safe and nurturing home for differently-abled learners. The school focuses on education and emotional support, ensuring each child receives equal opportunities and respect while learning and living in a positive environment.",

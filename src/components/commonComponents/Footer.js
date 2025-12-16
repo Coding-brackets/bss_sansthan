@@ -113,12 +113,7 @@ const Footer = () => {
                 <br /> Maharashtra
               </h4>
               <p>
-                Bhondekar Shikshan Sanstha, Bhandara, is a reputed educational
-                organization dedicated to advancing quality learning in
-                healthcare and allied sciences. With a vision to empower
-                students through academic excellence and professional values,
-                the institution stands as a symbol of trust and innovation in
-                Maharashtra’s education landscape.
+               Bhondekar Shikshan Sanstha Bhandara is a reputed educational organization advancing quality learning across primary schools, higher secondary schools, senior secondary schools, undergraduate & postgraduate colleges. Founded on academic excellence, the institution represents a strong presence within Maharashtra’s evolving education landscape.
               </p>
             </div>
           </div>

@@ -21,7 +21,7 @@ const BbPhysiotherapy = () => {
             "This Physiotherapy College has 6 departments with advanced facilities and modern equipment. Students can choose their desired fields and can access the digital library, which offers online articles and video lectures by professionals."
         ]}
         buttonText="Visit Now"
-        url="/"
+        url="https://www.bbphysiotherapycollege.in/"
       />
       <CollegeGallery
       para="Our institute has made learning easy by merging theory with practicals. The timely activities we provide help our students to apply their knowledge in real life."

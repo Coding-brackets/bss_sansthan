@@ -4,36 +4,52 @@ import React, { useEffect, useState } from 'react'
 
 const Gallery = () => {
 
-     const [galleryTabs, setGalleryTabs] = useState({});
+    const [galleryTabs, setGalleryTabs] = useState({});
+const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        fetch("https://bss.youstable.cfd/api/fetch-gallery-data")
-            .then(res => res.json())
-            .then(response => {
-                const data = response.data;
+useEffect(() => {
+  const controller = new AbortController();
 
-                const groupedData = {};
+  const fetchGallery = async () => {
+    try {
+      const res = await fetch(
+        "https://bss.youstable.cfd/api/fetch-gallery-data",
+        { signal: controller.signal }
+      );
+      const response = await res.json();
 
-                data.forEach(item => {
-                    const category = item.category || "Other";
+      const groupedData = {};
 
-                    if (!groupedData[category]) groupedData[category] = [];
+      response.data.forEach(item => {
+        const category = item.category || "Other";
 
-                    groupedData[category].push({
-                        image: "https://bss.youstable.cfd/public/storage/" + item.image,
-                        alt: item.alt_text || item.title || "Gallery Image"
-                    });
-                });
+        if (!groupedData[category]) groupedData[category] = [];
 
-                setGalleryTabs(groupedData);
-            })
-            .catch(err => console.error("Gallery load error:", err));
-    }, []);
+        groupedData[category].push({
+          image: `https://bss.youstable.cfd/public/storage/${item.image}`,
+          alt: item.alt_text || item.title || "Gallery Image",
+        });
+      });
+
+      setGalleryTabs(groupedData);
+    } catch (err) {
+      if (err.name !== "AbortError") {
+        console.error("Gallery load error:", err);
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchGallery();
+
+  return () => controller.abort();
+}, []);
 
 
     // const galleryTabs = {
     //     "Academics": [
-    //        { image: "/assets/gallery/wds.png", alt: "Moments of Inclusion 1" },
+    //        { image: "/public/assets/gallery/academics", alt: "Moments of Inclusion 1" },
     //        { image: "/assets/gallery/vfs.png", alt: "Moments of Inclusion 1" },
     //        { image: "/assets/gallery/doctors.jpg", alt: "Moments of Inclusion 1" },
     //        { image: "/assets/gallery/tereating-mental.jpg", alt: "Moments of Inclusion 1" },

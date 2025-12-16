@@ -25,7 +25,7 @@ const Founders = () => {
       name: "Hon. MLA Shri. Narendra B. Bhondekarji",
       title: "Society Member, Bhondekar Shikshan Sanstha",
       quote:
-        "I formally welcome you to BSS. I encourage you to pursue education with discipline and integrity. Dedicate yourselves to learning and excellence for the progress of the nation.",
+        "Our Society is committed to academic excellence and creating an enriching educational environment that empowers students to realize their full potential.",
     },
 
     {

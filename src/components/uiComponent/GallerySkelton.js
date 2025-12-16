@@ -2,8 +2,8 @@ import React from 'react'
 
 const GallerySkelton = () => {
   return (
-    <div className="container-fluid mb-80 p-0">
-      <div className="gallery-section text-center">
+    <div className="container mb-80 p-0">
+      <div className="gallery-section1 text-center">
         {/* Title skeleton */}
         <div className="skeleton skeleton-title mb-3"></div>
         <div className="skeleton skeleton-text mb-5"></div>

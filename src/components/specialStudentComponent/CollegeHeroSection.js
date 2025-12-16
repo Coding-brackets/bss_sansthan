@@ -32,7 +32,7 @@ const CollegeHeroSection = ({
           {/* Button Section */}
           {heroButton && (
             <Link
-              href="/"
+              href="/colleges/dr-babasaheb-ambedkar-residential-mr-school-bhandara"
               className="btn-hero d-inline-flex align-items-center gap-2 mt-5"
             >
               {buttonText} <ArrowUpRight size={20} />

@@ -18,30 +18,25 @@ const specialStudents = () => {
   ],
 
   "Smiles & Success": [
-    { image: "/assets/gallery/gallery6.jpg", alt: "Smiles & Success 1" },
-    { image: "/assets/gallery/gallery5.jpg", alt: "Smiles & Success 2" },
-    { image: "/assets/gallery/gallery4.jpg", alt: "Smiles & Success 3" },
-    { image: "/assets/gallery/gallery3.jpg", alt: "Smiles & Success 4" },
-    { image: "/assets/gallery/gallery2.jpg", alt: "Smiles & Success 5" },
-    { image: "/assets/gallery/gallery1.jpg", alt: "Smiles & Success 6" },
+    { image: "/assets/gallery/smiles-success/smile-succes2.jpeg", alt: "Smiles & Success 1" },
+    { image: "/assets/gallery/smiles-success/smile-succes3.jpeg", alt: "Smiles & Success 2" },
+    { image: "/assets/gallery/smiles-success/smile-success.jpeg", alt: "Smiles & Success 3" },
+ 
   ],
 
   "Inspiring Journeys": [
-    { image: "/assets/gallery/gallery1.jpg", alt: "Inspiring Journeys 1" },
-    { image: "/assets/gallery/gallery2.jpg", alt: "Inspiring Journeys 2" },
-    { image: "/assets/gallery/gallery3.jpg", alt: "Inspiring Journeys 3" },
-    { image: "/assets/gallery/gallery4.jpg", alt: "Inspiring Journeys 4" },
-    { image: "/assets/gallery/gallery5.jpg", alt: "Inspiring Journeys 5" },
-    { image: "/assets/gallery/gallery6.jpg", alt: "Inspiring Journeys 6" },
+    { image: "/assets/gallery/journeys/journeys1.jpg", alt: "Inspiring Journeys 1" },
+    { image: "/assets/gallery/journeys/journeys2.JPG", alt: "Inspiring Journeys 2" },
+    { image: "/assets/gallery/journeys/journeys3.jpeg", alt: "Inspiring Journeys 3" },
   ],
 
   "Life at Our Campus": [
-    { image: "/assets/gallery/gallery6.jpg", alt: "Life at Our Campus 1" },
-    { image: "/assets/gallery/gallery5.jpg", alt: "Life at Our Campus 2" },
-    { image: "/assets/gallery/gallery4.jpg", alt: "Life at Our Campus 3" },
-    { image: "/assets/gallery/gallery3.jpg", alt: "Life at Our Campus 4" },
-    { image: "/assets/gallery/gallery2.jpg", alt: "Life at Our Campus 5" },
-    { image: "/assets/gallery/gallery1.jpg", alt: "Life at Our Campus 6" },
+    { image: "/assets/gallery/life-at-campus/3.JPG", alt: "Life at Our Campus 1" },
+    { image: "/assets/gallery/life-at-campus/life-at-campu2.jpeg", alt: "Life at Our Campus 2" },
+    { image: "/assets/gallery/life-at-campus/life-at-campu6.jpeg", alt: "Life at Our Campus 3" },
+    { image: "/assets/gallery/life-at-campus/life-at-campus1.JPG", alt: "Life at Our Campus 4" },
+    { image: "/assets/gallery/life-at-campus/life-at-campus4.jpeg", alt: "Life at Our Campus 5" },
+    { image: "/assets/gallery/life-at-campus/life-at-campus5.jpeg", alt: "Life at Our Campus 6" },
   ],
 };
 

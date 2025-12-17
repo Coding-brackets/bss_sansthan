@@ -45,7 +45,10 @@ const specialStudents = () => {
     <div>
       <CollegeHeroSection
         heading="Empowering Every Ability, Enabling Every Dream"
-        description="We believe that education should have no barriers. Our mission is to ensure that every student — regardless of physical or cognitive challenges — has the support, accessibility, and opportunities they deserve to learn, grow, and succeed."
+        description={[
+          "We believe education is a pathway to growth and opportunity for every learner. Our mission is to create an environment where all students receive meaningful learning experiences that encourage confidence, curiosity, and achievement.",
+          "By offering education in various fields and disciplines, we help students develop knowledge, skills, and values that support academic excellence and lifelong success."
+        ]}
         bgImage="/assets/heroImages/special-student-bg.webp"
         buttonText="Learn How We Help"
         heroButton="true"
@@ -57,9 +60,9 @@ const specialStudents = () => {
         subHeadingCon="ABOUT US"
         heading="Creating Equal Opportunities Through Education"
         description={[
-          "At our institution, inclusivity is more than a value — it’s our foundation. We are committed to supporting students with disabilities by providing accessible learning environments, adaptive resources, and personalized guidance.",
-          "From wheelchair-accessible classrooms and assistive technologies to dedicated counseling and mentorship programs, we ensure that every learner has the tools and encouragement they need to thrive academically and personally.",
-          "Our faculty and staff are trained to recognize diverse needs, foster understanding, and promote an atmosphere where all students feel respected, supported, and empowered.",
+          "At our institution, inclusivity is the foundation of our educational approach. We are dedicated to nurturing specially abled students (children with acute disabilities) through accessible learning spaces and personalized academic guidance.",
+          "Our well infrastructure school is thoughtfully designed to support diverse learning styles. Modern classrooms and technology enabled facilities create a comfortable and supportive environment for every student.",
+          "We provide education in various fields to promote holistic development. Counseling services, mentorship initiatives and academic support programs ensure students remain guided throughout their educational journey.",
         ]}
         SubHeading="true"
       />

@@ -10,7 +10,7 @@ const CollegeHeroSection = ({
   subHeadingCon,
   SubHeading = false,
   heroButton = false,
-  desc = false,
+  // desc = false,
 }) => {
   return (
     <div className="container-fluid mb-100 p-0 ">
@@ -26,9 +26,20 @@ const CollegeHeroSection = ({
         <div className="college_hero_content collegeContent_banner position-relative">
           {SubHeading && <p className="hero_subHeading">{subHeadingCon}</p>}
           <h1 className="mb-4 text-white">{heading}</h1>
-          {desc && (
+          {/* {desc && (
           <p className="mb-0">{description}</p>
-          )}
+          )} */}
+
+ {Array.isArray(description) ? (
+                description.map((para, index) => (
+                  <p key={index} className="section_para" style={{ fontWeight: 500 }}>
+                    {para}
+                  </p>
+                ))
+              ) : (
+                <p className="section_para mb-4">{description}</p>
+              )}
+
           {/* Button Section */}
           {heroButton && (
             <Link

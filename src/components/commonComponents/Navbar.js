@@ -47,13 +47,8 @@ const navItems = [
             href: "/colleges/bhojrajji-bhondekar-ayurvedic-mahavidyalaya",
           },
           {
-<<<<<<< HEAD
-            label: "Manjulabai Bhondekar Mahavidyalaya B.A. Bhandara",
-            href: "/colleges/manjulabai-bhondekar-college-ba-administrative-services-bhandara",
-=======
             label: "Manjulabai Bhondekar Mahavidyalaya",
             href: "/colleges/manjulabai-bhondekar-mahavidyalaya",
->>>>>>> 08d32bb7198d2ce7989d96ffe161c12b3a765303
           },
           {
             label: "Dr. Babasaheb Ambedkar MR School",

@@ -20,6 +20,15 @@ const Founders = () => {
     },
     {
       id: 2,
+      image: "/assets/leader&founders/bhojraj-bhondekar.png",
+
+      name: "Hon. MLA Shri. Narendra B. Bhondekarji",
+      title: "Society Member, Bhondekar Shikshan Sanstha",
+      quote:
+        "Our Society is committed to academic excellence and creating an enriching educational environment that empowers students to realize their full potential.",
+    },
+    {
+      id: 3,
       image: "/assets/leader&founders/founderImage1.webp",
 
       name: "Hon. MLA Shri. Narendra B. Bhondekarji",
@@ -29,7 +38,7 @@ const Founders = () => {
     },
 
     {
-      id: 2,
+      id: 4,
       image: "/assets/leader&founders/founderImage2.webp",
       name: "Dr. Ashvini Narendra Bhondekar",
       title: "Secretary, Bhondekar Shikshan Sanstha",

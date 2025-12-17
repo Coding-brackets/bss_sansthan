@@ -64,7 +64,7 @@ const AboutUs = () => {
         showQuote="true"
       /> */}
       <Mentors
-        img="/assets/founder.png"
+        img="/assets/bhojraj-bhondekar.png"
         heading="Meet Founders & Mentors Now!"
       />
     </div>

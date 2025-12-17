@@ -10,7 +10,7 @@ const PoojaNursing = () => {
     <div>
       <HeroSection
         subHeadingCon="Welcome to"
-        heading="Pooja Nursing College & PES Hospital & Research Center, Bhandara"
+        heading="Pooja Nursing College"
         bgImage="/assets/heroImages/pooja-nursing-college-hero.webp"
       />
 

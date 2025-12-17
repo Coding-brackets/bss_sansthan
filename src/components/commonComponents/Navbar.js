@@ -31,43 +31,43 @@ const navItems = [
         children: [
           {
             label: "Pooja Nursing College",
-            href: "/colleges/pooja-Nursing-college",
+            href: "/colleges/pooja-nursing-college",
           },
           {
-            label: "Bhojrajji Bhondekar Physiotherapy College",
-            href: "/colleges/bb-physiotherapy-college",
+            label: "Bhojrajji Bhondekar Physiotherapy Mahavidyalaya",
+            href: "/colleges/bhojrajji-bhondekar-physiotherapy-mahavidyalaya",
           },
           {
-            label: "Bhojrajji Bhondekar Medical College(Proposed)",
-            href: "/colleges/bb-medical-college",
+            label: "Bhojrajji Bhondekar Medical College (Proposed)",
+            href: "/colleges/bhojrajji-bhondekar-medical-college",
           },
            {
-            label: "Bhojrajji Bhondekar Ayurvedic Mahavidyalaya",
+            label: "Bhojraj Bhondekar Ayurvedic Mahavidyalaya",
             href: "/colleges/bhojrajji-bhondekar-ayurvedic-mahavidyalaya",
           },
           {
-            label: "Manjulabai Bhondekar College B.A. Bhandara",
-            href: "/colleges/manjulabai-bhondekar-college-ba-administrative-services-bhandara",
+            label: "Manjulabai Bhondekar Mahavidyalaya",
+            href: "/colleges/manjulabai-bhondekar-mahavidyalaya",
           },
           {
-            label: "Dr. Babasaheb Ambedkar Residential MR School",
-            href: "/colleges/dr-babasaheb-ambedkar-residential-mr-school-bhandara",
+            label: "Dr. Babasaheb Ambedkar MR School",
+            href: "/colleges/dr-babasaheb-ambedkar-mr-school",
           },
           {
-            label: "Universal BA College",
-            href: "/colleges/universal-ba-college",
+            label: "Universal BA Mahavidyalaya Nerla",
+            href: "/colleges/universal-ba-mahavidyalaya",
           },
           {
-            label: "Sant Gadgebaba Residential MR School, Nerla",
-            href: "/colleges/sant-gadgebaba-residential-mr-school-nerla",
+            label: "Sant Gadgebaba MR School Nerla",
+            href: "/colleges/sant-gadgebaba-mr-school",
           },
           {
-            label: "Late Jamunabai Bhondekar Residential MR School",
-            href: "/colleges/swayamsevi-Jamunabai-madhyamik-shala",
+            label: "Late Jamunabai Bhondekar Mahavidyalaya Navegaon",
+            href: "/colleges/late-jamunabai-bhondekar-mahavidyalaya",
           },
           {
-            label: "Late Jamnabai Bhondekar College",
-            href: "/colleges/swayamsevi-Jamunabai-bhondekar-college",
+            label: "Late Jamunabai Bhondekar MR School Umri",
+            href: "/colleges/late-jamunabai-bhondekar-mr-school",
           },
         ],
       },
@@ -79,8 +79,8 @@ const navItems = [
             href: "/colleges/pes-ayurvedic-rugnalay",
           },
           {
-            label: "PES Multi speciality Hospital and Research Centre",
-            href: "/colleges/pes-multispeciality-hospital",
+            label: "PES Multi-speciality Hospital and Research Centre",
+            href: "/colleges/pes-multispeciality-hospital-and-research-centre",
           },
         ],
       },

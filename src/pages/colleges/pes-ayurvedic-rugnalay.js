@@ -13,7 +13,6 @@ const PESAyurvedicRugnalay = () => {
         heading="PES Ayurvedic Rugnalay"
         bgImage="/assets/heroImages/bb-ayurvedic-college.webp"
       />
-      <Announcement/>
       <CollegeConSec
         image="/assets/CollegesImg/doctorImg.png"
         heading="A dedicated center for authentic Ayurvedic healthcare."

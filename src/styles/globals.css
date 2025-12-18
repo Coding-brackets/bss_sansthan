@@ -1142,7 +1142,7 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 95%;
   height: 100%;
   background: #DADFE6;
   z-index: 10;
@@ -1154,7 +1154,7 @@ border-radius: 0px 30px 150px 0px;
 
 /* Video itself */
 .hero-video {
-  border-radius: 0px 30px 61px 0px;
+  border-radius: 0px 30px 120px 0px;
     width: 96%;
     max-height: 100%;
 }

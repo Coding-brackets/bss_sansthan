@@ -20,7 +20,7 @@ const Rankings = ({ title, highlight, description, image }) => {
 
         {/* Description */}
         <motion.p
-          className="text-center w-75 mx-auto"
+          className="text-center w-75 mx-auto heading_con"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}

@@ -2,7 +2,7 @@
 export const  CAROUSEL_ITEMS = [
   {
     id: 1,
-    image: "/assets/carousel1.png",
+    image: "/assets/ourLeaders.jpg",
     category: "Thriving Beyond Campus",
     title: "Life at BSS",
     description: "Life at BSS is dynamic and purpose-driven. Students experience an enriching campus life filled with academics and cultural activities. Regular events like Rhythm 2025 encourage personal growth and leadership, while hands-on training prepares students for successful careers, shaping confident and skilled professionals for the future.",

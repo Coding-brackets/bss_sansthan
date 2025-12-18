@@ -1,10 +1,22 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { motion as Motion } from "framer-motion";
 import Image from "next/image";
+import { FaPlay } from "react-icons/fa";
 
-const HeroSection = ({subHeading, mainHeading, content, urltext1, urltext2, urlLink1, urlLink2, imgUrl}) => {
+const HeroSection = ({
+  subHeading,
+  mainHeading,
+  content,
+  urltext1,
+  urltext2,
+  urlLink1,
+  urlLink2,
+  imgUrl,
+}) => {
+  const [showVideo, setShowVideo] = useState(false);
+
   // Stagger container for left content
   const container = {
     hidden: {},
@@ -22,8 +34,8 @@ const HeroSection = ({subHeading, mainHeading, content, urltext1, urltext2, urlL
   };
 
   return (
-    <div className="container-fluid mb-100">
-      <div className="hero_section my-40">
+    <div className="container-fluid mb-100 overflow-hidden">
+      <div className="hero_section my-40 position-relative">
         <div className="row heroBanner position-relative">
           {/* LEFT SIDE CONTENT */}
           <div className="col-lg-6 p-0 border-right-mobile">
@@ -34,17 +46,13 @@ const HeroSection = ({subHeading, mainHeading, content, urltext1, urltext2, urlL
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <Motion.h4 variants={fadeUp}>
-                {subHeading}
-              </Motion.h4>
+              <Motion.h4 variants={fadeUp}>{subHeading}</Motion.h4>
 
               <Motion.h1 variants={fadeUp}>
                 {mainHeading} <span>(BSS)</span>
               </Motion.h1>
 
-              <Motion.p variants={fadeUp}>
-                {content}
-              </Motion.p>
+              <Motion.p variants={fadeUp}>{content}</Motion.p>
 
               {/* BUTTONS */}
               <Motion.div variants={fadeUp} className="hero_btns d-flex gap-3">
@@ -70,6 +78,7 @@ const HeroSection = ({subHeading, mainHeading, content, urltext1, urltext2, urlL
           </div>
 
           {/* RIGHT SIDE IMAGE */}
+          {/* RIGHT SIDE IMAGE */}
           <Motion.div
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -80,12 +89,49 @@ const HeroSection = ({subHeading, mainHeading, content, urltext1, urltext2, urlL
             <Image
               src={imgUrl}
               alt={mainHeading}
-              className="hero_image"
               fill
               priority
+              className="hero_image"
               style={{ objectFit: "contain", objectPosition: "right bottom" }}
             />
+
+            {/* PLAY ICON */}
+            <button
+              className="video-play-btn"
+              onClick={() => setShowVideo(true)}
+            >
+              <FaPlay />
+            </button>
+             {showVideo && (
+            <Motion.div
+              className="hero-video-panel"
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+            >
+              <button
+                className="video-close"
+                onClick={() => setShowVideo(false)}
+              >
+                ✕
+              </button>
+
+              <video
+                src="/video/college.mp4"
+                autoPlay
+                controls
+  loop
+  muted
+  playsInline
+                className="hero-video"
+              />
+            </Motion.div>
+          )}
+
           </Motion.div>
+
+         
         </div>
       </div>
     </div>

@@ -25,7 +25,7 @@ const Founders = () => {
       name: "Hon. MLA Shri. Narendra B. Bhondekarji",
       title: "Society Member, Bhondekar Shikshan Sanstha",
       quote:
-        "Our Society is committed to academic excellence and creating an enriching educational environment that empowers students to realize their full potential.",
+        "I believe education is the most powerful tool to transform lives and build a just society. Our institutions exist to teach and to uplift communities through values and opportunity.",
     },
     {
       id: 3,

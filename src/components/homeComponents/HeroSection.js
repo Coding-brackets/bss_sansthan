@@ -46,7 +46,7 @@ const HeroSection = ({
           modules={[Pagination]}
           slidesPerView={1}
           pagination={{ clickable: true }}
-          spaceBetween={15}
+          spaceBetween={30}
           // autoplay={{ delay: 6000, disableOnInteraction: false }}
           className="hero-swiper"
         >
@@ -109,41 +109,6 @@ const HeroSection = ({
               className="hero_image"
               style={{ objectFit: "contain", objectPosition: "right bottom" }}
             />
-
-            {/* PLAY ICON */}
-            {/* <button
-              className="video-play-btn"
-              onClick={() => setShowVideo(true)}
-            >
-             
-            </button> */}
-             {/* {showVideo && (
-            <Motion.div
-              className="hero-video-panel"
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ duration: 0.6, ease: "easeInOut" }}
-            >
-              <button
-                className="video-close"
-                onClick={() => setShowVideo(false)}
-              >
-                ✕
-              </button>
-
-              <video
-                src="/video/college.mp4"
-                autoPlay
-                controls
-  loop
-  muted
-  playsInline
-                className="hero-video"
-              />
-            </Motion.div>
-          )} */}
-
           </Motion.div>
 
          
@@ -158,7 +123,6 @@ const HeroSection = ({
                 loop
                 muted
                 playsInline
-                controls
                 className="hero-video"
               />
             </div>

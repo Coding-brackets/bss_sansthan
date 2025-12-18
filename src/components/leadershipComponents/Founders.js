@@ -11,6 +11,15 @@ const Founders = () => {
   const founders = [
     {
       id: 1,
+      image: "/assets/leader&founders/bhojraj-bhondekar.png",
+
+      name: "Shri Bhojraj ji Bhondekar",
+      title: "Founder",
+      quote:
+        "I believe education is the most powerful tool to transform lives and build a just society. Our institutions exist to teach and to uplift communities through values and opportunity.",
+    },
+    {
+      id: 2,
       image: "/assets/leader&founders/manjulatai.png",
       founderSign: "/assets/leader&founders/sign.png",
       name: "Mrs. Manjulatai Bhojraj Bhondekar",
@@ -18,15 +27,7 @@ const Founders = () => {
       quote:
         "Our Institution upholds the motto “Education is Life,” providing quality learning. We empower students to dream big and achieve excellence in every field.",
     },
-    {
-      id: 2,
-      image: "/assets/leader&founders/bhojraj-bhondekar.png",
-
-      name: "Hon. MLA Shri. Narendra B. Bhondekarji",
-      title: "Society Member, Bhondekar Shikshan Sanstha",
-      quote:
-        "I believe education is the most powerful tool to transform lives and build a just society. Our institutions exist to teach and to uplift communities through values and opportunity.",
-    },
+    
     {
       id: 3,
       image: "/assets/leader&founders/founderImage1.webp",

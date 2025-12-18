@@ -1,9 +1,15 @@
 "use client";
-import React, { useState } from "react";
+
+import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { motion as Motion } from "framer-motion";
 import Image from "next/image";
-import { FaPlay } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+
+// Swiper styles (mandatory)
+import "swiper/css";
+import "swiper/css/pagination";
 
 const HeroSection = ({
   subHeading,
@@ -15,7 +21,7 @@ const HeroSection = ({
   urlLink2,
   imgUrl,
 }) => {
-  const [showVideo, setShowVideo] = useState(false);
+  // const [showVideo, setShowVideo] = useState(false);
 
   // Stagger container for left content
   const container = {
@@ -36,6 +42,15 @@ const HeroSection = ({
   return (
     <div className="container-fluid mb-100 overflow-hidden">
       <div className="hero_section my-40 position-relative">
+         <Swiper
+          modules={[Pagination]}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          spaceBetween={15}
+          // autoplay={{ delay: 6000, disableOnInteraction: false }}
+          className="hero-swiper"
+        >
+          <SwiperSlide>
         <div className="row heroBanner position-relative">
           {/* LEFT SIDE CONTENT */}
           <div className="col-lg-6 p-0 border-right-mobile">
@@ -96,13 +111,13 @@ const HeroSection = ({
             />
 
             {/* PLAY ICON */}
-            <button
+            {/* <button
               className="video-play-btn"
               onClick={() => setShowVideo(true)}
             >
-              <FaPlay />
-            </button>
-             {showVideo && (
+             
+            </button> */}
+             {/* {showVideo && (
             <Motion.div
               className="hero-video-panel"
               initial={{ x: "100%" }}
@@ -127,12 +142,28 @@ const HeroSection = ({
                 className="hero-video"
               />
             </Motion.div>
-          )}
+          )} */}
 
           </Motion.div>
 
          
         </div>
+        </SwiperSlide>
+         {/* SLIDE 2: VIDEO ONLY */}
+          <SwiperSlide>
+            <div className="hero-video-slide d-flex align-items-center justify-content-center heroBanner">
+              <video
+                src="/video/college.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                className="hero-video"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );

@@ -1079,63 +1079,6 @@ a {
   border-radius: 30px 30px 150px;
 }
 
-/* .hero-img-wrapper {
-  position: relative;
-  min-height: 420px;
-}
-
-/* Play button */
-/* .video-play-btn {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.65);
-  color: #fff;
-  border: none;
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 5;
-}
-
-.video-play-btn:hover {
-  background: #000;
-}
-
-/* Slide-in video panel */
-/* .video-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* Video */
-/* .hero-video {
-  width: 80%;
-  max-width: 900px;
-  border-radius: 12px;
-} */
-
-/* Close button */
-/* .video-close {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  font-size: 28px;
-  background: none;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}  */
 
 /* Hero video slide panel */
 .hero-video-panel {
@@ -1420,12 +1363,8 @@ border-radius: 0px 30px 150px 0px;
 
 .highlight-card {
   padding: 0px 24px 30px;
-}
-
-/* Default flat cards */
-.highlight-card {
-  border-radius: 0;
-  transition: all 0.3s ease;
+  border-radius: 15px;
+    transition: all 0.3s ease;
 }
 
 .about_card_title {
@@ -3439,14 +3378,6 @@ hr {
 }
 
 /* career & vacancy */
-
-.career-card-0 {
-  border-radius: 15px 0px 0px 15px;
-}
-
-.career-card-3 {
-  border-radius: 0px 15px 15px 0px;
-}
 
 .vacancy_card_title {
   font-weight: 600;

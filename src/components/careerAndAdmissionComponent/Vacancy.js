@@ -1,6 +1,11 @@
-import React from 'react'
-import { BadgeCheck} from "lucide-react";
-import Image from 'next/image';
+import React from "react";
+import { BadgeCheck } from "lucide-react";
+import Image from "next/image";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Vacancy = ({cards, heading}) => {
 
@@ -9,9 +14,23 @@ const Vacancy = ({cards, heading}) => {
       <div className="container">
 
       <h2 className="section_heading text-center mb-4">{heading}</h2>
-        <div className="row g-2 justify-content-center">
+        {/* <div className="row g-2 justify-content-center"> */}
+          <Swiper
+                    modules={[ Pagination]}
+                    spaceBetween={15}
+                    slidesPerView={3}
+                    // navigation
+                    pagination={{ clickable: true }}
+                    // autoplay={{ delay: 5000 }}
+                    breakpoints={{
+                      0: { slidesPerView: 1 },
+                      768: { slidesPerView: 2 },
+                      1200: { slidesPerView: 4 },
+                    }}
+                    className="college-slider pb-5 row"
+                  >
           {cards.map((card, index) => (
-            <div className="col-md-6 col-lg-3" key={index}>
+            <SwiperSlide className="col-md-6 col-lg-3 h-auto" key={index}>
               <div
                 className={`highlight-card  h-100 career-card-${index}`}
                 style={{ backgroundColor: card.color }}
@@ -23,11 +42,12 @@ const Vacancy = ({cards, heading}) => {
                   <Image src={card.img} alt=''  className="badge_check" width={40} height={40}/>
                 </div>
                 <h4 className="fw-bold mb-3 vacancy_card_title text-white">{card.title}</h4>
-                <p className="mb-0 vacancy_card_para text-white">{card.text}</p>
+                <p className="mb-0 vacancy_card_para text-white">Positions: {card.text}</p>
               </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+          </Swiper>
+        {/* </div> */}
       </div>
     </section>
   );

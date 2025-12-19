@@ -9,7 +9,7 @@ const leadership = () => {
     <div>
       <Hero/>
       <Founders/>
-      <LeaderShip/>
+      {/* <LeaderShip/> */}
       <Awards/>
     </div>
   )

@@ -3,7 +3,7 @@ import HeroSection from "@/components/homeComponents/HeroSection";
 import BssContentSec from "@/components/commonComponents/BssContentSec";
 import AboutHighlights from "@/components/homeComponents/AboutHighlights";
 // import Carousel from "@/components/homeComponents/Carousel";
-import Rankings from "@/components/homeComponents/Rankings";
+// import Rankings from "@/components/homeComponents/Rankings";
 import Success from "@/components/homeComponents/Success";
 import Testimonials from "@/components/commonComponents/Testimonials";
 import BssStats from "@/components/homeComponents/BssStats";
@@ -31,7 +31,7 @@ export default function Home() {
       <BssContentSec {...homeData.bssContent} />
       <AboutHighlights cards={homeData.aboutCards} />
       <CustomCarousel />
-      <Rankings {...homeData.rankings} />
+      {/* <Rankings {...homeData.rankings} /> */}
       <Success {...homeData.success} />
       <Testimonials />
       <BssStats

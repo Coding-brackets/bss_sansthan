@@ -27,7 +27,6 @@ const PoojaNursing = () => {
 
       <CarouselGallery 
       para="Here is a small piece of collections that were captured during college events and social programs conducted by our faculty."
-
         items={[
           {
             img: "/assets/CollegesImg/pooja-nursing-college/college-fest-image1.jpg",

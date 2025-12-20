@@ -16,12 +16,13 @@ const TopNewsSec = ({ mainNews }) => {
         <div className="card-body mainNews_body">
           <p className="">{mainNews.date} | {mainNews.editor}</p>
           <h4 className=" mb-2">
-            {mainNews.title}:{" "}
-            {mainNews.description && (
+            {mainNews.title}
+            {/* {mainNews.description && (
               <span >
                 {mainNews.description}
               </span>
-            )}
+            )} */}
+            <p style={{ fontSize: "16px", fontWeight: "400" }}>{mainNews.description}</p>
           </h4>
         </div>
       </div>

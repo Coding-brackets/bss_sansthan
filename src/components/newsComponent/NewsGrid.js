@@ -54,7 +54,7 @@ const NewsGrid = ({ newsData, onSelectNews }) => {
                   width={70}
                   height={70}
                 />
-                <p className=" mb-0">{item.title}: {item.description}</p>
+                <p className=" mb-0">{item.title}</p>
               </div>
             ))}
           </div>
@@ -76,7 +76,7 @@ const NewsGrid = ({ newsData, onSelectNews }) => {
                   width={70}
                   height={70}
                 />
-                <p className="small mb-0">{item.title}: {item.description}</p>
+                <p className="small mb-0">{item.title}</p>
               </div>
             ))}
           </div>

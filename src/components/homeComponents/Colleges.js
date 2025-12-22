@@ -30,7 +30,7 @@ const Colleges = ({ colleges }) => {
           slidesPerView={3}
           // navigation
           pagination={{ clickable: true }}
-          // autoplay={{ delay: 5000 }}
+          autoplay={{ delay: 2000 }}
           breakpoints={{
             0: { slidesPerView: 1 },
             768: { slidesPerView: 2 },

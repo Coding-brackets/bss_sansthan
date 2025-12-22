@@ -24,7 +24,7 @@ export const CustomCarousel = () => {
     if (isAutoPlaying) {
       const interval = setInterval(() => {
         nextSlide();
-      }, 500000);
+      }, 5000);
       return () => clearInterval(interval);
     }
   }, [isAutoPlaying, currentIndex]); // keeping deps close to your original logic

@@ -15,7 +15,7 @@ const PoojaNursing = () => {
       />
 
       <CollegeConSec
-        image="/assets/CollegesImg/pooja-nursing-college/college-activity-image.png"
+        image="/assets/CollegesImg/pooja-nursing-college/college-activity-image.webp"
         heading="Get To Know Our Nursing College"
         description={[
           "At Pooja Nursing College, Bhandara, we believe education is not just about learning, it’s about caring and transforming lives. Since our foundation in 2015, we have been dedicated to preparing skilled nursing professionals who are ready to serve society with excellence.",

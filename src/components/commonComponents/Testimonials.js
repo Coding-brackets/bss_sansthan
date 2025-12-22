@@ -58,6 +58,10 @@ const Testimonials = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,
+     autoplay: true,          // ✅ enable auto slide
+  autoplaySpeed: 4000,     // ✅ time between slides (ms)
+
+  pauseOnHover: true,      // ✅ stop when user hovers
     beforeChange: (_, next) => setActiveSlide(next),
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,

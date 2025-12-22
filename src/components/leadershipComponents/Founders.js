@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -68,12 +68,13 @@ const Founders = () => {
           </button>
 
           <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             navigation={{
               nextEl: ".custom-swiper-next",
               prevEl: ".custom-swiper-prev",
             }}
             pagination={{ clickable: true }}
+            autoplay={{ delay: 4000, disableOnInteraction: false, }}
             loop={true}
             className="founder-swiper"
           >

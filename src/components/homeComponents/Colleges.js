@@ -25,17 +25,18 @@ const Colleges = ({ colleges }) => {
         </p>
 
         <Swiper
-          modules={[ Pagination]}
+          modules={[ Pagination, Autoplay]}
           spaceBetween={24}
           slidesPerView={3}
           // navigation
           pagination={{ clickable: true }}
-          autoplay={{ delay: 2000 }}
+          autoplay={{ delay: 2000, disableOnInteraction: false, }}
           breakpoints={{
             0: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1200: { slidesPerView: 3 },
           }}
+          loop={true}  
           className="college-slider pb-5"
         >
           {colleges.map((college, index) => (

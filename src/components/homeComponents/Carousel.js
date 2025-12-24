@@ -182,14 +182,14 @@ export const CustomCarousel = () => {
                               <RightArrow size={20} />
                             </button>
                           </div>
-                          <div className="carousel-index">
+                          {/* <div className="carousel-index">
                             <span className="counter-current">
                               {String(index + 1).padStart(2, "0")}
                             </span>
                             <span>
                               /{String(CAROUSEL_ITEMS.length).padStart(2, "0")}
                             </span>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>

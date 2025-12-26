@@ -22,12 +22,12 @@ const Founders = () => {
       id: 2,
       image: "/assets/leader&founders/manjulatai.png",
       founderSign: "/assets/leader&founders/sign.png",
-      name: "Mrs. Manjulatai Bhojraj Bhondekar",
+      name: "Mrs. Manjulabai Bhojraj Bhondekar",
       title: "President, Bhondekar Shikshan Sanstha",
       quote:
         "Our Institution upholds the motto “Education is Life,” providing quality learning. We empower students to dream big and achieve excellence in every field.",
     },
-    
+
     {
       id: 3,
       image: "/assets/leader&founders/founderImage1.webp",
@@ -53,8 +53,7 @@ const Founders = () => {
       <div className="container position-relative">
         <h2 className="section_heading text-center mb-2">Our Founders</h2>
         <p className="section_para text-center mb-5">
-          BSS, Bhandara, since 2002, is a trusted name in medical and nursing
-          education.
+          BSS, Bhandara, since 2002, is a trusted name in medical and nursing education.
         </p>
 
         {/* ✅ Wrap Swiper inside a relative container */}
@@ -74,7 +73,7 @@ const Founders = () => {
               prevEl: ".custom-swiper-prev",
             }}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 4000, disableOnInteraction: false, }}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
             loop={true}
             className="founder-swiper"
           >
@@ -82,23 +81,15 @@ const Founders = () => {
               <SwiperSlide key={index}>
                 <div className="row align-items-center justify-content-center founder-slide">
                   <div className="col-md-4 text-center mb-4 mb-md-0">
-                    <img
-                      src={founder.image}
-                      alt={founder.name}
-                      className="img-fluid founder-img"
-                    />
+                    <img src={founder.image} alt={founder.name} className="img-fluid founder-img" />
                   </div>
                   <div className="col-md-6">
                     <div className="d-flex flex-column justify-content-between h-100">
                       <p className="founder-text mb-5">{founder.quote}</p>
                       <div className="founder-signature d-flex align-items-center justify-content-between">
                         <div>
-                          <h5 className="fw-bold mb-1 founder-name">
-                            {founder.name}
-                          </h5>
-                          <p className="founder-title mb-0">
-                            {founder.title}
-                          </p>
+                          <h5 className="fw-bold mb-1 founder-name">{founder.name}</h5>
+                          <p className="founder-title mb-0">{founder.title}</p>
                         </div>
                         {founder.founderSign && (
                           <img
@@ -121,5 +112,3 @@ const Founders = () => {
 };
 
 export default Founders;
-
-

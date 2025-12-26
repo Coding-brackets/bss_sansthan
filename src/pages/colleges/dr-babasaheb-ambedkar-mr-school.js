@@ -14,7 +14,7 @@ const DrBabasahebAambedkar = () => {
       />
 
       <CollegeConSec
-        image="/assets/CollegesImg/babasaheb-ambedkar-school/award-ceremony.png"
+        image="/assets/CollegesImg/babasaheb-ambedkar-school/mr3.png"
         heading="Let’s take a tour of Dr. Babasaheb Ambedkar MR School"
         description={[
   "A safe and home-like space where students feel protected and ready to learn with confidence. The school builds strong reading and writing habits, boosts self-belief and helps every child grow through meaningful daily activities. Caring teachers guide each student step by step so they feel encouraged and excited to improve.",

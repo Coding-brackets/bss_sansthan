@@ -26,11 +26,11 @@ const UniversalBA = () => {
       <CollegeGallery
         para="Explore Universal BA Mahavidyalaya,Nerla campus, arts programs, and student facilities. Get all the information you need with just a click."
         images={[
-          "/assets/CollegesImg/universal-ba-college/uba5.jpeg",
-          "/assets/CollegesImg/universal-ba-college/uba4.jpeg",
-          "/assets/CollegesImg/universal-ba-college/uba3.jpeg",
-          "/assets/CollegesImg/universal-ba-college/uba2.jpeg",
-          "/assets/CollegesImg/universal-ba-college/uba1.jpeg",
+          "/assets/CollegesImg/universal-ba-college/ubmimg5.jpeg",
+          "/assets/CollegesImg/universal-ba-college/ubmimg4.jpeg",
+          "/assets/CollegesImg/universal-ba-college/ubmimg3.jpeg",
+          "/assets/CollegesImg/universal-ba-college/ubmimg1.jpeg",
+          "/assets/CollegesImg/universal-ba-college/ubmimg2.jpeg",
         ]}
       />
       <QuoteComponent

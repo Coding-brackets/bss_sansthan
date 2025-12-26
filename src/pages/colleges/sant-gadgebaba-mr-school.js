@@ -14,7 +14,7 @@ const SwayamseviJanmubaiMadhyamik = () => {
       />
 
       <CollegeConSec
-        image="/assets/CollegesImg/swayamsevi-janmubai/school.png"
+        image="/assets/CollegesImg/swayamsevi-janmubai/library.png"
         heading="Come and Discover Sant Gadgebaba MR School,Nerla"
         description={[
             "Sant Gadgebaba MR School,Nerla offers simple and practical learning that helps students understand daily life and important values in a fun and meaningful way. Here, we promote clean habits and respect, inspired by the teachings of Sant Gadge Baba. Students learn through stories, hands-on activities, extra-curricular programs, and lively lessons that make every day exciting. Our teachers support each child with patience and care, helping them grow in skills, confidence, and creativity. With a warm and motivating environment, the school shapes responsible and active learners who love coming to school. Contact Us to know how students discover new talents and shine brighter every single day."

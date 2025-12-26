@@ -14,7 +14,7 @@ const SwayamseviJanmubaiBhondekar = () => {
       />
 
       <CollegeConSec
-        image="/assets/CollegesImg/swayamsevi-bhondekar-college/classroomFrame.png"
+        image="/assets/CollegesImg/swayamsevi-bhondekar-college/mr1.png"
         heading="Begin your journey into Janmubai Madhyamik Shala"
         description={[
             "Janmubai Madhyamik Shala delivers a strong and focused education for students from upper primary to high school, providing students with the proper guidance and structure they need to progress confidently. The school follows clear teaching methods and well-planned lessons that help students understand subjects with ease and stay prepared for academic success. ",

@@ -7,39 +7,37 @@ import InclusiveCollegesSection from "@/components/specialStudentComponent/Inclu
 import React from "react";
 
 const specialStudents = () => {
- const specialGalleryTabs = {
-  "Moments of Inclusion": [
-    { image: "/assets/gallery/gallery1.jpg", alt: "Moments of Inclusion 1" },
-    { image: "/assets/gallery/gallery2.jpg", alt: "Moments of Inclusion 2" },
-    { image: "/assets/gallery/gallery3.jpg", alt: "Moments of Inclusion 3" },
-    { image: "/assets/gallery/gallery4.jpg", alt: "Moments of Inclusion 4" },
-    { image: "/assets/gallery/gallery5.jpg", alt: "Moments of Inclusion 5" },
-    { image: "/assets/gallery/gallery6.jpg", alt: "Moments of Inclusion 6" },
-  ],
+  const specialGalleryTabs = {
+    "Moments of Inclusion": [
+      { image: "/assets/gallery/gallery1.jpg", alt: "Moments of Inclusion 1" },
+      { image: "/assets/gallery/gallery2.jpg", alt: "Moments of Inclusion 2" },
+      { image: "/assets/gallery/gallery3.jpg", alt: "Moments of Inclusion 3" },
+      { image: "/assets/gallery/gallery4.jpg", alt: "Moments of Inclusion 4" },
+      { image: "/assets/gallery/gallery5.jpg", alt: "Moments of Inclusion 5" },
+      { image: "/assets/gallery/gallery6.jpg", alt: "Moments of Inclusion 6" },
+    ],
 
-  "Smiles & Success": [
-    { image: "/assets/gallery/smiles-success/smile-succes2.jpeg", alt: "Smiles & Success 1" },
-    { image: "/assets/gallery/smiles-success/smile-succes3.jpeg", alt: "Smiles & Success 2" },
-    { image: "/assets/gallery/smiles-success/smile-success.jpeg", alt: "Smiles & Success 3" },
- 
-  ],
+    "Smiles & Success": [
+      { image: "/assets/gallery/smiles-success/smile-succes2.jpeg", alt: "Smiles & Success 1" },
+      { image: "/assets/gallery/smiles-success/smile-succes3.jpeg", alt: "Smiles & Success 2" },
+      { image: "/assets/gallery/smiles-success/smile-success.jpeg", alt: "Smiles & Success 3" },
+    ],
 
-  "Inspiring Journeys": [
-    { image: "/assets/gallery/journeys/journeys1.jpg", alt: "Inspiring Journeys 1" },
-    { image: "/assets/gallery/journeys/journeys2.JPG", alt: "Inspiring Journeys 2" },
-    { image: "/assets/gallery/journeys/journeys3.jpeg", alt: "Inspiring Journeys 3" },
-  ],
+    "Inspiring Journeys": [
+      { image: "/assets/gallery/journeys/journeys1.jpg", alt: "Inspiring Journeys 1" },
+      { image: "/assets/gallery/journeys/journeys2.JPG", alt: "Inspiring Journeys 2" },
+      { image: "/assets/gallery/journeys/journeys3.jpeg", alt: "Inspiring Journeys 3" },
+    ],
 
-  "Life at Our Campus": [
-    { image: "/assets/gallery/life-at-campus/3.JPG", alt: "Life at Our Campus 1" },
-    { image: "/assets/gallery/life-at-campus/life-at-campu2.jpeg", alt: "Life at Our Campus 2" },
-    { image: "/assets/gallery/life-at-campus/life-at-campu6.jpeg", alt: "Life at Our Campus 3" },
-    { image: "/assets/gallery/life-at-campus/life-at-campus1.JPG", alt: "Life at Our Campus 4" },
-    { image: "/assets/gallery/life-at-campus/life-at-campus4.jpeg", alt: "Life at Our Campus 5" },
-    { image: "/assets/gallery/life-at-campus/life-at-campus5.jpeg", alt: "Life at Our Campus 6" },
-  ],
-};
-
+    "Life at Our Campus": [
+      { image: "/assets/gallery/life-at-campus/3.JPG", alt: "Life at Our Campus 1" },
+      { image: "/assets/gallery/life-at-campus/life-at-campu2.jpeg", alt: "Life at Our Campus 2" },
+      { image: "/assets/gallery/life-at-campus/life-at-campu6.jpeg", alt: "Life at Our Campus 3" },
+      { image: "/assets/gallery/life-at-campus/life-at-campus1.JPG", alt: "Life at Our Campus 4" },
+      { image: "/assets/gallery/life-at-campus/life-at-campus4.jpeg", alt: "Life at Our Campus 5" },
+      { image: "/assets/gallery/life-at-campus/life-at-campus5.jpeg", alt: "Life at Our Campus 6" },
+    ],
+  };
 
   return (
     <div>
@@ -47,7 +45,7 @@ const specialStudents = () => {
         heading="Empowering Every Ability, Enabling Every Dream"
         description={[
           "We believe education is a pathway to growth and opportunity for every learner. Our mission is to create an environment where all students receive meaningful learning experiences that encourage confidence, curiosity, and achievement.",
-          "By offering education in various fields and disciplines, we help students develop knowledge, skills, and values that support academic excellence and lifelong success."
+          "By offering education in various fields and disciplines, we help students develop knowledge, skills, and values that support academic excellence and lifelong success.",
         ]}
         bgImage="/assets/heroImages/special-student-bg.webp"
         buttonText="Learn How We Help"
@@ -56,7 +54,7 @@ const specialStudents = () => {
       />
 
       <Mission
-        image="/assets/student-about-us.png"
+        image="/assets/special-student-bg.png"
         subHeadingCon="ABOUT US"
         heading="Creating Equal Opportunities Through Education"
         description={[

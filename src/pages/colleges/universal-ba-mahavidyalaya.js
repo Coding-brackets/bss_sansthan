@@ -37,7 +37,7 @@ const UniversalBA = () => {
         para="Universal BA Mahavidyalaya,Nerla is dedicated to quality learning in the arts and a supportive environment where students thrive academically and personally. With a strong focus on values, clear instruction, and continuous skill development, the college nurtures creative, critical, and confident minds."
         quote="Students and parents are always welcome to connect for guidance and support, shaping a brighter future together."
         image1="/assets/CollegesImg/ayurved.png"
-        image2="/assets/CollegesImg/universal-ba-college/Rectangle 21206.png"
+        image2="/assets/CollegesImg/manjubai-college/student_image.png"
       />
     </div>
   );

@@ -37,7 +37,7 @@ const DrBabasahebAambedkar = () => {
         para="We aim to offer every student good learning and a caring place to develop. With strong values, simple teaching and steady skill-building, we help students progress every day. Parents and students can always contact us for guidance or support. "
         quote="Our goal is to shape a confident and promising future for each child."
         image1="/assets/CollegesImg/ayurved.png"
-        image2="/assets/CollegesImg/mr2.png"
+        image2="/assets/CollegesImg/std.png"
       />
     </div>
   );

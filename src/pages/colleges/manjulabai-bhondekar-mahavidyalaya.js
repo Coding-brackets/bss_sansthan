@@ -59,7 +59,7 @@ const ManjuBaiCollege = () => {
         para="Our institution, Manjulabai College, is committed to shaping informed and socially responsible graduates through quality education and inclusive learning. We advance education by blending academic excellence with values and student empowerment."
         quote="Every effort we make represents our mission, to nurture scholars and changemakers for a better future."
         image1="/assets/CollegesImg/ayurved.png"
-        image2="/assets/CollegesImg/manjubai-college/Rectangle 21206.png"
+        image2="/assets/CollegesImg/manjubai-college/student_image.png"
       />
     </div>
   );

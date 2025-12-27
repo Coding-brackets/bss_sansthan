@@ -39,7 +39,7 @@ const SantGadgeBabamadhyamik = () => {
         para="Our institution works to give every student quality learning and a supportive space to grow. We focus on strong values, clear teaching, and building skills step by step. Parents and students can reach out anytime for help or information."
         quote="Together, we work towards creating a bright and confident future for every learner."
         image1="/assets/CollegesImg/ayurved.png"
-        image2="/public/assets/CollegesImg/sant-Gadge-baba-madhyamik/Rectangle 21206.png"
+        image2="/assets/CollegesImg/sant-Gadge-baba-madhyamik/img_student.png"
       />
     </div>
   );

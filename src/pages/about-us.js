@@ -15,7 +15,7 @@ const AboutUs = () => {
         bgImage="/assets/aboutHeroBanner.png"
       />
       <History
-        image="/assets/bss-history-img.png"
+        image="/assets/CollegesImg/physio-img2.webp"
         heading="Our History"
         description={[
           "Bhondekar Shikshan Sanstha, founded in 2002 by Late Shri Bhojrajji Bhondekar, who believed that true progress begins with education, laid the cornerstone of educational reform in the Vidarbha region. BSS started special 3 residential schools and advanced colleges in nursing, physiotherapy and Ayurveda to continually expand opportunities. Guided by a legacy of service, the BSS society now envisions a world-class university and modern educational campus.",

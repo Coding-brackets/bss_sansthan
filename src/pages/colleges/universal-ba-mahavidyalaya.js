@@ -14,7 +14,7 @@ const UniversalBA = () => {
       />
 
       <CollegeConSec
-        image="/assets/CollegesImg/universal-ba-college/student-collage-img.png"
+        image="/assets/CollegesImg/physio-img2.webp"
         heading="Let us learn about Universal BA Mahavidyalaya Nerla"
         description={[
           "The Universal BA Mahavidyalaya in Nerla, Maharashtra was founded by the late Shri Bhojrajji Bhodenkar in 2002. The aim behind the construction of this college in the remote village of Nerla was to deliver expert learning facilities for the students. The continuous praise that we receive from students, their parents and the community has encouraged us to provide exceptional educational facilities in the fields of Arts.",

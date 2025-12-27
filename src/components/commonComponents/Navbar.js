@@ -39,10 +39,11 @@ const navItems = [
             href: "/colleges/bhojrajji-bhondekar-physiotherapy-mahavidyalaya",
           },
           {
-            label: "Bhojrajji Bhondekar Medical College (Proposed)",
+            label: "Bhojrajji Bhondekar Medical College",
+            isProposed: true,
             href: "/colleges/bhojrajji-bhondekar-medical-college",
           },
-           {
+          {
             label: "Bhojraj Bhondekar Ayurvedic Mahavidyalaya",
             href: "/colleges/bhojrajji-bhondekar-ayurvedic-mahavidyalaya",
           },
@@ -137,6 +138,26 @@ const Navbar = () => {
         isScrolled ? "nav-shadow" : ""
       } container-fluid p-0 ${!isHome ? " nav_container" : ""}`}
     >
+      <style jsx>{`
+  .proposed-badge-nav {
+    margin-left: 6px;
+    padding: 3px 6px;
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #f73a00, #f73a00);
+    border-radius: 12px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    animation: pulse 1.6s infinite;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+`}</style>
       <div className="navbar_section my-40">
         {/* Logo Section */}
         <div className="nav1 d-flex align-items-center">
@@ -170,8 +191,7 @@ const Navbar = () => {
           <div className="news_scroll_sec">
             <div className="scroll-content">
               <Link href="/news" className="tag">
-                🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM
-                & ANM programs
+                🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs
               </Link>
               |
               <Link href="/news" className="tag">
@@ -183,8 +203,7 @@ const Navbar = () => {
               </Link>
               |
               <Link href="/news" className="tag">
-                🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM
-                & ANM programs
+                🎓 Admission Open for 2025–26 – Apply now for B.Sc. Nursing, GNM & ANM programs
               </Link>
               |
               <Link href="/news" className="tag">
@@ -238,6 +257,9 @@ const Navbar = () => {
                               {sub.children.map((child, j) => (
                                 <Link key={j} href={child.href}>
                                   {child.label}
+                                  {child.isProposed && (
+                                    <sup className="proposed-badge-nav">Proposed</sup>
+                                  )}
                                 </Link>
                               ))}
                             </div>
@@ -246,7 +268,7 @@ const Navbar = () => {
                           <Link key={i} href={sub.href}>
                             {sub.label}
                           </Link>
-                        )
+                        ),
                       )}
                     </div>
                   </div>
@@ -254,7 +276,7 @@ const Navbar = () => {
                   <Link key={index} href={item.href}>
                     {item.title}
                   </Link>
-                )
+                ),
               )}
             </div>
 
@@ -284,10 +306,7 @@ const Navbar = () => {
               className="w-100 h-100"
             />
           </Link>
-          <button
-            className="border-0 bg-transparent"
-            onClick={() => setSidebarOpen(false)}
-          >
+          <button className="border-0 bg-transparent" onClick={() => setSidebarOpen(false)}>
             <X size={26} />
           </button>
         </div>
@@ -296,14 +315,9 @@ const Navbar = () => {
           {sidebarItems.map((item, index) =>
             item.submenu ? (
               <div key={index} className="sidebar_item">
-                <button
-                  className="sidebar_btn p-0"
-                  onClick={() => toggleDropdown(item.title)}
-                >
+                <button className="sidebar_btn p-0" onClick={() => toggleDropdown(item.title)}>
                   {item.title}
-                  <IoIosArrowDown
-                    className={openDropdowns[item.title] ? "rotate-icon" : ""}
-                  />
+                  <IoIosArrowDown className={openDropdowns[item.title] ? "rotate-icon" : ""} />
                 </button>
 
                 {openDropdowns[item.title] && (
@@ -317,9 +331,7 @@ const Navbar = () => {
                           >
                             {sub.label}
                             <IoIosArrowForward
-                              className={
-                                openDropdowns[sub.label] ? "rotate-icon" : ""
-                              }
+                              className={openDropdowns[sub.label] ? "rotate-icon" : ""}
                             />
                           </button>
 
@@ -332,43 +344,33 @@ const Navbar = () => {
                                   onClick={() => setSidebarOpen(false)}
                                 >
                                   {child.label}
+                                  {child.isProposed && (
+                                    <sup className="proposed-badge-nav">Proposed</sup>
+                                  )}
                                 </Link>
                               ))}
                             </div>
                           )}
                         </div>
                       ) : (
-                        <Link
-                          key={i}
-                          href={sub.href}
-                          onClick={() => setSidebarOpen(false)}
-                        >
+                        <Link key={i} href={sub.href} onClick={() => setSidebarOpen(false)}>
                           {sub.label}
                         </Link>
-                      )
+                      ),
                     )}
                   </div>
                 )}
               </div>
             ) : (
-              <Link
-                key={index}
-                href={item.href}
-                onClick={() => setSidebarOpen(false)}
-              >
+              <Link key={index} href={item.href} onClick={() => setSidebarOpen(false)}>
                 {item.title}
               </Link>
-            )
+            ),
           )}
         </div>
       </div>
 
-      {sidebarOpen && (
-        <div
-          className="sidebar_overlay"
-          onClick={() => setSidebarOpen(false)}
-        ></div>
-      )}
+      {sidebarOpen && <div className="sidebar_overlay" onClick={() => setSidebarOpen(false)}></div>}
     </div>
   );
 };

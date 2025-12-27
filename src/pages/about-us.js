@@ -15,7 +15,7 @@ const AboutUs = () => {
         bgImage="/assets/aboutHeroBanner.png"
       />
       <History
-        image="/assets/CollegesImg/physio-img2.webp"
+        image="/assets/CollegesImg/doctorImg.png"
         heading="Our History"
         description={[
           "Bhondekar Shikshan Sanstha, founded in 2002 by Late Shri Bhojrajji Bhondekar, who believed that true progress begins with education, laid the cornerstone of educational reform in the Vidarbha region. BSS started special 3 residential schools and advanced colleges in nursing, physiotherapy and Ayurveda to continually expand opportunities. Guided by a legacy of service, the BSS society now envisions a world-class university and modern educational campus.",
@@ -26,24 +26,23 @@ const AboutUs = () => {
       />
       <Journey />
       <Vision
-      image="/assets/vision_img.png"
-      heading="Our Vision"
-        
+        image="/assets/vision_img.png"
+        heading="Our Vision"
         description={[
           "To transform the Vidarbha region into a hub of knowledge. With a focus on quality education & employment generation plus community upliftment, the vision is to establish globally respected schools and colleges that nurture intellect and social responsibility, shaping a self-reliant Maharashtra for generations to come.",
           "We aim to set up a world-class group of institutions, to enhance youth employment opportunities, high-tech infrastructure and ensure quality education reaches every corner of society for a prosperous and self-reliant India.",
         ]}
-        reverse="true"/>
-         <Vision
-      image="/assets/leaders.webp"
-      heading="Our Vision"
-        
+        reverse="true"
+      />
+      <Vision
+        image="/assets/leaders.webp"
+        heading="Our Vision"
         description={[
           "we want to empower students through education that blends academic brilliance with moral values and modern technology. The mission focuses primarily on creating opportunities in healthcare, nursing, Law & administrative studies while promoting research and social development, ensuring every learner contributes 100% to the nation’s advancement.",
           "Towards a Brighter Tomorrow with Education and Humanity! Our mission is to uplift every section of society through opportunity. Bhondekar Shikshan Sanstha continues to inspire hope and prosperity for all.",
         ]}
         showQuote="true"
-        />
+      />
       {/* <Mission
         image="/assets/vision.png"
         heading="Our Vision"
@@ -63,10 +62,7 @@ const AboutUs = () => {
         ]}
         showQuote="true"
       /> */}
-      <Mentors
-        img="/assets/bhojraj-bhondekar.png"
-        heading="Meet Founders & Mentors Now!"
-      />
+      <Mentors img="/assets/bhojraj-bhondekar.png" heading="Meet Founders & Mentors Now!" />
     </div>
   );
 };

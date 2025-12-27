@@ -14,7 +14,9 @@ const Colleges = ({ colleges }) => {
   return (
     <section className="mb-80">
       <div className="container">
-        <h2 className="section_heading text-center mb-3">Institutions Nurtured by the Society</h2>
+        <h2 className="section_heading text-center mb-3">
+          Society-Operated Educational Institutions
+        </h2>
 
         <p className="section_para text-center mb-5 m-auto college_para">
           We operate a network of institutions offering comprehensive programs in medical, nursing,

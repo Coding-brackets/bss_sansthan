@@ -31,12 +31,28 @@ const navItems = [
         className: "long-dropdown",
         children: [
           {
-            label: "Pooja Nursing College",
-            href: "/colleges/pooja-nursing-college",
+            label: "Dr. Babasaheb Ambedkar MR School",
+            href: "/colleges/dr-babasaheb-ambedkar-mr-school",
+          },
+          {
+            label: "Late Jamunabai Bhondekar MR School Umri",
+            href: "/colleges/late-jamunabai-bhondekar-mr-school",
+          },
+          {
+            label: "Sant Gadgebaba MR School Nerla",
+            href: "/colleges/sant-gadgebaba-mr-school",
+          },
+          {
+            label: "Bhojraj Bhondekar Ayurvedic Mahavidyalaya",
+            href: "/colleges/bhojrajji-bhondekar-ayurvedic-mahavidyalaya",
           },
           {
             label: "Bhojrajji Bhondekar Physiotherapy Mahavidyalaya",
             href: "/colleges/bhojrajji-bhondekar-physiotherapy-mahavidyalaya",
+          },
+          {
+            label: "Pooja Nursing College",
+            href: "/colleges/pooja-nursing-college",
           },
           {
             label: "Bhojrajji Bhondekar Medical College",
@@ -44,32 +60,16 @@ const navItems = [
             href: "/colleges/bhojrajji-bhondekar-medical-college",
           },
           {
-            label: "Bhojraj Bhondekar Ayurvedic Mahavidyalaya",
-            href: "/colleges/bhojrajji-bhondekar-ayurvedic-mahavidyalaya",
-          },
-          {
             label: "Manjulabai Bhondekar Mahavidyalaya",
             href: "/colleges/manjulabai-bhondekar-mahavidyalaya",
-          },
-          {
-            label: "Dr. Babasaheb Ambedkar MR School",
-            href: "/colleges/dr-babasaheb-ambedkar-mr-school",
-          },
-          {
-            label: "Universal BA Mahavidyalaya Nerla",
-            href: "/colleges/universal-ba-mahavidyalaya",
-          },
-          {
-            label: "Sant Gadgebaba MR School Nerla",
-            href: "/colleges/sant-gadgebaba-mr-school",
           },
           {
             label: "Late Jamunabai Bhondekar Mahavidyalaya Navegaon",
             href: "/colleges/late-jamunabai-bhondekar-mahavidyalaya",
           },
           {
-            label: "Late Jamunabai Bhondekar MR School Umri",
-            href: "/colleges/late-jamunabai-bhondekar-mr-school",
+            label: "Universal BA Mahavidyalaya Nerla",
+            href: "/colleges/universal-ba-mahavidyalaya",
           },
         ],
       },
